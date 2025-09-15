@@ -1,0 +1,258 @@
+import chromadb
+from chromadb.config import Settings
+import json
+from typing import List, Dict, Optional
+from debug_logger import DebugLogger
+import os
+import openai
+from dotenv import load_dotenv
+
+class VectorStore:
+    """ChromaDB with optimized search"""
+    
+    def __init__(self, persist_directory: str = "./chroma_db"):
+        self.persist_directory = persist_directory
+        self.debug = DebugLogger("vector_store")
+        
+        # Initialize ChromaDB
+        self.client = chromadb.PersistentClient(
+            path=persist_directory,
+            settings=Settings(
+                anonymized_telemetry=False,
+                allow_reset=True
+            )
+        )
+        
+        # Initialize OpenAI API for long-context embeddings
+        load_dotenv()
+        if os.path.exists('env'):
+            load_dotenv('env', override=True)
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            try:
+                import streamlit as st
+                api_key = st.secrets.get("OPENAI_API_KEY")
+            except:
+                pass
+        if not api_key:
+            self.debug.log("error", "OPENAI_API_KEY environment variable not set.")
+            raise ValueError("OPENAI_API_KEY environment variable not set.")
+        openai.api_key = api_key
+        self.embedding_model = "text-embedding-3-large"  # 8192-token context, 3072-dim
+        
+        # Initialize collection
+        self.collection = self._init_collection()
+    
+    def _init_collection(self):
+        """Initialize or load collection"""
+        try:
+            # Try to get existing
+            collection = self.client.get_collection("malta_code_v2")
+            self.collection = collection
+            doc_count = collection.count()
+            self.debug.log("info", f"Loaded collection with {doc_count} documents")
+            if doc_count == 0:
+                self._load_documents()
+        except:
+            # Create new
+            collection = self.client.create_collection(
+                name="malta_code_v2",
+                metadata={"hnsw:space": "cosine"}
+            )
+            self.collection = collection
+            self.debug.log("info", "Created new collection")
+            self._load_documents()
+        
+        return collection
+    
+    def _load_documents(self):
+        """Load chunks into vector store"""
+        try:
+            with open('processed_chunks.json', 'r', encoding='utf-8') as f:
+                chunks = json.load(f)
+            
+            # Batch process for efficiency
+            batch_size = 100
+            
+            for i in range(0, len(chunks), batch_size):
+                batch = chunks[i:i + batch_size]
+                
+                ids = [c['id'] for c in batch]
+                documents = [c['content'] for c in batch]
+                metadatas = [c['metadata'] for c in batch]
+                
+                # Generate embeddings
+                embeddings = self._embed_texts(documents)
+                
+                # Add to collection
+                self.collection.add(
+                    ids=ids,
+                    documents=documents,
+                    metadatas=metadatas,
+                    embeddings=embeddings
+                )
+                
+                self.debug.log("debug", f"Loaded batch {i//batch_size + 1}")
+            
+            self.debug.log("info", f"Loaded {len(chunks)} chunks total")
+            
+        except Exception as e:
+            self.debug.log("error", f"Error loading documents: {e}")
+            raise
+    
+    def search(self, query: str, n_results: int = 10, 
+               filters: Optional[Dict] = None) -> List[Dict]:
+        """Unified search with debugging"""
+        self.debug.log("query", f"Search query: {query}")
+        
+        # Generate query embedding
+        query_embedding = self._embed_texts([query])[0]
+        
+        # Build where clause
+        where_clause = filters if filters else None
+        
+        # Search
+        results = self.collection.query(
+            query_embeddings=[query_embedding],
+            n_results=min(n_results * 2, 50),  # Get extra for re-ranking
+            where=where_clause,
+            include=['documents', 'metadatas', 'distances']
+        )
+        
+        # Process results
+        processed = self._process_results(results, query, n_results)
+        
+        self.debug.log("info", f"Returned {len(processed)} results")
+        return processed
+    
+    def get_article(self, article_num: str, doc_code: Optional[str] = None) -> List[Dict]:
+        """Get specific article, optionally constrained to a document code."""
+        self.debug.log("query", f"Article lookup: {article_num} (doc={doc_code or 'any'})")
+        
+        # ChromaDB get() doesn't support multiple where conditions, so we need to use query() instead
+        if doc_code and doc_code not in {"sl", "sl_*"}:
+            # Use our own embedding method to ensure dimension consistency
+            dummy_query = f"article {article_num} {doc_code}"
+            query_embedding = self._embed_texts([dummy_query])[0]
+            results = self.collection.query(
+                query_embeddings=[query_embedding],
+                n_results=100,  # Get enough to find the article
+                where={"doc_code": doc_code},
+                include=['documents', 'metadatas']
+            )
+            # Filter by article number in the results
+            filtered_results = []
+            for i, metadata in enumerate(results['metadatas'][0]):
+                if metadata.get('article') == article_num:
+                    filtered_results.append({
+                        'id': results['ids'][0][i],
+                        'content': results['documents'][0][i],
+                        'metadata': metadata,
+                        'score': 1.0,
+                        'citation': metadata['citation']
+                    })
+            return filtered_results
+        else:
+            # Simple article lookup without doc_code constraint
+            results = self.collection.get(
+                where={"article": article_num},
+                include=['documents', 'metadatas']
+            )
+        
+        if not results['ids']:
+            return []
+        
+        # Format results
+        formatted = []
+        for i in range(len(results['ids'])):
+            formatted.append({
+                'id': results['ids'][i],
+                'content': results['documents'][i],
+                'metadata': results['metadatas'][i],
+                'score': 1.0,
+                'citation': results['metadatas'][i]['citation']
+            })
+        
+        # Sort by chunk index
+        formatted.sort(key=lambda x: x['metadata'].get('chunk_index', 0))
+        
+        return formatted
+    
+    def _process_results(self, results: Dict, query: str, 
+                        n_results: int) -> List[Dict]:
+        """Process and rank results"""
+        if not results['ids'] or not results['ids'][0]:
+            return []
+        
+        processed = []
+        
+        # Check for article lookup
+        import re
+        article_match = re.search(r'\b(?:article|art\.?)\s*(\d+[A-Z]?)\b', 
+                                query.lower())
+        
+        if article_match:
+            # Direct article lookup
+            article_num = article_match.group(1).upper()
+            article_results = self.get_article(article_num)
+            if article_results:
+                return article_results[:n_results]
+        
+        # Process semantic results
+        for i in range(len(results['ids'][0])):
+            doc_id = results['ids'][0][i]
+            
+            # Convert distance to similarity
+            distance = results['distances'][0][i]
+            score = 1 / (1 + distance)  # Convert to 0-1 score
+            
+            processed.append({
+                'id': doc_id,
+                'content': results['documents'][0][i],
+                'metadata': results['metadatas'][0][i],
+                'score': score,
+                'citation': results['metadatas'][0][i]['citation']
+            })
+        
+        # Sort by score
+        processed.sort(key=lambda x: x['score'], reverse=True)
+        
+        # Deduplicate multi-chunk articles
+        final_results = self._deduplicate_results(processed)
+        
+        return final_results[:n_results]
+
+    def _embed_texts(self, texts: List[str]) -> List[List[float]]:
+        """Embed a list of texts using OpenAI long-context embeddings.
+        Splits into smaller batches to respect API payload limits.
+        """
+        embeddings: List[List[float]] = []
+        batch_size = 64
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
+            response = openai.Embedding.create(
+                model=self.embedding_model,
+                input=batch
+            )
+            # Ensure results are ordered corresponding to input
+            batch_embeddings = [item["embedding"] for item in sorted(
+                response["data"], key=lambda x: x["index"]
+            )]
+            embeddings.extend(batch_embeddings)
+        return embeddings
+    
+    def _deduplicate_results(self, results: List[Dict]) -> List[Dict]:
+        """Merge multi-chunk articles"""
+        article_map = {}
+        
+        for result in results:
+            article = result['metadata']['article']
+            
+            if article not in article_map:
+                article_map[article] = result
+            else:
+                # Keep highest scoring chunk
+                if result['score'] > article_map[article]['score']:
+                    article_map[article] = result
+        
+        return list(article_map.values())

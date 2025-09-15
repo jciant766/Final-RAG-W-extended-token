@@ -1,0 +1,60 @@
+{
+  "strategy": "whole_article_chunking",
+  "embedding_model": "text-embedding-3-large",
+  "max_tokens": 8192,
+  "total_chunks": 22,
+  "compatible_chunks": 22,
+  "compatibility_rate": 100.0,
+  "sample_chunks": [
+    {
+      "article": "1",
+      "tokens": 20,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "2",
+      "tokens": 694,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "3",
+      "tokens": 111,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "4",
+      "tokens": 61,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "5",
+      "tokens": 159,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "6",
+      "tokens": 130,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "7",
+      "tokens": 489,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "8",
+      "tokens": 211,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "9",
+      "tokens": 236,
+      "fits_in_embedding": true
+    },
+    {
+      "article": "10",
+      "tokens": 828,
+      "fits_in_embedding": true
+    }
+  ]
+}

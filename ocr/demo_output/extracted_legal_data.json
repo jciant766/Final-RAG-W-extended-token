@@ -1,0 +1,3052 @@
+{
+  "articles_detected": [
+    "1",
+    "1927",
+    "2",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "26B",
+    "26C",
+    "1",
+    "2",
+    "26H",
+    "26I",
+    "26J",
+    "27",
+    "28",
+    "32B",
+    "38",
+    "39",
+    "40",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "66",
+    "70A",
+    "71",
+    "75",
+    "76",
+    "77",
+    "77A",
+    "77F",
+    "78",
+    "78A",
+    "78B",
+    "78E",
+    "78F",
+    "78E",
+    "78G",
+    "78H",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "128",
+    "129",
+    "130",
+    "131",
+    "132",
+    "133",
+    "134",
+    "144",
+    "145",
+    "146",
+    "147",
+    "148",
+    "149",
+    "150",
+    "151",
+    "152",
+    "161",
+    "162",
+    "163",
+    "164",
+    "165",
+    "166",
+    "167",
+    "168",
+    "179",
+    "180",
+    "181",
+    "182",
+    "183",
+    "184",
+    "185",
+    "186",
+    "187",
+    "188",
+    "189",
+    "190",
+    "202",
+    "203",
+    "204",
+    "205",
+    "206",
+    "207",
+    "208",
+    "209",
+    "210",
+    "211",
+    "212",
+    "221",
+    "222",
+    "223",
+    "224",
+    "225",
+    "226",
+    "227",
+    "228",
+    "238",
+    "239",
+    "240",
+    "241",
+    "242",
+    "250",
+    "251",
+    "252",
+    "253",
+    "254",
+    "255",
+    "256",
+    "257",
+    "258",
+    "259",
+    "267",
+    "268",
+    "269",
+    "270",
+    "271",
+    "272",
+    "280",
+    "281",
+    "282",
+    "283",
+    "284",
+    "285",
+    "294",
+    "295",
+    "296",
+    "297",
+    "298",
+    "299",
+    "309",
+    "310",
+    "311",
+    "312",
+    "313",
+    "316",
+    "317",
+    "318",
+    "319",
+    "320",
+    "321",
+    "322",
+    "331",
+    "332",
+    "333",
+    "334",
+    "335",
+    "336",
+    "337",
+    "361",
+    "369",
+    "370",
+    "371",
+    "372",
+    "373",
+    "374",
+    "375",
+    "376",
+    "377",
+    "378",
+    "379",
+    "385",
+    "386",
+    "387",
+    "388",
+    "389",
+    "396",
+    "397",
+    "398",
+    "399",
+    "400",
+    "401",
+    "402",
+    "403",
+    "412",
+    "413",
+    "414",
+    "415",
+    "416",
+    "423",
+    "424",
+    "425",
+    "426",
+    "427",
+    "428",
+    "429",
+    "430",
+    "431",
+    "441",
+    "442",
+    "443",
+    "444",
+    "451",
+    "452",
+    "453",
+    "454",
+    "455",
+    "456",
+    "457",
+    "458",
+    "477",
+    "480",
+    "481",
+    "482",
+    "485",
+    "486",
+    "491",
+    "492",
+    "493",
+    "494",
+    "498",
+    "503",
+    "504",
+    "505",
+    "506",
+    "507",
+    "511",
+    "516",
+    "517",
+    "518",
+    "520",
+    "521",
+    "523",
+    "528",
+    "530",
+    "531",
+    "532",
+    "536",
+    "537",
+    "538",
+    "495",
+    "539",
+    "540",
+    "546",
+    "547",
+    "548",
+    "549",
+    "550",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "0"
+  ],
+  "definitions": [
+    {
+      "term": "and published by",
+      "definition": "of a notice in the"
+    },
+    {
+      "term": "notice of such withdrawal by",
+      "definition": "of a note filed in the"
+    },
+    {
+      "term": "or by any other",
+      "definition": "provided for in"
+    },
+    {
+      "term": "A contract stipulated by",
+      "definition": "of correspondence,"
+    },
+    {
+      "term": "Offer by",
+      "definition": "of 113"
+    },
+    {
+      "term": "An offer made to the public by",
+      "definition": "of catalogues"
+    },
+    {
+      "term": "A bill of exchange signed by",
+      "definition": "of a cross or any other"
+    },
+    {
+      "term": "Re-exchange is effected by",
+      "definition": "of a re-draft"
+    },
+    {
+      "term": "if he is required to do so by",
+      "definition": "of a protest by the"
+    },
+    {
+      "term": "anticipated profit is proved by",
+      "definition": "of the lists of Proof of"
+    },
+    {
+      "term": "by such other",
+      "definition": "as anticipated profit"
+    },
+    {
+      "term": "of prices current or other",
+      "definition": "it is Where profit is less"
+    },
+    {
+      "term": "regard being had to the",
+      "definition": "of communication or other"
+    },
+    {
+      "term": "published by",
+      "definition": "of a notice containing an abstract in the"
+    },
+    {
+      "term": "declaration to be published by",
+      "definition": "of a notice containing an"
+    },
+    {
+      "term": "whether by",
+      "definition": "of a licensed auctioneer or otherwise, such assets"
+    },
+    {
+      "term": "said continuation will afford a",
+      "definition": "of increasing his assets for"
+    },
+    {
+      "term": "a meeting of the creditors by",
+      "definition": "of a notice published"
+    },
+    {
+      "term": "exceed the",
+      "definition": "of the bankrupt"
+    },
+    {
+      "term": "exceed the",
+      "definition": "of the bankrupt"
+    },
+    {
+      "term": "than by",
+      "definition": "of the agent"
+    }
+  ],
+  "requirements": [
+    {
+      "text": "shall not extend:"
+    },
+    {
+      "text": "shall not extend insofar as these may be"
+    },
+    {
+      "text": "shall apply:"
+    },
+    {
+      "text": "shall apply"
+    },
+    {
+      "text": "shall have the meaning assigned to it in article 477"
+    },
+    {
+      "text": "shall be deemed to be an act of trade, Presumption as to"
+    },
+    {
+      "text": "shall be deemed to be a major with regard to obligations Amended by:"
+    },
+    {
+      "text": "shall apply to minors"
+    },
+    {
+      "text": "shall be registered in the Civil"
+    },
+    {
+      "text": "shall in no case injuriously affect the rights"
+    },
+    {
+      "text": "shall immediately enter in the waste-book"
+    },
+    {
+      "text": "must show day by day all the transactions"
+    },
+    {
+      "text": "must show month"
+    },
+    {
+      "text": "must show in detail, day by day, all the"
+    },
+    {
+      "text": "must be balanced at least once a month"
+    },
+    {
+      "text": "shall make every year an inventory Inventory-book"
+    },
+    {
+      "text": "shall be closed with a balance and"
+    },
+    {
+      "text": "shall be copied"
+    },
+    {
+      "text": "shall show an accurate and up-to-date record of Ledger"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall keep, by order of date, the original of all Duty of trader to"
+    },
+    {
+      "text": "shall be numbered and kept, by order observed in the"
+    },
+    {
+      "text": "shall be necessary to make any cancellation,"
+    },
+    {
+      "text": "shall be made in such a manner as to leave the cancelled words"
+    },
+    {
+      "text": "shall not apply to such books"
+    },
+    {
+      "text": "shall Proof by books"
+    },
+    {
+      "text": "shall not be lawful to divide the contents of"
+    },
+    {
+      "text": "shall have"
+    },
+    {
+      "text": "shall apply thereto;"
+    },
+    {
+      "text": "shall, notwithstanding the Scope of this"
+    },
+    {
+      "text": "shall not regulate transactions"
+    },
+    {
+      "text": "shall be entitled to interest for late payment, without the of late payment in"
+    },
+    {
+      "text": "shall be entitled to interest for late payment from the day"
+    },
+    {
+      "text": "shall be entitled to interest for late"
+    },
+    {
+      "text": "shall be the"
+    },
+    {
+      "text": "shall be the"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be entitled to interest for late payment upon the"
+    },
+    {
+      "text": "shall not"
+    },
+    {
+      "text": "shall be extended to a maximum of sixty calendar days"
+    },
+    {
+      "text": "shall be the"
+    },
+    {
+      "text": "shall be the"
+    },
+    {
+      "text": "shall prohibit parties from"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be taken into"
+    },
+    {
+      "text": "shall be deemed as grossly"
+    },
+    {
+      "text": "shall be presumed to"
+    },
+    {
+      "text": "shall Added by:"
+    },
+    {
+      "text": "shall publish the rate of legal Publication"
+    },
+    {
+      "text": "shall, within fifteen days from the"
+    },
+    {
+      "text": "shall cause a copy of the note aforesaid to be"
+    },
+    {
+      "text": "shall keep an Index, in alphabetical be kept by"
+    },
+    {
+      "text": "shall be open to inspection by the public"
+    },
+    {
+      "text": "shall be liable, on conviction, to a penalty not exceeding"
+    },
+    {
+      "text": "shall devolve upon such spouse"
+    },
+    {
+      "text": "shall be liable to the penalty prescribed in the last preceding"
+    },
+    {
+      "text": "shall cause every demand for the"
+    },
+    {
+      "text": "shall likewise cause the judgment on the said"
+    },
+    {
+      "text": "shall enter"
+    },
+    {
+      "text": "shall not make use of any name, mark or"
+    },
+    {
+      "text": "shall not engage in any comparative"
+    },
+    {
+      "text": "shall, as far as the comparison is concerned, be"
+    },
+    {
+      "text": "shall indicate in"
+    },
+    {
+      "text": "shall apply"
+    },
+    {
+      "text": "shall not engage in any form of misleading Misleading"
+    },
+    {
+      "text": "shall be taken of all its features, and in particular of any"
+    },
+    {
+      "text": "shall not make use of any false indication of origin"
+    },
+    {
+      "text": "shall not be deemed"
+    },
+    {
+      "text": "shall not, for the purpose of competition,"
+    },
+    {
+      "text": "shall not make use of honours, patents,"
+    },
+    {
+      "text": "shall not suborn persons employed in the trade or"
+    },
+    {
+      "text": "shall not, in the exercise of his trade or business,"
+    },
+    {
+      "text": "shall be construed"
+    },
+    {
+      "text": "shall, at the choice of the"
+    },
+    {
+      "text": "shall be governed by the rules of the civil law"
+    },
+    {
+      "text": "shall be fixed by the Civil Court,"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be paid to the injured trader in settlement"
+    },
+    {
+      "text": "shall be kept under the authority of the Civil"
+    },
+    {
+      "text": "shall be kept under the authority of the Court of"
+    },
+    {
+      "text": "shall be deemed to form an integral part of that kept under"
+    },
+    {
+      "text": "must exist in respect of every one of the partners"
+    },
+    {
+      "text": "shall make an application before one of the courts registration"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall contain the"
+    },
+    {
+      "text": "shall be subject to appeal, by sworn"
+    },
+    {
+      "text": "shall be lawful for the court of first or second instance to"
+    },
+    {
+      "text": "shall deem necessary for dealing with the"
+    },
+    {
+      "text": "shall be liable to cancellation if the trader dies or retires from"
+    },
+    {
+      "text": "shall be made before the"
+    },
+    {
+      "text": "shall bear"
+    },
+    {
+      "text": "shall set out the name and surname of"
+    },
+    {
+      "text": "shall, without delay, be"
+    },
+    {
+      "text": "shall enter such registration in the register of traders, allotting to it a"
+    },
+    {
+      "text": "shall, without delay, be"
+    },
+    {
+      "text": "shall forthwith enter the"
+    },
+    {
+      "text": "shall be lawful for any trader or commercial partnership,"
+    },
+    {
+      "text": "shall be open to inspection by every"
+    },
+    {
+      "text": "shall not operate so as to Default of"
+    },
+    {
+      "text": "shall, in ful use of term"
+    },
+    {
+      "text": "shall be liable to a penalty of not less"
+    },
+    {
+      "text": "shall be a special part for Parts of register for"
+    },
+    {
+      "text": "shall also be governed by the provisions of the"
+    },
+    {
+      "text": "shall be had to the capacity of validity and effects"
+    },
+    {
+      "text": "must be conferred in authority"
+    },
+    {
+      "text": "shall not be deemed to include the power to buy on credit,"
+    },
+    {
+      "text": "shall not be deemed to include the power to"
+    },
+    {
+      "text": "shall be considered as a forgery of a commercial"
+    },
+    {
+      "text": "shall be liable to the punishment therein prescribed, without"
+    },
+    {
+      "text": "shall not be lawful for the agent to transact with himself"
+    },
+    {
+      "text": "must file in the one or the other of the courts mentioned"
+    },
+    {
+      "text": "shall in"
+    },
+    {
+      "text": "shall be liable for the acts of the manager and Liability of"
+    },
+    {
+      "text": "shall always deal in the name of the Duties of manager"
+    },
+    {
+      "text": "shall, besides his own name and"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall not, either on his own behalf or on Manager may not"
+    },
+    {
+      "text": "shall be Determination of"
+    },
+    {
+      "text": "shall produce to the customers"
+    },
+    {
+      "text": "shall not, without"
+    },
+    {
+      "text": "shall not communicate"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall moreover be liable to a"
+    },
+    {
+      "text": "shall not apply to:"
+    },
+    {
+      "text": "shall apply in"
+    },
+    {
+      "text": "shall notify agents"
+    },
+    {
+      "text": "shall apply in writing to the IX"
+    },
+    {
+      "text": "shall prescribe,"
+    },
+    {
+      "text": "shall require"
+    },
+    {
+      "text": "shall be made in the application to"
+    },
+    {
+      "text": "shall not accept an application for"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall likewise be"
+    },
+    {
+      "text": "shall be published in the"
+    },
+    {
+      "text": "shall removed from the register"
+    },
+    {
+      "text": "shall be liable:"
+    },
+    {
+      "text": "shall not"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall -"
+    },
+    {
+      "text": "shall act dutifully and in good faith"
+    },
+    {
+      "text": "shall - Substituted by:"
+    },
+    {
+      "text": "shall, in addition, inform his commercial agent"
+    },
+    {
+      "text": "shall govern the articles 74 and 75"
+    },
+    {
+      "text": "shall be entitled to the remuneration Substituted by:"
+    },
+    {
+      "text": "shall be entitled to such reasonable"
+    },
+    {
+      "text": "shall not apply"
+    },
+    {
+      "text": "shall be entitled to commission Entitlement to"
+    },
+    {
+      "text": "shall also be entitled to commission on"
+    },
+    {
+      "text": "shall be entitled"
+    },
+    {
+      "text": "shall not be entitled to the"
+    },
+    {
+      "text": "shall be liable for any sum due under sub-"
+    },
+    {
+      "text": "shall be refunded to the principal"
+    },
+    {
+      "text": "shall become due as soon as, and to the"
+    },
+    {
+      "text": "shall become due at the latest when the third"
+    },
+    {
+      "text": "shall be paid not later than on the last day"
+    },
+    {
+      "text": "shall run from the date the agency"
+    },
+    {
+      "text": "shall run from that"
+    },
+    {
+      "text": "shall be void"
+    },
+    {
+      "text": "shall be refunded if the right to it is extinguished"
+    },
+    {
+      "text": "shall be void"
+    },
+    {
+      "text": "shall supply his commercial agent with Periodic supply of"
+    },
+    {
+      "text": "shall set out the basis used in calculating inspection of"
+    },
+    {
+      "text": "shall be entitled to demand that he be IX"
+    },
+    {
+      "text": "shall be void"
+    },
+    {
+      "text": "shall remove or restrict the effect of,"
+    },
+    {
+      "text": "shall each be Right to signed"
+    },
+    {
+      "text": "shall be void"
+    },
+    {
+      "text": "shall be agency contract"
+    },
+    {
+      "text": "shall be - agency contract"
+    },
+    {
+      "text": "must coincide with the end of a calendar month"
+    },
+    {
+      "text": "shall also apply to an agency"
+    },
+    {
+      "text": "shall be deemed to be part of the agency"
+    },
+    {
+      "text": "shall not affect the application of any"
+    },
+    {
+      "text": "shall be entitled to an indemnity if and to the"
+    },
+    {
+      "text": "shall not exceed a figure"
+    },
+    {
+      "text": "shall be calculated on the average for the"
+    },
+    {
+      "text": "shall not"
+    },
+    {
+      "text": "shall be entitled to compensation for damage he suffers as a"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall also arise where"
+    },
+    {
+      "text": "shall lose his entitlement to the"
+    },
+    {
+      "text": "shall not be payable to the commercial agent where - excluding payment"
+    },
+    {
+      "text": "shall be valid only if and to Restraint of trade"
+    },
+    {
+      "text": "shall be valid for not more than"
+    },
+    {
+      "text": "shall affect any enactment or rule of"
+    },
+    {
+      "text": "shall require information to be Disclosure of"
+    },
+    {
+      "text": "shall also apply to agency"
+    },
+    {
+      "text": "shall effect any right or liability"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall inform the authority in"
+    },
+    {
+      "text": "shall prescribe,"
+    },
+    {
+      "text": "shall require"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be published in"
+    },
+    {
+      "text": "shall likewise be published in the"
+    },
+    {
+      "text": "shall, ipso facto, forfeit his office,"
+    },
+    {
+      "text": "shall be struck off the register"
+    },
+    {
+      "text": "shall, on conviction by the"
+    },
+    {
+      "text": "shall keep a memorandum or daybook Books to be kept"
+    },
+    {
+      "text": "shall apply to such books"
+    },
+    {
+      "text": "shall forthwith note it down in his memorandum or"
+    },
+    {
+      "text": "shall, day by day, enter every transaction in his book"
+    },
+    {
+      "text": "shall state in both such books, the date, the name"
+    },
+    {
+      "text": "shall particularly state"
+    },
+    {
+      "text": "shall, if so required by any of the Delivery of copies"
+    },
+    {
+      "text": "shall, if so ordered by the court, produce Production of"
+    },
+    {
+      "text": "shall give to the court, if necessary on oath,"
+    },
+    {
+      "text": "shall have the custody of his Custody of books"
+    },
+    {
+      "text": "shall keep them in good order"
+    },
+    {
+      "text": "shall be deposited in the Civil Court, First Hall, by his"
+    },
+    {
+      "text": "shall have reasonable grounds to believe to be in"
+    },
+    {
+      "text": "shall not Exceptions"
+    },
+    {
+      "text": "shall not apply to"
+    },
+    {
+      "text": "shall transact any commercial business for Broker cannot"
+    },
+    {
+      "text": "shall any public"
+    },
+    {
+      "text": "shall not be entitled to the"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall, at the"
+    },
+    {
+      "text": "shall, during the time of interdiction, be"
+    },
+    {
+      "text": "shall in respect of the bargain which he has"
+    },
+    {
+      "text": "shall be equally divided"
+    },
+    {
+      "text": "shall not apply to"
+    },
+    {
+      "text": "shall not be answerable for the performance commission"
+    },
+    {
+      "text": "shall be in the power of the commission merchant to Acceptance of"
+    },
+    {
+      "text": "shall, without any"
+    },
+    {
+      "text": "shall, without any delay, give him"
+    },
+    {
+      "text": "shall likewise attach, where the goods, although already in"
+    },
+    {
+      "text": "shall be deemed to"
+    },
+    {
+      "text": "shall count as a refusal of the original offer and as a new"
+    },
+    {
+      "text": "shall extend to a surety, even if not a"
+    },
+    {
+      "text": "shall not be lawful for"
+    },
+    {
+      "text": "shall not apply to contracts of letting of"
+    },
+    {
+      "text": "shall each year appoint, in terms of"
+    },
+    {
+      "text": "shall constitute the Council of the Chamber of"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall represent the commercial,"
+    },
+    {
+      "text": "must be dated, and must specify the"
+    },
+    {
+      "text": "must be signed by the drawer"
+    },
+    {
+      "text": "shall be deemed"
+    },
+    {
+      "text": "must deliver to the payee, if the latter so Several parts may"
+    },
+    {
+      "text": "shall be on"
+    },
+    {
+      "text": "shall be deemed to have been put in funds if, When drawee is"
+    },
+    {
+      "text": "shall, in Protested bills"
+    },
+    {
+      "text": "shall, in"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall have endorsed the bill after the lapse of"
+    },
+    {
+      "text": "shall also apply where the"
+    },
+    {
+      "text": "shall not vest in the where endorsement"
+    },
+    {
+      "text": "must be made on the Form of"
+    },
+    {
+      "text": "must be dated, if the bill is payable at a When acceptance"
+    },
+    {
+      "text": "shall be deemed to be a refusal to"
+    },
+    {
+      "text": "shall be accepted on presentment, When bill is to be"
+    },
+    {
+      "text": "shall be liable in damages and interest to the holder"
+    },
+    {
+      "text": "shall have the"
+    },
+    {
+      "text": "shall be proved by means of a"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be lawful to demand against the drawer,"
+    },
+    {
+      "text": "shall be jointly and severally liable only"
+    },
+    {
+      "text": "shall have the preferences:"
+    },
+    {
+      "text": "shall, in all cases, have the given to party"
+    },
+    {
+      "text": "must be written on the bill and Acceptance for"
+    },
+    {
+      "text": "shall be honour how made"
+    },
+    {
+      "text": "shall cause the protest for non- Duties of acceptor"
+    },
+    {
+      "text": "shall, without delay, give for honour"
+    },
+    {
+      "text": "shall be liable in damages and interest"
+    },
+    {
+      "text": "shall be deemed to be made honour does not"
+    },
+    {
+      "text": "shall not be competent"
+    },
+    {
+      "text": "must be presented to the Bill accepted for"
+    },
+    {
+      "text": "shall not"
+    },
+    {
+      "text": "shall lose his right of recourse against such parties"
+    },
+    {
+      "text": "shall be deemed to become due on the"
+    },
+    {
+      "text": "shall not be"
+    },
+    {
+      "text": "shall not be reckoned;"
+    },
+    {
+      "text": "shall be deemed to fall due"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be payable at sight"
+    },
+    {
+      "text": "shall be payable on the day next following,"
+    },
+    {
+      "text": "shall be deemed to be due from the moment the Where drawee is"
+    },
+    {
+      "text": "shall be due according to the terms in"
+    },
+    {
+      "text": "must be paid in the money specified In what money bill"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall have expressly"
+    },
+    {
+      "text": "shall be Anticipated"
+    },
+    {
+      "text": "shall be deemed to be lawfully discharged"
+    },
+    {
+      "text": "shall be valid, provided it is specified on such second, third, or a bill drawn in sets"
+    },
+    {
+      "text": "shall not be part is not taken"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be proved by means of"
+    },
+    {
+      "text": "shall be liable to the party paying the bill, as"
+    },
+    {
+      "text": "must protest it for the balance"
+    },
+    {
+      "text": "shall be referred to an independent action and,"
+    },
+    {
+      "text": "shall deem fit, shall not be delayed"
+    },
+    {
+      "text": "shall be allowed"
+    },
+    {
+      "text": "shall be extinguished after the lapse of obligation arising"
+    },
+    {
+      "text": "shall be lawful, on furnishing the proof of title required amount of lost bill"
+    },
+    {
+      "text": "shall, in order to preserve all his rights, cause a deed"
+    },
+    {
+      "text": "shall apply to his immediate endorser, immediate"
+    },
+    {
+      "text": "shall be bound to give his assistance to, and"
+    },
+    {
+      "text": "shall bear all the expenses Owner of lost bill"
+    },
+    {
+      "text": "shall be liable in damages in case of"
+    },
+    {
+      "text": "shall be recorded in the act of How recorded"
+    },
+    {
+      "text": "must give immediate notice of the payment to"
+    },
+    {
+      "text": "shall be discharged"
+    },
+    {
+      "text": "shall be discharged"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall have preference over all the"
+    },
+    {
+      "text": "shall have no right"
+    },
+    {
+      "text": "shall be doubled"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall not present it for payment or acceptance within the"
+    },
+    {
+      "text": "shall Where drawer or"
+    },
+    {
+      "text": "shall present it for payment on the day Presentment for"
+    },
+    {
+      "text": "shall be made at"
+    },
+    {
+      "text": "shall be demanded on the next following day, not being a public"
+    },
+    {
+      "text": "shall also apply to the protest"
+    },
+    {
+      "text": "shall be made on the When protest is to"
+    },
+    {
+      "text": "shall be made on the day next"
+    },
+    {
+      "text": "shall not excuse acceptance, etc"
+    },
+    {
+      "text": "shall, after protesting the bill against the"
+    },
+    {
+      "text": "shall, after protesting the bill against him, present"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall not"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall not excuse him"
+    },
+    {
+      "text": "shall, without delay, give notice thereof in writing to"
+    },
+    {
+      "text": "shall, without"
+    },
+    {
+      "text": "shall be accompanied"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall not be competent to the holder of a bill, in case of"
+    },
+    {
+      "text": "shall it be competent to the holder to exercise his right"
+    },
+    {
+      "text": "shall not be"
+    },
+    {
+      "text": "shall be exercised within -"
+    },
+    {
+      "text": "shall be doubled in time of maritime"
+    },
+    {
+      "text": "shall Running of times"
+    },
+    {
+      "text": "shall lose bared by lapse of"
+    },
+    {
+      "text": "shall be only discharged"
+    },
+    {
+      "text": "shall accepts voluntary"
+    },
+    {
+      "text": "shall be entirely"
+    },
+    {
+      "text": "shall revive in favour of the holder"
+    },
+    {
+      "text": "shall, on paying the"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall go to the place of business"
+    },
+    {
+      "text": "must contain a verbatim copy of the"
+    },
+    {
+      "text": "must"
+    },
+    {
+      "text": "shall specify by whom, for whose honour, and in what manner the"
+    },
+    {
+      "text": "shall expressly"
+    },
+    {
+      "text": "shall be sufficient to draw up a protest to be drawn"
+    },
+    {
+      "text": "must be accompanied by an account termed Re-draft to be"
+    },
+    {
+      "text": "shall comprise - Contents of"
+    },
+    {
+      "text": "shall be accompanied by the protested bill"
+    },
+    {
+      "text": "shall be reckoned according to the course of exchange on the place"
+    },
+    {
+      "text": "shall be recoverable as from the day of the protest"
+    },
+    {
+      "text": "shall apply to promissory notes"
+    },
+    {
+      "text": "shall state the date, the amount to"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall specify the sum to be paid, and shall be made"
+    },
+    {
+      "text": "shall be payable on presentment"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be deemed to be two"
+    },
+    {
+      "text": "shall remain unimpaired; and, where"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be entitled to enforce such claim is passed to"
+    },
+    {
+      "text": "shall also apply with regard to"
+    },
+    {
+      "text": "shall be deemed to be passed to account current under the clause debts due"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall not be lawful for the debtor, after the Debtor not to"
+    },
+    {
+      "text": "shall not be deemed to be a fresh remittance"
+    },
+    {
+      "text": "shall be wound up yearly"
+    },
+    {
+      "text": "shall not operate so as to determine disability or"
+    },
+    {
+      "text": "shall be observed:"
+    },
+    {
+      "text": "shall be reckoned from the time when the"
+    },
+    {
+      "text": "shall be determined according to the laws and usages"
+    },
+    {
+      "text": "shall be determined according to the"
+    },
+    {
+      "text": "shall not be computed in the"
+    },
+    {
+      "text": "shall be liable to a"
+    },
+    {
+      "text": "shall be answerable for"
+    },
+    {
+      "text": "shall not apply, where the"
+    },
+    {
+      "text": "must pay to the person letting the vessel half the"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall, moreover, be"
+    },
+    {
+      "text": "shall have"
+    },
+    {
+      "text": "shall pay freight on the excess at the rate stipulated for the quantity"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall sail with the first favourable wind"
+    },
+    {
+      "text": "shall be lawful for each of the shippers to withdraw his own goods"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "is required to do so by means of a protest by the"
+    },
+    {
+      "text": "shall so"
+    },
+    {
+      "text": "shall be allowed to withdraw his"
+    },
+    {
+      "text": "shall make good to the person letting the vessel and the"
+    },
+    {
+      "text": "shall be liable in damages"
+    },
+    {
+      "text": "must pay the full freight and contribute"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "must charter"
+    },
+    {
+      "text": "shall devolve on"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be lawful for the freighter to withdraw it on paying the freight"
+    },
+    {
+      "text": "must, if he"
+    },
+    {
+      "text": "shall be payable"
+    },
+    {
+      "text": "shall be payable by contribution as a general average"
+    },
+    {
+      "text": "shall be lawful to demand that a judicial deposit be made of a"
+    },
+    {
+      "text": "shall forfeit his right against the"
+    },
+    {
+      "text": "must bear the expenses of"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "must pay to the"
+    },
+    {
+      "text": "shall be borne by the person letting the vessel"
+    },
+    {
+      "text": "shall be observed:"
+    },
+    {
+      "text": "shall stay in port until the conclusion of"
+    },
+    {
+      "text": "shall be borne, by"
+    },
+    {
+      "text": "shall be borne by the freighter;"
+    },
+    {
+      "text": "shall be dissolved"
+    },
+    {
+      "text": "shall pay the expenses for loading and"
+    },
+    {
+      "text": "shall also apply:"
+    },
+    {
+      "text": "shall use"
+    },
+    {
+      "text": "shall be out before, or on"
+    },
+    {
+      "text": "shall be competent to"
+    },
+    {
+      "text": "shall pay half the stipulated freight"
+    },
+    {
+      "text": "shall continue to subsist, and neither party is liable for damages for"
+    },
+    {
+      "text": "shall also be due during the detention of the vessel,"
+    },
+    {
+      "text": "must, in the absence of instructions to the contrary, proceed"
+    },
+    {
+      "text": "shall apply to the Conveyance in a"
+    },
+    {
+      "text": "shall be signed by the master, and given Bill of lading"
+    },
+    {
+      "text": "shall be signed by the shipper, and"
+    },
+    {
+      "text": "shall give as many parts of a bill of lading as"
+    },
+    {
+      "text": "shall have been"
+    },
+    {
+      "text": "shall not be competent to the freighters or the"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be at"
+    },
+    {
+      "text": "shall be due"
+    },
+    {
+      "text": "shall be deducted"
+    },
+    {
+      "text": "shall be released from their mutual obligations, and"
+    },
+    {
+      "text": "shall pay passage"
+    },
+    {
+      "text": "shall be at the charge of the master, if he has"
+    },
+    {
+      "text": "shall obey the orders of the master in all Passengers to obey"
+    },
+    {
+      "text": "shall, in the absence of an agreement to the Maintenance of"
+    },
+    {
+      "text": "shall provide for the custody of such effects of the deceased as are deceased"
+    },
+    {
+      "text": "shall, for the payment of the passage money Right of retention"
+    },
+    {
+      "text": "must be made in writing, under Contracts of"
+    },
+    {
+      "text": "shall be left in the policy"
+    },
+    {
+      "text": "shall be stated in the contract the date of the day on"
+    },
+    {
+      "text": "shall, before signing,"
+    },
+    {
+      "text": "shall run the risks of the entire"
+    },
+    {
+      "text": "shall be increased in proportion to the"
+    },
+    {
+      "text": "shall not include gold or silver"
+    },
+    {
+      "text": "shall be reckoned at the value of such foreign foreign money"
+    },
+    {
+      "text": "shall be valued according to the market price at"
+    },
+    {
+      "text": "shall be due by the insurer"
+    },
+    {
+      "text": "shall be fixed"
+    },
+    {
+      "text": "shall commence to run and shall come to an"
+    },
+    {
+      "text": "shall Period of risk in"
+    },
+    {
+      "text": "shall end if the voyage is legally"
+    },
+    {
+      "text": "shall commence, as in regard to freight,"
+    },
+    {
+      "text": "shall end on their being landed"
+    },
+    {
+      "text": "shall commence and end simultaneously with the insurers of loans on"
+    },
+    {
+      "text": "shall in regard to"
+    },
+    {
+      "text": "shall be estimated separately in the contract, to be valued"
+    },
+    {
+      "text": "shall be considered as"
+    },
+    {
+      "text": "shall only be good to the"
+    },
+    {
+      "text": "shall be lawful for the insurer to reinsure with"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall deposit a bill of lading in the Civil Court, First Hall,"
+    },
+    {
+      "text": "shall be deposited with the diplomatic or"
+    },
+    {
+      "text": "shall be signed by two of the principal members of the crew, and, in"
+    },
+    {
+      "text": "shall also be bound to prove to the"
+    },
+    {
+      "text": "shall be competent to the insurer in case of"
+    },
+    {
+      "text": "shall be valid for the excess of their value over the sum"
+    },
+    {
+      "text": "shall render the contract of insurance void, if"
+    },
+    {
+      "text": "shall be void even if the concealment,"
+    },
+    {
+      "text": "shall have had no effect upon the"
+    },
+    {
+      "text": "shall be entitled to demand"
+    },
+    {
+      "text": "shall receive, by way of"
+    },
+    {
+      "text": "shall be at the risk of"
+    },
+    {
+      "text": "shall have covenanted his exemption"
+    },
+    {
+      "text": "shall be deemed to have earned"
+    },
+    {
+      "text": "shall be first deducted"
+    },
+    {
+      "text": "shall not be answerable for such malversations or faults of"
+    },
+    {
+      "text": "shall, however, be answerable for the unskilful-"
+    },
+    {
+      "text": "shall be liable to make good the damage if the collision"
+    },
+    {
+      "text": "shall be borne in equal"
+    },
+    {
+      "text": "shall not be liable for ordinary pilotage and"
+    },
+    {
+      "text": "shall be discharged from all"
+    },
+    {
+      "text": "shall cease as soon as the subject"
+    },
+    {
+      "text": "shall not on such account be"
+    },
+    {
+      "text": "shall be deemed to be captures at sea, and the risk of the"
+    },
+    {
+      "text": "shall cease"
+    },
+    {
+      "text": "shall, nevertheless, be entitled to one half"
+    },
+    {
+      "text": "shall be entitled to Where voyage is"
+    },
+    {
+      "text": "shall have its full effect if the voyage is"
+    },
+    {
+      "text": "shall bear the damages and costs"
+    },
+    {
+      "text": "shall exercise the right of Assured to"
+    },
+    {
+      "text": "shall not be bottomry not liable"
+    },
+    {
+      "text": "shall receive one half per centum, are not dispatched"
+    },
+    {
+      "text": "shall not be principal fails to"
+    },
+    {
+      "text": "shall receive one half per centum, or one half of the"
+    },
+    {
+      "text": "shall be answerable for the"
+    },
+    {
+      "text": "shall only be liable in proportion to the value"
+    },
+    {
+      "text": "shall hold"
+    },
+    {
+      "text": "shall be discharged, and shall only receive one half per centum on"
+    },
+    {
+      "text": "shall be answerable for the remaining value, according to"
+    },
+    {
+      "text": "shall be borne"
+    },
+    {
+      "text": "shall, provided the assured has acted in good"
+    },
+    {
+      "text": "shall be deemed to exist whensoever,"
+    },
+    {
+      "text": "shall also be deemed to exist"
+    },
+    {
+      "text": "shall have come to the place where the contract was made,"
+    },
+    {
+      "text": "shall have sailed from the said place after the arrival or loss"
+    },
+    {
+      "text": "shall not arise if the insurance is effected under the clause bad news”"
+    },
+    {
+      "text": "shall be deemed to be an average loss,"
+    },
+    {
+      "text": "shall be settled between the insurer and the assured in"
+    },
+    {
+      "text": "shall not be lawful for the assured, after having elected to"
+    },
+    {
+      "text": "shall not be lawful to make an abandonment before the"
+    },
+    {
+      "text": "must be made within"
+    },
+    {
+      "text": "shall not be competent"
+    },
+    {
+      "text": "must give notice to the insurer of"
+    },
+    {
+      "text": "shall be given without delay under pain of"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be allowed, for the purpose of"
+    },
+    {
+      "text": "shall be presumed to have happened"
+    },
+    {
+      "text": "shall, when making the abandonment, state all Statement to be"
+    },
+    {
+      "text": "shall be suspended until the day on which"
+    },
+    {
+      "text": "shall make and notify such statement, but the period"
+    },
+    {
+      "text": "shall not be enlarged"
+    },
+    {
+      "text": "shall be Consequences of"
+    },
+    {
+      "text": "shall be bound to pay fraudulent"
+    },
+    {
+      "text": "shall pay the sum insured four months after the notice of is to be paid"
+    },
+    {
+      "text": "shall also pay"
+    },
+    {
+      "text": "shall be charged"
+    },
+    {
+      "text": "shall order order provisional"
+    },
+    {
+      "text": "shall cease to be binding on the expiration of"
+    },
+    {
+      "text": "shall have been brought by"
+    },
+    {
+      "text": "shall, without delay, give notice to the insurer"
+    },
+    {
+      "text": "shall commence to run from the day of the"
+    },
+    {
+      "text": "shall be reduced to two months in the"
+    },
+    {
+      "text": "shall run the risks of the goods reshipped on"
+    },
+    {
+      "text": "shall moreover be liable for all averages and"
+    },
+    {
+      "text": "shall be lawful for the"
+    },
+    {
+      "text": "shall each and all contribute in proportion to their"
+    },
+    {
+      "text": "shall be fixed according to their"
+    },
+    {
+      "text": "shall be made"
+    },
+    {
+      "text": "shall prevail"
+    },
+    {
+      "text": "shall be the first to be thrown overboard"
+    },
+    {
+      "text": "shall, as soon as possible, draw up a Deliberation to be"
+    },
+    {
+      "text": "shall indicate the grounds on which it was"
+    },
+    {
+      "text": "shall mention the goods thrown"
+    },
+    {
+      "text": "shall include the names of those who"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be made at Statement of losses"
+    },
+    {
+      "text": "shall be valued according to the How things thrown"
+    },
+    {
+      "text": "shall overboard are"
+    },
+    {
+      "text": "shall be Adjustment of"
+    },
+    {
+      "text": "shall, if saved, contribute"
+    },
+    {
+      "text": "shall be paid for"
+    },
+    {
+      "text": "shall, if saved, contribute on the"
+    },
+    {
+      "text": "shall be paid for according to their value"
+    },
+    {
+      "text": "shall be paid for by a contribution on all the other things"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall contribute, if saved; if"
+    },
+    {
+      "text": "shall, however,"
+    },
+    {
+      "text": "shall not apply in the case of"
+    },
+    {
+      "text": "shall be no"
+    },
+    {
+      "text": "shall not be liable to pay for the things"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall contribute to the repair of the damage caused to"
+    },
+    {
+      "text": "shall be no claim for contribution against goods put into boats"
+    },
+    {
+      "text": "must"
+    },
+    {
+      "text": "shall suspend the payment of all his debts, and shall, upon the"
+    },
+    {
+      "text": "shall suspend the payment of all his debts and"
+    },
+    {
+      "text": "shall, in"
+    },
+    {
+      "text": "shall, for the purposes of this Part, be treated as a"
+    },
+    {
+      "text": "shall, for the purposes of this Part, be read and construed"
+    },
+    {
+      "text": "shall, unless a determination"
+    },
+    {
+      "text": "shall,"
+    },
+    {
+      "text": "must"
+    },
+    {
+      "text": "must also include the name and the place of residence of each of the"
+    },
+    {
+      "text": "shall, at the same time, file in the Civil Court books"
+    },
+    {
+      "text": "shall be sufficient for"
+    },
+    {
+      "text": "shall, demanding"
+    },
+    {
+      "text": "shall be equivalent to the greater of ten percent (10%) of the debt security"
+    },
+    {
+      "text": "shall not operate as a bar to an"
+    },
+    {
+      "text": "shall, by notice, call upon the creditors"
+    },
+    {
+      "text": "shall be specified in the relevant notice, being a date not later than"
+    },
+    {
+      "text": "shall cause the notice to be served on the creditors mentioned in the"
+    },
+    {
+      "text": "shall, by notice, call upon the debtor"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall cause the notice to be served on the"
+    },
+    {
+      "text": "shall, by judgment,"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall also order that an"
+    },
+    {
+      "text": "shall deliver a"
+    },
+    {
+      "text": "shall be repaid to"
+    },
+    {
+      "text": "shall be stayed in respect of"
+    },
+    {
+      "text": "shall cease with regard to the bankrupt, upon the"
+    },
+    {
+      "text": "shall be null"
+    },
+    {
+      "text": "shall be ipso jure relieved relieved of"
+    },
+    {
+      "text": "shall, by"
+    },
+    {
+      "text": "shall receive and hold such assets for the benefit of the body of"
+    },
+    {
+      "text": "shall, by operation of law, become due and payable by the"
+    },
+    {
+      "text": "shall become payable in Malta by"
+    },
+    {
+      "text": "shall, by operation of"
+    },
+    {
+      "text": "shall receive and hold the thing for the benefit of the"
+    },
+    {
+      "text": "shall become payable in Malta by"
+    },
+    {
+      "text": "shall devolve upon the bankruptcy trustee"
+    },
+    {
+      "text": "shall be received by the"
+    },
+    {
+      "text": "shall be preserved"
+    },
+    {
+      "text": "shall not be prejudiced thereby"
+    },
+    {
+      "text": "shall become payable"
+    },
+    {
+      "text": "shall, in the judgment declaring bankruptcy,"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be deemed to be an officer of"
+    },
+    {
+      "text": "shall be subject to the orders of the same"
+    },
+    {
+      "text": "shall, at the instance of any"
+    },
+    {
+      "text": "shall appoint one (1) or"
+    },
+    {
+      "text": "shall apply mutatis mutandis to the"
+    },
+    {
+      "text": "shall be a"
+    },
+    {
+      "text": "shall, within fourteen (14) days"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall lie against the pronouncement of the court"
+    },
+    {
+      "text": "shall appoint a substitute bankruptcy trustee and the"
+    },
+    {
+      "text": "shall apply mutatis mutandis"
+    },
+    {
+      "text": "shall Property which"
+    },
+    {
+      "text": "shall apply to the Civil Court (Commercial"
+    },
+    {
+      "text": "shall be executed not only at the principal offices or"
+    },
+    {
+      "text": "shall Books open to"
+    },
+    {
+      "text": "shall be open to inspection by the"
+    },
+    {
+      "text": "shall include all sums due to the"
+    },
+    {
+      "text": "shall cease to"
+    },
+    {
+      "text": "shall, in no event,"
+    },
+    {
+      "text": "shall be entitled to receive from the"
+    },
+    {
+      "text": "shall not be less than the"
+    },
+    {
+      "text": "shall be entitled to receive,"
+    },
+    {
+      "text": "shall not be less"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall, without delay sell,"
+    },
+    {
+      "text": "shall deem to be perishable"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be extinguished and the moneys realised shall form part of the"
+    },
+    {
+      "text": "shall,"
+    },
+    {
+      "text": "shall lie against the pronouncement of the court"
+    },
+    {
+      "text": "shall be lawful for the bankruptcy trustee, with the Bankruptcy trustee"
+    },
+    {
+      "text": "shall, when granting such authority, give such"
+    },
+    {
+      "text": "shall not carry out any act of trade until rehabilitated in"
+    },
+    {
+      "text": "shall not require,"
+    },
+    {
+      "text": "shall, at all times, require the express prior written"
+    },
+    {
+      "text": "shall determine, to remunerate the bankruptcy"
+    },
+    {
+      "text": "shall continue to be held by"
+    },
+    {
+      "text": "shall have the power to order that of the expenses"
+    },
+    {
+      "text": "shall be unlimitedly and personally"
+    },
+    {
+      "text": "shall take"
+    },
+    {
+      "text": "shall also"
+    },
+    {
+      "text": "shall be the duty of the bankruptcy trustee to sue for the"
+    },
+    {
+      "text": "shall not be lawful for the bankruptcy trustee to make"
+    },
+    {
+      "text": "shall make up an inventory of"
+    },
+    {
+      "text": "shall be updated by the"
+    },
+    {
+      "text": "shall contain a true list, together with a Contents of"
+    },
+    {
+      "text": "shall be lawful for the Civil Court (Commercial Section), Power of the court"
+    },
+    {
+      "text": "shall be lawful to recover all bills Recovery of bills"
+    },
+    {
+      "text": "shall have been endorsed by the owner for collection for his own"
+    },
+    {
+      "text": "shall likewise be lawful to recover goods delivered to Recovery of goods"
+    },
+    {
+      "text": "shall also be lawful to recover the price or part of the"
+    },
+    {
+      "text": "shall be bound to return to"
+    },
+    {
+      "text": "shall pay what remains due in respect of such"
+    },
+    {
+      "text": "shall be lawful for the seller to retain any goods sold by"
+    },
+    {
+      "text": "shall have the power to take the goods on paying"
+    },
+    {
+      "text": "shall make a list of all the creditors,"
+    },
+    {
+      "text": "shall, by order of the court,"
+    },
+    {
+      "text": "shall be held not later than thirty (30) days from such order, in the"
+    },
+    {
+      "text": "shall be served upon"
+    },
+    {
+      "text": "shall, at such meeting, present a"
+    },
+    {
+      "text": "shall examine the bankrupt’s debts and organise the debts"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall, to the extent that the said debt has"
+    },
+    {
+      "text": "shall comprise, as a minimum: Contents of debt"
+    },
+    {
+      "text": "shall set out the extent to which the debt has been designated"
+    },
+    {
+      "text": "shall provide any relevant documentation or information"
+    },
+    {
+      "text": "shall rank according to law"
+    },
+    {
+      "text": "shall, at any time prior Application of"
+    },
+    {
+      "text": "shall produce and specify the documents"
+    },
+    {
+      "text": "shall decide whether to admit or refuse the claim, and the contents"
+    },
+    {
+      "text": "shall be determined accordingly"
+    },
+    {
+      "text": "shall only make the"
+    },
+    {
+      "text": "shall be drawn up containing the pleas set"
+    },
+    {
+      "text": "shall, following a request made to the"
+    },
+    {
+      "text": "shall, on"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall proceed to the examination of the submissions"
+    },
+    {
+      "text": "shall confirm or vary the contents of the debt register, as may"
+    },
+    {
+      "text": "shall, within fourteen (14) days,"
+    },
+    {
+      "text": "shall be maintained and updated with such frequency as the"
+    },
+    {
+      "text": "shall update the debt register and the procedures in articles"
+    },
+    {
+      "text": "shall, mutatis mutandis, apply"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall have no suspensive effects on proceedings in"
+    },
+    {
+      "text": "shall hear all appeals"
+    },
+    {
+      "text": "shall not lie on the grounds"
+    },
+    {
+      "text": "shall separately identify and contain List of creditors"
+    },
+    {
+      "text": "shall not be taken into account:"
+    },
+    {
+      "text": "shall only receive payment of his debt, in terms of this Part, on"
+    },
+    {
+      "text": "shall have the right to request the court to order his"
+    },
+    {
+      "text": "shall call a meeting of the creditors"
+    },
+    {
+      "text": "shall be held within thirty"
+    },
+    {
+      "text": "shall also be summoned to such meeting"
+    },
+    {
+      "text": "shall examine the instruments of"
+    },
+    {
+      "text": "shall cause the bankruptcy trustee to give, in Proceedings during"
+    },
+    {
+      "text": "shall continue without him and the bankruptcy trustee shall"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be required to continue to contribute a"
+    },
+    {
+      "text": "shall, in support of the debt"
+    },
+    {
+      "text": "shall be necessary to"
+    },
+    {
+      "text": "shall include a financial"
+    },
+    {
+      "text": "shall, during such meeting, organise"
+    },
+    {
+      "text": "shall, at minimum, distinguish between:"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be null and void"
+    },
+    {
+      "text": "shall have at least fourteen (14) days to Taking of votes"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be in no case later than thirty (30) days thereafter, for the"
+    },
+    {
+      "text": "shall draw up a procès verbal of the Proposed terms"
+    },
+    {
+      "text": "shall be agreed"
+    },
+    {
+      "text": "shall be entitled to vote, and the"
+    },
+    {
+      "text": "shall be deemed to be approved by the body of"
+    },
+    {
+      "text": "shall be exercised on the"
+    },
+    {
+      "text": "shall be supported by at least seventy-five percent (75%)"
+    },
+    {
+      "text": "shall be approved by the court in accordance with article 523,"
+    },
+    {
+      "text": "shall not result in a dissenting creditor within a"
+    },
+    {
+      "text": "shall have the"
+    },
+    {
+      "text": "shall have the right during the"
+    },
+    {
+      "text": "shall allow the bankrupt"
+    },
+    {
+      "text": "shall call a new meeting in terms of article 518, that shall"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall undertake to discuss"
+    },
+    {
+      "text": "shall be considered"
+    },
+    {
+      "text": "shall identify the proposed"
+    },
+    {
+      "text": "shall prevail to the exclusion of all others"
+    },
+    {
+      "text": "shall, when it is satisfied that the proposed Proposed terms"
+    },
+    {
+      "text": "shall be confirmed"
+    },
+    {
+      "text": "shall be sufficient to make"
+    },
+    {
+      "text": "shall be sufficient to make such terms binding:"
+    },
+    {
+      "text": "shall be assumed by the court that the"
+    },
+    {
+      "text": "shall be subject to appeal, by application"
+    },
+    {
+      "text": "shall be entitled to receive an amount at least"
+    },
+    {
+      "text": "shall be treated at least as favourably as any"
+    },
+    {
+      "text": "shall have no"
+    },
+    {
+      "text": "shall:"
+    },
+    {
+      "text": "shall be struck off"
+    },
+    {
+      "text": "shall remain unpaid"
+    },
+    {
+      "text": "shall, where so provided in terms of law, become the personal"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall, publish a notice of completion of"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall have no power to do any one (1) or various acts, whether"
+    },
+    {
+      "text": "shall be a valid stipulation, and shall have effect even"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall remain unpaid"
+    },
+    {
+      "text": "shall be abated in full, to the benefit of the bankruptcy estate"
+    },
+    {
+      "text": "shall be published by"
+    },
+    {
+      "text": "shall remain"
+    },
+    {
+      "text": "shall, by novation, become the personal liabilities of the"
+    },
+    {
+      "text": "shall, notwithstanding the provisions of article 1186 of the Civil Cap"
+    },
+    {
+      "text": "shall continue to receive payment from the"
+    },
+    {
+      "text": "shall only accede to a"
+    },
+    {
+      "text": "shall not be subject to"
+    },
+    {
+      "text": "shall be valid"
+    },
+    {
+      "text": "shall have no effect on the abatement of debts"
+    },
+    {
+      "text": "shall be discharged, even"
+    },
+    {
+      "text": "shall not operate in"
+    },
+    {
+      "text": "shall remain unimpaired, even though such creditors may have"
+    },
+    {
+      "text": "shall, within fourteen (14) days"
+    },
+    {
+      "text": "shall render subsequent to the approval of the debt agreement, or, where"
+    },
+    {
+      "text": "shall, within a period of fourteen"
+    },
+    {
+      "text": "shall, every six (6) months, that shall be reckoned"
+    },
+    {
+      "text": "shall, upon"
+    },
+    {
+      "text": "shall, where"
+    },
+    {
+      "text": "shall:"
+    },
+    {
+      "text": "shall be specified in the relevant notice,"
+    },
+    {
+      "text": "shall not be later than thirty (30) days from"
+    },
+    {
+      "text": "shall include:"
+    },
+    {
+      "text": "shall be specified in the relevant notice,"
+    },
+    {
+      "text": "shall not be later than thirty (30) days from"
+    },
+    {
+      "text": "shall include:"
+    },
+    {
+      "text": "shall, where he deems that such assets have an excessive"
+    },
+    {
+      "text": "shall be sold, under the authority"
+    },
+    {
+      "text": "shall automatically fall to be sold in"
+    },
+    {
+      "text": "shall contribute towards the bankruptcy estate in the"
+    },
+    {
+      "text": "shall be reckoned from the date of the original"
+    },
+    {
+      "text": "shall be formulated in accordance with the"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall ensure that the bankrupt is permitted to retain moneys"
+    },
+    {
+      "text": "shall be utilised for the settlement of the debts of the"
+    },
+    {
+      "text": "shall rank in terms of law"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall rank according to"
+    },
+    {
+      "text": "shall be utilised for the further"
+    },
+    {
+      "text": "shall also present a statement reflecting his evidence regarding"
+    },
+    {
+      "text": "shall submit all evidence in support"
+    },
+    {
+      "text": "shall, at such hearing, or at Right to be heard"
+    },
+    {
+      "text": "shall be determined by the court, be given the"
+    },
+    {
+      "text": "shall, by order, variation"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall accede to the request of the bankruptcy trustee"
+    },
+    {
+      "text": "shall be stipulated by the court, to"
+    },
+    {
+      "text": "shall be subject to appeal, by application to the"
+    },
+    {
+      "text": "shall be entitled to receive an amount at least"
+    },
+    {
+      "text": "shall be treated at least as favourably as any"
+    },
+    {
+      "text": "shall have no"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall be collected by the bankruptcy trustee; if the price realized is"
+    },
+    {
+      "text": "shall, provided that there is no determination"
+    },
+    {
+      "text": "shall be struck off"
+    },
+    {
+      "text": "shall remain unpaid"
+    },
+    {
+      "text": "shall, where so provided in terms"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall publish a notice of completion of"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall have no power to do any one (1) or various acts, whether"
+    },
+    {
+      "text": "shall be a valid stipulation, and shall have effect even"
+    },
+    {
+      "text": "shall be"
+    },
+    {
+      "text": "shall remain unpaid following the full execution"
+    },
+    {
+      "text": "shall be abated in full, to"
+    },
+    {
+      "text": "shall be published by"
+    },
+    {
+      "text": "shall remain"
+    },
+    {
+      "text": "shall, by novation, become the personal liabilities of the"
+    },
+    {
+      "text": "shall, notwithstanding the provisions of article 1186 of the Civil Cap"
+    },
+    {
+      "text": "shall continue to receive payment from the rehabilitated bankrupt"
+    },
+    {
+      "text": "shall only accede to a"
+    },
+    {
+      "text": "shall not be subject to"
+    },
+    {
+      "text": "shall be valid"
+    },
+    {
+      "text": "shall have no effect on the abatement of debts"
+    },
+    {
+      "text": "shall be discharged, even"
+    },
+    {
+      "text": "shall not operate in"
+    },
+    {
+      "text": "shall remain unimpaired"
+    },
+    {
+      "text": "shall, within fourteen (14) days The bankruptcy"
+    },
+    {
+      "text": "shall render"
+    },
+    {
+      "text": "shall, within a period of fourteen"
+    },
+    {
+      "text": "shall, every six (6) months, that shall be reckoned"
+    },
+    {
+      "text": "shall, upon"
+    },
+    {
+      "text": "shall, where"
+    },
+    {
+      "text": "shall be applied in his favour in"
+    },
+    {
+      "text": "shall only proceed to the"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall receive, for and on behalf of the"
+    },
+    {
+      "text": "shall ensure that"
+    },
+    {
+      "text": "shall not be distributed or deposited in terms of paragraph"
+    },
+    {
+      "text": "shall aggregate to the bankruptcy estate in terms of article"
+    },
+    {
+      "text": "shall accrue from the date of the declaration of bankruptcy made by"
+    },
+    {
+      "text": "shall be no possibility of discharge with respect"
+    },
+    {
+      "text": "shall not apply in the case of fraudulent bankruptcy"
+    },
+    {
+      "text": "shall be deemed to be a fraudulent bankrupt"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be barred by prescription by the lapse of five years from"
+    },
+    {
+      "text": "shall be barred by prescription by the lapse"
+    },
+    {
+      "text": "shall be barred by prescription by the lapse"
+    },
+    {
+      "text": "shall be barred by prescription by"
+    },
+    {
+      "text": "shall lie -"
+    },
+    {
+      "text": "shall run against minors and against minors, etc"
+    },
+    {
+      "text": "shall be exercised by the Civil Court, First Hall, in accordance with the jurisdiction"
+    },
+    {
+      "text": "shall also take cognizance of Other matters"
+    },
+    {
+      "text": "shall be possible for commercial fees, different from Commercial fees"
+    },
+    {
+      "text": "shall inform his client of the"
+    },
+    {
+      "text": "shall have no effect"
+    },
+    {
+      "text": "shall"
+    },
+    {
+      "text": "shall be refunded to"
+    }
+  ],
+  "penalties": [
+    {
+      "text": "Penalty"
+    },
+    {
+      "text": "penalty not exceeding"
+    },
+    {
+      "text": "penalty prescribed in the last preceding"
+    },
+    {
+      "text": "penalty"
+    },
+    {
+      "text": "penalty, however, shall be fixed by the Civil Court,"
+    },
+    {
+      "text": "penalty shall be paid to the injured trader in settlement"
+    },
+    {
+      "text": "Penalty for unlaw-"
+    },
+    {
+      "text": "penalty of not less"
+    },
+    {
+      "text": "penalty of not less than eleven euro and sixty-five cents (11"
+    },
+    {
+      "text": "fine (multa) not exceeding"
+    },
+    {
+      "text": "imprisonment"
+    },
+    {
+      "text": "fine"
+    },
+    {
+      "text": "fine under this sub-title,"
+    },
+    {
+      "text": "fine has not been paid, the regulatory authority shall not"
+    },
+    {
+      "text": "fine"
+    },
+    {
+      "text": "fine is effected"
+    },
+    {
+      "text": "Penalty for 91"
+    },
+    {
+      "text": "penalty of not less than fifty euro (€50) and not"
+    },
+    {
+      "text": "penalty of"
+    },
+    {
+      "text": "penalty of forfeiting his right of recourse against the"
+    },
+    {
+      "text": "penalty of"
+    },
+    {
+      "text": "fine (ammenda or multa) due by the"
+    }
+  ]
+}

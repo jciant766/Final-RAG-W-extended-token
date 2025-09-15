@@ -1,0 +1,61 @@
+[
+  {
+    "article_number": "1",
+    "title": "Short title",
+    "definitions": [],
+    "requirements": [],
+    "penalties": []
+  },
+  {
+    "article_number": "2",
+    "title": null,
+    "definitions": [],
+    "requirements": [
+      {
+        "subject": "persons referred to in article 477",
+        "obligation": "extends to",
+        "citation": "Article 2"
+      },
+      {
+        "subject": "public corporations or agencies established by law",
+        "obligation": "shall not extend",
+        "citation": "Article 2"
+      },
+      {
+        "subject": "applicable law creating a separate patrimony",
+        "obligation": "shall not extend",
+        "citation": "Article 2"
+      },
+      {
+        "subject": "accrued occupational pension entitlements",
+        "obligation": "shall not extend",
+        "citation": "Article 2"
+      },
+      {
+        "subject": "laws or instruments that may be inconsistent",
+        "obligation": "shall not extend",
+        "citation": "Article 2"
+      }
+    ],
+    "penalties": []
+  },
+  {
+    "article_number": "4",
+    "title": null,
+    "definitions": [
+      {
+        "term": "trader",
+        "definition": "any person who, by profession, exercises acts of trade in his own name, and includes any commercial partnership",
+        "citation": "Article 4"
+      }
+    ],
+    "requirements": [
+      {
+        "subject": "trader",
+        "obligation": "shall have the meaning assigned to it in article 477",
+        "citation": "Article 4"
+      }
+    ],
+    "penalties": []
+  }
+]
