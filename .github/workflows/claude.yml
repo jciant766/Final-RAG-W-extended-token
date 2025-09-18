@@ -1,0 +1,47 @@
+name: Claude Code Integration
+
+on:
+  # Manual trigger
+  workflow_dispatch:
+
+  # When issues are created/edited/labeled
+  issues:
+    types: [opened, edited, labeled]
+
+  # When new comments are added to issues or PRs
+  issue_comment:
+    types: [created]
+
+  # Optional: react to PR review comments as well
+  pull_request_review_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  run-claude:
+    name: Run Claude Code Action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude Code
+        uses: anthropics/claude-code-action@beta
+        with:
+          # REQUIRED: provide your Anthropic API key via GitHub Secrets
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # REQUIRED: default GitHub token provided by Actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: uncomment and customize as needed
+          # base_branch: main
+          # mode: auto
+          # model: claude-3-5-sonnet-latest
+          # max_output_tokens: 4000
+
+
