@@ -44,32 +44,67 @@ class VectorStore:
         self.collection = self._init_collection()
     
     def _init_collection(self):
-        """Initialize or load collection"""
-        try:
-            # Try to get existing
-            collection = self.client.get_collection("malta_code_v2")
-            self.collection = collection
-            doc_count = collection.count()
-            self.debug.log("info", f"Loaded collection with {doc_count} documents")
-            if doc_count == 0:
-                self._load_documents()
-        except:
-            # Create new
-            collection = self.client.create_collection(
-                name="malta_code_v2",
-                metadata={"hnsw:space": "cosine"}
-            )
-            self.collection = collection
-            self.debug.log("info", "Created new collection")
-            self._load_documents()
-        
-        return collection
+        """Initialize or load collection with error recovery"""
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                # Try to get existing collection
+                collection = self.client.get_collection("malta_code_v2")
+                self.collection = collection
+                
+                # Test if collection is working
+                doc_count = collection.count()
+                self.debug.log("info", f"Loaded collection with {doc_count} documents")
+                
+                if doc_count == 0:
+                    self.debug.log("info", "Collection is empty, loading documents...")
+                    self._load_documents()
+                
+                return collection
+                
+            except Exception as e:
+                self.debug.log("warning", f"Collection load attempt {attempt + 1} failed: {str(e)}")
+                
+                if attempt < max_retries - 1:
+                    # Try to reset and recreate
+                    try:
+                        self.debug.log("info", "Attempting to reset database...")
+                        self.client.reset()
+                    except:
+                        pass
+                    
+                    # Create new collection
+                    collection = self.client.create_collection(
+                        name="malta_code_v2",
+                        metadata={"hnsw:space": "cosine"}
+                    )
+                    self.collection = collection
+                    self.debug.log("info", f"Created new collection (attempt {attempt + 1})")
+                    self._load_documents()
+                    return collection
+                else:
+                    # Final attempt - create fresh
+                    self.debug.log("error", "All attempts failed, creating fresh collection")
+                    collection = self.client.create_collection(
+                        name="malta_code_v2",
+                        metadata={"hnsw:space": "cosine"}
+                    )
+                    self.collection = collection
+                    self._load_documents()
+                    return collection
     
     def _load_documents(self):
-        """Load chunks into vector store"""
+        """Load chunks into vector store with fallback to document processing"""
         try:
-            with open('processed_chunks.json', 'r', encoding='utf-8') as f:
-                chunks = json.load(f)
+            # Try to load from processed chunks first
+            if os.path.exists('processed_chunks.json'):
+                with open('processed_chunks.json', 'r', encoding='utf-8') as f:
+                    chunks = json.load(f)
+                self.debug.log("info", f"Loaded {len(chunks)} chunks from processed_chunks.json")
+            else:
+                # Fallback: process documents directly
+                self.debug.log("info", "processed_chunks.json not found, processing documents directly...")
+                chunks = self._process_documents_directly()
             
             # Batch process for efficiency
             batch_size = 100
@@ -99,6 +134,43 @@ class VectorStore:
         except Exception as e:
             self.debug.log("error", f"Error loading documents: {e}")
             raise
+    
+    def _process_documents_directly(self):
+        """Process documents directly when processed_chunks.json is not available"""
+        try:
+            from doc_processor import DocumentProcessor
+            
+            self.debug.log("info", "Initializing document processor...")
+            processor = DocumentProcessor()
+            
+            # Process the main document
+            if os.path.exists('malta_commercial_code_text.txt'):
+                self.debug.log("info", "Processing malta_commercial_code_text.txt...")
+                processor.process_document('malta_commercial_code_text.txt')
+            
+            # Process OCR documents if available
+            ocr_dir = 'ocr/output'
+            if os.path.exists(ocr_dir):
+                self.debug.log("info", f"Processing OCR documents from {ocr_dir}...")
+                for filename in os.listdir(ocr_dir):
+                    if filename.endswith('.txt'):
+                        filepath = os.path.join(ocr_dir, filename)
+                        self.debug.log("info", f"Processing {filename}...")
+                        processor.process_document(filepath)
+            
+            # Load the processed chunks
+            if os.path.exists('processed_chunks.json'):
+                with open('processed_chunks.json', 'r', encoding='utf-8') as f:
+                    chunks = json.load(f)
+                self.debug.log("info", f"Successfully processed {len(chunks)} chunks")
+                return chunks
+            else:
+                self.debug.log("error", "Document processing failed - no chunks generated")
+                return []
+                
+        except Exception as e:
+            self.debug.log("error", f"Error processing documents directly: {e}")
+            return []
     
     def search(self, query: str, n_results: int = 10, 
                filters: Optional[Dict] = None) -> List[Dict]:
