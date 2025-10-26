@@ -20,7 +20,7 @@ env.bak/
 venv.bak/
 
 # Database and vector stores
-chroma_db/
+# chroma_db/  # Temporarily enabled for deployment
 *.db
 *.sqlite
 *.sqlite3
