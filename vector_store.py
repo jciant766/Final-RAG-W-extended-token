@@ -49,17 +49,30 @@ class VectorStore:
         max_retries = 3
         for attempt in range(max_retries):
             try:
-                client = chromadb.PersistentClient(
-                    path=self.persist_directory,
-                    settings=Settings(
-                        anonymized_telemetry=False,
-                        allow_reset=True
+                # Try in-memory client first (better for Streamlit Cloud)
+                if os.getenv("STREAMLIT_CLOUD") or attempt > 0:
+                    self.debug.log("info", f"Using in-memory ChromaDB client (attempt {attempt + 1})")
+                    client = chromadb.Client(
+                        settings=Settings(
+                            anonymized_telemetry=False,
+                            allow_reset=True
+                        )
                     )
-                )
+                else:
+                    # Try persistent client for local development
+                    client = chromadb.PersistentClient(
+                        path=self.persist_directory,
+                        settings=Settings(
+                            anonymized_telemetry=False,
+                            allow_reset=True
+                        )
+                    )
+                
                 # Test the client
                 client.list_collections()
                 self.debug.log("info", f"ChromaDB client initialized successfully (attempt {attempt + 1})")
                 return client
+                
             except Exception as e:
                 self.debug.log("warning", f"ChromaDB client init attempt {attempt + 1} failed: {str(e)}")
                 if attempt < max_retries - 1:
