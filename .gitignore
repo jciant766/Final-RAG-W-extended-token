@@ -19,8 +19,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# Database and vector stores
-chroma_db/
+# Database and vector stores - Let app recreate from text files
+# chroma_db/  # Disabled - app will recreate from source files
 *.db
 *.sqlite
 # *.sqlite3  # Handled by Git LFS
