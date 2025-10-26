@@ -128,17 +128,26 @@ class VectorStore:
                 self.debug.log("info", "processed_chunks.json not found, processing documents directly...")
                 chunks = self._process_documents_directly()
             
-            # Batch process for efficiency
+            if not chunks:
+                self.debug.log("warning", "No chunks to load")
+                return
+            
+            # Batch process for efficiency with progress updates
             batch_size = 100
+            total_batches = (len(chunks) + batch_size - 1) // batch_size
+            
+            self.debug.log("info", f"Processing {len(chunks)} chunks in {total_batches} batches...")
             
             for i in range(0, len(chunks), batch_size):
                 batch = chunks[i:i + batch_size]
+                batch_num = i // batch_size + 1
                 
                 ids = [c['id'] for c in batch]
                 documents = [c['content'] for c in batch]
                 metadatas = [c['metadata'] for c in batch]
                 
                 # Generate embeddings
+                self.debug.log("debug", f"Generating embeddings for batch {batch_num}/{total_batches}")
                 embeddings = self._embed_texts(documents)
                 
                 # Add to collection
@@ -149,9 +158,9 @@ class VectorStore:
                     embeddings=embeddings
                 )
                 
-                self.debug.log("debug", f"Loaded batch {i//batch_size + 1}")
+                self.debug.log("info", f"✅ Loaded batch {batch_num}/{total_batches} ({len(batch)} chunks)")
             
-            self.debug.log("info", f"Loaded {len(chunks)} chunks total")
+            self.debug.log("info", f"🎉 Successfully loaded {len(chunks)} chunks total")
             
         except Exception as e:
             self.debug.log("error", f"Error loading documents: {e}")

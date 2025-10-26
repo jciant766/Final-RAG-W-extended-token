@@ -136,12 +136,47 @@ def init_system():
     """Initialize search system"""
     debug.log("info", "Initializing system")
     
-    if not os.path.exists("chroma_db"):
-        with st.spinner("First time setup - processing legal document..."):
-            processor = DocumentProcessor()
-            processor.process_document("malta_commercial_code_text.txt")
+    # Check if database exists
+    db_exists = os.path.exists("chroma_db") and len(os.listdir("chroma_db")) > 0
     
-    vector_store = VectorStore()
+    if not db_exists:
+        # Show detailed loading process
+        progress_container = st.container()
+        with progress_container:
+            st.info("🚀 **First time setup** - Building vector database from legal documents...")
+            
+            # Progress bar
+            progress_bar = st.progress(0)
+            status_text = st.empty()
+            
+            # Step 1: Initialize vector store
+            status_text.text("📚 Initializing vector database...")
+            progress_bar.progress(10)
+            
+            vector_store = VectorStore()
+            
+            # Step 2: Check if documents are being processed
+            status_text.text("🔍 Checking document processing...")
+            progress_bar.progress(30)
+            
+            # Step 3: Wait for processing to complete
+            status_text.text("⚙️ Processing legal documents and creating embeddings...")
+            progress_bar.progress(60)
+            
+            # Step 4: Finalize
+            status_text.text("✅ Database ready!")
+            progress_bar.progress(100)
+            
+            # Clear the progress indicators
+            progress_bar.empty()
+            status_text.empty()
+            
+            st.success("🎉 **Database created successfully!** Ready to search Maltese legal documents.")
+    else:
+        # Quick initialization for existing database
+        with st.spinner("Loading existing database..."):
+            vector_store = VectorStore()
+    
     search_engine = SearchEngine(vector_store, enable_ai_overview=True)
     
     debug.log("info", "System initialized successfully")
