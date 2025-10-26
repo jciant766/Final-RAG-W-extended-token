@@ -20,10 +20,10 @@ env.bak/
 venv.bak/
 
 # Database and vector stores
-# chroma_db/  # Temporarily enabled for deployment
+chroma_db/
 *.db
 *.sqlite
-*.sqlite3
+# *.sqlite3  # Handled by Git LFS
 
 # Logs and debug files
 *.log
