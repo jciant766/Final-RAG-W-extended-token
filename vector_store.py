@@ -187,29 +187,52 @@ class VectorStore:
             self.debug.log("info", "Initializing document processor...")
             processor = DocumentProcessor()
             
+            all_chunks = []
+            
             # Process the main document
             if os.path.exists('malta_commercial_code_text.txt'):
                 self.debug.log("info", "Processing malta_commercial_code_text.txt...")
                 processor.process_document('malta_commercial_code_text.txt')
+                
+                # Load chunks from this document
+                if os.path.exists('processed_chunks.json'):
+                    with open('processed_chunks.json', 'r', encoding='utf-8') as f:
+                        chunks = json.load(f)
+                    all_chunks.extend(chunks)
+                    self.debug.log("info", f"Added {len(chunks)} chunks from Commercial Code")
             
             # Process OCR documents if available
             ocr_dir = 'ocr/output'
             if os.path.exists(ocr_dir):
                 self.debug.log("info", f"Processing OCR documents from {ocr_dir}...")
-                for filename in os.listdir(ocr_dir):
-                    if filename.endswith('.txt'):
-                        filepath = os.path.join(ocr_dir, filename)
-                        self.debug.log("info", f"Processing {filename}...")
+                ocr_files = [f for f in os.listdir(ocr_dir) if f.endswith('.txt')]
+                self.debug.log("info", f"Found {len(ocr_files)} OCR files to process")
+                
+                for filename in ocr_files:
+                    filepath = os.path.join(ocr_dir, filename)
+                    self.debug.log("info", f"Processing {filename}...")
+                    
+                    try:
                         processor.process_document(filepath)
+                        
+                        # Load chunks from this document
+                        if os.path.exists('processed_chunks.json'):
+                            with open('processed_chunks.json', 'r', encoding='utf-8') as f:
+                                chunks = json.load(f)
+                            all_chunks.extend(chunks)
+                            self.debug.log("info", f"Added {len(chunks)} chunks from {filename}")
+                    except Exception as e:
+                        self.debug.log("warning", f"Failed to process {filename}: {e}")
+                        continue
             
-            # Load the processed chunks
-            if os.path.exists('processed_chunks.json'):
-                with open('processed_chunks.json', 'r', encoding='utf-8') as f:
-                    chunks = json.load(f)
-                self.debug.log("info", f"Successfully processed {len(chunks)} chunks")
-                return chunks
+            # Save all accumulated chunks
+            if all_chunks:
+                with open('processed_chunks.json', 'w', encoding='utf-8') as f:
+                    json.dump(all_chunks, f, ensure_ascii=False)
+                self.debug.log("info", f"Successfully processed {len(all_chunks)} total chunks from all documents")
+                return all_chunks
             else:
-                self.debug.log("error", "Document processing failed - no chunks generated")
+                self.debug.log("error", "No chunks generated from any documents")
                 return []
                 
         except Exception as e:
