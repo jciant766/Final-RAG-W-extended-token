@@ -14,6 +14,13 @@ class VectorStore:
         self.persist_directory = persist_directory
         self.debug = DebugLogger("vector_store")
         
+        # Force fresh database on Streamlit Cloud
+        if os.getenv("STREAMLIT_CLOUD"):
+            self.debug.log("info", "Streamlit Cloud detected - forcing fresh database creation")
+            import shutil
+            if os.path.exists(self.persist_directory):
+                shutil.rmtree(self.persist_directory)
+        
         # Initialize ChromaDB with error recovery
         self.client = self._init_client()
         
@@ -69,54 +76,44 @@ class VectorStore:
                     raise
     
     def _init_collection(self):
-        """Initialize or load collection with error recovery"""
-        max_retries = 3
-        for attempt in range(max_retries):
-            try:
-                # Try to get existing collection
-                collection = self.client.get_collection("malta_code_v2")
+        """Initialize collection - always create fresh on Streamlit Cloud"""
+        try:
+            # Check if we're on Streamlit Cloud (no local database)
+            if not os.path.exists(self.persist_directory) or len(os.listdir(self.persist_directory)) == 0:
+                self.debug.log("info", "No existing database found, creating fresh collection...")
+                collection = self.client.create_collection(
+                    name="malta_code_v2",
+                    metadata={"hnsw:space": "cosine"}
+                )
                 self.collection = collection
-                
-                # Test if collection is working
-                doc_count = collection.count()
-                self.debug.log("info", f"Loaded collection with {doc_count} documents")
-                
-                if doc_count == 0:
-                    self.debug.log("info", "Collection is empty, loading documents...")
-                    self._load_documents()
-                
+                self._load_documents()
                 return collection
-                
-            except Exception as e:
-                self.debug.log("warning", f"Collection load attempt {attempt + 1} failed: {str(e)}")
-                
-                if attempt < max_retries - 1:
-                    # Try to reset and recreate
-                    try:
-                        self.debug.log("info", "Attempting to reset database...")
-                        self.client.reset()
-                    except:
-                        pass
-                    
-                    # Create new collection
-                    collection = self.client.create_collection(
-                        name="malta_code_v2",
-                        metadata={"hnsw:space": "cosine"}
-                    )
-                    self.collection = collection
-                    self.debug.log("info", f"Created new collection (attempt {attempt + 1})")
-                    self._load_documents()
-                    return collection
-                else:
-                    # Final attempt - create fresh
-                    self.debug.log("error", "All attempts failed, creating fresh collection")
-                    collection = self.client.create_collection(
-                        name="malta_code_v2",
-                        metadata={"hnsw:space": "cosine"}
-                    )
-                    self.collection = collection
-                    self._load_documents()
-                    return collection
+            
+            # Try to get existing collection (local development)
+            collection = self.client.get_collection("malta_code_v2")
+            self.collection = collection
+            
+            # Test if collection is working
+            doc_count = collection.count()
+            self.debug.log("info", f"Loaded collection with {doc_count} documents")
+            
+            if doc_count == 0:
+                self.debug.log("info", "Collection is empty, loading documents...")
+                self._load_documents()
+            
+            return collection
+            
+        except Exception as e:
+            self.debug.log("warning", f"Collection load failed: {str(e)}, creating fresh...")
+            # Create fresh collection
+            collection = self.client.create_collection(
+                name="malta_code_v2",
+                metadata={"hnsw:space": "cosine"}
+            )
+            self.collection = collection
+            self.debug.log("info", "Created fresh collection")
+            self._load_documents()
+            return collection
     
     def _load_documents(self):
         """Load chunks into vector store with fallback to document processing"""
