@@ -1,0 +1,53 @@
+graph TD
+    %% Document Processing Pipeline
+    A[📁 Source Documents<br/>PDFs in Legislation/<br/>Text files in ocr/output/] --> B[📄 Document Processor<br/>doc_processor.py]
+    
+    %% Document Analysis
+    B --> C[🔍 Infer Document Info<br/>From file path/name]
+    C --> D[📋 Set Document Metadata<br/>Citation prefix, labels, codes]
+    
+    %% Text Processing
+    D --> E[🧹 Pre-clean OCR Artifacts<br/>Remove formatting issues]
+    E --> F[📖 Read Document Content<br/>UTF-8 encoding]
+    
+    %% Article Extraction
+    F --> G[🔍 Extract Articles<br/>Regex pattern matching<br/>Article numbers + content]
+    G --> H[📊 Count Articles<br/>Log extraction results]
+    
+    %% Chunking Process
+    H --> I[✂️ Create Chunks<br/>Max: 3000 tokens<br/>Overlap: 1000 tokens<br/>Preserve article boundaries]
+    I --> J[📝 Generate Chunk Metadata<br/>Article, page, tokens, doc_code]
+    
+    %% Document Overviews
+    J --> K[📚 Add Document Overviews<br/>AI context enrichment<br/>67 predefined overviews]
+    K --> L[💾 Save processed_chunks.json<br/>Ready for vector indexing]
+    
+    %% Vector Database Integration
+    L --> M[🗄️ Vector Store<br/>vector_store.py]
+    M --> N[🧠 Generate Embeddings<br/>text-embedding-3-large<br/>3072 dimensions]
+    N --> O[📦 Batch Processing<br/>100 chunks per batch]
+    O --> P[🗃️ Store in ChromaDB<br/>Collection: malta_code_v2]
+    
+    %% Processing Report
+    P --> Q[📊 Generate Report<br/>processing_report.json<br/>Statistics & metadata]
+    
+    %% Document Types Processed
+    R[📋 Document Types<br/>Commercial Code Cap. 13<br/>Companies Act Cap. 386<br/>21 Subsidiary Legislation<br/>Tax, Property, Notarial Laws] --> B
+    
+    %% Chunk Statistics
+    S[📈 Chunk Statistics<br/>1,069 total chunks<br/>273 Commercial Code articles<br/>462 Companies Act articles<br/>328 Subsidiary articles] --> L
+    
+    %% Styling
+    classDef source fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef processing fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef extraction fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef chunking fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef storage fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+    classDef metadata fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    
+    class A,R source
+    class B,C,D processing
+    class E,F,G,H extraction
+    class I,J,K chunking
+    class L,M,N,O,P storage
+    class Q,S metadata

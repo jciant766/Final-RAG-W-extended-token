@@ -1,0 +1,12 @@
+# Google Cloud Vision OCR
+google-cloud-vision==3.7.2
+pdf2image==1.17.0
+Pillow==10.4.0
+
+# Optional: existing dependencies
+pdfminer.six==20221105
+requests==2.32.3
+opencv-python-headless==4.10.0.84
+tqdm==4.66.5
+
+

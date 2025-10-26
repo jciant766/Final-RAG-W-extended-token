@@ -1,0 +1,75 @@
+graph TD
+    %% User Interface Layer
+    A[👤 User] --> B[🌐 Streamlit Web App<br/>main.py]
+    
+    %% Initialization Flow
+    B --> C{🔍 ChromaDB<br/>Exists?}
+    C -->|No| D[📄 Document Processor<br/>doc_processor.py]
+    C -->|Yes| E[🗄️ Vector Store<br/>vector_store.py]
+    
+    %% Document Processing Pipeline
+    D --> F[📚 Read Text Files<br/>malta_commercial_code_text.txt<br/>ocr/output/*.txt]
+    F --> G[🔍 Extract Articles<br/>Regex pattern matching]
+    G --> H[✂️ Create Chunks<br/>3000 tokens + 1000 overlap]
+    H --> I[💾 Save processed_chunks.json]
+    I --> E
+    
+    %% Vector Database Setup
+    E --> J[🧠 Generate Embeddings<br/>text-embedding-3-large<br/>3072 dimensions]
+    J --> K[🗃️ Store in ChromaDB<br/>Collection: malta_code_v2]
+    K --> L[🔍 Search Engine<br/>search_engine.py]
+    
+    %% Search Flow
+    B --> M[📝 User Query Input]
+    M --> L
+    L --> N[🧠 Query Analysis<br/>Detect intent & type]
+    N --> O{📋 Query Type?}
+    
+    %% Article Lookup Path
+    O -->|Article Lookup| P[🎯 Direct Article Search<br/>Find specific article]
+    
+    %% Semantic Search Path
+    O -->|General Query| Q[🤖 AI Query Expander<br/>ai_query_expander.py]
+    Q --> R[🧠 Claude 3.5 Sonnet<br/>Generate Malta-specific terms]
+    R --> S[📝 Enhanced Query<br/>40-60 legal terms]
+    S --> T[🔍 Vector Search<br/>ChromaDB similarity search]
+    T --> U[📊 Re-rank Results<br/>By intent & relevance]
+    
+    %% Results Processing
+    P --> V[📋 Results List]
+    U --> V
+    V --> W{🤖 AI Overview<br/>Enabled?}
+    W -->|Yes| X[🧠 AI Assistant<br/>ai_assistant.py]
+    W -->|No| Y[📄 Raw Results]
+    
+    %% AI Overview Generation
+    X --> Z[🧠 Claude 4.5 Sonnet<br/>Generate comprehensive overview]
+    Z --> AA[📝 Structured Response<br/>Overview + Citations + Confidence]
+    AA --> BB[🎨 Format Results<br/>Streamlit UI]
+    Y --> BB
+    
+    %% Display Layer
+    BB --> CC[🖥️ User Interface<br/>Results + AI Overview<br/>Citations + Confidence]
+    
+    %% Caching Layer
+    Q --> DD{💾 Query Cache<br/>Hit?}
+    DD -->|Yes| EE[⚡ Instant Response<br/><1ms]
+    DD -->|No| R
+    R --> FF[💾 Cache Result<br/>Store for future]
+    
+    %% Debug & Logging
+    L --> GG[📝 Debug Logger<br/>debug_logger.py]
+    GG --> HH[📊 Log Files<br/>debug_logs/*.log]
+    
+    %% Styling
+    classDef userLayer fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef processingLayer fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef aiLayer fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef dataLayer fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef interfaceLayer fill:#fce4ec,stroke:#880e4f,stroke-width:2px
+    
+    class A,B,M userLayer
+    class D,F,G,H,I processingLayer
+    class Q,R,S,X,Z,AA aiLayer
+    class E,J,K,T dataLayer
+    class L,N,O,P,U,V,W,Y,BB,CC interfaceLayer
