@@ -291,6 +291,26 @@ with st.expander("💡 Search Tips & Context Optimization", expanded=False):
 # Debug mode toggle (hidden)
 if st.session_state.get('debug_clicks', 0) >= 3:
     debug_mode = st.checkbox("🔧 Debug Mode", key="debug_mode")
+    
+    # Add RAG system test
+    if debug_mode:
+        st.markdown("### 🧪 RAG System Test")
+        if st.button("Test RAG System"):
+            try:
+                # Test if search engine is working
+                test_results = search_engine.search("company formation", n_results=5)
+                st.success(f"✅ RAG System Working! Found {len(test_results)} results")
+                
+                if test_results:
+                    st.markdown("**Sample Results:**")
+                    for i, result in enumerate(test_results[:3]):
+                        st.markdown(f"**{i+1}.** {result['citation']}")
+                        st.markdown(f"   {result['content'][:200]}...")
+                else:
+                    st.warning("⚠️ No results found - database might be empty")
+                    
+            except Exception as e:
+                st.error(f"❌ RAG System Error: {str(e)}")
 else:
     debug_mode = False
 

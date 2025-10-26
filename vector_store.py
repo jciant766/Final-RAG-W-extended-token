@@ -221,6 +221,17 @@ class VectorStore:
         """Unified search with debugging and error recovery"""
         self.debug.log("query", f"Search query: {query}")
         
+        # Check if collection has documents
+        try:
+            doc_count = self.collection.count()
+            self.debug.log("info", f"Collection has {doc_count} documents")
+            if doc_count == 0:
+                self.debug.log("warning", "Collection is empty - no documents to search")
+                return []
+        except Exception as e:
+            self.debug.log("error", f"Error checking collection count: {e}")
+            return []
+        
         max_retries = 2
         for attempt in range(max_retries):
             try:
@@ -240,6 +251,7 @@ class VectorStore:
                 
                 # Process results
                 processed = self._process_results(results, query, n_results)
+                self.debug.log("info", f"Search returned {len(processed)} results")
                 return processed
                 
             except Exception as e:
