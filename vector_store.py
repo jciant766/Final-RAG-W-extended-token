@@ -136,6 +136,19 @@ class VectorStore:
                 with open('processed_chunks.json', 'r', encoding='utf-8') as f:
                     chunks = json.load(f)
                 self.debug.log("info", f"Loaded {len(chunks)} chunks from processed_chunks.json")
+                
+                # Check if we only have Commercial Code documents (indicating incomplete processing)
+                sources = set()
+                for chunk in chunks:
+                    if 'source' in chunk:
+                        sources.add(chunk['source'])
+                
+                self.debug.log("info", f"Documents loaded from sources: {list(sources)}")
+                
+                # If we only have Commercial Code, force reprocessing to include OCR documents
+                if len(sources) == 1 and any('commercial' in source.lower() for source in sources):
+                    self.debug.log("warning", "Only Commercial Code found, forcing reprocessing to include OCR documents...")
+                    chunks = self._process_documents_directly()
             else:
                 # Fallback: process documents directly
                 self.debug.log("info", "processed_chunks.json not found, processing documents directly...")
