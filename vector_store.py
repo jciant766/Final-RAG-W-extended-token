@@ -14,14 +14,8 @@ class VectorStore:
         self.persist_directory = persist_directory
         self.debug = DebugLogger("vector_store")
         
-        # Initialize ChromaDB
-        self.client = chromadb.PersistentClient(
-            path=persist_directory,
-            settings=Settings(
-                anonymized_telemetry=False,
-                allow_reset=True
-            )
-        )
+        # Initialize ChromaDB with error recovery
+        self.client = self._init_client()
         
         # Initialize OpenAI API for long-context embeddings
         load_dotenv()
@@ -42,6 +36,37 @@ class VectorStore:
         
         # Initialize collection
         self.collection = self._init_collection()
+    
+    def _init_client(self):
+        """Initialize ChromaDB client with error recovery"""
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                client = chromadb.PersistentClient(
+                    path=self.persist_directory,
+                    settings=Settings(
+                        anonymized_telemetry=False,
+                        allow_reset=True
+                    )
+                )
+                # Test the client
+                client.list_collections()
+                self.debug.log("info", f"ChromaDB client initialized successfully (attempt {attempt + 1})")
+                return client
+            except Exception as e:
+                self.debug.log("warning", f"ChromaDB client init attempt {attempt + 1} failed: {str(e)}")
+                if attempt < max_retries - 1:
+                    # Try to remove corrupted database
+                    try:
+                        import shutil
+                        if os.path.exists(self.persist_directory):
+                            self.debug.log("info", "Removing corrupted database directory...")
+                            shutil.rmtree(self.persist_directory)
+                    except Exception as cleanup_error:
+                        self.debug.log("warning", f"Failed to cleanup database: {str(cleanup_error)}")
+                else:
+                    self.debug.log("error", "All ChromaDB client initialization attempts failed")
+                    raise
     
     def _init_collection(self):
         """Initialize or load collection with error recovery"""
@@ -174,28 +199,50 @@ class VectorStore:
     
     def search(self, query: str, n_results: int = 10, 
                filters: Optional[Dict] = None) -> List[Dict]:
-        """Unified search with debugging"""
+        """Unified search with debugging and error recovery"""
         self.debug.log("query", f"Search query: {query}")
         
-        # Generate query embedding
-        query_embedding = self._embed_texts([query])[0]
-        
-        # Build where clause
-        where_clause = filters if filters else None
-        
-        # Search - retrieve many candidates, let AI filter what's relevant
-        results = self.collection.query(
-            query_embeddings=[query_embedding],
-            n_results=min(n_results * 2, 200),  # Retrieve broadly for AI-powered filtering
-            where=where_clause,
-            include=['documents', 'metadatas', 'distances']
-        )
-        
-        # Process results
-        processed = self._process_results(results, query, n_results)
-        
-        self.debug.log("info", f"Returned {len(processed)} results")
-        return processed
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                # Generate query embedding
+                query_embedding = self._embed_texts([query])[0]
+                
+                # Build where clause
+                where_clause = filters if filters else None
+                
+                # Search - retrieve many candidates, let AI filter what's relevant
+                results = self.collection.query(
+                    query_embeddings=[query_embedding],
+                    n_results=min(n_results * 2, 200),  # Retrieve broadly for AI-powered filtering
+                    where=where_clause,
+                    include=['documents', 'metadatas', 'distances']
+                )
+                
+                # Process results
+                processed = self._process_results(results, query, n_results)
+                return processed
+                
+            except Exception as e:
+                self.debug.log("error", f"Search attempt {attempt + 1} failed: {str(e)}")
+                
+                if attempt < max_retries - 1:
+                    # Try to recreate the collection
+                    self.debug.log("info", "Attempting to recreate collection due to search error...")
+                    try:
+                        self.client.reset()
+                        self.collection = self.client.create_collection(
+                            name="malta_code_v2",
+                            metadata={"hnsw:space": "cosine"}
+                        )
+                        self._load_documents()
+                        self.debug.log("info", "Collection recreated successfully")
+                    except Exception as recreate_error:
+                        self.debug.log("error", f"Failed to recreate collection: {str(recreate_error)}")
+                        return []
+                else:
+                    self.debug.log("error", "All search attempts failed")
+                    return []
     
     def get_article(self, article_num: str, doc_code: Optional[str] = None) -> List[Dict]:
         """Get specific article, optionally constrained to a document code."""
