@@ -1,0 +1,537 @@
+{
+  "law_code": "S.L. 427.81",
+  "law_name": "Energy Labelling of Household Electric Tumble Driers (Implementing Measures)Regulations",
+  "pdf_pages": 36,
+  "extraction_metrics": {
+    "total_pages_in_pdf": 36,
+    "pages_processed": 36,
+    "pages_skipped": 23,
+    "regulations_extracted": 4,
+    "schedules_extracted": 6,
+    "miscellaneous_extracted": 0,
+    "edges_created": 30,
+    "extraction_time_seconds": 458.71,
+    "extraction_timestamp": "2026-01-09T02:51:05.195389"
+  },
+  "trials": [
+    {
+      "trial_id": 1,
+      "timestamp": "2026-01-20T19:02:43.792529",
+      "questions_total": 11,
+      "questions_correct": 6,
+      "accuracy": 0.5454545454545454,
+      "results_by_type": {
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 0.0,
+          "total": 2,
+          "correct": 0
+        },
+        "faithfulness": {
+          "accuracy": 0.75,
+          "total": 4,
+          "correct": 3
+        },
+        "structure": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "trial_id": 2,
+      "timestamp": "2026-01-20T19:03:06.154652",
+      "questions_total": 11,
+      "questions_correct": 7,
+      "accuracy": 0.6363636363636364,
+      "results_by_type": {
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        },
+        "faithfulness": {
+          "accuracy": 0.75,
+          "total": 4,
+          "correct": 3
+        },
+        "structure": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "trial_id": 3,
+      "timestamp": "2026-01-20T19:03:28.257942",
+      "questions_total": 11,
+      "questions_correct": 6,
+      "accuracy": 0.5454545454545454,
+      "results_by_type": {
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        },
+        "faithfulness": {
+          "accuracy": 0.5,
+          "total": 4,
+          "correct": 2
+        },
+        "structure": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "overall_accuracy": {
+      "mean": 0.5758,
+      "ci_95_low": 0.4455,
+      "ci_95_high": 0.7061,
+      "std_dev": 0.0525
+    },
+    "by_question_type": {
+      "cross_reference": {
+        "mean_accuracy": 0.6667,
+        "ci_95_low": 0.6667,
+        "ci_95_high": 0.6667,
+        "std_dev": 0.0
+      },
+      "completeness": {
+        "mean_accuracy": 0.3333,
+        "ci_95_low": -0.3833,
+        "ci_95_high": 1.05,
+        "std_dev": 0.2887
+      },
+      "faithfulness": {
+        "mean_accuracy": 0.6667,
+        "ci_95_low": 0.3083,
+        "ci_95_high": 1.025,
+        "std_dev": 0.1443
+      },
+      "structure": {
+        "mean_accuracy": 0.5,
+        "ci_95_low": 0.5,
+        "ci_95_high": 0.5,
+        "std_dev": 0.0
+      }
+    },
+    "num_trials": 3,
+    "statistical_power": "limited"
+  },
+  "statistical_analysis": {
+    "methodology": "RAGAS + Bloomberg Law + BenchmarkQED",
+    "confidence_level": 0.95,
+    "min_questions": 10,
+    "trials_for_significance": 6
+  },
+  "questions_asked": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): '(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\n(2) These regulations shall be interpreted in terms of the Indicatio...'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'The following notes define the information to be included:\nNote\nI. Supplier's name or trade mark.\nII. Supplier's model identifier.\nIII. The energy efficiency class of an appliance shall be determined ...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 25
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 3 in the PDF contain this exact text (allowing for minor formatting differences): 'The following defines certain aspects of the label:...'?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 26
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 4 in the PDF contain this exact text (allowing for minor formatting differences): '(1) The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\n(a) the name and address of the supplier;\n(b) a general description of the applianc...'?",
+      "expected_answer": "yes",
+      "source_article": "4",
+      "page_reference": 1
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "question": "How many numbered regulations are in this law? The extraction found 4.",
+      "expected_answer": "4",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "question": "Does this law contain schedules? The extraction found: SCHEDULE I, SCHEDULE, SCHEDULE II, SCHEDULE III, SCHEDULE IV, ANNEX",
+      "expected_answer": "yes",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference 'Schedule II point 3' internally?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference external law 'S.L. 427.24' or 'S.L. 427.24'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference external law 'S.L. 427.24' or 'the Energy Labelling Regulations'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "question": "Does regulation/article 1 have sub-items like ['1(1)', '1(2)', '1(3)']?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "question": "Does regulation/article 2 have sub-items like ['2(I)', '2(II)', '2(III)']?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 25
+    }
+  ],
+  "detailed_results": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content from regulation 1 matches the original PDF text. The question focused on the first two paragraphs, and they are verbatim in the extracted data. The rest of the regulation's text is also present.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\nS.L. 427.24\n(2) These regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\"."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The question focuses on the specific text within regulation/article 2. However, the provided text exists under the 'Notes concerning the label:' section, which begins on page 25. This entire section provides definitions for the information included on the label, indicated by roman numerals. Regulation 2 in the document pertains to \"Scope and application\" and specifies which types of appliances the regulations apply to.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"\",\n  \"text\": \"The following notes define the information to be included:\\nNote\\nI. Supplier's name or trade mark.\\nII. Supplier's model identifier.\\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV. This shall be placed at the same level as\\nthe relevant arrow.\\nIV. Without prejudice to any requirements under the Community eco-label scheme, where a model has been ",
+      "pdf_text": "Page 1, Regulation 2: \"Scope and application.\n2.\n(1)\nThese regulations shall apply to electric mains operated household tumble driers.\n(2)\nAppliances that can also use other energy sources are excluded, as are combined washer-driers.\"\nPage 25: \"Notes concerning the label:\n2.\nThe following notes define the information to be included:\nNote\nI. Supplier’s name or trade mark.\nII. Supplier’s model identifier.\nIII. The energy efficiency class of an appliance shall be determined in\naccordance with Sched"
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text: 'The following defines certain aspects of the label:' is present under the Printing section, numbered 3, on page 26.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"\",\n  \"text\": \"The following defines certain aspects of the label:\",\n  \"sub_items\": [],\n  \"page_start\": 26,\n  \"page_end\": 26,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"IV\",\n        \"target_id\": \"reg:S.L.427.81/IV\",\n        \"sub_target\": null\n      },\n      {\n        \"target\": \"Schedule I note VI\",\n        \"target_id\": \"reg:S.L.427.81/Schedule I note VI\",\n        \"sub_target\": null\n      }",
+      "pdf_text": "ENERGY LABELLING OF HOUSEHOLD ELECTRIC\nTUMBLE DRIERS (IMPLEMENTING MEASURES)\n[S.L.427.81\n27\nPrinting\n3.\nThe following defines certain aspects of the label:"
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content includes the exact text specified in the validation question. Regulation 4(1) in the PDF states: 'The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include: (a) the name and address of the supplier; (b) a general description of the appliance...' as required.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": \"Energy label and information requirements.\",\n  \"text\": \"(1) The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\\n(a) the name and address of the supplier;\\n(b) a general description of the appliance, sufficient for it to be uniquely identified;\\n(c) information, including drawings as relevant, on the main design features of the model and in particular it",
+      "pdf_text": "1\n4. (1) The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\n(a) the name and address of the supplier;\n(b) a general description of the appliance, sufficient for it to be uniquely identified;"
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The legislation contains more than 4 numbered regulations. Regulations are indicated at the beginning of sections numbered 1, 2, 3, and 4. However, after regulation 4, there are Schedules with numbered paragraphs, and these also contain regulatory information. Therefore, the extraction is incorrect in stating that the law has only 4 regulations.",
+      "extracted_text": "{\n  \"regulations_count\": 4,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"SCHEDULE I\",\n    \"SCHEDULE\",\n    \"SCHEDULE II\",\n    \"SCHEDULE III\",\n    \"SCHEDULE IV\",\n    \"ANNEX\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation details the energy labelling requirements for household electric tumble driers in Malta, implementing Commission Directive 95/13/EC. It sets out specific standards for energy labels, product information fiches, and distance selling communications for these applia",
+      "pdf_text": "The document includes Regulations 1, 2, 3, and 4. The subsequent Schedules contain further detailed requirements. For example, Schedule I concerns 'THE LABEL' and its specifications, which are regulatory in nature."
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 0.9,
+      "llm_reasoning": "The extraction includes 'ANNEX' in the schedules, but the document only refers to Annex I of Directive 1995/13/EC and doesn't contain an actual Schedule named 'ANNEX'. Also, the extraction misses Schedule V which is mentioned at the end of the first paragraph of point Note on page 26 ('Note: The equivalent terms in other languages in those described above are given in Schedule V.')",
+      "extracted_text": "{\n  \"regulations_count\": 4,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"SCHEDULE I\",\n    \"SCHEDULE\",\n    \"SCHEDULE II\",\n    \"SCHEDULE III\",\n    \"SCHEDULE IV\",\n    \"ANNEX\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation details the energy labelling requirements for household electric tumble driers in Malta, implementing Commission Directive 95/13/EC. It sets out specific standards for energy labels, product information fiches, and distance selling communications for these applia",
+      "pdf_text": "Page 26: 'Note: The equivalent terms in other languages in those described above are given in Schedule V.'"
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not reference 'Schedule II point 3' internally. The extracted information is incorrect. Regulation 1 only defines the scope, citation, and implementation directives.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\nS.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\".\n(3)\nThese regulations implement the requirements of\nCommission Directive 95/13/EC of "
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1(2) explicitly mentions \"S.L. 427.24\" and defines the \"Energy Labelling Regulations\" in relation to it. Regulation 1(3) references \"Commission Directive 95/13/EC\" and \"Council Directive 92/75/EEC\".",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1. (2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \"the Energy Labelling Regulations\". S.L. 427.24\n(3) These regulations implement the requirements of Commission Directive 95/13/EC of 23 May 1995 implementing Council Directive 92/75/EEC with regard to energy labelling of household electric tumble driers."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted data accurately reflects the content of regulation 1 in S.L.427.81, which refers to both 'S.L. 427.24' and 'the Energy Labelling Regulations'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1. (2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \"the Energy Labelling Regulations\"."
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 in the PDF has sub-items numbered 1(1), 1(2), 1(3), and 1(4) as reflected in the extracted content.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of\nHousehold Electric Tumble Driers (Implementing Measures)\nRegulations.\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\".\n(3)\nThese regulations implement the requirements of\nCommission Directive 95/13/EC of 23 May 1995 "
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content and the identified regulation are incorrect. Regulation 2 starts on page 1 and ends on page 2. It contains two sub-items, 2(1) and 2(2), not the listed sub-items. The extracted text actually belongs to \"Notes concerning the label\" in SCHEDULE I on page 25, point 2 (Notes I-VIII). The schedule is defined in regulation 4(2).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"\",\n  \"text\": \"The following notes define the information to be included:\\nNote\\nI. Supplier's name or trade mark.\\nII. Supplier's model identifier.\\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV. This shall be placed at the same level as\\nthe relevant arrow.\\nIV. Without prejudice to any requirements under the Community eco-label scheme, where a model has been ",
+      "pdf_text": "Page 1-2: \"2.\n(1) These regulations shall apply to electric mains operated household tumble driers.\n(2) Appliances that can also use other energy sources are excluded, as are combined washer-driers.\"\nPage 25: \"Notes concerning the label:\n2. The following notes define the information to be included:\nNote\nI. Supplier’s name or trade mark.\nII. Supplier’s model identifier.\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV.\""
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content for regulation 1(1) and 1(2) matches the original PDF text accurately. The extracted content includes: '(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations. (2) These regulations shall be interpreted in terms of the Indicatio...'",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "Original PDF Text:\n1.\n(1)\nThe title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\n(2)\nThese regulations shall be interpreted in terms of the"
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content is from 'Notes concerning the label: 2.' within SCHEDULE I of the document, not from regulation/article 2. The question asks about regulation 2, which deals with 'Scope and application.'",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"\",\n  \"text\": \"The following notes define the information to be included:\\nNote\\nI. Supplier's name or trade mark.\\nII. Supplier's model identifier.\\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV. This shall be placed at the same level as\\nthe relevant arrow.\\nIV. Without prejudice to any requirements under the Community eco-label scheme, where a model has been ",
+      "pdf_text": "Regulation 2: 'These regulations shall apply to electric mains operated household tumble driers...'\n\nSchedule I, Notes concerning the label, 2: 'The following notes define the information to be included:\nNote\nI. Supplier’s name or trade mark.\nII. Supplier’s model identifier.\nIII. The energy efficiency class of an appliance shall be determined ...'"
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text is found in the PDF. It is the beginning of section 3 which describes printing.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"\",\n  \"text\": \"The following defines certain aspects of the label:\",\n  \"sub_items\": [],\n  \"page_start\": 26,\n  \"page_end\": 26,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"IV\",\n        \"target_id\": \"reg:S.L.427.81/IV\",\n        \"sub_target\": null\n      },\n      {\n        \"target\": \"Schedule I note VI\",\n        \"target_id\": \"reg:S.L.427.81/Schedule I note VI\",\n        \"sub_target\": null\n      }",
+      "pdf_text": "Printing\n3.\nThe following defines certain aspects of the label:"
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 4(1), including sub-sections (a) and (b), perfectly matches the original PDF text.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": \"Energy label and information requirements.\",\n  \"text\": \"(1) The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\\n(a) the name and address of the supplier;\\n(b) a general description of the appliance, sufficient for it to be uniquely identified;\\n(c) information, including drawings as relevant, on the main design features of the model and in particular it",
+      "pdf_text": "The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\n(a) the name and address of the supplier;\n(b) a general description of the appliance..."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted data correctly identifies that there are four numbered regulations in this piece of legislation (Regulations 1, 2, 3, and 4).",
+      "extracted_text": "{\n  \"regulations_count\": 4,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"SCHEDULE I\",\n    \"SCHEDULE\",\n    \"SCHEDULE II\",\n    \"SCHEDULE III\",\n    \"SCHEDULE IV\",\n    \"ANNEX\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation details the energy labelling requirements for household electric tumble driers in Malta, implementing Commission Directive 95/13/EC. It sets out specific standards for energy labels, product information fiches, and distance selling communications for these applia",
+      "pdf_text": "The regulations are enumerated as follows:\n1.\n(1)\nThe title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\n2.\n(1)\nThese regulations shall apply to electric mains operated household tumble driers.\n3.\nThe definitions of the Energy Labelling Regulations shall apply.\n4.\n(1)\nThe technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:"
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extraction includes \"ANNEX\" and \"SCHEDULE\" in the list of schedules when those terms appear in the text but are not actually schedules. It also does not include Schedule V which is present. It also missed the Title of the Schedule V.",
+      "extracted_text": "{\n  \"regulations_count\": 4,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"SCHEDULE I\",\n    \"SCHEDULE\",\n    \"SCHEDULE II\",\n    \"SCHEDULE III\",\n    \"SCHEDULE IV\",\n    \"ANNEX\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation details the energy labelling requirements for household electric tumble driers in Malta, implementing Commission Directive 95/13/EC. It sets out specific standards for energy labels, product information fiches, and distance selling communications for these applia",
+      "pdf_text": "The document contains Schedules I, II, III, IV and V. It does not contain a Schedule titled only \"SCHEDULE\", nor is \"ANNEX\" a Schedule."
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not contain any internal references to Schedule II point 3. The extracted cross-reference is therefore incorrect.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "The text of regulation 1 reads:\n(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \"the Energy Labelling Regulations\".\n(3) These regulations implement the requirements of Commission Direc"
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1(2) states: \"These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as 'the Energy Labelling Regulations'.\" The S.L. number for the 'Energy Labelling Regulations' is 'S.L. 427.24'. This means there is a correct reference to 'S.L. 427.24'. Regulation 1(3) refers to Commission Directive 95/13/EC and Council Directive 92/75/EEC and both directives are considered external references. Both 'the Energy Labelling Regulations' in 1(2) and 1(4) refer to S.L. 427.24. The internal cross-reference to Schedule II point 3 is incorrect, there is no point 3 in Schedule II.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "S.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\"."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1(2) states that 'These regulations shall be interpreted in terms of the...Energy Related Products Regulations, hereinafter referred to as \"the Energy Labelling Regulations\".' Regulation 1(4) references 'the Energy Labelling Regulations'. The extracted content accurately reflects these references. S.L. 427.24 is also correctly referenced as it is the parent legislation for the Energy Labelling Regulations.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "S.L. 427.24\n(2) These regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\".\n(4) These regulations constitute an implementing measure\nwithin the meaning of the Energy Labelling Regulations with\nregard to the energy labelling of household electric tumble driers."
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 in the original PDF text has sub-items (1), (2), (3) and (4). The extraction correctly identifies these sub-items in the `sub_items` array.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\nS.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\".\n(3)\nThese \nregulations \nimplement \nthe \nrequirements \nof\nCommission Directive 95/13/E"
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided JSON describes content extracted from pages 25-26 of the PDF, specifically pertaining to \"Notes concerning the label:\" and \"Printing\". This section lists notes I through VIII related to the label's content and format, not regulation/article 2. Regulation 2 is on page 1 and describes the Scope and application.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"\",\n  \"text\": \"The following notes define the information to be included:\\nNote\\nI. Supplier's name or trade mark.\\nII. Supplier's model identifier.\\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV. This shall be placed at the same level as\\nthe relevant arrow.\\nIV. Without prejudice to any requirements under the Community eco-label scheme, where a model has been ",
+      "pdf_text": "Page 1:\nScope and \napplication.\n2.\n(1)\nThese regulations shall apply to electric mains\noperated household tumble driers.\n(2)\nAppliances that can also use other energy sources are\nexcluded, as are combined washer-driers."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text of regulation 1 in the PDF, including subsections (1) and (2). There are no substantive differences.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\nS.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\"."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content is not from regulation/article 2, but rather from 'Notes concerning the label:' on page 25 of the PDF. The extracted content is from after the Schedule I definition in the document, not regulation 2.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"\",\n  \"text\": \"The following notes define the information to be included:\\nNote\\nI. Supplier's name or trade mark.\\nII. Supplier's model identifier.\\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV. This shall be placed at the same level as\\nthe relevant arrow.\\nIV. Without prejudice to any requirements under the Community eco-label scheme, where a model has been ",
+      "pdf_text": "The following notes define the information to be included:\nNote\nI. Supplier’s name or trade mark.\nII. Supplier’s model identifier.\nIII. The energy efficiency class of an appliance shall be determined in\naccordance with Schedule IV. This shall be placed at the same level as"
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text is from the section titled 'Printing', not regulation/article 3. Regulation 3 contains the text: 'The definitions of the Energy Labelling Regulations shall apply.'",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"\",\n  \"text\": \"The following defines certain aspects of the label:\",\n  \"sub_items\": [],\n  \"page_start\": 26,\n  \"page_end\": 26,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"IV\",\n        \"target_id\": \"reg:S.L.427.81/IV\",\n        \"sub_target\": null\n      },\n      {\n        \"target\": \"Schedule I note VI\",\n        \"target_id\": \"reg:S.L.427.81/Schedule I note VI\",\n        \"sub_target\": null\n      }",
+      "pdf_text": "The following defines certain aspects of the label:' is at the beginning of the 'Printing' section on page 26, not in a regulation numbered '3'. Regulation 3 on page 1 states: 'The definitions of the Energy Labelling Regulations shall apply.'"
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text of regulation 4(1), including subsections (a) and (b), as found in the original PDF. Minor formatting differences (line breaks) are acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": \"Energy label and information requirements.\",\n  \"text\": \"(1) The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\\n(a) the name and address of the supplier;\\n(b) a general description of the appliance, sufficient for it to be uniquely identified;\\n(c) information, including drawings as relevant, on the main design features of the model and in particular it",
+      "pdf_text": "The technical documentation referred to in regulation 6(2)(a) of the Energy Labelling Regulations shall include:\n(a) the name and address of the supplier;\n(b) a general description of the appliance..."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The document lists four numbered regulations: Citation and scope (1), Scope and application (2), Definitions (3), and Energy label and information requirements (4).",
+      "extracted_text": "{\n  \"regulations_count\": 4,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"SCHEDULE I\",\n    \"SCHEDULE\",\n    \"SCHEDULE II\",\n    \"SCHEDULE III\",\n    \"SCHEDULE IV\",\n    \"ANNEX\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation details the energy labelling requirements for household electric tumble driers in Malta, implementing Commission Directive 95/13/EC. It sets out specific standards for energy labels, product information fiches, and distance selling communications for these applia",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of\nHousehold Electric Tumble Driers (Implementing Measures)\nRegulations.\n\n2.\n(1)\nThese regulations shall apply to electric mains\noperated household tumble driers.\n\n3.\nThe definitions of the Energy Labelling Regulations shall\napply.\n\n4.\n(1)\nThe technical documentation referred to in regulation\n6(2)(a) of the Energy Labelling Regulations shall include:"
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extraction incorrectly lists \"ANNEX\" as a schedule. While the schedules are based on an annex, they are referred to as schedules in the legal document. The document refers to \"Based on Annex I of Directive 1995/13/EC\" regarding SCHEDULE I, and this may be the source of the confusion.",
+      "extracted_text": "{\n  \"regulations_count\": 4,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"SCHEDULE I\",\n    \"SCHEDULE\",\n    \"SCHEDULE II\",\n    \"SCHEDULE III\",\n    \"SCHEDULE IV\",\n    \"ANNEX\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation details the energy labelling requirements for household electric tumble driers in Malta, implementing Commission Directive 95/13/EC. It sets out specific standards for energy labels, product information fiches, and distance selling communications for these applia",
+      "pdf_text": "The document states: \"SCHEDULE I Based on Annex I of Directive 1995/13/EC\" (page 3)"
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not reference Schedule II point 3. Regulation 1 only mentions the title, scope, directives implemented and relationship to Energy Labelling Regulations.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\nS.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\".\n(3)\nThese \nregulations \nimplement \nthe \nrequirements \nof\nCommission Directive 95/13/E"
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1(2) refers to \"the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations\", which is then referred to as \"the Energy Labelling Regulations\", and clarifies that it refers to 'S.L. 427.24'. Regulation 1(4) also refers to \"the Energy Labelling Regulations\" again referring to 'S.L. 427.24'. Regulation 1(3) also refers to Commission Directive 95/13/EC and Council Directive 92/75/EEC.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "S.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\"."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 in the PDF text directly references both \"S.L. 427.24\" and \"the Energy Labelling Regulations\". Specifically, section 1(2) states: \"These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \"the Energy Labelling Regulations\".\" which also cites S.L. 427.24, as this is the law that the regulations are implementing.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "S.L. 427.24\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\"."
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the structure and content of regulation 1 in the original PDF text. Regulation 1 has four sub-items numbered (1), (2), (3) and (4).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation and scope.\",\n  \"text\": \"(1) The title of these regulations is the Energy Labelling of Household Electric Tumble Driers (Implementing Measures) Regulations.\\n(2) These regulations shall be interpreted in terms of the Indication by Labelling and Standard Product Information of the Consumption of Energy and other Resources by Energy Related Products Regulations, hereinafter referred to as \\\"the Energy Labell",
+      "pdf_text": "1.\n(1)\nThe title of these regulations is the Energy Labelling of\nHousehold Electric Tumble Driers (Implementing Measures)\nRegulations.\n(2)\nThese regulations shall be interpreted in terms of the\nIndication by Labelling and Standard Product Information of the\nConsumption of Energy and other Resources by Energy Related\nProducts Regulations, hereinafter referred to as \"the Energy\nLabelling Regulations\".\n(3)\nThese regulations implement the requirements of\nCommission Directive 95/13/EC of 23 May 1995 "
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content is incorrect. Regulation 2 in the document (page 1) has sub-items 2(1) and 2(2). The extracted content is actually notes that follow schedule I (page 25).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.427.81/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"\",\n  \"text\": \"The following notes define the information to be included:\\nNote\\nI. Supplier's name or trade mark.\\nII. Supplier's model identifier.\\nIII. The energy efficiency class of an appliance shall be determined in accordance with Schedule IV. This shall be placed at the same level as\\nthe relevant arrow.\\nIV. Without prejudice to any requirements under the Community eco-label scheme, where a model has been ",
+      "pdf_text": "2.\n(1)\nThese regulations shall apply to electric mains\noperated household tumble driers.\n(2)\nAppliances that can also use other energy sources are\nexcluded, as are combined washer-driers."
+    }
+  ],
+  "generated_at": "2026-01-20T19:03:28.259497"
+}

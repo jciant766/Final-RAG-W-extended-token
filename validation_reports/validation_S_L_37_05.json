@@ -1,0 +1,409 @@
+{
+  "law_code": "S.L. 37.05",
+  "law_name": "Customs Regulations",
+  "pdf_pages": 108,
+  "extraction_metrics": {
+    "total_pages_in_pdf": 108,
+    "pages_processed": 108,
+    "pages_skipped": 49,
+    "regulations_extracted": 64,
+    "schedules_extracted": 10,
+    "miscellaneous_extracted": 0,
+    "edges_created": 46,
+    "extraction_time_seconds": 1648.78,
+    "extraction_timestamp": "2026-01-06T22:15:31.115134"
+  },
+  "trials": [
+    {
+      "trial_id": 1,
+      "timestamp": "2026-01-20T19:10:02.542163",
+      "questions_total": 11,
+      "questions_correct": 9,
+      "accuracy": 0.8181818181818182,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 1.0,
+          "total": 4,
+          "correct": 4
+        },
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        },
+        "structure": {
+          "accuracy": 1.0,
+          "total": 2,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "trial_id": 2,
+      "timestamp": "2026-01-20T19:10:28.050842",
+      "questions_total": 11,
+      "questions_correct": 8,
+      "accuracy": 0.7272727272727273,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 1.0,
+          "total": 4,
+          "correct": 4
+        },
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 0.0,
+          "total": 2,
+          "correct": 0
+        },
+        "structure": {
+          "accuracy": 1.0,
+          "total": 2,
+          "correct": 2
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "overall_accuracy": {
+      "mean": 0.7727,
+      "ci_95_low": 0.195,
+      "ci_95_high": 1.3505,
+      "std_dev": 0.0643
+    },
+    "by_question_type": {
+      "faithfulness": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      },
+      "cross_reference": {
+        "mean_accuracy": 0.6667,
+        "ci_95_low": 0.6667,
+        "ci_95_high": 0.6667,
+        "std_dev": 0.0
+      },
+      "completeness": {
+        "mean_accuracy": 0.25,
+        "ci_95_low": -2.9275,
+        "ci_95_high": 3.4275,
+        "std_dev": 0.3536
+      },
+      "structure": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "num_trials": 2,
+    "statistical_power": "limited"
+  },
+  "statistical_analysis": {
+    "methodology": "RAGAS + Bloomberg Law + BenchmarkQED",
+    "confidence_level": 0.95,
+    "min_questions": 10,
+    "trials_for_significance": 6
+  },
+  "questions_asked": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Customs Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): '(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed a...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 3 in the PDF contain this exact text (allowing for minor formatting differences): '(1) Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between th...'?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 4 in the PDF contain this exact text (allowing for minor formatting differences): 'Goods shall be landed without delay at the approved landing place. An officer of the Customs and a representative of the Authority for Transport in Malta or of its contractor shall keep a joint tally ...'?",
+      "expected_answer": "yes",
+      "source_article": "4",
+      "page_reference": 2
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "question": "How many numbered regulations are in this law? The extraction found 64.",
+      "expected_answer": "64",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "question": "Does this law contain schedules? The extraction found: FIRST SCHEDULE, SECOND SCHEDULE, Schedule, THIRD SCHEDULE, FIFTH SCHEDULE, SCHEDULE 2, SIXTH SCHEDULE, SEVENTH SCHEDULE, EIGHTH SCHEDULE, NINTH SCHEDULE",
+      "expected_answer": "yes",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 2 reference 'First Schedule' internally?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-INT-2",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 5 reference '5' internally?",
+      "expected_answer": "yes",
+      "source_article": "5",
+      "page_reference": 2
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 5 reference external law 'Cap. 37' or '7'?",
+      "expected_answer": "yes",
+      "source_article": "5",
+      "page_reference": 2
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "question": "Does regulation/article 2 have sub-items like ['2(1)', '2(2)', '2(2)(a)']?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "question": "Does regulation/article 3 have sub-items like ['3(1)', '3(2)']?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 1
+    }
+  ],
+  "detailed_results": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the original PDF text exactly, including the title and the text of the regulation.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Title.\",\n  \"text\": \"The title of these regulations is the Customs Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "Title.\n1.\nThe title of these regulations is the Customs Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content for regulation 2, specifically the initial phrase '(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed a...', matches the original PDF text. The rest of the extracted content accurately reflects the PDF text for the entire regulation.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Approved landing places\",\n  \"text\": \"(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed at a foreign animals wharf or a quarantine station, shall be conveyed, without delay, direct from the importing vessel to such approved landing places as the Comptroller of Customs m",
+      "pdf_text": "PDF: 2. (1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed a..."
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the original PDF text for regulation 3(1) up to the point specified in the question. The formatting differences are minor and acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Lighters conveying goods from importing vessels.\",\n  \"text\": \"(1) Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between the hours of 7.00a.m. and 5.00p.m. from the 1st October to the 31st March inclusive shall, if the Comptroller of Customs so directs, be escorted to the proper",
+      "pdf_text": "Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between th..."
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation/article 4 exactly matches the corresponding text in the original PDF, with only minor and acceptable formatting variations (like line breaks).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": null,\n  \"text\": \"Goods shall be landed without delay at the approved landing place. An officer of the Customs and a representative of the Authority for Transport in Malta or of its contractor shall keep a joint tally of goods so landed and such tally shall be deemed to be sufficient evidence that such goods were discharged into the custody of the Authority for Transport in Malta or of its contractor.\",\n  \"sub_items\"",
+      "pdf_text": "4. Goods shall be landed without delay at the approved landing place. An officer of the Customs and a representative of the Authority for Transport in Malta or of its contractor shall keep a joint tally ..."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided PDF text only contains regulations numbered 1 through 8. The extracted content states that there are 64 regulations, which is incorrect. Furthermore, the schedules listed in the extraction are not present within the original PDF excerpt.",
+      "extracted_text": "{\n  \"regulations_count\": 64,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"FIRST SCHEDULE\",\n    \"SECOND SCHEDULE\",\n    \"Schedule\",\n    \"THIRD SCHEDULE\",\n    \"FIFTH SCHEDULE\",\n    \"SCHEDULE 2\",\n    \"SIXTH SCHEDULE\",\n    \"SEVENTH SCHEDULE\",\n    \"EIGHTH SCHEDULE\",\n    \"NINTH SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation establishes detailed regulations for customs operations in Malta, covering goods landing, storage, customs entries, passenger baggage, and bonded warehou",
+      "pdf_text": "The provided PDF text contains regulations numbered 1 through 8."
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 0.9,
+      "llm_reasoning": "The document mentions \"First Schedule\" in point 2. Also the text is 'Incorporating also Legal Notice 10 of 1989.', which means that it's possible to have Schedules in the original document.",
+      "extracted_text": "{\n  \"regulations_count\": 64,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"FIRST SCHEDULE\",\n    \"SECOND SCHEDULE\",\n    \"Schedule\",\n    \"THIRD SCHEDULE\",\n    \"FIFTH SCHEDULE\",\n    \"SCHEDULE 2\",\n    \"SIXTH SCHEDULE\",\n    \"SEVENTH SCHEDULE\",\n    \"EIGHTH SCHEDULE\",\n    \"NINTH SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation establishes detailed regulations for customs operations in Malta, covering goods landing, storage, customs entries, passenger baggage, and bonded warehou",
+      "pdf_text": "Approved landing places for goods are those\nmentioned in the First Schedule or such other landing places as the\nPresident of Malta may from time to time appoint."
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text in the original PDF. Specifically, regulation 2(1) states \"Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint.\"",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Approved landing places\",\n  \"text\": \"(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed at a foreign animals wharf or a quarantine station, shall be conveyed, without delay, direct from the importing vessel to such approved landing places as the Comptroller of Customs m",
+      "pdf_text": "Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint."
+    },
+    {
+      "question_id": "XREF-INT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 5 references itself internally. Specifically, sub-regulation 5(1)(b) refers to 'sub-regulation (3) of this regulation'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/5\",\n  \"type\": \"regulation\",\n  \"number\": \"5\",\n  \"title\": null,\n  \"text\": \"(1) In the following cases -\\n(a) when any lighter with any goods from the importing vessel shall arrive at the approved landing place and shall remain there, with any unexamined goods on board, on Saturdays, Sundays or on public holidays, or, on other days, at any time between the hours of 5.15p.m and 7.45a.m.; or\\n(b) where, for any reason, other than that mentioned in sub-regulation (3) of this r",
+      "pdf_text": "5. (1) ... (b) where, for any reason, other than that mentioned in sub-regulation (3) of this regulation, any goods upon which the duty has not been paid, or which have not been duly examined and delivered out of Customs charge, shall remain upon an open quay..."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 5 makes a direct reference to external law 'Cap. 37', which stands for Customs Ordinance. The extracted content omits this reference from the 'external' cross-references in the JSON.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/5\",\n  \"type\": \"regulation\",\n  \"number\": \"5\",\n  \"title\": null,\n  \"text\": \"(1) In the following cases -\\n(a) when any lighter with any goods from the importing vessel shall arrive at the approved landing place and shall remain there, with any unexamined goods on board, on Saturdays, Sundays or on public holidays, or, on other days, at any time between the hours of 5.15p.m and 7.45a.m.; or\\n(b) where, for any reason, other than that mentioned in sub-regulation (3) of this r",
+      "pdf_text": "Cap. 37.\nthen an officer may be appointed by the Comptroller of Customs to\nguard such lighters or goods, for revenue purposes, and the expense\nof such guarding shall be paid by the agent, in the case of steamers\ndischarging before report under article 7 of the Customs Ordinance"
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the structure and content of regulation 2 in the original PDF text. The regulation does indeed have sub-items labeled 2(1), 2(2), 2(2)(a), and 2(2)(b).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Approved landing places\",\n  \"text\": \"(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed at a foreign animals wharf or a quarantine station, shall be conveyed, without delay, direct from the importing vessel to such approved landing places as the Comptroller of Customs m",
+      "pdf_text": "2.\n(1)\nApproved landing places for goods are those\nmentioned in the First Schedule or such other landing places as the\nPresident of Malta may from time to time appoint. ...\n(2)\n(a) The Comptroller of Customs may from time to time\ngive general or special directions as to the manner in\nwhich and the conditions under which goods which\nhave not been cleared from Customs may be moved\nwithin the limits of any port or Customs airport or\nbetween any such place and any other place.\n(b) Any such direction"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 3 is divided into two sub-items: 3(1) and 3(2), as shown in the PDF. The extracted content accurately reflects this structure and the corresponding text.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Lighters conveying goods from importing vessels.\",\n  \"text\": \"(1) Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between the hours of 7.00a.m. and 5.00p.m. from the 1st October to the 31st March inclusive shall, if the Comptroller of Customs so directs, be escorted to the proper",
+      "pdf_text": "3.\n(1)\nLighters conveying goods from the importing vessel on\nworking days other than Saturdays between the hours of 6.00a.m.\nand 6.00p.m. from the 1st April to the 30th September inclusive\nand between the hours of 7.00a.m. and 5.00p.m. from the 1st\nOctober to the 31st March inclusive shall, if the Comptroller of\nCustoms so directs, be escorted to the proper place of landing by an\n\n2\n[S.L.37.05\nCUSTOMS\nofficer of Customs.\n(2)\nWhen, however, the conveyance of goods takes place on\nSaturdays, Sunday"
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text exactly matches the text of regulation 1 in the original PDF.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Title.\",\n  \"text\": \"The title of these regulations is the Customs Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "1.\nThe title of these regulations is the Customs Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content for regulation 2(1) exactly matches the original PDF text, including the first sentence. The rest of the regulation is also present and accurate, covering sections (2)(a) and (2)(b).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Approved landing places\",\n  \"text\": \"(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed at a foreign animals wharf or a quarantine station, shall be conveyed, without delay, direct from the importing vessel to such approved landing places as the Comptroller of Customs m",
+      "pdf_text": "PDF text:\n2.\n(1)\nApproved landing places for goods are those\nmentioned in the First Schedule or such other landing places as the\nPresident of Malta may from time to time appoint. Goods, other\nthan animals landed at a foreign animals wharf or a quarantine\nstation, shall be conveyed, without delay, direct from the importing\nvessel to such approved landing places as the Comptroller of\nCustoms may in each particular case, direct; no goods shall be\nconveyed elsewhere, except with the permission of th"
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the original PDF text for regulation 3(1) as requested, allowing for minor formatting differences (line breaks).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Lighters conveying goods from importing vessels.\",\n  \"text\": \"(1) Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between the hours of 7.00a.m. and 5.00p.m. from the 1st October to the 31st March inclusive shall, if the Comptroller of Customs so directs, be escorted to the proper",
+      "pdf_text": "PDF Text: 3. (1) Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between th..."
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text accurately reflects the content of regulation 4 in the provided PDF excerpt. The sentence in question, 'Goods shall be landed without delay at the approved landing place. An officer of the Customs and a representative of the Authority for Transport in Malta or of its contractor shall keep a joint tally ...', is present and correctly transcribed.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": null,\n  \"text\": \"Goods shall be landed without delay at the approved landing place. An officer of the Customs and a representative of the Authority for Transport in Malta or of its contractor shall keep a joint tally of goods so landed and such tally shall be deemed to be sufficient evidence that such goods were discharged into the custody of the Authority for Transport in Malta or of its contractor.\",\n  \"sub_items\"",
+      "pdf_text": "Tally of goods \nlanded.\nAmended by:\nL.N. 50 of 1966.\nSubstituted by;\nL.N. 6 of 1976.\nAmended by:\nXVII. 1991.81.\n4.\nGoods shall be landed without delay at the approved\nlanding place. An officer of the Customs and a representative of the\nAuthority for Transport in Malta or of its contractor shall keep a\njoint tally of goods so landed and such tally shall be deemed to be\nsufficient evidence that such goods were discharged into the\ncustody of the Authority for Transport in Malta or of its contractor"
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided PDF text only contains regulations numbered 1 through 8. The claim of 64 regulations is not supported by the document. The document also includes schedules, which could have been mistakenly counted as regulations.",
+      "extracted_text": "{\n  \"regulations_count\": 64,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"FIRST SCHEDULE\",\n    \"SECOND SCHEDULE\",\n    \"Schedule\",\n    \"THIRD SCHEDULE\",\n    \"FIFTH SCHEDULE\",\n    \"SCHEDULE 2\",\n    \"SIXTH SCHEDULE\",\n    \"SEVENTH SCHEDULE\",\n    \"EIGHTH SCHEDULE\",\n    \"NINTH SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation establishes detailed regulations for customs operations in Malta, covering goods landing, storage, customs entries, passenger baggage, and bonded warehou",
+      "pdf_text": "The PDF text clearly shows regulations numbered from 1 to 8. There is no regulation with number higher than 8 in the provided extract."
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 0.9,
+      "llm_reasoning": "The extracted content claims that the law contains FIRST SCHEDULE, SECOND SCHEDULE, Schedule, THIRD SCHEDULE, FIFTH SCHEDULE, SCHEDULE 2, SIXTH SCHEDULE, SEVENTH SCHEDULE, EIGHTH SCHEDULE, NINTH SCHEDULE. However, based on the text provided, only \"FIRST SCHEDULE\" is found. The document does not contain the remaining schedules listed.",
+      "extracted_text": "{\n  \"regulations_count\": 64,\n  \"articles_count\": 0,\n  \"schedules\": [\n    \"FIRST SCHEDULE\",\n    \"SECOND SCHEDULE\",\n    \"Schedule\",\n    \"THIRD SCHEDULE\",\n    \"FIFTH SCHEDULE\",\n    \"SCHEDULE 2\",\n    \"SIXTH SCHEDULE\",\n    \"SEVENTH SCHEDULE\",\n    \"EIGHTH SCHEDULE\",\n    \"NINTH SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation establishes detailed regulations for customs operations in Malta, covering goods landing, storage, customs entries, passenger baggage, and bonded warehou",
+      "pdf_text": "The document only mentions \"First Schedule\" in relation to approved landing places: \"Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint.\""
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately represents the text from the original PDF regarding regulation 2 and its reference to the 'First Schedule'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Approved landing places\",\n  \"text\": \"(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed at a foreign animals wharf or a quarantine station, shall be conveyed, without delay, direct from the importing vessel to such approved landing places as the Comptroller of Customs m",
+      "pdf_text": "Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint."
+    },
+    {
+      "question_id": "XREF-INT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 5 includes an internal reference to 'sub-regulation (3) of this regulation'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/5\",\n  \"type\": \"regulation\",\n  \"number\": \"5\",\n  \"title\": null,\n  \"text\": \"(1) In the following cases -\\n(a) when any lighter with any goods from the importing vessel shall arrive at the approved landing place and shall remain there, with any unexamined goods on board, on Saturdays, Sundays or on public holidays, or, on other days, at any time between the hours of 5.15p.m and 7.45a.m.; or\\n(b) where, for any reason, other than that mentioned in sub-regulation (3) of this r",
+      "pdf_text": "5. (1) ... (b) where, for any reason, other than that mentioned in sub-regulation (3) of this regulation..."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 5 references 'Cap. 37.', and article 7 of the Customs Ordinance. The extracted content has a faulty 'cross_references' section and includes the reference to article 7 in 'external' when it is contained within the original PDF Text.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/5\",\n  \"type\": \"regulation\",\n  \"number\": \"5\",\n  \"title\": null,\n  \"text\": \"(1) In the following cases -\\n(a) when any lighter with any goods from the importing vessel shall arrive at the approved landing place and shall remain there, with any unexamined goods on board, on Saturdays, Sundays or on public holidays, or, on other days, at any time between the hours of 5.15p.m and 7.45a.m.; or\\n(b) where, for any reason, other than that mentioned in sub-regulation (3) of this r",
+      "pdf_text": "Cap. 37.\nthen an officer may be appointed by the Comptroller of Customs to\nguard such lighters or goods, for revenue purposes, and the expense\nof such guarding shall be paid by the agent, in the case of steamers\ndischarging before report under article 7 of the Customs Ordinance"
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the structure and content of Regulation 2 in the original PDF text. It correctly identifies the sub-items as 2(1), 2(2), 2(2)(a), and 2(2)(b).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Approved landing places\",\n  \"text\": \"(1) Approved landing places for goods are those mentioned in the First Schedule or such other landing places as the President of Malta may from time to time appoint. Goods, other than animals landed at a foreign animals wharf or a quarantine station, shall be conveyed, without delay, direct from the importing vessel to such approved landing places as the Comptroller of Customs m",
+      "pdf_text": "2.\n(1)\nApproved landing places for goods are those\nmentioned in the First Schedule or such other landing places as the\nPresident of Malta may from time to time appoint. Goods, other\nthan animals landed at a foreign animals wharf or a quarantine\nstation, shall be conveyed, without delay, direct from the importing\nvessel to such approved landing places as the Comptroller of\nCustoms may in each particular case, direct; no goods shall be\nconveyed elsewhere, except with the permission of the Comptrol"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 3 clearly has sub-items labeled (1) and (2).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.37.05/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Lighters conveying goods from importing vessels.\",\n  \"text\": \"(1) Lighters conveying goods from the importing vessel on working days other than Saturdays between the hours of 6.00a.m. and 6.00p.m. from the 1st April to the 30th September inclusive and between the hours of 7.00a.m. and 5.00p.m. from the 1st October to the 31st March inclusive shall, if the Comptroller of Customs so directs, be escorted to the proper",
+      "pdf_text": "3.\n(1)\nLighters conveying goods from the importing vessel on\nworking days other than Saturdays between the hours of 6.00a.m.\nand 6.00p.m. from the 1st April to the 30th September inclusive\nand between the hours of 7.00a.m. and 5.00p.m. from the 1st\nOctober to the 31st March inclusive shall, if the Comptroller of\nCustoms so directs, be escorted to the proper place of landing by an\n(2)\nWhen, however, the conveyance of goods takes place on\nSaturdays, Sundays or other public holidays, or on working "
+    }
+  ],
+  "generated_at": "2026-01-20T19:10:28.052313"
+}

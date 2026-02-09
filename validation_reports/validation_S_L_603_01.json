@@ -1,0 +1,409 @@
+{
+  "law_code": "S.L. 603.01",
+  "law_name": "Prosecution of Offences (Transitory Provisions) Regulations",
+  "pdf_pages": 7,
+  "extraction_metrics": {
+    "total_pages_in_pdf": 7,
+    "pages_processed": 7,
+    "pages_skipped": 0,
+    "regulations_extracted": 5,
+    "schedules_extracted": 3,
+    "miscellaneous_extracted": 0,
+    "edges_created": 56,
+    "extraction_time_seconds": 136.64,
+    "extraction_timestamp": "2026-01-13T02:40:52.484514"
+  },
+  "trials": [
+    {
+      "trial_id": 1,
+      "timestamp": "2026-01-20T19:08:28.284238",
+      "questions_total": 11,
+      "questions_correct": 4,
+      "accuracy": 0.36363636363636365,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 0.5,
+          "total": 4,
+          "correct": 2
+        },
+        "cross_reference": {
+          "accuracy": 0.0,
+          "total": 3,
+          "correct": 0
+        },
+        "completeness": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        },
+        "structure": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "trial_id": 2,
+      "timestamp": "2026-01-20T19:08:56.326082",
+      "questions_total": 11,
+      "questions_correct": 5,
+      "accuracy": 0.45454545454545453,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 0.5,
+          "total": 4,
+          "correct": 2
+        },
+        "cross_reference": {
+          "accuracy": 0.0,
+          "total": 3,
+          "correct": 0
+        },
+        "completeness": {
+          "accuracy": 1.0,
+          "total": 2,
+          "correct": 2
+        },
+        "structure": {
+          "accuracy": 0.5,
+          "total": 2,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "overall_accuracy": {
+      "mean": 0.4091,
+      "ci_95_low": -0.1686,
+      "ci_95_high": 0.9868,
+      "std_dev": 0.0643
+    },
+    "by_question_type": {
+      "faithfulness": {
+        "mean_accuracy": 0.5,
+        "ci_95_low": 0.5,
+        "ci_95_high": 0.5,
+        "std_dev": 0.0
+      },
+      "cross_reference": {
+        "mean_accuracy": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "std_dev": 0.0
+      },
+      "completeness": {
+        "mean_accuracy": 0.75,
+        "ci_95_low": -2.4275,
+        "ci_95_high": 3.9275,
+        "std_dev": 0.3536
+      },
+      "structure": {
+        "mean_accuracy": 0.5,
+        "ci_95_low": 0.5,
+        "ci_95_high": 0.5,
+        "std_dev": 0.0
+      }
+    },
+    "num_trials": 2,
+    "statistical_power": "limited"
+  },
+  "statistical_analysis": {
+    "methodology": "RAGAS + Bloomberg Law + BenchmarkQED",
+    "confidence_level": 0.95,
+    "min_questions": 10,
+    "trials_for_significance": 6
+  },
+  "questions_asked": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): '(1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1C in the PDF contain this exact text (allowing for minor formatting differences): 'Magistrates as a Court of criminal inquiry on or after the 1st October 2023:\n(a) grievous bodily harm; grievous bodily harm with arms proper; other cases of grievous bodily harm; grievous bodily harm ...'?",
+      "expected_answer": "yes",
+      "source_article": "1C",
+      "page_reference": 5
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1D in the PDF contain this exact text (allowing for minor formatting differences): 'The Attorney General shall have the power to decide whether a prosecution is or is not to be instituted in the following categories of offences when the charges are to be filed in the Court of Magistr...'?",
+      "expected_answer": "yes",
+      "source_article": "1D",
+      "page_reference": 5
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "question": "How many numbered regulations are in this law? The extraction found 5.",
+      "expected_answer": "5",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "question": "Does this law contain schedules? The extraction found: , , SCHEDULE",
+      "expected_answer": "yes",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference '1' internally?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-INT-2",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference '1' internally?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference external law 'Prevention of Money Laundering Act' or '3'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "question": "Does regulation/article 2 have sub-items like ['2(1)', '2(2)', '2(3)']?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "question": "Does regulation/article 1C have sub-items like ['1C(a)', '1C(b)', '1C(c)']?",
+      "expected_answer": "yes",
+      "source_article": "1C",
+      "page_reference": 5
+    }
+  ],
+  "detailed_results": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the text in the original PDF. The text is \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\"",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the original PDF text exactly, with no discrepancies. The validation question focuses on the first sentence of regulation/article 2, and that is accurately represented in the extracted content.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Prosecutions by Attorney General and delegation of functions\",\n  \"text\": \"(1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before the Court of Magistrates either as a court of criminal judicature or as a court of criminal inquiry apply in respect of the crimes listed in t",
+      "pdf_text": "The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before..."
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The text provided in the question is not present in the PDF document. Furthermore, article 1C does not exist within this version of Subsidiary Legislation 603.01.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1C\",\n  \"type\": \"regulation\",\n  \"number\": \"1C\",\n  \"title\": \"\",\n  \"text\": \"Magistrates as a Court of criminal inquiry on or after the 1st October 2023:\\n(a) grievous bodily harm; grievous bodily harm with arms proper; other cases of grievous bodily harm; grievous bodily harm from which death ensues under sub-title II of Title VIII of Part II of Book First of the Criminal Code;\\n(b) involuntary homicide; involuntary homicide in the course of theft or attempted theft under ",
+      "pdf_text": "The document only contains regulations 1, 1A, and 1B. There is no article or regulation labeled 1C."
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided text is found within item 1 of the Schedule, not in a separate regulation 1D. The extracted content contains information from different parts of the document (including 1, 1A and 1B) and is therefore inaccurate to ascribe it to 1D alone, which doesn't exist.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1D\",\n  \"type\": \"regulation\",\n  \"number\": \"1D\",\n  \"title\": \"\",\n  \"text\": \"The Attorney General shall have the power to decide whether a prosecution is or is not to be instituted in the following categories of offences when the charges are to be filed in the Court of Magistrates as a court of criminal judicature or in the Court of Magistrates as a Court of criminal inquiry on or after the 1st October 2024:\\n(a) offences against the Medical and Kindred Professions Ordinanc",
+      "pdf_text": "SCHEDULE\nPowers of the Attorney General to prosecute\n1.\nThe Attorney General shall have the power to decide \nwhether a prosecution is or is not to be instituted in the following \ncategories of offences when the charges are to be filed in the Court of \nMagistrates as a court of criminal judicature or in the Court of \nMagistrates as a Court of criminal inquiry on or after the 1st October \n2020:"
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The document contains only 2 numbered regulations (Regulation 1, Citation, and Regulation 2, Prosecutions by Attorney General and delegation of functions). There is also regulation 1A, 1B, but these are not separate regulations, instead they fall under the scope of the powers of the Attorney General as outlined in Regulation 2.",
+      "extracted_text": "{\n  \"regulations_count\": 5,\n  \"articles_count\": 0,\n  \"schedules\": [\n    null,\n    null,\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation defines the specific categories of criminal offences for which the Attorney General has the power to decide on prosecution before the Court of Magistrates, outlining these powers with specific financial thresholds and commencement dates. It also details the delegation of these prosecution functions and the procedural roles of the ",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations.\n\n2.\n(1)\nThe powers and functions of the Attorney General \nas provided under article 3 of the Attorney General Ordinance shall"
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the presence of a \"SCHEDULE\" within the legal document, as seen on page 2 of the PDF. The other values are represented as \"null\" which is appropriate as there is no specific named schedule before the one starting on page 2.",
+      "extracted_text": "{\n  \"regulations_count\": 5,\n  \"articles_count\": 0,\n  \"schedules\": [\n    null,\n    null,\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation defines the specific categories of criminal offences for which the Attorney General has the power to decide on prosecution before the Court of Magistrates, outlining these powers with specific financial thresholds and commencement dates. It also details the delegation of these prosecution functions and the procedural roles of the ",
+      "pdf_text": "PROSECUTION OF OFFENCES \n(TRANSITORY PROVISIONS)\nAmended by:\nL.N. 367 of 2021;\nL.N. 241 of 2022;\nL.N. 225 of 2023;\nL.N. 192 of 2024.\nSCHEDULE"
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not contain any internal references to itself (or its sub-items). The 'internal' cross-references listed in the extracted content are incorrect. The Attorney General powers to prosecute (Schedule) is the section referencing the sub-items of item '1'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations."
+    },
+    {
+      "question_id": "XREF-INT-2",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not make any internal references to itself. The internal references in the provided JSON are inaccurate. Regulation 1 defines the Citation for the regulations: \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\"",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 defines the title of the regulations, and it does not reference the 'Prevention of Money Laundering Act' or '3'. The reference to 'Prevention of Money Laundering Act' and article '3' is found in the Schedule, specifically in item 1(f). Therefore, the cross-reference is incorrect.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations. ... (f)\nCrimes of money laundering under article 3 of the Prevention of Money Laundering Act"
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 2 in the original PDF text clearly has sub-items (1), (2), (3), and (4). Sub-items (a), (b), (c), and (d) fall under sub-item (4). Therefore the list of sub-items provided in the EXTRACTED CONTENT BEING VALIDATED is accurate.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Prosecutions by Attorney General and delegation of functions\",\n  \"text\": \"(1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before the Court of Magistrates either as a court of criminal judicature or as a court of criminal inquiry apply in respect of the crimes listed in t",
+      "pdf_text": "2.\n(1)\n(2)\n(3)\n(4)\n(a)\n(b)\n(c)\n(d)"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1C does not exist in the provided PDF text. The Attorney General's power to decide on prosecutions is outlined in sections 1, 1A, and 1B, followed by a paragraph on the powers not to prejudice the exercise of other powers granted by law. There is no regulation or article labelled '1C'. The extracted content for 1C is therefore inaccurate and appears to be fabricated.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1C\",\n  \"type\": \"regulation\",\n  \"number\": \"1C\",\n  \"title\": \"\",\n  \"text\": \"Magistrates as a Court of criminal inquiry on or after the 1st October 2023:\\n(a) grievous bodily harm; grievous bodily harm with arms proper; other cases of grievous bodily harm; grievous bodily harm from which death ensues under sub-title II of Title VIII of Part II of Book First of the Criminal Code;\\n(b) involuntary homicide; involuntary homicide in the course of theft or attempted theft under ",
+      "pdf_text": "The last regulation is 1B on page 3: \"1B. The Attorney General shall have the power to decide whether a prosecution shall or shall not be instituted in the following categories of offences when the charges are to be filed in the Court of Magistrates as a court of criminal judicature or in the Court of Magistrates as a court of criminal inquiry on or after the 1st October 2022:\""
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the text in the PDF. Minor formatting differences such as extra space or line breaks are acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 2(1) accurately reflects the corresponding text in the original PDF. There are no discrepancies in the wording or the legal references.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Prosecutions by Attorney General and delegation of functions\",\n  \"text\": \"(1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before the Court of Magistrates either as a court of criminal judicature or as a court of criminal inquiry apply in respect of the crimes listed in t",
+      "pdf_text": "Original PDF Text: \"2. (1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before...\"\nExtracted Text: \"(1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before...\""
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided text does not contain a regulation/article 1C. The PDF contains regulations/articles 1, 1A and 1B, but no 1C. Further, The text the prompt asks for from regulation 1C is also inaccurate. There is no date of \"1st October 2023\" mentioned in association with any regulation of the 'Prosecution of Offences (Transitory Provisions)'. The extracted content contains a regulation 1C which is not available in the provided PDF text.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1C\",\n  \"type\": \"regulation\",\n  \"number\": \"1C\",\n  \"title\": \"\",\n  \"text\": \"Magistrates as a Court of criminal inquiry on or after the 1st October 2023:\\n(a) grievous bodily harm; grievous bodily harm with arms proper; other cases of grievous bodily harm; grievous bodily harm from which death ensues under sub-title II of Title VIII of Part II of Book First of the Criminal Code;\\n(b) involuntary homicide; involuntary homicide in the course of theft or attempted theft under ",
+      "pdf_text": "The PDF text only goes up to regulation 1B."
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided text is similar to the beginning of items 1, 1A and 1B in the Schedule, but there is no item '1D' in the provided PDF text. The extracted text also appears to be a combination of elements from different sections of the schedule and contains content not found in the provided PDF snippet.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1D\",\n  \"type\": \"regulation\",\n  \"number\": \"1D\",\n  \"title\": \"\",\n  \"text\": \"The Attorney General shall have the power to decide whether a prosecution is or is not to be instituted in the following categories of offences when the charges are to be filed in the Court of Magistrates as a court of criminal judicature or in the Court of Magistrates as a Court of criminal inquiry on or after the 1st October 2024:\\n(a) offences against the Medical and Kindred Professions Ordinanc",
+      "pdf_text": "The text 'The Attorney General shall have the power to decide whether a prosecution is or is not to be instituted in the following categories of offences when the charges are to be filed in the Court of Magistr...' is a general statement introducing powers of the Attorney General in different sections (1, 1A, 1B) of the SCHEDULE but not regulation 1D."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The document contains two numbered regulations (1 and 2). Regulation 2 has sub-regulations numbered (1), (2), (3), (4). Therefore, the extraction of 5 numbered regulations is correct.",
+      "extracted_text": "{\n  \"regulations_count\": 5,\n  \"articles_count\": 0,\n  \"schedules\": [\n    null,\n    null,\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation defines the specific categories of criminal offences for which the Attorney General has the power to decide on prosecution before the Court of Magistrates, outlining these powers with specific financial thresholds and commencement dates. It also details the delegation of these prosecution functions and the procedural roles of the ",
+      "pdf_text": "Citation.\n1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations.\nProsecutions by \nAttorney General \nand delegation of \nfunctions.\nCap. 90.\n2.\n(1)\nThe powers and functions of the Attorney General \nas provided under article 3 of the Attorney General Ordinance shall \ninsofar as they refer to the power to institute and conduct prosecutions \nbefore the Court of Magistrates either as a court of criminal judicature \nor as a court of criminal inquiry apply"
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The document contains a schedule, as indicated in the extracted content. The PDF text clearly includes a 'SCHEDULE' section.",
+      "extracted_text": "{\n  \"regulations_count\": 5,\n  \"articles_count\": 0,\n  \"schedules\": [\n    null,\n    null,\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation defines the specific categories of criminal offences for which the Attorney General has the power to decide on prosecution before the Court of Magistrates, outlining these powers with specific financial thresholds and commencement dates. It also details the delegation of these prosecution functions and the procedural roles of the ",
+      "pdf_text": "PROSECUTION OF OFFENCES \n(TRANSITORY PROVISIONS)\n\nAmended by:\nL.N. 367 of 2021;\nL.N. 241 of 2022;\nL.N. 225 of 2023;\nL.N. 192 of 2024.\nSCHEDULE"
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not have any internal references. The listed internal cross-references are to item 1 of the Schedule, not to regulation 1.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations."
+    },
+    {
+      "question_id": "XREF-INT-2",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 does not reference '1' or its sub-items internally. The references to '1(a)', '1(b)', etc. are all within the Schedule of the document, not regulation 1 itself. Therefore, the internal cross-references listed in the extracted content are incorrect.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content incorrectly associates regulation 1 with external laws. Regulation 1 is the citation and doesn't reference any external laws. The external law references are made in the Schedule under item 1(f). The cross-references under regulation 1 are therefore incorrect.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation\",\n  \"text\": \"The title of these regulations is the Prosecution of Offences (Transitory Provisions) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_target\": \"1(a)\"\n      },\n      {\n        \"target\": \"1\",\n        \"target_id\": \"reg:S.L.603.01/1\",\n        \"sub_ta",
+      "pdf_text": "1.\nThe title of these regulations is the Prosecution of \nOffences (Transitory Provisions) Regulations.\n\nSCHEDULE\n...\n(f)\nCrimes of money laundering under article 3 of the \nPrevention of Money Laundering Act except where such crimes \nare prosecuted together with crimes against the Dangerous \nDrugs Ordinance or the Medical and Kindred Professions \nOrdinance;"
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the structure and content of regulation/article 2 in the original PDF text. It correctly identifies the sub-items and their corresponding text.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Prosecutions by Attorney General and delegation of functions\",\n  \"text\": \"(1) The powers and functions of the Attorney General as provided under article 3 of the Attorney General Ordinance shall insofar as they refer to the power to institute and conduct prosecutions before the Court of Magistrates either as a court of criminal judicature or as a court of criminal inquiry apply in respect of the crimes listed in t",
+      "pdf_text": "2.\n(1) The powers and functions of the Attorney General \nas provided under article 3 of the Attorney General Ordinance shall \ninsofar as they refer to the power to institute and conduct prosecutions \nbefore the Court of Magistrates either as a court of criminal judicature \nor as a court of criminal inquiry apply in respect of the crimes listed in \nthe Schedule.\n(2) Without prejudice to paragraph (f) of item 1 of the \nSchedule, the powers and functions referred to in sub-regulation (1) \nshall als"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1C does not exist within the provided PDF text. The last numbered section within the schedule is 1B.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.603.01/1C\",\n  \"type\": \"regulation\",\n  \"number\": \"1C\",\n  \"title\": \"\",\n  \"text\": \"Magistrates as a Court of criminal inquiry on or after the 1st October 2023:\\n(a) grievous bodily harm; grievous bodily harm with arms proper; other cases of grievous bodily harm; grievous bodily harm from which death ensues under sub-title II of Title VIII of Part II of Book First of the Criminal Code;\\n(b) involuntary homicide; involuntary homicide in the course of theft or attempted theft under ",
+      "pdf_text": "The provided PDF only contains sections 1, 1A, and 1B within the schedule. There is no mention of a section 1C."
+    }
+  ],
+  "generated_at": "2026-01-20T19:08:56.327163"
+}

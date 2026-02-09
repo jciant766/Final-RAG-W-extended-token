@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maltese Law Research Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Söhne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: #343541;
+            color: #ececf1;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #202123;
+            padding: 12px 20px;
+            border-bottom: 1px solid #444654;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header h1 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ececf1;
+            flex: 1;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .header-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ececf1;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .token-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .token-status:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .token-status.active {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .token-status.inactive {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .token-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .token-modal.show {
+            display: flex;
+        }
+
+        .token-modal-content {
+            background: #202123;
+            border: 1px solid #444654;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .token-modal h2 {
+            margin-bottom: 16px;
+            color: #ececf1;
+            font-size: 18px;
+        }
+
+        .token-modal p {
+            margin-bottom: 16px;
+            color: #acacbe;
+            font-size: 14px;
+        }
+
+        .token-modal input {
+            width: 100%;
+            padding: 12px;
+            background: #40414f;
+            border: 1px solid #565869;
+            border-radius: 6px;
+            color: #ececf1;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .token-modal input:focus {
+            outline: none;
+            border-color: #10a37f;
+        }
+
+        .token-modal-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+
+        .token-modal button {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .token-modal .btn-primary {
+            background: #10a37f;
+            border: none;
+            color: white;
+        }
+
+        .token-modal .btn-primary:hover {
+            background: #0d8c6c;
+        }
+
+        .token-modal .btn-secondary {
+            background: transparent;
+            border: 1px solid #565869;
+            color: #ececf1;
+        }
+
+        .token-modal .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 13px;
+            margin-top: 8px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .sidebar {
+            position: fixed;
+            right: -320px;
+            top: 0;
+            width: 320px;
+            height: 100vh;
+            background: #202123;
+            border-left: 1px solid #444654;
+            transition: right 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar.open {
+            right: 0;
+        }
+
+        .sidebar-header {
+            padding: 16px;
+            border-bottom: 1px solid #444654;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-header h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ececf1;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #8e8ea0;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .chat-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chat-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .chat-item-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #ececf1;
+            margin-bottom: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .chat-item-meta {
+            font-size: 12px;
+            color: #8e8ea0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-item-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .chat-item-btn {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #8e8ea0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chat-item-btn:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #ececf1;
+        }
+
+        .chat-item-btn.delete {
+            color: #ef4444;
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .chat-item-btn.delete:hover {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.5);
+        }
+
+        .no-chats {
+            text-align: center;
+            color: #8e8ea0;
+            padding: 32px 16px;
+            font-size: 14px;
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            background: #343541;
+        }
+
+        .message {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 32px 0;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-content {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 24px;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        .message-user {
+            background: #343541;
+        }
+
+        .message-user .avatar {
+            background: #19c37d;
+            color: white;
+        }
+
+        .message-assistant {
+            background: #444654;
+        }
+
+        .message-assistant .avatar {
+            background: #9333ea;
+            color: white;
+        }
+
+        .text {
+            flex: 1;
+            line-height: 1.8;
+            color: #ececf1;
+            font-size: 16px;
+        }
+
+        .text p {
+            margin-bottom: 20px;
+        }
+
+        .text a {
+            color: #19c37d;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #19c37d;
+            transition: all 0.2s;
+        }
+
+        .text a:hover {
+            color: #1ed683;
+            border-bottom-style: solid;
+            background: rgba(25, 195, 125, 0.1);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        /* Perplexity-style citation numbers */
+        sup {
+            line-height: 0;
+        }
+
+        /* Citation links - Perplexity style with metadata */
+        sup a.citation-link,
+        sup a.citation-link:link,
+        sup a.citation-link:visited,
+        sup a.citation-link:active {
+            font-size: 11px;
+            font-weight: 600;
+            color: #19c37d !important;
+            text-decoration: none !important;
+            border: none !important;
+            border-bottom: none !important;
+            background: rgba(25, 195, 125, 0.12) !important;
+            padding: 2px 6px;
+            margin: 0 2px;
+            border-radius: 4px;
+            transition: all 0.15s ease;
+            cursor: pointer !important;
+            display: inline-block;
+            vertical-align: super;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        sup a.citation-link:hover {
+            background: rgba(25, 195, 125, 0.25) !important;
+            color: #fff !important;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(25, 195, 125, 0.3);
+        }
+
+        sup .citation-number {
+            font-size: 12px;
+            font-weight: 700;
+            background: rgba(147, 51, 234, 0.12);
+            color: #c084fc !important;
+            text-decoration: none !important;
+            border: none !important;
+            padding: 1px 5px;
+            margin: 0 2px;
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: super;
+            line-height: 1;
+        }
+
+        .text > div {
+            margin-bottom: 16px;
+        }
+
+        .text strong {
+            display: block;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .text ul, .text ol {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+
+        .text li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        .text section {
+            margin-bottom: 24px;
+        }
+
+        .text h3 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .sources {
+            margin-top: 32px;
+            padding: 16px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sources-title {
+            font-weight: 600;
+            color: #19c37d;
+            margin-bottom: 12px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .source-item {
+            background: rgba(0, 0, 0, 0.2);
+            border-left: 3px solid #9333ea;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .source-item a {
+            color: #19c37d;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .source-item a:hover {
+            text-decoration: underline;
+        }
+
+        .source-item em {
+            display: block;
+            color: #b4b4b4;
+            margin-top: 6px;
+            font-size: 13px;
+        }
+
+        .metadata {
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(25, 195, 125, 0.1);
+            border-radius: 6px;
+            font-size: 13px;
+            color: #b4b4b4;
+            border: 1px solid rgba(25, 195, 125, 0.2);
+        }
+
+        .metadata strong {
+            color: #ececf1;
+        }
+
+        .citation-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(25, 195, 125, 0.15);
+            border: 1px solid rgba(25, 195, 125, 0.3);
+            color: #19c37d;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .citation-badge.high {
+            background: rgba(25, 195, 125, 0.2);
+            border-color: rgba(25, 195, 125, 0.4);
+        }
+
+        .citation-badge.medium {
+            background: rgba(234, 179, 8, 0.15);
+            border-color: rgba(234, 179, 8, 0.3);
+            color: #eab308;
+        }
+
+        .citation-badge.low {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        .citation-stats {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #b4b4b4;
+        }
+
+        .citation-stats span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: rgba(147, 51, 234, 0.2);
+            color: #c084fc;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 2px 4px 2px 0;
+            font-weight: 500;
+            border: 1px solid rgba(147, 51, 234, 0.3);
+        }
+
+        .law-tag {
+            display: inline-block;
+            background: rgba(25, 195, 125, 0.2);
+            color: #34d399;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin: 2px 4px 2px 0;
+            font-weight: 500;
+            border: 1px solid rgba(25, 195, 125, 0.3);
+        }
+
+        .input-area {
+            padding: 20px;
+            background: #343541;
+            border-top: 1px solid #444654;
+        }
+
+        .input-wrapper {
+            max-width: 768px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #messageInput {
+            width: 100%;
+            padding: 16px 52px 16px 16px;
+            background: #40414f;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: #ececf1;
+            font-size: 16px;
+            font-family: inherit;
+            resize: none;
+            outline: none;
+            transition: all 0.2s ease;
+            max-height: 200px;
+        }
+
+        #messageInput:focus {
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        #messageInput::placeholder {
+            color: #8e8ea0;
+        }
+
+        #sendBtn {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            width: 32px;
+            height: 32px;
+            background: #19c37d;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        #sendBtn:hover:not(:disabled) {
+            background: #1a9c65;
+        }
+
+        #sendBtn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            display: flex;
+            gap: 6px;
+            padding: 8px 0;
+        }
+
+        .loading-dot {
+            width: 8px;
+            height: 8px;
+            background: #19c37d;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .loading-dot:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+            40% { transform: scale(1.2); opacity: 1; }
+        }
+
+        .welcome {
+            max-width: 768px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .welcome h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #ececf1;
+            margin-bottom: 24px;
+        }
+
+        .welcome p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #b4b4b4;
+            margin-bottom: 40px;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .example-btn {
+            padding: 16px 20px;
+            background: #40414f;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ececf1;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .example-btn:hover {
+            background: #4a4b5a;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #343541;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #565869;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6e6f7f;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #8e8ea0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>⚖️ Maltese Law Research Assistant</h1>
+            <div class="header-buttons">
+                <div class="token-status active" id="userInfo" title="Logged in user">
+                    <span>👤</span>
+                    <span id="userEmail"></span>
+                </div>
+                <button class="header-btn" onclick="saveCurrentChat()" title="Save this conversation">
+                    <span>💾</span>
+                    <span>Save Chat</span>
+                </button>
+                <button class="header-btn" onclick="toggleSidebar()" title="View saved chats">
+                    <span>📚</span>
+                    <span>History</span>
+                </button>
+                <button class="header-btn" onclick="logout()" title="Sign out">
+                    <span>🚪</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div class="token-modal" id="loginModal">
+            <div class="token-modal-content">
+                <h2>Login</h2>
+                <p>Enter your credentials to access the Maltese Law Research Assistant.</p>
+                <input
+                    type="text"
+                    id="usernameInput"
+                    placeholder="Username"
+                    autocomplete="username"
+                />
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                />
+                <div class="error-message" id="loginError">Invalid credentials. Please try again.</div>
+                <div class="token-modal-buttons">
+                    <button class="btn-primary" onclick="login()">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar for chat history -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>📚 Chat History</h2>
+                <button class="close-btn" onclick="toggleSidebar()">×</button>
+            </div>
+            <div class="sidebar-content" id="sidebarContent">
+                <div class="no-chats">No saved chats yet</div>
+            </div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome">
+                <h2>Maltese Law Research Assistant</h2>
+                <p>Ask me anything about Maltese legislation. I'll search through 600+ chapters of laws and provide accurate, cited answers.</p>
+
+                <div class="example-grid">
+                    <button class="example-btn" onclick="setQuery('What licenses are required to provide financial services in Malta?')">What licenses are required to provide financial services in Malta?</button>
+                    <button class="example-btn" onclick="setQuery('What are the minimum share capital and incorporation requirements for a private limited company?')">What are the minimum share capital and incorporation requirements for a private limited company?</button>
+                    <button class="example-btn" onclick="setQuery('How are corporate profits and dividends taxed in Malta?')">How are corporate profits and dividends taxed in Malta?</button>
+                    <button class="example-btn" onclick="setQuery('What are the requirements for hiring non-EU employees in Malta?')">What are the requirements for hiring non-EU employees in Malta?</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="messageInput" placeholder="Message Maltese Law Assistant..." rows="1"></textarea>
+                <button id="sendBtn" onclick="sendMessage()" title="Send message">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="note">Powered by Claude Sonnet 4.5 with GraphRAG</div>
+        </div>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById('chatContainer');
+        const messageInput = document.getElementById('messageInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        // Token-based authentication
+        let authToken = localStorage.getItem('auth_token') || '';
+        let username = localStorage.getItem('username') || '';
+        let userEmail = localStorage.getItem('email') || '';
+
+        // Check if user is logged in on page load
+        if (!authToken) {
+            // Redirect to login page
+            window.location.href = '/login';
+        }
+
+        function logout() {
+            localStorage.removeItem('auth_token');
+            localStorage.removeItem('username');
+            localStorage.removeItem('email');
+            window.location.href = '/login';
+        }
+
+        function login() {
+            const usernameInput = document.getElementById('usernameInput').value.trim();
+            const passwordInput = document.getElementById('passwordInput').value.trim();
+            const errorEl = document.getElementById('loginError');
+
+            if (usernameInput === 'axis' && passwordInput === '1616') {
+                username = usernameInput;
+                password = passwordInput;
+                sessionStorage.setItem('username', username);
+                sessionStorage.setItem('password', password);
+                document.getElementById('loginModal').classList.remove('show');
+                errorEl.classList.remove('show');
+            } else {
+                errorEl.classList.add('show');
+            }
+        }
+
+        // Display user info on page load
+        function displayUserInfo() {
+            const userEmailEl = document.getElementById('userEmail');
+            if (userEmailEl && userEmail) {
+                userEmailEl.textContent = userEmail;
+            } else if (userEmailEl && username) {
+                userEmailEl.textContent = username;
+            }
+        }
+
+        // Initialize user info
+        displayUserInfo();
+
+        // PDF lookup dictionary
+        let pdfLookup = {};
+
+        // Load PDF lookup on page load
+        fetch('/api/pdf-lookup')
+            .then(res => res.json())
+            .then(data => {
+                pdfLookup = data;
+                console.log('PDF lookup loaded:', Object.keys(pdfLookup).length, 'entries');
+            })
+            .catch(err => console.error('Failed to load PDF lookup:', err));
+
+        // Auto-resize textarea
+        messageInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 200) + 'px';
+        });
+
+        // Send on Enter (Shift+Enter for new line)
+        messageInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        function setQuery(text) {
+            messageInput.value = text;
+            messageInput.focus();
+            sendMessage();
+        }
+
+        // Check if user is near bottom of chat
+        function isNearBottom() {
+            const threshold = 150; // pixels from bottom
+            const position = chatContainer.scrollTop + chatContainer.clientHeight;
+            const bottom = chatContainer.scrollHeight;
+            return bottom - position < threshold;
+        }
+
+        // Smooth scroll to bottom if user is near bottom
+        function smartScroll() {
+            if (isNearBottom()) {
+                chatContainer.scrollTo({
+                    top: chatContainer.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function addMessage(text, isUser) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message message-${isUser ? 'user' : 'assistant'}`;
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+
+            const avatar = document.createElement('div');
+            avatar.className = 'avatar';
+            avatar.textContent = isUser ? '👤' : '⚖️';
+
+            const textDiv = document.createElement('div');
+            textDiv.className = 'text';
+            textDiv.innerHTML = text;
+
+            contentDiv.appendChild(avatar);
+            contentDiv.appendChild(textDiv);
+            messageDiv.appendChild(contentDiv);
+
+            chatContainer.appendChild(messageDiv);
+
+            // Only auto-scroll for user messages (keep question visible)
+            // For assistant messages, use smartScroll during typewriter effect
+            if (isUser) {
+                smartScroll();
+            }
+
+            return textDiv;
+        }
+
+        // Typewriter effect for assistant responses
+        async function typewriterEffect(element, html) {
+            // Create a temporary div to parse the HTML
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+
+            // Clear the element
+            element.innerHTML = '';
+
+            // Get all child nodes (text and elements)
+            const nodes = Array.from(temp.childNodes);
+
+            for (const node of nodes) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    // Text node - type character by character
+                    const text = node.textContent;
+                    const textNode = document.createTextNode('');
+                    element.appendChild(textNode);
+
+                    for (let i = 0; i < text.length; i++) {
+                        textNode.textContent += text[i];
+                        smartScroll();
+                        await new Promise(resolve => setTimeout(resolve, 1)); // Fast typing
+                    }
+                } else if (node.nodeType === Node.ELEMENT_NODE) {
+                    // Element node - add it and recurse
+                    const clone = node.cloneNode(false);
+                    element.appendChild(clone);
+
+                    if (node.childNodes.length > 0) {
+                        await typewriterEffect(clone, node.innerHTML);
+                    }
+
+                    smartScroll();
+                    await new Promise(resolve => setTimeout(resolve, 10)); // Pause between elements
+                }
+            }
+        }
+
+        function addLoading() {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message message-assistant';
+            messageDiv.id = 'loading';
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+
+            const avatar = document.createElement('div');
+            avatar.className = 'avatar';
+            avatar.textContent = '⚖️';
+
+            const textDiv = document.createElement('div');
+            textDiv.className = 'text';
+            textDiv.innerHTML = '<div class="loading"><div class="loading-dot"></div><div class="loading-dot"></div><div class="loading-dot"></div></div>';
+
+            contentDiv.appendChild(avatar);
+            contentDiv.appendChild(textDiv);
+            messageDiv.appendChild(contentDiv);
+
+            chatContainer.appendChild(messageDiv);
+            // Use smart scroll instead of forcing scroll to bottom
+            smartScroll();
+        }
+
+        function removeLoading() {
+            const loading = document.getElementById('loading');
+            if (loading) loading.remove();
+        }
+
+        async function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+
+            // Remove welcome message
+            const welcome = chatContainer.querySelector('.welcome');
+            if (welcome) welcome.remove();
+
+            // Add user message
+            addMessage(message, true);
+
+            // Clear input
+            messageInput.value = '';
+            messageInput.style.height = 'auto';
+
+            // Disable button
+            sendBtn.disabled = true;
+
+            // Show loading
+            addLoading();
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${authToken}`
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        token: authToken,
+                        settings: {
+                            top_laws: 25,
+                            limit: 15,
+                            expand_graph: true,
+                            auto_classify: true
+                        }
+                    })
+                });
+
+                removeLoading();
+
+                // Handle 401 Unauthorized
+                if (response.status === 401) {
+                    addMessage('❌ Session expired or invalid token. Please log in again.', false);
+                    sendBtn.disabled = false;
+                    logout();
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+
+                // Build citation quality badge
+                let html = '';
+                if (data.citation_quality) {
+                    const quality = data.citation_quality;
+                    const confidenceClass = quality.confidence || 'medium';
+                    const citationCount = quality.citation_count || 0;
+
+                    if (citationCount > 0) {
+                        html += `<div class="citation-badge ${confidenceClass}">
+                            ✓ ${citationCount} Verified Citation${citationCount > 1 ? 's' : ''} | Citations API
+                        </div>`;
+
+                        if (quality.citation_density !== undefined) {
+                            html += `<div class="citation-stats">
+                                <span>📊 Density: ${quality.citation_density} per 100 words</span>
+                                <span>📈 Confidence: ${quality.confidence.toUpperCase()}</span>
+                            </div>`;
+                        }
+                    }
+                }
+
+                // FIRST: Normalize Unicode superscript citations to bracket notation
+                let processedText = normalizeSuperscriptCitations(data.response);
+
+                // SECOND: Convert markdown links and plain URLs to anchor tags
+                processedText = convertMarkdownLinks(processedText);
+
+                // THIRD: Linkify numbered citations [1] [2] [3] in the text
+                // Pass citation_pages from API for direct page lookup
+                processedText = linkifyCitations(processedText, data.citation_pages || {});
+
+                // THEN: Build response HTML with better formatting
+                let responseText = processedText
+                    .split('\n\n')
+                    .map(para => {
+                        if (para.startsWith('## ')) {
+                            return `<h3>${para.substring(3)}</h3>`;
+                        }
+                        return `<p>${para}</p>`;
+                    })
+                    .join('');
+
+                html += `<div>${responseText}</div>`;
+
+                // Add sources
+                if (data.sources && data.sources.length > 0) {
+                    html += '<div class="sources">';
+                    html += '<div class="sources-title">📚 Sources</div>';
+                    data.sources.forEach(source => {
+                        const lawCode = source.chapter_number || '';
+                        let pdfUrl = '';
+                        if (lawCode) {
+                            const pdfFile = getPdfFilename(lawCode);
+                            const pdfPath = `/static/${encodeURIComponent(pdfFile)}`;
+                            // Use PDF.js viewer with page number if available
+                            if (source.page_number) {
+                                pdfUrl = `/lib/pdfjs/web/viewer.html?file=${encodeURIComponent(pdfPath)}#page=${source.page_number}`;
+                            } else {
+                                pdfUrl = `/lib/pdfjs/web/viewer.html?file=${encodeURIComponent(pdfPath)}`;
+                            }
+                        }
+                        const citation = pdfUrl ?
+                            `<a href="${pdfUrl}" target="_blank">${source.citation}</a>` :
+                            source.citation;
+
+                        html += `<div class="source-item">
+                            <strong>${citation}</strong>
+                            <em>${source.chapter_title || ''}</em>
+                        </div>`;
+                    });
+                    html += '</div>';
+                }
+
+                // Add metadata
+                if (data.classification || data.laws_searched) {
+                    html += '<div class="metadata">';
+
+                    if (data.classification && data.classification.categories) {
+                        html += '<div><strong>Categories:</strong> ';
+                        data.classification.categories.forEach(cat => {
+                            html += `<span class="category-tag">${cat.replace(/_/g, ' ')}</span>`;
+                        });
+                        html += '</div>';
+                    }
+
+                    if (data.laws_searched && data.laws_searched.length > 0) {
+                        html += `<div style="margin-top: 8px;"><strong>Searched ${data.laws_searched.length} laws:</strong> `;
+                        data.laws_searched.slice(0, 10).forEach(law => {
+                            html += `<span class="law-tag">${law}</span>`;
+                        });
+                        if (data.laws_searched.length > 10) {
+                            html += ` <em>+${data.laws_searched.length - 10} more</em>`;
+                        }
+                        html += '</div>';
+                    }
+
+                    html += '</div>';
+                }
+
+                // Split HTML into main content and instant sections (sources/metadata)
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = html;
+
+                // Find the main response content (everything before sources/metadata)
+                const mainContent = [];
+                const instantContent = [];
+                let isInstantSection = false;
+
+                Array.from(tempDiv.children).forEach(child => {
+                    if (child.classList && (child.classList.contains('sources') ||
+                        child.classList.contains('metadata') ||
+                        child.classList.contains('citation-badge') ||
+                        child.classList.contains('citation-stats'))) {
+                        isInstantSection = true;
+                    }
+
+                    if (isInstantSection) {
+                        instantContent.push(child.outerHTML);
+                    } else {
+                        mainContent.push(child.outerHTML);
+                    }
+                });
+
+                // Add empty message and animate only the main content
+                const textDiv = addMessage('', false);
+
+                // Typewriter effect for main content
+                if (mainContent.length > 0) {
+                    await typewriterEffect(textDiv, mainContent.join(''));
+                }
+
+                // Instantly add sources and metadata (no animation)
+                if (instantContent.length > 0) {
+                    textDiv.innerHTML += instantContent.join('');
+                    smartScroll();
+                }
+
+            } catch (error) {
+                removeLoading();
+                addMessage('❌ Sorry, there was an error processing your request. Please try again.', false);
+                console.error('Error:', error);
+            }
+
+            // Re-enable button
+            sendBtn.disabled = false;
+            messageInput.focus();
+        }
+
+        function getPdfFilename(lawCode) {
+            // Look up the actual PDF filename from the server-provided dictionary
+            if (pdfLookup[lawCode]) {
+                return pdfLookup[lawCode];
+            }
+            // Try without space after dot (e.g., "Cap.386" vs "Cap. 386")
+            const noSpace = lawCode.replace('. ', '.');
+            if (pdfLookup[noSpace]) {
+                return pdfLookup[noSpace];
+            }
+            // Fallback (probably won't work, but better than nothing)
+            return `${lawCode}.pdf`;
+        }
+
+        function normalizeSuperscriptCitations(text) {
+            /**
+             * Convert Unicode superscript numbers to bracket notation [1] [2] [3]
+             * This handles cases where the model outputs ¹ ² ³ instead of [1] [2] [3]
+             */
+            // Map of Unicode superscript characters to regular numbers
+            const superscriptMap = {
+                '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4',
+                '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9'
+            };
+
+            // Replace Unicode superscripts with bracket notation
+            return text.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]+/g, (match) => {
+                const number = match.split('').map(char => superscriptMap[char] || char).join('');
+                return `[${number}]`;
+            });
+        }
+
+        function convertMarkdownLinks(text) {
+            /**
+             * Convert markdown links [text](url) to HTML anchor tags
+             * Also convert plain URLs to clickable links
+             */
+            // First, convert markdown-style links [text](url)
+            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+
+            // Then convert plain URLs (http/https) that aren't already in anchor tags
+            text = text.replace(/(?<!href=["'])(?<!>)(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank">$1</a>');
+
+            return text;
+        }
+
+        function linkifyCitations(text, citationPages = {}) {
+            /**
+             * Convert metadata-rich citations [Art 376, Cap. 452] to clickable links with page numbers.
+             * Also supports legacy numbered citations [1] [2] [3] with References section.
+             *
+             * @param {string} text - The response text containing citations
+             * @param {Object} citationPages - Map from API: {"Art 36, Cap. 452": 45, "Reg 5, S.L. 499.67": 3}
+             */
+            console.log('=== DEBUGGING CITATIONS v3 (page fix) ===');
+            console.log('Full text length:', text.length);
+            console.log('Citation pages from API:', JSON.stringify(citationPages));
+
+            // STEP 1: Parse References section as FALLBACK for page numbers (if API didn't provide them)
+            const referencesMatch = text.match(/##?\s*References?\s*[:\n]*([\s\S]*?)(?=\n##|$)/i);
+            let metadataCitationMap = {}; // Map for metadata citations: "Art 376, Cap. 452" -> {page: 185, law: "..."}
+            let numberedCitationMap = {}; // Map for numbered citations: "1" -> {article: "...", code: "...", page: ...}
+
+            console.log('References found:', !!referencesMatch);
+
+            if (referencesMatch) {
+                const referencesText = referencesMatch[1];
+                console.log('References section text:', referencesText);
+
+                // Split into individual reference lines
+                const lines = referencesText.split('\n').filter(line => line.trim() && line.includes('['));
+                console.log('Found', lines.length, 'reference lines');
+
+                lines.forEach(line => {
+                    console.log('Processing reference line:', line);
+
+                    // Pattern for metadata-rich citations: [Art 59(1)(a), Cap. 123] - Income Tax Act (Page 185)
+                    // First, try to extract the page number separately (more reliable)
+                    const pageMatch = line.match(/\(Page\s+(\d+)\)/i);
+                    const extractedPage = pageMatch ? parseInt(pageMatch[1]) : null;
+
+                    // Now match the citation part
+                    let metadataMatch = line.match(/\[(Art|Reg)\s+(\d+(?:\([^)]+\))*),\s+((?:Cap\.|S\.L\.)\s*[\d.]+)\]/i);
+
+                    if (metadataMatch) {
+                        const prefix = metadataMatch[1]; // "Art" or "Reg"
+                        const articleNum = metadataMatch[2].trim();
+                        const code = metadataMatch[3].trim();
+                        const page = extractedPage; // Use separately extracted page
+
+                        // Create key for lookup: "Art 59(1)(a), Cap. 123"
+                        const citationKey = `${prefix} ${articleNum}, ${code}`;
+                        // Also create normalized version with space after Cap./S.L.
+                        const normalizedCode = code.replace(/^(Cap\.|S\.L\.)(\d)/, '$1 $2');
+                        const normalizedKey = `${prefix} ${articleNum}, ${normalizedCode}`;
+
+                        metadataCitationMap[citationKey] = {
+                            article: articleNum,
+                            code: code,
+                            page: page
+                        };
+                        // Also store with normalized code
+                        if (normalizedKey !== citationKey) {
+                            metadataCitationMap[normalizedKey] = {
+                                article: articleNum,
+                                code: normalizedCode,
+                                page: page
+                            };
+                        }
+                        console.log(`✓ Mapped metadata citation: ${citationKey} -> Page ${page}`);
+                    }
+
+                    // Pattern for numbered citations: [1] Article 36, Cap. 452 - Employment Act (Page 45)
+                    let numberedMatch = line.match(/\[(\d+)\]\s*Article\s+([^,]+),\s*((?:Cap\.|S\.L\.)\s*[\d.]+)\s*-\s*([^(]+?)(?:\s*\(Page\s+(\d+)\))?/i);
+
+                    if (!numberedMatch) {
+                        // Try old format: [1] Article 36, Employment Act - Cap. 452 (Page 45)
+                        numberedMatch = line.match(/\[(\d+)\]\s*Article\s+([^,]+),\s*([^-]+?)\s*-\s*((?:Cap\.|S\.L\.)\s*[\d.]+)(?:\s*\(Page\s+(\d+)\))?/i);
+
+                        if (numberedMatch) {
+                            const citNum = numberedMatch[1];
+                            numberedCitationMap[citNum] = {
+                                article: numberedMatch[2].trim(),
+                                law: numberedMatch[3].trim(),
+                                code: numberedMatch[4].trim(),
+                                page: numberedMatch[5] ? parseInt(numberedMatch[5]) : null
+                            };
+                            console.log(`✓ Mapped numbered citation [${citNum}] (old format)`);
+                        }
+                    } else {
+                        const citNum = numberedMatch[1];
+                        numberedCitationMap[citNum] = {
+                            article: numberedMatch[2].trim(),
+                            code: numberedMatch[3].trim(),
+                            law: numberedMatch[4].trim(),
+                            page: numberedMatch[5] ? parseInt(numberedMatch[5]) : null
+                        };
+                        console.log(`✓ Mapped numbered citation [${citNum}] (new format)`);
+                    }
+
+                    if (!metadataMatch && !numberedMatch) {
+                        console.log(`✗ Failed to parse reference line:`, line);
+                    }
+                });
+            }
+
+            console.log('Final metadata citation map:', metadataCitationMap);
+            console.log('Final numbered citation map:', numberedCitationMap);
+            console.log('PDF lookup has', Object.keys(pdfLookup).length, 'entries');
+
+            // STEP 2: Convert inline metadata-rich citations like [Art 376, Cap. 452] with page numbers
+            text = text.replace(/\[(?:Art|Reg)\s+(\d+(?:\([^)]+\))*),\s+((?:Cap\.|S\.L\.)\s*[\d.]+)\]/g, (match, articleNum, code) => {
+                console.log(`Found inline citation: ${match} | Article: ${articleNum} | Code: ${code}`);
+
+                // Determine if it's an Art or Reg citation
+                const isReg = match.startsWith('[Reg');
+                const prefix = isReg ? 'Reg' : 'Art';
+
+                // Normalize the code to ensure consistent spacing (Cap.372 -> Cap. 372)
+                const normalizedCode = code.replace(/^(Cap\.|S\.L\.)(\d)/, '$1 $2');
+
+                // Look up page number - PRIORITY: 1) API citationPages, 2) References section
+                const citationKey = `${prefix} ${articleNum}, ${normalizedCode}`;
+                const altKey = `${articleNum}, ${normalizedCode}`; // Alternative key format
+
+                // Also try original code format in case API used different spacing
+                const origKey = `${prefix} ${articleNum}, ${code}`;
+                const origAltKey = `${articleNum}, ${code}`;
+
+                // Check API-provided citation pages first (try normalized then original)
+                let page = citationPages[citationKey] || citationPages[altKey] ||
+                           citationPages[origKey] || citationPages[origAltKey] || null;
+
+                // Fall back to References section if API didn't provide page
+                if (!page) {
+                    // Try multiple key formats for References lookup
+                    const referenceInfo = metadataCitationMap[citationKey] ||
+                                         metadataCitationMap[origKey] ||
+                                         metadataCitationMap[`Art ${articleNum}, ${normalizedCode}`] ||
+                                         metadataCitationMap[`Art ${articleNum}, ${code}`];
+                    page = referenceInfo ? referenceInfo.page : null;
+                }
+
+                // DETAILED DEBUG
+                console.log('=== CITATION DEBUG ===');
+                console.log('  Match:', match);
+                console.log('  Keys tried:', [citationKey, altKey, origKey, origAltKey]);
+                console.log('  API citationPages keys:', Object.keys(citationPages));
+                console.log('  metadataCitationMap keys:', Object.keys(metadataCitationMap));
+                console.log('  metadataCitationMap values:', JSON.stringify(metadataCitationMap));
+                console.log('  FINAL PAGE:', page);
+                console.log('======================');
+
+                const pdfFile = getPdfFilename(normalizedCode) || getPdfFilename(code);
+                if (pdfFile) {
+                    // Build URL using PDF.js viewer with page number
+                    const pdfPath = `/static/${encodeURIComponent(pdfFile)}`;
+                    let url;
+                    if (page) {
+                        url = `/lib/pdfjs/web/viewer.html?file=${encodeURIComponent(pdfPath)}#page=${page}`;
+                        console.log(`✓ Linkifying: ${match} -> ${pdfFile} (Page ${page})`);
+                    } else {
+                        url = `/lib/pdfjs/web/viewer.html?file=${encodeURIComponent(pdfPath)}`;
+                        console.log(`✓ Linkifying: ${match} -> ${pdfFile} (no page)`);
+                    }
+
+                    // Display format: [Art 376, Cap. 452] (clickable with green styling)
+                    const displayText = match.slice(1, -1); // Remove brackets
+                    const tooltipText = page
+                        ? `View ${code} - ${prefix} ${articleNum} (Page ${page})`
+                        : `View ${code} - ${prefix} ${articleNum}`;
+
+                    return `<sup><a href="${url}" target="_blank" class="citation-link" title="${tooltipText}">[${displayText}]</a></sup>`;
+                } else {
+                    console.log(`✗ No PDF found for code: ${code}`);
+                    // Keep as non-clickable but styled citation
+                    return `<sup><span class="citation-number">${match}</span></sup>`;
+                }
+            });
+
+            // STEP 3: Replace numbered citations [1] [2] [3] with clickable superscript links
+            text = text.replace(/\[(\d+)\]/g, (match, num) => {
+                const cite = numberedCitationMap[num];
+                if (cite && cite.code) {
+                    const pdfFile = getPdfFilename(cite.code);
+                    if (pdfFile) {
+                        // Build URL using PDF.js viewer for proper page navigation
+                        const pdfPath = `/static/${encodeURIComponent(pdfFile)}`;
+                        let url;
+                        if (cite.page) {
+                            // Use PDF.js viewer with page parameter
+                            url = `/lib/pdfjs/web/viewer.html?file=${encodeURIComponent(pdfPath)}#page=${cite.page}`;
+                            console.log(`✓ Citation [${num}] will open PDF at page ${cite.page}`);
+                        } else {
+                            // No page number, just open the PDF
+                            url = `/lib/pdfjs/web/viewer.html?file=${encodeURIComponent(pdfPath)}`;
+                        }
+
+                        // Display format: [1: Cap. 452, Art. 36]
+                        const displayText = `${num}: ${cite.code}, Art. ${cite.article}`;
+                        const tooltipText = cite.page
+                            ? `${cite.law} - Article ${cite.article} (Page ${cite.page})`
+                            : `${cite.law} - Article ${cite.article}`;
+
+                        return `<sup><a href="${url}" target="_blank" class="citation-link" title="${tooltipText}">${displayText}</a></sup>`;
+                    }
+                }
+                // Fallback for non-clickable citations
+                return `<sup><span class="citation-number">${num}</span></sup>`;
+            });
+
+            return text;
+        }
+
+        // ============================================================================
+        // CHAT HISTORY FUNCTIONS
+        // ============================================================================
+
+        let currentChatId = null;
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const isOpen = sidebar.classList.toggle('open');
+            if (isOpen) {
+                loadChatHistory();
+            }
+        }
+
+        async function loadChatHistory() {
+            try {
+                const response = await fetch('/api/chats/list?limit=50');
+                const data = await response.json();
+
+                const sidebarContent = document.getElementById('sidebarContent');
+
+                if (data.chats && data.chats.length > 0) {
+                    sidebarContent.innerHTML = data.chats.map(chat => `
+                        <div class="chat-item">
+                            <div class="chat-item-title">${escapeHtml(chat.title)}</div>
+                            <div class="chat-item-meta">
+                                <span>${chat.message_count} messages</span>
+                                <span>${formatDate(chat.updated_at)}</span>
+                            </div>
+                            <div class="chat-item-actions">
+                                <button class="chat-item-btn" onclick="loadChat('${chat.id}')">Load</button>
+                                <button class="chat-item-btn" onclick="exportChat('${chat.id}')">Export</button>
+                                <button class="chat-item-btn delete" onclick="deleteChat('${chat.id}', event)">Delete</button>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    sidebarContent.innerHTML = '<div class="no-chats">No saved chats yet</div>';
+                }
+            } catch (error) {
+                console.error('Error loading chat history:', error);
+                document.getElementById('sidebarContent').innerHTML =
+                    '<div class="no-chats">Error loading chats</div>';
+            }
+        }
+
+        async function saveCurrentChat() {
+            try {
+                // Get all messages from the chat
+                const messages = [];
+                const messageElements = document.querySelectorAll('.message');
+
+                messageElements.forEach(msg => {
+                    const isUser = msg.classList.contains('message-user');
+                    const content = msg.querySelector('.text').textContent.trim();
+
+                    if (content && content !== '') {
+                        messages.push({
+                            role: isUser ? 'user' : 'assistant',
+                            content: content,
+                            timestamp: new Date().toISOString()
+                        });
+                    }
+                });
+
+                if (messages.length === 0) {
+                    alert('No messages to save!');
+                    return;
+                }
+
+                const response = await fetch('/api/chats/save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        chat_id: currentChatId,
+                        messages: messages
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    currentChatId = data.chat_id;
+                    alert('✓ Chat saved successfully!');
+                } else {
+                    throw new Error(data.error || 'Failed to save chat');
+                }
+            } catch (error) {
+                console.error('Error saving chat:', error);
+                alert('Failed to save chat: ' + error.message);
+            }
+        }
+
+        async function loadChat(chatId) {
+            try {
+                const response = await fetch(`/api/chats/${chatId}`);
+                const data = await response.json();
+
+                if (data.messages) {
+                    // Clear current chat
+                    chatContainer.innerHTML = '';
+                    currentChatId = chatId;
+
+                    // Load messages
+                    data.messages.forEach(msg => {
+                        addMessage(msg.content, msg.role === 'user');
+                    });
+
+                    // Close sidebar
+                    toggleSidebar();
+                } else {
+                    throw new Error('Invalid chat data');
+                }
+            } catch (error) {
+                console.error('Error loading chat:', error);
+                alert('Failed to load chat: ' + error.message);
+            }
+        }
+
+        async function deleteChat(chatId, event) {
+            event.stopPropagation();
+
+            if (!confirm('Are you sure you want to delete this chat?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/chats/${chatId}`, {
+                    method: 'DELETE'
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Reload chat list
+                    loadChatHistory();
+
+                    // If this was the current chat, clear it
+                    if (currentChatId === chatId) {
+                        currentChatId = null;
+                    }
+                } else {
+                    throw new Error(data.error || 'Failed to delete chat');
+                }
+            } catch (error) {
+                console.error('Error deleting chat:', error);
+                alert('Failed to delete chat: ' + error.message);
+            }
+        }
+
+        async function exportChat(chatId) {
+            try {
+                window.open(`/api/chats/${chatId}/export?format=json`, '_blank');
+            } catch (error) {
+                console.error('Error exporting chat:', error);
+                alert('Failed to export chat');
+            }
+        }
+
+        function formatDate(isoString) {
+            const date = new Date(isoString);
+            const now = new Date();
+            const diffMs = now - date;
+            const diffMins = Math.floor(diffMs / 60000);
+            const diffHours = Math.floor(diffMs / 3600000);
+            const diffDays = Math.floor(diffMs / 86400000);
+
+            if (diffMins < 1) return 'Just now';
+            if (diffMins < 60) return `${diffMins}m ago`;
+            if (diffHours < 24) return `${diffHours}h ago`;
+            if (diffDays < 7) return `${diffDays}d ago`;
+
+            return date.toLocaleDateString();
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

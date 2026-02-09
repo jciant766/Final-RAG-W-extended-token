@@ -1,0 +1,794 @@
+source,target,weight,source_name,target_name,edge_type
+Cap.10,Cap.499,1,Code of Police Laws,Authority for Transport in Malta Act,CROSS_REFERENCE
+Cap.10,Cap.9,6,Code of Police Laws,Criminal Code,CROSS_REFERENCE
+Cap.101,Cap.12,13,Dangerous Drugs Ordinance,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.101,Cap.31,7,Dangerous Drugs Ordinance,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.101,Cap.37,2,Dangerous Drugs Ordinance,Customs Ordinance,CROSS_REFERENCE
+Cap.101,Cap.446,6,Dangerous Drugs Ordinance,Probation Act,CROSS_REFERENCE
+Cap.101,Cap.9,15,Dangerous Drugs Ordinance,Criminal Code,CROSS_REFERENCE
+Cap.12,Cap.13,2,Code of Organization and Civil Procedure,Commercial Code,CROSS_REFERENCE
+Cap.12,Cap.16,20,Code of Organization and Civil Procedure,Civil Code,CROSS_REFERENCE
+Cap.12,Cap.204,1,Code of Organization and Civil Procedure,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.12,Cap.234,7,Code of Organization and Civil Procedure,Merchant Shipping Act,CROSS_REFERENCE
+Cap.12,Cap.318,1,Code of Organization and Civil Procedure,Social Security Act,CROSS_REFERENCE
+Cap.12,Cap.345,3,Code of Organization and Civil Procedure,Financial Markets Act,CROSS_REFERENCE
+Cap.12,Cap.371,2,Code of Organization and Civil Procedure,Banking Act,CROSS_REFERENCE
+Cap.12,Cap.373,1,Code of Organization and Civil Procedure,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.12,Cap.378,1,Code of Organization and Civil Procedure,Consumer Affairs Act,CROSS_REFERENCE
+Cap.12,Cap.379,1,Code of Organization and Civil Procedure,Competition Act,CROSS_REFERENCE
+Cap.12,Cap.386,3,Code of Organization and Civil Procedure,Companies Act,CROSS_REFERENCE
+Cap.12,Cap.387,1,Code of Organization and Civil Procedure,Arbitration Act,CROSS_REFERENCE
+Cap.12,Cap.451,3,Code of Organization and Civil Procedure,Mutual Recognition of Qualifications Act,CROSS_REFERENCE
+Cap.12,Cap.496,9,Code of Organization and Civil Procedure,Freedom of Information Act,CROSS_REFERENCE
+Cap.12,Cap.503,6,Code of Organization and Civil Procedure,Aircraft Registration Act,CROSS_REFERENCE
+Cap.12,Cap.504,2,Code of Organization and Civil Procedure,Environment and Development Planning ActAll subsid,CROSS_REFERENCE
+Cap.12,Cap.525,2,Code of Organization and Civil Procedure,Mental Health Act,CROSS_REFERENCE
+Cap.12,Cap.625,1,Code of Organization and Civil Procedure,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.12,Cap.9,9,Code of Organization and Civil Procedure,Criminal Code,CROSS_REFERENCE
+Cap.123,Cap.16,5,Income Tax Act,Civil Code,CROSS_REFERENCE
+Cap.123,Cap.217,2,Income Tax Act,Immigration Act,CROSS_REFERENCE
+Cap.123,Cap.281,1,Income Tax Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.123,Cap.318,1,Income Tax Act,Social Security Act,CROSS_REFERENCE
+Cap.123,Cap.325,1,Income Tax Act,Business Promotion Act,CROSS_REFERENCE
+Cap.123,Cap.330,4,Income Tax Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.123,Cap.331,13,Income Tax Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.123,Cap.354,1,Income Tax Act,General Elections Act,CROSS_REFERENCE
+Cap.123,Cap.356,1,Income Tax Act,Development Planning ActAll subsidiary legislation,CROSS_REFERENCE
+Cap.123,Cap.364,15,Income Tax Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.123,Cap.370,8,Income Tax Act,Investment Services Act,CROSS_REFERENCE
+Cap.123,Cap.371,5,Income Tax Act,Banking Act,CROSS_REFERENCE
+Cap.123,Cap.372,92,Income Tax Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.123,Cap.376,2,Income Tax Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.123,Cap.386,9,Income Tax Act,Companies Act,CROSS_REFERENCE
+Cap.123,Cap.403,6,Income Tax Act,Insurance Business Act,CROSS_REFERENCE
+Cap.123,Cap.406,2,Income Tax Act,Value Added Tax Act,CROSS_REFERENCE
+Cap.123,Cap.452,1,Income Tax Act,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.123,Cap.487,3,Income Tax Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.123,Cap.504,1,Income Tax Act,Environment and Development Planning ActAll subsid,CROSS_REFERENCE
+Cap.123,Cap.625,2,Income Tax Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.13,Cap.12,5,Commercial Code,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.13,Cap.16,6,Commercial Code,Civil Code,CROSS_REFERENCE
+Cap.13,Cap.234,1,Commercial Code,Merchant Shipping Act,CROSS_REFERENCE
+Cap.13,Cap.378,2,Commercial Code,Consumer Affairs Act,CROSS_REFERENCE
+Cap.13,Cap.386,2,Commercial Code,Companies Act,CROSS_REFERENCE
+Cap.13,Cap.452,2,Commercial Code,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.13,Cap.632,3,Commercial Code,Insolvency Practitioners Act,CROSS_REFERENCE
+Cap.13,Cap.9,2,Commercial Code,Criminal Code,CROSS_REFERENCE
+Cap.158,Cap.16,1,Housing (Decontrol) Ordinance,Civil Code,CROSS_REFERENCE
+Cap.158,Cap.69,18,Housing (Decontrol) Ordinance,Reletting of Urban Property (Regulation) Ordinance,CROSS_REFERENCE
+Cap.16,Cap.10,1,Civil Code,Code of Police Laws,CROSS_REFERENCE
+Cap.16,Cap.12,61,Civil Code,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.16,Cap.13,4,Civil Code,Commercial Code,CROSS_REFERENCE
+Cap.16,Cap.158,5,Civil Code,Housing (Decontrol) Ordinance,CROSS_REFERENCE
+Cap.16,Cap.234,3,Civil Code,Merchant Shipping Act,CROSS_REFERENCE
+Cap.16,Cap.258,2,Civil Code,Identity Card and other Identity Documents Act,CROSS_REFERENCE
+Cap.16,Cap.318,1,Civil Code,Social Security Act,CROSS_REFERENCE
+Cap.16,Cap.331,10,Civil Code,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.16,Cap.364,1,Civil Code,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.16,Cap.370,1,Civil Code,Investment Services Act,CROSS_REFERENCE
+Cap.16,Cap.371,1,Civil Code,Banking Act,CROSS_REFERENCE
+Cap.16,Cap.376,1,Civil Code,Financial Institutions Act,CROSS_REFERENCE
+Cap.16,Cap.377,1,Civil Code,Professional Secrecy Act,CROSS_REFERENCE
+Cap.16,Cap.378,2,Civil Code,Consumer Affairs Act,CROSS_REFERENCE
+Cap.16,Cap.386,13,Civil Code,Companies Act,CROSS_REFERENCE
+Cap.16,Cap.387,1,Civil Code,Arbitration Act,CROSS_REFERENCE
+Cap.16,Cap.413,3,Civil Code,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.16,Cap.445,2,Civil Code,Cultural Heritage Act,CROSS_REFERENCE
+Cap.16,Cap.484,1,Civil Code,Securitisation Act,CROSS_REFERENCE
+Cap.16,Cap.492,11,Civil Code,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.16,Cap.499,1,Civil Code,Authority for Transport in Malta Act,CROSS_REFERENCE
+Cap.16,Cap.503,3,Civil Code,Aircraft Registration Act,CROSS_REFERENCE
+Cap.16,Cap.525,1,Civil Code,Mental Health Act,CROSS_REFERENCE
+Cap.16,Cap.549,1,Civil Code,Environment Protection Act,CROSS_REFERENCE
+Cap.16,Cap.55,7,Civil Code,Notarial Profession and Notarial Archives Act,CROSS_REFERENCE
+Cap.16,Cap.552,1,Civil Code,Development Planning Act,CROSS_REFERENCE
+Cap.16,Cap.586,1,Civil Code,Data Protection Act,CROSS_REFERENCE
+Cap.16,Cap.602,3,Civil Code,Minor Protection (Alternative Care) Act,CROSS_REFERENCE
+Cap.16,Cap.604,9,Civil Code,Private Residential Leases Act,CROSS_REFERENCE
+Cap.16,Cap.625,1,Civil Code,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.16,Cap.69,6,Civil Code,Reletting of Urban Property (Regulation) Ordinance,CROSS_REFERENCE
+Cap.16,Cap.9,12,Civil Code,Criminal Code,CROSS_REFERENCE
+Cap.161,Cap.330,1,Local Loans (Registered Stock and Securities) Ordi,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.161,Cap.345,1,Local Loans (Registered Stock and Securities) Ordi,Financial Markets Act,CROSS_REFERENCE
+Cap.164,Cap.12,1,Police Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.164,Cap.16,3,Police Act,Civil Code,CROSS_REFERENCE
+Cap.164,Cap.318,3,Police Act,Social Security Act,CROSS_REFERENCE
+Cap.164,Cap.377,1,Police Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.164,Cap.386,1,Police Act,Companies Act,CROSS_REFERENCE
+Cap.164,Cap.460,1,Police Act,European Union Act,CROSS_REFERENCE
+Cap.164,Cap.527,1,Police Act,Protection of the Whistleblower Act,CROSS_REFERENCE
+Cap.164,Cap.549,1,Police Act,Environment Protection Act,CROSS_REFERENCE
+Cap.164,Cap.552,1,Police Act,Development Planning Act,CROSS_REFERENCE
+Cap.164,Cap.595,2,Police Act,Public Administration Act,CROSS_REFERENCE
+Cap.164,Cap.9,9,Police Act,Criminal Code,CROSS_REFERENCE
+Cap.204,Cap.12,1,Central Bank of Malta Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.204,Cap.345,1,Central Bank of Malta Act,Financial Markets Act,CROSS_REFERENCE
+Cap.204,Cap.371,2,Central Bank of Malta Act,Banking Act,CROSS_REFERENCE
+Cap.204,Cap.376,1,Central Bank of Malta Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.204,Cap.460,1,Central Bank of Malta Act,European Union Act,CROSS_REFERENCE
+Cap.217,Cap.12,5,Immigration Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.217,Cap.602,1,Immigration Act,Minor Protection (Alternative Care) Act,CROSS_REFERENCE
+Cap.217,Cap.625,1,Immigration Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.217,Cap.9,2,Immigration Act,Criminal Code,CROSS_REFERENCE
+Cap.234,Cap.12,6,Merchant Shipping Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.234,Cap.13,3,Merchant Shipping Act,Commercial Code,CROSS_REFERENCE
+Cap.234,Cap.16,6,Merchant Shipping Act,Civil Code,CROSS_REFERENCE
+Cap.234,Cap.318,1,Merchant Shipping Act,Social Security Act,CROSS_REFERENCE
+Cap.234,Cap.331,1,Merchant Shipping Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.234,Cap.386,6,Merchant Shipping Act,Companies Act,CROSS_REFERENCE
+Cap.234,Cap.499,2,Merchant Shipping Act,Authority for Transport in Malta Act,CROSS_REFERENCE
+Cap.234,Cap.9,4,Merchant Shipping Act,Criminal Code,CROSS_REFERENCE
+Cap.249,Cap.16,2,Interpretation Act,Civil Code,CROSS_REFERENCE
+Cap.249,Cap.460,2,Interpretation Act,European Union Act,CROSS_REFERENCE
+Cap.258,Cap.217,9,Identity Card and other Identity Documents Act,Immigration Act,CROSS_REFERENCE
+Cap.258,Cap.490,3,Identity Card and other Identity Documents Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.258,Cap.586,1,Identity Card and other Identity Documents Act,Data Protection Act,CROSS_REFERENCE
+Cap.258,Cap.9,1,Identity Card and other Identity Documents Act,Criminal Code,CROSS_REFERENCE
+Cap.276,Cap.446,1,Extradition Act,Probation Act,CROSS_REFERENCE
+Cap.276,Cap.9,4,Extradition Act,Criminal Code,CROSS_REFERENCE
+Cap.281,Cap.386,7,Accountancy Profession Act,Companies Act,CROSS_REFERENCE
+Cap.281,Cap.451,1,Accountancy Profession Act,Mutual Recognition of Qualifications Act,CROSS_REFERENCE
+Cap.281,Cap.490,1,Accountancy Profession Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.281,Cap.9,1,Accountancy Profession Act,Criminal Code,CROSS_REFERENCE
+Cap.291,Cap.101,4,Commissioners for Justice Act,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.291,Cap.12,2,Commissioners for Justice Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.291,Cap.249,1,Commissioners for Justice Act,Interpretation Act,CROSS_REFERENCE
+Cap.291,Cap.31,4,Commissioners for Justice Act,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.291,Cap.354,1,Commissioners for Justice Act,General Elections Act,CROSS_REFERENCE
+Cap.291,Cap.363,3,Commissioners for Justice Act,Local Government Act,CROSS_REFERENCE
+Cap.291,Cap.537,2,Commissioners for Justice Act,Drug Dependence (Treatment not Imprisonment) Act,CROSS_REFERENCE
+Cap.291,Cap.9,6,Commissioners for Justice Act,Criminal Code,CROSS_REFERENCE
+Cap.31,Cap.101,21,Medical and Kindred Professions Ordinance,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.31,Cap.446,4,Medical and Kindred Professions Ordinance,Probation Act,CROSS_REFERENCE
+Cap.31,Cap.9,5,Medical and Kindred Professions Ordinance,Criminal Code,CROSS_REFERENCE
+Cap.318,Cap.12,6,Social Security Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.318,Cap.123,3,Social Security Act,Income Tax Act,CROSS_REFERENCE
+Cap.318,Cap.16,10,Social Security Act,Civil Code,CROSS_REFERENCE
+Cap.318,Cap.249,1,Social Security Act,Interpretation Act,CROSS_REFERENCE
+Cap.318,Cap.372,1,Social Security Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.318,Cap.403,1,Social Security Act,Insurance Business Act,CROSS_REFERENCE
+Cap.318,Cap.442,1,Social Security Act,Co-operative Societies Act,CROSS_REFERENCE
+Cap.318,Cap.452,23,Social Security Act,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.318,Cap.514,2,Social Security Act,Retirement Pensions Act,CROSS_REFERENCE
+Cap.318,Cap.58,1,Social Security Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.318,Cap.594,13,Social Security Act,Employment and Training Services Act,CROSS_REFERENCE
+Cap.318,Cap.601,2,Social Security Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.318,Cap.602,1,Social Security Act,Minor Protection (Alternative Care) Act,CROSS_REFERENCE
+Cap.318,Cap.605,2,Social Security Act,Education Act,CROSS_REFERENCE
+Cap.318,Cap.614,2,Social Security Act,Cohabitation Act,CROSS_REFERENCE
+Cap.318,Cap.9,7,Social Security Act,Criminal Code,CROSS_REFERENCE
+Cap.325,Cap.123,15,Business Promotion Act,Income Tax Act,CROSS_REFERENCE
+Cap.325,Cap.158,1,Business Promotion Act,Housing (Decontrol) Ordinance,CROSS_REFERENCE
+Cap.325,Cap.16,1,Business Promotion Act,Civil Code,CROSS_REFERENCE
+Cap.325,Cap.204,2,Business Promotion Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.325,Cap.217,2,Business Promotion Act,Immigration Act,CROSS_REFERENCE
+Cap.325,Cap.364,2,Business Promotion Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.325,Cap.386,8,Business Promotion Act,Companies Act,CROSS_REFERENCE
+Cap.325,Cap.490,1,Business Promotion Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.325,Cap.625,1,Business Promotion Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.327,Cap.12,1,Education Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.327,Cap.451,3,Education Act,Mutual Recognition of Qualifications Act,CROSS_REFERENCE
+Cap.327,Cap.490,2,Education Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.327,Cap.58,5,Education Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.327,Cap.9,1,Education Act,Criminal Code,CROSS_REFERENCE
+Cap.327,Cap.93,5,Education Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.330,Cap.12,3,Malta Financial Services Authority Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.330,Cap.403,2,Malta Financial Services Authority Act,Insurance Business Act,CROSS_REFERENCE
+Cap.330,Cap.460,1,Malta Financial Services Authority Act,European Union Act,CROSS_REFERENCE
+Cap.330,Cap.601,1,Malta Financial Services Authority Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.330,Cap.9,1,Malta Financial Services Authority Act,Criminal Code,CROSS_REFERENCE
+Cap.331,Cap.12,6,Trusts and Trustees Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.331,Cap.16,7,Trusts and Trustees Act,Civil Code,CROSS_REFERENCE
+Cap.331,Cap.330,5,Trusts and Trustees Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.331,Cap.345,3,Trusts and Trustees Act,Financial Markets Act,CROSS_REFERENCE
+Cap.331,Cap.370,4,Trusts and Trustees Act,Investment Services Act,CROSS_REFERENCE
+Cap.331,Cap.371,1,Trusts and Trustees Act,Banking Act,CROSS_REFERENCE
+Cap.331,Cap.377,1,Trusts and Trustees Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.331,Cap.386,1,Trusts and Trustees Act,Companies Act,CROSS_REFERENCE
+Cap.331,Cap.403,1,Trusts and Trustees Act,Insurance Business Act,CROSS_REFERENCE
+Cap.331,Cap.487,1,Trusts and Trustees Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.331,Cap.514,4,Trusts and Trustees Act,Retirement Pensions Act,CROSS_REFERENCE
+Cap.331,Cap.529,3,Trusts and Trustees Act,Company Service Providers Act,CROSS_REFERENCE
+Cap.331,Cap.55,3,Trusts and Trustees Act,Notarial Profession and Notarial Archives Act,CROSS_REFERENCE
+Cap.331,Cap.9,1,Trusts and Trustees Act,Criminal Code,CROSS_REFERENCE
+Cap.345,Cap.12,2,Financial Markets Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.345,Cap.204,2,Financial Markets Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.345,Cap.281,1,Financial Markets Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.345,Cap.330,6,Financial Markets Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.345,Cap.364,1,Financial Markets Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.345,Cap.370,4,Financial Markets Act,Investment Services Act,CROSS_REFERENCE
+Cap.345,Cap.371,3,Financial Markets Act,Banking Act,CROSS_REFERENCE
+Cap.345,Cap.373,1,Financial Markets Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.345,Cap.379,1,Financial Markets Act,Competition Act,CROSS_REFERENCE
+Cap.345,Cap.386,1,Financial Markets Act,Companies Act,CROSS_REFERENCE
+Cap.350,Cap.12,1,Broadcasting Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.350,Cap.123,1,Broadcasting Act,Income Tax Act,CROSS_REFERENCE
+Cap.350,Cap.363,2,Broadcasting Act,Local Government Act,CROSS_REFERENCE
+Cap.350,Cap.364,1,Broadcasting Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.350,Cap.399,4,Broadcasting Act,Electronic Communications (Regulation) Act,CROSS_REFERENCE
+Cap.350,Cap.9,2,Broadcasting Act,Criminal Code,CROSS_REFERENCE
+Cap.353,Cap.164,1,Civil Aviation (Security) Act,Police Act,CROSS_REFERENCE
+Cap.353,Cap.217,2,Civil Aviation (Security) Act,Immigration Act,CROSS_REFERENCE
+Cap.353,Cap.276,12,Civil Aviation (Security) Act,Extradition Act,CROSS_REFERENCE
+Cap.353,Cap.9,16,Civil Aviation (Security) Act,Criminal Code,CROSS_REFERENCE
+Cap.354,Cap.12,2,General Elections Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.354,Cap.249,1,General Elections Act,Interpretation Act,CROSS_REFERENCE
+Cap.354,Cap.258,1,General Elections Act,Identity Card and other Identity Documents Act,CROSS_REFERENCE
+Cap.354,Cap.363,1,General Elections Act,Local Government Act,CROSS_REFERENCE
+Cap.354,Cap.446,2,General Elections Act,Probation Act,CROSS_REFERENCE
+Cap.354,Cap.9,2,General Elections Act,Criminal Code,CROSS_REFERENCE
+Cap.356,Cap.12,3,Development Planning ActAll subsidiary legislation,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.356,Cap.363,1,Development Planning ActAll subsidiary legislation,Local Government Act,CROSS_REFERENCE
+Cap.356,Cap.446,1,Development Planning ActAll subsidiary legislation,Probation Act,CROSS_REFERENCE
+Cap.356,Cap.9,1,Development Planning ActAll subsidiary legislation,Criminal Code,CROSS_REFERENCE
+Cap.356,L.N.512of2010,60,Development Planning ActAll subsidiary legislation,L.N.512of2010,CROSS_REFERENCE
+Cap.363,Cap.258,2,Local Government Act,Identity Card and other Identity Documents Act,CROSS_REFERENCE
+Cap.363,Cap.281,3,Local Government Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.363,Cap.291,4,Local Government Act,Commissioners for Justice Act,CROSS_REFERENCE
+Cap.363,Cap.318,2,Local Government Act,Social Security Act,CROSS_REFERENCE
+Cap.363,Cap.350,1,Local Government Act,Broadcasting Act,CROSS_REFERENCE
+Cap.363,Cap.354,4,Local Government Act,General Elections Act,CROSS_REFERENCE
+Cap.363,Cap.446,2,Local Government Act,Probation Act,CROSS_REFERENCE
+Cap.363,Cap.490,1,Local Government Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.363,Cap.496,5,Local Government Act,Freedom of Information Act,CROSS_REFERENCE
+Cap.363,Cap.552,2,Local Government Act,Development Planning Act,CROSS_REFERENCE
+Cap.363,Cap.58,1,Local Government Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.363,Cap.586,2,Local Government Act,Data Protection Act,CROSS_REFERENCE
+Cap.363,Cap.595,1,Local Government Act,Public Administration Act,CROSS_REFERENCE
+Cap.363,Cap.9,2,Local Government Act,Criminal Code,CROSS_REFERENCE
+Cap.363,Cap.93,1,Local Government Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.364,Cap.12,2,Duty on Documents and Transfers Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.364,Cap.123,14,Duty on Documents and Transfers Act,Income Tax Act,CROSS_REFERENCE
+Cap.364,Cap.16,2,Duty on Documents and Transfers Act,Civil Code,CROSS_REFERENCE
+Cap.364,Cap.331,1,Duty on Documents and Transfers Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.364,Cap.370,2,Duty on Documents and Transfers Act,Investment Services Act,CROSS_REFERENCE
+Cap.364,Cap.386,1,Duty on Documents and Transfers Act,Companies Act,CROSS_REFERENCE
+Cap.364,Cap.403,2,Duty on Documents and Transfers Act,Insurance Business Act,CROSS_REFERENCE
+Cap.364,Cap.413,1,Duty on Documents and Transfers Act,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.364,Cap.490,2,Duty on Documents and Transfers Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.364,Cap.55,4,Duty on Documents and Transfers Act,Notarial Profession and Notarial Archives Act,CROSS_REFERENCE
+Cap.364,Cap.625,1,Duty on Documents and Transfers Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.364,Cap.9,5,Duty on Documents and Transfers Act,Criminal Code,CROSS_REFERENCE
+Cap.37,Cap.12,1,Customs Ordinance,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.37,Cap.406,2,Customs Ordinance,Value Added Tax Act,CROSS_REFERENCE
+Cap.37,Cap.446,1,Customs Ordinance,Probation Act,CROSS_REFERENCE
+Cap.37,Cap.625,1,Customs Ordinance,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.37,Cap.9,9,Customs Ordinance,Criminal Code,CROSS_REFERENCE
+Cap.370,Cap.16,1,Investment Services Act,Civil Code,CROSS_REFERENCE
+Cap.370,Cap.204,1,Investment Services Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.370,Cap.281,1,Investment Services Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.370,Cap.318,1,Investment Services Act,Social Security Act,CROSS_REFERENCE
+Cap.370,Cap.330,5,Investment Services Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.370,Cap.345,2,Investment Services Act,Financial Markets Act,CROSS_REFERENCE
+Cap.370,Cap.371,1,Investment Services Act,Banking Act,CROSS_REFERENCE
+Cap.370,Cap.386,5,Investment Services Act,Companies Act,CROSS_REFERENCE
+Cap.370,Cap.9,1,Investment Services Act,Criminal Code,CROSS_REFERENCE
+Cap.371,Cap.12,1,Banking Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.371,Cap.13,1,Banking Act,Commercial Code,CROSS_REFERENCE
+Cap.371,Cap.204,1,Banking Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.371,Cap.330,7,Banking Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.371,Cap.345,1,Banking Act,Financial Markets Act,CROSS_REFERENCE
+Cap.371,Cap.373,1,Banking Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.371,Cap.376,1,Banking Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.371,Cap.378,1,Banking Act,Consumer Affairs Act,CROSS_REFERENCE
+Cap.371,Cap.386,4,Banking Act,Companies Act,CROSS_REFERENCE
+Cap.371,Cap.9,1,Banking Act,Criminal Code,CROSS_REFERENCE
+Cap.372,Cap.12,2,Income Tax Management Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.372,Cap.123,75,Income Tax Management Act,Income Tax Act,CROSS_REFERENCE
+Cap.372,Cap.281,4,Income Tax Management Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.372,Cap.318,2,Income Tax Management Act,Social Security Act,CROSS_REFERENCE
+Cap.372,Cap.325,1,Income Tax Management Act,Business Promotion Act,CROSS_REFERENCE
+Cap.372,Cap.330,1,Income Tax Management Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.372,Cap.331,3,Income Tax Management Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.372,Cap.345,1,Income Tax Management Act,Financial Markets Act,CROSS_REFERENCE
+Cap.372,Cap.364,4,Income Tax Management Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.372,Cap.370,4,Income Tax Management Act,Investment Services Act,CROSS_REFERENCE
+Cap.372,Cap.371,1,Income Tax Management Act,Banking Act,CROSS_REFERENCE
+Cap.372,Cap.377,2,Income Tax Management Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.372,Cap.386,9,Income Tax Management Act,Companies Act,CROSS_REFERENCE
+Cap.372,Cap.403,1,Income Tax Management Act,Insurance Business Act,CROSS_REFERENCE
+Cap.372,Cap.406,1,Income Tax Management Act,Value Added Tax Act,CROSS_REFERENCE
+Cap.372,Cap.446,1,Income Tax Management Act,Probation Act,CROSS_REFERENCE
+Cap.372,Cap.487,1,Income Tax Management Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.372,Cap.490,3,Income Tax Management Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.372,Cap.55,1,Income Tax Management Act,Notarial Profession and Notarial Archives Act,CROSS_REFERENCE
+Cap.372,Cap.586,2,Income Tax Management Act,Data Protection Act,CROSS_REFERENCE
+Cap.372,Cap.9,1,Income Tax Management Act,Criminal Code,CROSS_REFERENCE
+Cap.373,Cap.101,7,Prevention of Money Laundering Act,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.373,Cap.12,7,Prevention of Money Laundering Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.373,Cap.31,2,Prevention of Money Laundering Act,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.373,Cap.377,1,Prevention of Money Laundering Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.373,Cap.9,10,Prevention of Money Laundering Act,Criminal Code,CROSS_REFERENCE
+Cap.376,Cap.13,1,Financial Institutions Act,Commercial Code,CROSS_REFERENCE
+Cap.376,Cap.16,1,Financial Institutions Act,Civil Code,CROSS_REFERENCE
+Cap.376,Cap.204,5,Financial Institutions Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.376,Cap.234,1,Financial Institutions Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.376,Cap.330,6,Financial Institutions Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.376,Cap.345,1,Financial Institutions Act,Financial Markets Act,CROSS_REFERENCE
+Cap.376,Cap.370,2,Financial Institutions Act,Investment Services Act,CROSS_REFERENCE
+Cap.376,Cap.371,4,Financial Institutions Act,Banking Act,CROSS_REFERENCE
+Cap.376,Cap.373,3,Financial Institutions Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.376,Cap.386,7,Financial Institutions Act,Companies Act,CROSS_REFERENCE
+Cap.376,Cap.503,1,Financial Institutions Act,Aircraft Registration Act,CROSS_REFERENCE
+Cap.377,Cap.12,4,Professional Secrecy Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.377,Cap.31,1,Professional Secrecy Act,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.377,Cap.345,1,Professional Secrecy Act,Financial Markets Act,CROSS_REFERENCE
+Cap.377,Cap.370,1,Professional Secrecy Act,Investment Services Act,CROSS_REFERENCE
+Cap.377,Cap.9,17,Professional Secrecy Act,Criminal Code,CROSS_REFERENCE
+Cap.378,Cap.12,10,Consumer Affairs Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.378,Cap.13,3,Consumer Affairs Act,Commercial Code,CROSS_REFERENCE
+Cap.378,Cap.16,4,Consumer Affairs Act,Civil Code,CROSS_REFERENCE
+Cap.378,Cap.217,1,Consumer Affairs Act,Immigration Act,CROSS_REFERENCE
+Cap.378,Cap.330,1,Consumer Affairs Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.378,Cap.37,1,Consumer Affairs Act,Customs Ordinance,CROSS_REFERENCE
+Cap.378,Cap.418,1,Consumer Affairs Act,Malta Communications Authority Act,CROSS_REFERENCE
+Cap.378,Cap.451,1,Consumer Affairs Act,Mutual Recognition of Qualifications Act,CROSS_REFERENCE
+Cap.378,Cap.510,5,Consumer Affairs Act,Malta Competition and Consumer Affairs Authority A,CROSS_REFERENCE
+Cap.378,Cap.586,1,Consumer Affairs Act,Data Protection Act,CROSS_REFERENCE
+Cap.378,Cap.9,2,Consumer Affairs Act,Criminal Code,CROSS_REFERENCE
+Cap.379,Cap.12,12,Competition Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.379,Cap.16,1,Competition Act,Civil Code,CROSS_REFERENCE
+Cap.379,Cap.377,1,Competition Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.379,Cap.387,1,Competition Act,Arbitration Act,CROSS_REFERENCE
+Cap.379,Cap.510,6,Competition Act,Malta Competition and Consumer Affairs Authority A,CROSS_REFERENCE
+Cap.379,Cap.586,1,Competition Act,Data Protection Act,CROSS_REFERENCE
+Cap.379,Cap.9,2,Competition Act,Criminal Code,CROSS_REFERENCE
+Cap.382,Cap.12,5,Excise Duty Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.382,Cap.37,4,Excise Duty Act,Customs Ordinance,CROSS_REFERENCE
+Cap.382,Cap.399,1,Excise Duty Act,Electronic Communications (Regulation) Act,CROSS_REFERENCE
+Cap.382,Cap.625,1,Excise Duty Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.382,Cap.9,4,Excise Duty Act,Criminal Code,CROSS_REFERENCE
+Cap.386,Cap.12,11,Companies Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.386,Cap.123,6,Companies Act,Income Tax Act,CROSS_REFERENCE
+Cap.386,Cap.13,7,Companies Act,Commercial Code,CROSS_REFERENCE
+Cap.386,Cap.16,10,Companies Act,Civil Code,CROSS_REFERENCE
+Cap.386,Cap.234,1,Companies Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.386,Cap.281,7,Companies Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.386,Cap.330,2,Companies Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.386,Cap.331,1,Companies Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.386,Cap.345,11,Companies Act,Financial Markets Act,CROSS_REFERENCE
+Cap.386,Cap.364,9,Companies Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.386,Cap.370,10,Companies Act,Investment Services Act,CROSS_REFERENCE
+Cap.386,Cap.371,3,Companies Act,Banking Act,CROSS_REFERENCE
+Cap.386,Cap.373,1,Companies Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.386,Cap.376,3,Companies Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.386,Cap.377,1,Companies Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.386,Cap.403,8,Companies Act,Insurance Business Act,CROSS_REFERENCE
+Cap.386,Cap.487,1,Companies Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.386,Cap.514,2,Companies Act,Retirement Pensions Act,CROSS_REFERENCE
+Cap.386,Cap.529,5,Companies Act,Company Service Providers Act,CROSS_REFERENCE
+Cap.387,Cap.12,17,Arbitration Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.387,Cap.123,2,Arbitration Act,Income Tax Act,CROSS_REFERENCE
+Cap.387,Cap.249,1,Arbitration Act,Interpretation Act,CROSS_REFERENCE
+Cap.387,Cap.281,1,Arbitration Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.387,Cap.331,1,Arbitration Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.387,Cap.364,1,Arbitration Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.387,Cap.372,2,Arbitration Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.387,Cap.386,2,Arbitration Act,Companies Act,CROSS_REFERENCE
+Cap.395,Cap.12,1,Customs and Excise Tax Act [R],Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.395,Cap.123,1,Customs and Excise Tax Act [R],Income Tax Act,CROSS_REFERENCE
+Cap.395,Cap.16,1,Customs and Excise Tax Act [R],Civil Code,CROSS_REFERENCE
+Cap.395,Cap.217,1,Customs and Excise Tax Act [R],Immigration Act,CROSS_REFERENCE
+Cap.395,Cap.234,1,Customs and Excise Tax Act [R],Merchant Shipping Act,CROSS_REFERENCE
+Cap.395,Cap.31,1,Customs and Excise Tax Act [R],Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.395,Cap.327,2,Customs and Excise Tax Act [R],Education Act,CROSS_REFERENCE
+Cap.395,Cap.345,1,Customs and Excise Tax Act [R],Financial Markets Act,CROSS_REFERENCE
+Cap.395,Cap.363,1,Customs and Excise Tax Act [R],Local Government Act,CROSS_REFERENCE
+Cap.395,Cap.37,5,Customs and Excise Tax Act [R],Customs Ordinance,CROSS_REFERENCE
+Cap.395,Cap.370,2,Customs and Excise Tax Act [R],Investment Services Act,CROSS_REFERENCE
+Cap.395,Cap.371,1,Customs and Excise Tax Act [R],Banking Act,CROSS_REFERENCE
+Cap.395,Cap.372,1,Customs and Excise Tax Act [R],Income Tax Management Act,CROSS_REFERENCE
+Cap.395,Cap.382,2,Customs and Excise Tax Act [R],Excise Duty Act,CROSS_REFERENCE
+Cap.395,Cap.446,1,Customs and Excise Tax Act [R],Probation Act,CROSS_REFERENCE
+Cap.395,Cap.9,3,Customs and Excise Tax Act [R],Criminal Code,CROSS_REFERENCE
+Cap.399,Cap.413,1,Electronic Communications (Regulation) Act,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.399,Cap.418,5,Electronic Communications (Regulation) Act,Malta Communications Authority Act,CROSS_REFERENCE
+Cap.399,Cap.625,2,Electronic Communications (Regulation) Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.399,Cap.9,1,Electronic Communications (Regulation) Act,Criminal Code,CROSS_REFERENCE
+Cap.403,Cap.12,1,Insurance Business Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.403,Cap.204,1,Insurance Business Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.403,Cap.249,1,Insurance Business Act,Interpretation Act,CROSS_REFERENCE
+Cap.403,Cap.330,10,Insurance Business Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.403,Cap.345,1,Insurance Business Act,Financial Markets Act,CROSS_REFERENCE
+Cap.403,Cap.373,2,Insurance Business Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.403,Cap.377,1,Insurance Business Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.403,Cap.386,15,Insurance Business Act,Companies Act,CROSS_REFERENCE
+Cap.403,Cap.487,9,Insurance Business Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.403,Cap.625,2,Insurance Business Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.403,Cap.9,2,Insurance Business Act,Criminal Code,CROSS_REFERENCE
+Cap.406,Cap.12,8,Value Added Tax Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.406,Cap.16,2,Value Added Tax Act,Civil Code,CROSS_REFERENCE
+Cap.406,Cap.345,1,Value Added Tax Act,Financial Markets Act,CROSS_REFERENCE
+Cap.406,Cap.363,1,Value Added Tax Act,Local Government Act,CROSS_REFERENCE
+Cap.406,Cap.37,2,Value Added Tax Act,Customs Ordinance,CROSS_REFERENCE
+Cap.406,Cap.370,2,Value Added Tax Act,Investment Services Act,CROSS_REFERENCE
+Cap.406,Cap.371,1,Value Added Tax Act,Banking Act,CROSS_REFERENCE
+Cap.406,Cap.372,1,Value Added Tax Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.406,Cap.395,5,Value Added Tax Act,Customs and Excise Tax Act [R],CROSS_REFERENCE
+Cap.406,Cap.403,2,Value Added Tax Act,Insurance Business Act,CROSS_REFERENCE
+Cap.406,Cap.446,1,Value Added Tax Act,Probation Act,CROSS_REFERENCE
+Cap.406,Cap.487,1,Value Added Tax Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.406,Cap.490,3,Value Added Tax Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.406,Cap.625,2,Value Added Tax Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.406,Cap.9,11,Value Added Tax Act,Criminal Code,CROSS_REFERENCE
+Cap.413,Cap.490,3,Equal Opportunities (Persons with Disability) Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.413,Cap.492,1,Equal Opportunities (Persons with Disability) Act,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.413,Cap.525,1,Equal Opportunities (Persons with Disability) Act,Mental Health Act,CROSS_REFERENCE
+Cap.413,Cap.58,3,Equal Opportunities (Persons with Disability) Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.413,Cap.601,1,Equal Opportunities (Persons with Disability) Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.413,Cap.93,4,Equal Opportunities (Persons with Disability) Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.417,Cap.12,12,Patents and Designs Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.417,Cap.460,1,Patents and Designs Act,European Union Act,CROSS_REFERENCE
+Cap.417,Cap.625,2,Patents and Designs Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.418,Cap.12,2,Malta Communications Authority Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.418,Cap.399,9,Malta Communications Authority Act,Electronic Communications (Regulation) Act,CROSS_REFERENCE
+Cap.418,Cap.413,1,Malta Communications Authority Act,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.418,Cap.490,3,Malta Communications Authority Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.418,Cap.58,3,Malta Communications Authority Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.418,Cap.601,1,Malta Communications Authority Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.418,Cap.9,1,Malta Communications Authority Act,Criminal Code,CROSS_REFERENCE
+Cap.418,Cap.93,3,Malta Communications Authority Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.442,Cap.12,2,Co-operative Societies Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.442,Cap.123,1,Co-operative Societies Act,Income Tax Act,CROSS_REFERENCE
+Cap.442,Cap.249,1,Co-operative Societies Act,Interpretation Act,CROSS_REFERENCE
+Cap.442,Cap.281,2,Co-operative Societies Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.442,Cap.364,1,Co-operative Societies Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.442,Cap.379,1,Co-operative Societies Act,Competition Act,CROSS_REFERENCE
+Cap.442,Cap.386,2,Co-operative Societies Act,Companies Act,CROSS_REFERENCE
+Cap.442,Cap.387,1,Co-operative Societies Act,Arbitration Act,CROSS_REFERENCE
+Cap.442,Cap.490,2,Co-operative Societies Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.445,Cap.12,2,Cultural Heritage Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.445,Cap.363,1,Cultural Heritage Act,Local Government Act,CROSS_REFERENCE
+Cap.445,Cap.451,2,Cultural Heritage Act,Mutual Recognition of Qualifications Act,CROSS_REFERENCE
+Cap.445,Cap.552,5,Cultural Heritage Act,Development Planning Act,CROSS_REFERENCE
+Cap.445,Cap.573,1,Cultural Heritage Act,Government Lands Act,CROSS_REFERENCE
+Cap.445,Cap.58,2,Cultural Heritage Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.445,Cap.93,2,Cultural Heritage Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.446,Cap.12,1,Probation Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.446,Cap.9,17,Probation Act,Criminal Code,CROSS_REFERENCE
+Cap.451,Cap.12,2,Mutual Recognition of Qualifications Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.451,Cap.460,1,Mutual Recognition of Qualifications Act,European Union Act,CROSS_REFERENCE
+Cap.452,Cap.12,13,Employment and Industrial Relations Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.452,Cap.16,1,Employment and Industrial Relations Act,Civil Code,CROSS_REFERENCE
+Cap.452,Cap.217,1,Employment and Industrial Relations Act,Immigration Act,CROSS_REFERENCE
+Cap.452,Cap.234,1,Employment and Industrial Relations Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.452,Cap.249,1,Employment and Industrial Relations Act,Interpretation Act,CROSS_REFERENCE
+Cap.452,Cap.318,3,Employment and Industrial Relations Act,Social Security Act,CROSS_REFERENCE
+Cap.452,Cap.386,2,Employment and Industrial Relations Act,Companies Act,CROSS_REFERENCE
+Cap.452,Cap.413,1,Employment and Industrial Relations Act,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.452,Cap.499,1,Employment and Industrial Relations Act,Authority for Transport in Malta Act,CROSS_REFERENCE
+Cap.452,Cap.594,1,Employment and Industrial Relations Act,Employment and Training Services Act,CROSS_REFERENCE
+Cap.452,Cap.605,1,Employment and Industrial Relations Act,Education Act,CROSS_REFERENCE
+Cap.452,Cap.625,2,Employment and Industrial Relations Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.452,Cap.9,4,Employment and Industrial Relations Act,Criminal Code,CROSS_REFERENCE
+Cap.455,Cap.12,8,Sports Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.455,Cap.16,3,Sports Act,Civil Code,CROSS_REFERENCE
+Cap.455,Cap.387,2,Sports Act,Arbitration Act,CROSS_REFERENCE
+Cap.455,Cap.446,1,Sports Act,Probation Act,CROSS_REFERENCE
+Cap.455,Cap.573,3,Sports Act,Government Lands Act,CROSS_REFERENCE
+Cap.455,Cap.58,3,Sports Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.455,Cap.605,1,Sports Act,Education Act,CROSS_REFERENCE
+Cap.455,Cap.626,1,Sports Act,Sports Governance and Integrity Act,CROSS_REFERENCE
+Cap.455,Cap.9,2,Sports Act,Criminal Code,CROSS_REFERENCE
+Cap.455,Cap.93,4,Sports Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.460,Cap.249,1,European Union Act,Interpretation Act,CROSS_REFERENCE
+Cap.484,Cap.123,2,Securitisation Act,Income Tax Act,CROSS_REFERENCE
+Cap.484,Cap.16,14,Securitisation Act,Civil Code,CROSS_REFERENCE
+Cap.484,Cap.249,1,Securitisation Act,Interpretation Act,CROSS_REFERENCE
+Cap.484,Cap.330,2,Securitisation Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.484,Cap.345,2,Securitisation Act,Financial Markets Act,CROSS_REFERENCE
+Cap.484,Cap.370,2,Securitisation Act,Investment Services Act,CROSS_REFERENCE
+Cap.484,Cap.371,1,Securitisation Act,Banking Act,CROSS_REFERENCE
+Cap.484,Cap.372,2,Securitisation Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.484,Cap.376,1,Securitisation Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.484,Cap.386,5,Securitisation Act,Companies Act,CROSS_REFERENCE
+Cap.484,Cap.403,2,Securitisation Act,Insurance Business Act,CROSS_REFERENCE
+Cap.484,Cap.586,3,Securitisation Act,Data Protection Act,CROSS_REFERENCE
+Cap.487,Cap.249,1,Insurance Distribution Act,Interpretation Act,CROSS_REFERENCE
+Cap.487,Cap.330,2,Insurance Distribution Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.487,Cap.345,1,Insurance Distribution Act,Financial Markets Act,CROSS_REFERENCE
+Cap.487,Cap.373,1,Insurance Distribution Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.487,Cap.386,6,Insurance Distribution Act,Companies Act,CROSS_REFERENCE
+Cap.487,Cap.403,32,Insurance Distribution Act,Insurance Business Act,CROSS_REFERENCE
+Cap.490,Cap.12,11,Administrative Justice Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.490,Cap.364,1,Administrative Justice Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.490,Cap.37,1,Administrative Justice Act,Customs Ordinance,CROSS_REFERENCE
+Cap.490,Cap.372,1,Administrative Justice Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.490,Cap.382,1,Administrative Justice Act,Excise Duty Act,CROSS_REFERENCE
+Cap.490,Cap.418,1,Administrative Justice Act,Malta Communications Authority Act,CROSS_REFERENCE
+Cap.490,Cap.442,1,Administrative Justice Act,Co-operative Societies Act,CROSS_REFERENCE
+Cap.490,Cap.545,1,Administrative Justice Act,Regulator for Energy and Water Services Act,CROSS_REFERENCE
+Cap.490,Cap.563,1,Administrative Justice Act,Lands Authority Act,CROSS_REFERENCE
+Cap.490,Cap.573,1,Administrative Justice Act,Government Lands Act,CROSS_REFERENCE
+Cap.490,Cap.583,1,Administrative Justice Act,Gaming Act,CROSS_REFERENCE
+Cap.492,Cap.16,16,Voluntary Organisations Act,Civil Code,CROSS_REFERENCE
+Cap.492,Cap.331,2,Voluntary Organisations Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.492,Cap.373,4,Voluntary Organisations Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.492,Cap.377,2,Voluntary Organisations Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.492,Cap.386,1,Voluntary Organisations Act,Companies Act,CROSS_REFERENCE
+Cap.492,Cap.387,2,Voluntary Organisations Act,Arbitration Act,CROSS_REFERENCE
+Cap.492,Cap.490,4,Voluntary Organisations Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.492,Cap.58,1,Voluntary Organisations Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.492,Cap.586,2,Voluntary Organisations Act,Data Protection Act,CROSS_REFERENCE
+Cap.492,Cap.595,2,Voluntary Organisations Act,Public Administration Act,CROSS_REFERENCE
+Cap.492,Cap.601,1,Voluntary Organisations Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.492,Cap.9,4,Voluntary Organisations Act,Criminal Code,CROSS_REFERENCE
+Cap.492,Cap.93,1,Voluntary Organisations Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.496,Cap.249,1,Freedom of Information Act,Interpretation Act,CROSS_REFERENCE
+Cap.496,Cap.363,2,Freedom of Information Act,Local Government Act,CROSS_REFERENCE
+Cap.496,Cap.460,1,Freedom of Information Act,European Union Act,CROSS_REFERENCE
+Cap.496,Cap.549,1,Freedom of Information Act,Environment Protection Act,CROSS_REFERENCE
+Cap.496,Cap.586,13,Freedom of Information Act,Data Protection Act,CROSS_REFERENCE
+Cap.496,Cap.595,3,Freedom of Information Act,Public Administration Act,CROSS_REFERENCE
+Cap.499,Cap.234,3,Authority for Transport in Malta Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.499,Cap.363,1,Authority for Transport in Malta Act,Local Government Act,CROSS_REFERENCE
+Cap.499,Cap.377,1,Authority for Transport in Malta Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.499,Cap.386,1,Authority for Transport in Malta Act,Companies Act,CROSS_REFERENCE
+Cap.499,Cap.460,1,Authority for Transport in Malta Act,European Union Act,CROSS_REFERENCE
+Cap.499,Cap.490,3,Authority for Transport in Malta Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.499,Cap.549,1,Authority for Transport in Malta Act,Environment Protection Act,CROSS_REFERENCE
+Cap.499,Cap.552,1,Authority for Transport in Malta Act,Development Planning Act,CROSS_REFERENCE
+Cap.499,Cap.58,3,Authority for Transport in Malta Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.499,Cap.9,1,Authority for Transport in Malta Act,Criminal Code,CROSS_REFERENCE
+Cap.499,Cap.93,4,Authority for Transport in Malta Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.503,Cap.12,6,Aircraft Registration Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.503,Cap.13,1,Aircraft Registration Act,Commercial Code,CROSS_REFERENCE
+Cap.503,Cap.16,11,Aircraft Registration Act,Civil Code,CROSS_REFERENCE
+Cap.503,Cap.217,1,Aircraft Registration Act,Immigration Act,CROSS_REFERENCE
+Cap.503,Cap.234,2,Aircraft Registration Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.503,Cap.371,2,Aircraft Registration Act,Banking Act,CROSS_REFERENCE
+Cap.503,Cap.386,4,Aircraft Registration Act,Companies Act,CROSS_REFERENCE
+Cap.503,Cap.490,1,Aircraft Registration Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.503,Cap.499,1,Aircraft Registration Act,Authority for Transport in Malta Act,CROSS_REFERENCE
+Cap.504,Cap.10,1,Environment and Development Planning ActAll subsid,Code of Police Laws,CROSS_REFERENCE
+Cap.504,Cap.12,3,Environment and Development Planning ActAll subsid,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.504,Cap.356,6,Environment and Development Planning ActAll subsid,Development Planning ActAll subsidiary legislation,CROSS_REFERENCE
+Cap.504,Cap.363,1,Environment and Development Planning ActAll subsid,Local Government Act,CROSS_REFERENCE
+Cap.504,Cap.446,1,Environment and Development Planning ActAll subsid,Probation Act,CROSS_REFERENCE
+Cap.504,Cap.492,3,Environment and Development Planning ActAll subsid,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.504,Cap.9,5,Environment and Development Planning ActAll subsid,Criminal Code,CROSS_REFERENCE
+Cap.510,Cap.13,1,Malta Competition and Consumer Affairs Authority A,Commercial Code,CROSS_REFERENCE
+Cap.510,Cap.378,32,Malta Competition and Consumer Affairs Authority A,Consumer Affairs Act,CROSS_REFERENCE
+Cap.510,Cap.379,28,Malta Competition and Consumer Affairs Authority A,Competition Act,CROSS_REFERENCE
+Cap.510,Cap.58,2,Malta Competition and Consumer Affairs Authority A,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.510,Cap.595,4,Malta Competition and Consumer Affairs Authority A,Public Administration Act,CROSS_REFERENCE
+Cap.510,Cap.601,1,Malta Competition and Consumer Affairs Authority A,Public Finance Management Act,CROSS_REFERENCE
+Cap.510,Cap.9,1,Malta Competition and Consumer Affairs Authority A,Criminal Code,CROSS_REFERENCE
+Cap.510,Cap.93,4,Malta Competition and Consumer Affairs Authority A,Pensions Ordinance,CROSS_REFERENCE
+Cap.514,Cap.12,1,Retirement Pensions Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.514,Cap.123,1,Retirement Pensions Act,Income Tax Act,CROSS_REFERENCE
+Cap.514,Cap.16,1,Retirement Pensions Act,Civil Code,CROSS_REFERENCE
+Cap.514,Cap.204,1,Retirement Pensions Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.514,Cap.330,3,Retirement Pensions Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.514,Cap.370,2,Retirement Pensions Act,Investment Services Act,CROSS_REFERENCE
+Cap.514,Cap.372,1,Retirement Pensions Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.514,Cap.386,5,Retirement Pensions Act,Companies Act,CROSS_REFERENCE
+Cap.514,Cap.403,1,Retirement Pensions Act,Insurance Business Act,CROSS_REFERENCE
+Cap.514,Cap.9,1,Retirement Pensions Act,Criminal Code,CROSS_REFERENCE
+Cap.518,Cap.101,1,Protection of Minors (Registration) Act,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.518,Cap.16,1,Protection of Minors (Registration) Act,Civil Code,CROSS_REFERENCE
+Cap.518,Cap.31,1,Protection of Minors (Registration) Act,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.518,Cap.446,5,Protection of Minors (Registration) Act,Probation Act,CROSS_REFERENCE
+Cap.518,Cap.525,2,Protection of Minors (Registration) Act,Mental Health Act,CROSS_REFERENCE
+Cap.518,Cap.586,1,Protection of Minors (Registration) Act,Data Protection Act,CROSS_REFERENCE
+Cap.518,Cap.9,19,Protection of Minors (Registration) Act,Criminal Code,CROSS_REFERENCE
+Cap.525,Cap.12,3,Mental Health Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.525,Cap.16,3,Mental Health Act,Civil Code,CROSS_REFERENCE
+Cap.525,Cap.9,5,Mental Health Act,Criminal Code,CROSS_REFERENCE
+Cap.527,Cap.12,3,Protection of the Whistleblower Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.527,Cap.371,1,Protection of the Whistleblower Act,Banking Act,CROSS_REFERENCE
+Cap.527,Cap.377,1,Protection of the Whistleblower Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.527,Cap.492,2,Protection of the Whistleblower Act,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.527,Cap.586,1,Protection of the Whistleblower Act,Data Protection Act,CROSS_REFERENCE
+Cap.527,Cap.595,1,Protection of the Whistleblower Act,Public Administration Act,CROSS_REFERENCE
+Cap.527,Cap.9,7,Protection of the Whistleblower Act,Criminal Code,CROSS_REFERENCE
+Cap.529,Cap.12,1,Company Service Providers Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.529,Cap.330,7,Company Service Providers Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.529,Cap.331,1,Company Service Providers Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.529,Cap.345,1,Company Service Providers Act,Financial Markets Act,CROSS_REFERENCE
+Cap.529,Cap.370,1,Company Service Providers Act,Investment Services Act,CROSS_REFERENCE
+Cap.529,Cap.371,1,Company Service Providers Act,Banking Act,CROSS_REFERENCE
+Cap.529,Cap.373,2,Company Service Providers Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.529,Cap.376,1,Company Service Providers Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.529,Cap.377,1,Company Service Providers Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.529,Cap.386,4,Company Service Providers Act,Companies Act,CROSS_REFERENCE
+Cap.529,Cap.403,1,Company Service Providers Act,Insurance Business Act,CROSS_REFERENCE
+Cap.529,Cap.484,1,Company Service Providers Act,Securitisation Act,CROSS_REFERENCE
+Cap.529,Cap.487,1,Company Service Providers Act,Insurance Distribution Act,CROSS_REFERENCE
+Cap.529,Cap.514,1,Company Service Providers Act,Retirement Pensions Act,CROSS_REFERENCE
+Cap.529,Cap.9,1,Company Service Providers Act,Criminal Code,CROSS_REFERENCE
+Cap.537,Cap.101,3,Drug Dependence (Treatment not Imprisonment) Act,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.537,Cap.12,1,Drug Dependence (Treatment not Imprisonment) Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.537,Cap.291,9,Drug Dependence (Treatment not Imprisonment) Act,Commissioners for Justice Act,CROSS_REFERENCE
+Cap.537,Cap.31,3,Drug Dependence (Treatment not Imprisonment) Act,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.537,Cap.446,1,Drug Dependence (Treatment not Imprisonment) Act,Probation Act,CROSS_REFERENCE
+Cap.537,Cap.492,3,Drug Dependence (Treatment not Imprisonment) Act,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.537,Cap.9,4,Drug Dependence (Treatment not Imprisonment) Act,Criminal Code,CROSS_REFERENCE
+Cap.545,Cap.12,3,Regulator for Energy and Water Services Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.545,Cap.490,2,Regulator for Energy and Water Services Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.545,Cap.549,1,Regulator for Energy and Water Services Act,Environment Protection Act,CROSS_REFERENCE
+Cap.545,Cap.58,3,Regulator for Energy and Water Services Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.545,Cap.625,2,Regulator for Energy and Water Services Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.545,Cap.9,1,Regulator for Energy and Water Services Act,Criminal Code,CROSS_REFERENCE
+Cap.545,Cap.93,4,Regulator for Energy and Water Services Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.549,Cap.12,1,Environment Protection Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.549,Cap.123,1,Environment Protection Act,Income Tax Act,CROSS_REFERENCE
+Cap.549,Cap.249,1,Environment Protection Act,Interpretation Act,CROSS_REFERENCE
+Cap.549,Cap.363,1,Environment Protection Act,Local Government Act,CROSS_REFERENCE
+Cap.549,Cap.364,1,Environment Protection Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.549,Cap.37,1,Environment Protection Act,Customs Ordinance,CROSS_REFERENCE
+Cap.549,Cap.386,1,Environment Protection Act,Companies Act,CROSS_REFERENCE
+Cap.549,Cap.446,2,Environment Protection Act,Probation Act,CROSS_REFERENCE
+Cap.549,Cap.552,2,Environment Protection Act,Development Planning Act,CROSS_REFERENCE
+Cap.549,Cap.58,3,Environment Protection Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.549,Cap.625,3,Environment Protection Act,Exclusive Economic Zone Act,CROSS_REFERENCE
+Cap.549,Cap.9,8,Environment Protection Act,Criminal Code,CROSS_REFERENCE
+Cap.549,Cap.93,4,Environment Protection Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.55,Cap.12,7,Notarial Profession and Notarial Archives Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.55,Cap.16,10,Notarial Profession and Notarial Archives Act,Civil Code,CROSS_REFERENCE
+Cap.55,Cap.249,1,Notarial Profession and Notarial Archives Act,Interpretation Act,CROSS_REFERENCE
+Cap.55,Cap.331,8,Notarial Profession and Notarial Archives Act,Trusts and Trustees Act,CROSS_REFERENCE
+Cap.55,Cap.364,5,Notarial Profession and Notarial Archives Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.55,Cap.9,2,Notarial Profession and Notarial Archives Act,Criminal Code,CROSS_REFERENCE
+Cap.551,Cap.12,9,Environment and Planning Review Tribunal Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.551,Cap.445,2,Environment and Planning Review Tribunal Act,Cultural Heritage Act,CROSS_REFERENCE
+Cap.551,Cap.492,1,Environment and Planning Review Tribunal Act,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.551,Cap.504,1,Environment and Planning Review Tribunal Act,Environment and Development Planning ActAll subsid,CROSS_REFERENCE
+Cap.551,Cap.549,6,Environment and Planning Review Tribunal Act,Environment Protection Act,CROSS_REFERENCE
+Cap.551,Cap.552,16,Environment and Planning Review Tribunal Act,Development Planning Act,CROSS_REFERENCE
+Cap.552,Cap.10,1,Development Planning Act,Code of Police Laws,CROSS_REFERENCE
+Cap.552,Cap.12,2,Development Planning Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.552,Cap.123,1,Development Planning Act,Income Tax Act,CROSS_REFERENCE
+Cap.552,Cap.249,1,Development Planning Act,Interpretation Act,CROSS_REFERENCE
+Cap.552,Cap.363,1,Development Planning Act,Local Government Act,CROSS_REFERENCE
+Cap.552,Cap.364,1,Development Planning Act,Duty on Documents and Transfers Act,CROSS_REFERENCE
+Cap.552,Cap.37,1,Development Planning Act,Customs Ordinance,CROSS_REFERENCE
+Cap.552,Cap.386,1,Development Planning Act,Companies Act,CROSS_REFERENCE
+Cap.552,Cap.492,3,Development Planning Act,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.552,Cap.504,2,Development Planning Act,Environment and Development Planning ActAll subsid,CROSS_REFERENCE
+Cap.552,Cap.551,4,Development Planning Act,Environment and Planning Review Tribunal Act,CROSS_REFERENCE
+Cap.552,Cap.58,3,Development Planning Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.552,Cap.9,6,Development Planning Act,Criminal Code,CROSS_REFERENCE
+Cap.552,Cap.93,4,Development Planning Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.563,Cap.363,1,Lands Authority Act,Local Government Act,CROSS_REFERENCE
+Cap.563,Cap.490,2,Lands Authority Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.563,Cap.58,3,Lands Authority Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.563,Cap.9,1,Lands Authority Act,Criminal Code,CROSS_REFERENCE
+Cap.563,Cap.93,4,Lands Authority Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.573,Cap.12,22,Government Lands Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.573,Cap.158,5,Government Lands Act,Housing (Decontrol) Ordinance,CROSS_REFERENCE
+Cap.573,Cap.16,9,Government Lands Act,Civil Code,CROSS_REFERENCE
+Cap.573,Cap.363,1,Government Lands Act,Local Government Act,CROSS_REFERENCE
+Cap.573,Cap.386,1,Government Lands Act,Companies Act,CROSS_REFERENCE
+Cap.573,Cap.490,1,Government Lands Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.573,Cap.563,7,Government Lands Act,Lands Authority Act,CROSS_REFERENCE
+Cap.573,Cap.69,1,Government Lands Act,Reletting of Urban Property (Regulation) Ordinance,CROSS_REFERENCE
+Cap.573,Cap.9,1,Government Lands Act,Criminal Code,CROSS_REFERENCE
+Cap.583,Cap.12,4,Gaming Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.583,Cap.16,2,Gaming Act,Civil Code,CROSS_REFERENCE
+Cap.583,Cap.318,1,Gaming Act,Social Security Act,CROSS_REFERENCE
+Cap.583,Cap.350,3,Gaming Act,Broadcasting Act,CROSS_REFERENCE
+Cap.583,Cap.372,1,Gaming Act,Income Tax Management Act,CROSS_REFERENCE
+Cap.583,Cap.377,1,Gaming Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.583,Cap.378,1,Gaming Act,Consumer Affairs Act,CROSS_REFERENCE
+Cap.583,Cap.386,1,Gaming Act,Companies Act,CROSS_REFERENCE
+Cap.583,Cap.446,1,Gaming Act,Probation Act,CROSS_REFERENCE
+Cap.583,Cap.452,1,Gaming Act,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.583,Cap.490,2,Gaming Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.583,Cap.586,1,Gaming Act,Data Protection Act,CROSS_REFERENCE
+Cap.583,Cap.9,8,Gaming Act,Criminal Code,CROSS_REFERENCE
+Cap.586,Cap.12,3,Data Protection Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.586,Cap.258,1,Data Protection Act,Identity Card and other Identity Documents Act,CROSS_REFERENCE
+Cap.586,Cap.377,1,Data Protection Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.586,Cap.496,3,Data Protection Act,Freedom of Information Act,CROSS_REFERENCE
+Cap.594,Cap.605,2,Employment and Training Services Act,Education Act,CROSS_REFERENCE
+Cap.594,Cap.9,9,Employment and Training Services Act,Criminal Code,CROSS_REFERENCE
+Cap.595,Cap.249,1,Public Administration Act,Interpretation Act,CROSS_REFERENCE
+Cap.595,Cap.452,1,Public Administration Act,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.595,Cap.601,3,Public Administration Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.595,Cap.93,1,Public Administration Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.601,Cap.12,4,Public Finance Management Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.602,Cap.12,18,Minor Protection (Alternative Care) Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.602,Cap.16,1,Minor Protection (Alternative Care) Act,Civil Code,CROSS_REFERENCE
+Cap.602,Cap.164,1,Minor Protection (Alternative Care) Act,Police Act,CROSS_REFERENCE
+Cap.602,Cap.249,1,Minor Protection (Alternative Care) Act,Interpretation Act,CROSS_REFERENCE
+Cap.602,Cap.377,1,Minor Protection (Alternative Care) Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.602,Cap.518,3,Minor Protection (Alternative Care) Act,Protection of Minors (Registration) Act,CROSS_REFERENCE
+Cap.602,Cap.586,3,Minor Protection (Alternative Care) Act,Data Protection Act,CROSS_REFERENCE
+Cap.602,Cap.9,1,Minor Protection (Alternative Care) Act,Criminal Code,CROSS_REFERENCE
+Cap.604,Cap.12,1,Private Residential Leases Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.604,Cap.158,1,Private Residential Leases Act,Housing (Decontrol) Ordinance,CROSS_REFERENCE
+Cap.604,Cap.16,25,Private Residential Leases Act,Civil Code,CROSS_REFERENCE
+Cap.604,Cap.586,2,Private Residential Leases Act,Data Protection Act,CROSS_REFERENCE
+Cap.604,Cap.69,2,Private Residential Leases Act,Reletting of Urban Property (Regulation) Ordinance,CROSS_REFERENCE
+Cap.604,Cap.9,4,Private Residential Leases Act,Criminal Code,CROSS_REFERENCE
+Cap.605,Cap.327,2,Education Act,Education Act,CROSS_REFERENCE
+Cap.605,Cap.490,3,Education Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.605,Cap.573,1,Education Act,Government Lands Act,CROSS_REFERENCE
+Cap.605,Cap.58,3,Education Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.605,Cap.586,2,Education Act,Data Protection Act,CROSS_REFERENCE
+Cap.605,Cap.9,2,Education Act,Criminal Code,CROSS_REFERENCE
+Cap.605,Cap.93,4,Education Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.614,Cap.16,43,Cohabitation Act,Civil Code,CROSS_REFERENCE
+Cap.614,Cap.318,11,Cohabitation Act,Social Security Act,CROSS_REFERENCE
+Cap.614,Cap.413,1,Cohabitation Act,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.614,Cap.55,2,Cohabitation Act,Notarial Profession and Notarial Archives Act,CROSS_REFERENCE
+Cap.625,Cap.234,1,Exclusive Economic Zone Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.626,Cap.373,4,Sports Governance and Integrity Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.626,Cap.377,1,Sports Governance and Integrity Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.626,Cap.386,3,Sports Governance and Integrity Act,Companies Act,CROSS_REFERENCE
+Cap.626,Cap.455,1,Sports Governance and Integrity Act,Sports Act,CROSS_REFERENCE
+Cap.626,Cap.490,3,Sports Governance and Integrity Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.626,Cap.595,1,Sports Governance and Integrity Act,Public Administration Act,CROSS_REFERENCE
+Cap.626,Cap.601,1,Sports Governance and Integrity Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.626,Cap.9,5,Sports Governance and Integrity Act,Criminal Code,CROSS_REFERENCE
+Cap.630,Cap.12,2,Social Enterprise Act Not yet in force,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.630,Cap.123,1,Social Enterprise Act Not yet in force,Income Tax Act,CROSS_REFERENCE
+Cap.630,Cap.13,1,Social Enterprise Act Not yet in force,Commercial Code,CROSS_REFERENCE
+Cap.630,Cap.16,1,Social Enterprise Act Not yet in force,Civil Code,CROSS_REFERENCE
+Cap.630,Cap.325,1,Social Enterprise Act Not yet in force,Business Promotion Act,CROSS_REFERENCE
+Cap.630,Cap.386,40,Social Enterprise Act Not yet in force,Companies Act,CROSS_REFERENCE
+Cap.630,Cap.413,1,Social Enterprise Act Not yet in force,Equal Opportunities (Persons with Disability) Act,CROSS_REFERENCE
+Cap.630,Cap.442,27,Social Enterprise Act Not yet in force,Co-operative Societies Act,CROSS_REFERENCE
+Cap.630,Cap.492,1,Social Enterprise Act Not yet in force,Voluntary Organisations Act,CROSS_REFERENCE
+Cap.630,Cap.586,1,Social Enterprise Act Not yet in force,Data Protection Act,CROSS_REFERENCE
+Cap.630,Cap.595,1,Social Enterprise Act Not yet in force,Public Administration Act,CROSS_REFERENCE
+Cap.630,Cap.9,1,Social Enterprise Act Not yet in force,Criminal Code,CROSS_REFERENCE
+Cap.631,Cap.12,4,Pre-Insolvency Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.631,Cap.13,1,Pre-Insolvency Act,Commercial Code,CROSS_REFERENCE
+Cap.631,Cap.16,3,Pre-Insolvency Act,Civil Code,CROSS_REFERENCE
+Cap.631,Cap.234,2,Pre-Insolvency Act,Merchant Shipping Act,CROSS_REFERENCE
+Cap.631,Cap.386,5,Pre-Insolvency Act,Companies Act,CROSS_REFERENCE
+Cap.631,Cap.452,4,Pre-Insolvency Act,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.631,Cap.484,1,Pre-Insolvency Act,Securitisation Act,CROSS_REFERENCE
+Cap.631,Cap.503,2,Pre-Insolvency Act,Aircraft Registration Act,CROSS_REFERENCE
+Cap.631,Cap.632,2,Pre-Insolvency Act,Insolvency Practitioners Act,CROSS_REFERENCE
+Cap.632,Cap.13,5,Insolvency Practitioners Act,Commercial Code,CROSS_REFERENCE
+Cap.632,Cap.16,3,Insolvency Practitioners Act,Civil Code,CROSS_REFERENCE
+Cap.632,Cap.386,7,Insolvency Practitioners Act,Companies Act,CROSS_REFERENCE
+Cap.632,Cap.490,1,Insolvency Practitioners Act,Administrative Justice Act,CROSS_REFERENCE
+Cap.632,Cap.586,2,Insolvency Practitioners Act,Data Protection Act,CROSS_REFERENCE
+Cap.632,Cap.631,5,Insolvency Practitioners Act,Pre-Insolvency Act,CROSS_REFERENCE
+Cap.632,Cap.9,1,Insolvency Practitioners Act,Criminal Code,CROSS_REFERENCE
+Cap.647,Cap.204,1,Markets in Crypto-Assets Act,Central Bank of Malta Act,CROSS_REFERENCE
+Cap.647,Cap.281,1,Markets in Crypto-Assets Act,Accountancy Profession Act,CROSS_REFERENCE
+Cap.647,Cap.330,1,Markets in Crypto-Assets Act,Malta Financial Services Authority Act,CROSS_REFERENCE
+Cap.647,Cap.345,1,Markets in Crypto-Assets Act,Financial Markets Act,CROSS_REFERENCE
+Cap.647,Cap.370,8,Markets in Crypto-Assets Act,Investment Services Act,CROSS_REFERENCE
+Cap.647,Cap.371,13,Markets in Crypto-Assets Act,Banking Act,CROSS_REFERENCE
+Cap.647,Cap.373,1,Markets in Crypto-Assets Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.647,Cap.376,7,Markets in Crypto-Assets Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.647,Cap.586,1,Markets in Crypto-Assets Act,Data Protection Act,CROSS_REFERENCE
+Cap.647,Cap.9,1,Markets in Crypto-Assets Act,Criminal Code,CROSS_REFERENCE
+Cap.649,Cap.386,1,Food Safety and Security Authority Act,Companies Act,CROSS_REFERENCE
+Cap.649,Cap.58,3,Food Safety and Security Authority Act,Widows' and Orphans' Pensions Act,CROSS_REFERENCE
+Cap.649,Cap.586,1,Food Safety and Security Authority Act,Data Protection Act,CROSS_REFERENCE
+Cap.649,Cap.595,4,Food Safety and Security Authority Act,Public Administration Act,CROSS_REFERENCE
+Cap.649,Cap.601,2,Food Safety and Security Authority Act,Public Finance Management Act,CROSS_REFERENCE
+Cap.649,Cap.93,4,Food Safety and Security Authority Act,Pensions Ordinance,CROSS_REFERENCE
+Cap.653,Cap.101,1,National Interest (Enabling Powers) Act,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.653,Cap.12,7,National Interest (Enabling Powers) Act,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.653,Cap.16,1,National Interest (Enabling Powers) Act,Civil Code,CROSS_REFERENCE
+Cap.653,Cap.249,2,National Interest (Enabling Powers) Act,Interpretation Act,CROSS_REFERENCE
+Cap.653,Cap.31,1,National Interest (Enabling Powers) Act,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.653,Cap.373,1,National Interest (Enabling Powers) Act,Prevention of Money Laundering Act,CROSS_REFERENCE
+Cap.653,Cap.376,3,National Interest (Enabling Powers) Act,Financial Institutions Act,CROSS_REFERENCE
+Cap.653,Cap.377,1,National Interest (Enabling Powers) Act,Professional Secrecy Act,CROSS_REFERENCE
+Cap.653,Cap.386,2,National Interest (Enabling Powers) Act,Companies Act,CROSS_REFERENCE
+Cap.653,Cap.406,2,National Interest (Enabling Powers) Act,Value Added Tax Act,CROSS_REFERENCE
+Cap.653,Cap.446,1,National Interest (Enabling Powers) Act,Probation Act,CROSS_REFERENCE
+Cap.653,Cap.527,1,National Interest (Enabling Powers) Act,Protection of the Whistleblower Act,CROSS_REFERENCE
+Cap.653,Cap.586,1,National Interest (Enabling Powers) Act,Data Protection Act,CROSS_REFERENCE
+Cap.653,Cap.9,10,National Interest (Enabling Powers) Act,Criminal Code,CROSS_REFERENCE
+Cap.69,Cap.12,5,Reletting of Urban Property (Regulation) Ordinance,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.69,Cap.16,2,Reletting of Urban Property (Regulation) Ordinance,Civil Code,CROSS_REFERENCE
+Cap.69,Cap.586,1,Reletting of Urban Property (Regulation) Ordinance,Data Protection Act,CROSS_REFERENCE
+Cap.69,Cap.604,2,Reletting of Urban Property (Regulation) Ordinance,Private Residential Leases Act,CROSS_REFERENCE
+Cap.9,Cap.101,4,Criminal Code,Dangerous Drugs Ordinance,CROSS_REFERENCE
+Cap.9,Cap.12,2,Criminal Code,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.9,Cap.31,1,Criminal Code,Medical and Kindred Professions Ordinance,CROSS_REFERENCE
+Cap.9,Cap.446,2,Criminal Code,Probation Act,CROSS_REFERENCE
+Cap.93,Cap.12,1,Pensions Ordinance,Code of Organization and Civil Procedure,CROSS_REFERENCE
+Cap.93,Cap.327,1,Pensions Ordinance,Education Act,CROSS_REFERENCE
+Cap.93,Cap.452,2,Pensions Ordinance,Employment and Industrial Relations Act,CROSS_REFERENCE
+Cap.93,Cap.595,1,Pensions Ordinance,Public Administration Act,CROSS_REFERENCE

@@ -1,0 +1,393 @@
+{
+  "law_code": "S.L. 331.04",
+  "law_name": "Creativity Trust (Exemption) Regulations",
+  "pdf_pages": 1,
+  "extraction_metrics": {
+    "total_pages_in_pdf": 1,
+    "pages_processed": 1,
+    "pages_skipped": 0,
+    "regulations_extracted": 2,
+    "schedules_extracted": 0,
+    "miscellaneous_extracted": 0,
+    "edges_created": 4,
+    "extraction_time_seconds": 7.87,
+    "extraction_timestamp": "2026-01-06T19:13:25.296142"
+  },
+  "trials": [
+    {
+      "trial_id": 1,
+      "timestamp": "2026-01-20T19:10:46.921596",
+      "questions_total": 11,
+      "questions_correct": 11,
+      "accuracy": 1.0,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 1.0,
+          "total": 8,
+          "correct": 8
+        },
+        "cross_reference": {
+          "accuracy": 1.0,
+          "total": 2,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 1.0,
+          "total": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "trial_id": 2,
+      "timestamp": "2026-01-20T19:11:04.951809",
+      "questions_total": 11,
+      "questions_correct": 11,
+      "accuracy": 1.0,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 1.0,
+          "total": 8,
+          "correct": 8
+        },
+        "cross_reference": {
+          "accuracy": 1.0,
+          "total": 2,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 1.0,
+          "total": 1,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "overall_accuracy": {
+      "mean": 1.0,
+      "ci_95_low": 1.0,
+      "ci_95_high": 1.0,
+      "std_dev": 0.0
+    },
+    "by_question_type": {
+      "faithfulness": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      },
+      "cross_reference": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      },
+      "completeness": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "num_trials": 2,
+    "statistical_power": "limited"
+  },
+  "statistical_analysis": {
+    "methodology": "RAGAS + Bloomberg Law + BenchmarkQED",
+    "confidence_level": 0.95,
+    "min_questions": 10,
+    "trials_for_significance": 6
+  },
+  "questions_asked": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Creativity Trust (Exemption) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accor...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "question": "How many numbered regulations are in this law? The extraction found 2.",
+      "expected_answer": "2",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "XREF-EXT-1",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 2 reference external law 'Cap. 331' or '43'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 2 reference external law 'Cap. 331' or '43A'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Creativity Trust (Exemption) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accor...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Creativity Trust (Exemption) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accor...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Creativity Trust (Exemption) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accor...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    }
+  ],
+  "detailed_results": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 exactly matches the text in the original PDF. The formatting difference of 'Citation.' being on a new line in the PDF, while in the extracted content it's associated with the 'title' key, is acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Creativity Trust (Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the original PDF text exactly, including legal terms and references. Minor formatting differences like line breaks are acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "2. \nThe Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the\nrequirements of articles 43 and 43A of the Trusts and Trustees\nAct in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects that there are two numbered regulations in the document: Regulation 1, regarding the title, and Regulation 2, regarding the exemption itself.",
+      "extracted_text": "{\n  \"regulations_count\": 2,\n  \"articles_count\": 0,\n  \"schedules\": [],\n  \"metadata\": {\n    \"purpose\": \"This subsidiary legislation grants a specific exemption to the Trustees of the Creativity Trust from certain requirements of the Trusts and Trustees Act (Cap. 331). It details the specific articles from which this trust is exempt.\",\n    \"key_topics\": [\n      \"Exemption for Creativity Trust\",\n      \"Exemption from Article 43 of the Trusts and Trustees Act (Cap. 331)\",\n      \"Exemption from Articl",
+      "pdf_text": "1.\nThe title of these regulations is the Creativity Trust\n(Exemption) Regulations.\n2. \nThe Trustees of the trust known as the Creativity Trust,\nestablished by the Creativity Trust Order, shall be exempt from the\nrequirements of articles 43 and 43A of the Trusts and Trustees\nAct in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "XREF-EXT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the information presented in the original PDF text regarding Regulation 2 and its references to external laws and provisions. All cross-references identified are valid and properly attributed.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "Regulation 2 states: \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\" The PDF also states 'S.L. 444.02 Cap. 331.'"
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text of regulation 2 in the original PDF, including the references to articles 43 and 43A, as well as article 57(1)(g) of the Trusts and Trustees Act (Cap. 331) and the Creativity Trust Order (S.L. 444.02).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "2. The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the text in the original PDF. The title \"Citation.\" is also accurate. The text ends correctly as the extract doesn't continue beyond the sentence.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Creativity Trust (Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text in regulation 2 precisely matches the text in the provided PDF snippet.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "PDF: The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 exactly matches the text in the PDF, including the title and the main content of the regulation.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Creativity Trust (Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text of regulation 2 matches the corresponding text in the original PDF document, including all legal terms, numbers, and references. Minor formatting differences (e.g., line breaks) are allowed.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 exactly matches the text in the PDF, ignoring minor formatting differences.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Creativity Trust (Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 2 matches the original PDF text exactly, including all legal terms, numbers, and references. Minor formatting differences (like line breaks) are acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the text in the original PDF, including the title and the text of the regulation.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Creativity Trust (Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 2 matches the original PDF text exactly, including all legal terms and references.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects that there are two numbered regulations within the Creativity Trust (Exemption) Regulations.",
+      "extracted_text": "{\n  \"regulations_count\": 2,\n  \"articles_count\": 0,\n  \"schedules\": [],\n  \"metadata\": {\n    \"purpose\": \"This subsidiary legislation grants a specific exemption to the Trustees of the Creativity Trust from certain requirements of the Trusts and Trustees Act (Cap. 331). It details the specific articles from which this trust is exempt.\",\n    \"key_topics\": [\n      \"Exemption for Creativity Trust\",\n      \"Exemption from Article 43 of the Trusts and Trustees Act (Cap. 331)\",\n      \"Exemption from Articl",
+      "pdf_text": "The text shows two regulations numbered 1 and 2."
+    },
+    {
+      "question_id": "XREF-EXT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately represents the text in the original PDF, including the references to 'articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act' which falls under Cap. 331 and the reference to the 'Creativity Trust Order', which falls under S.L. 444.02.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the external references made in regulation 2 of the Creativity Trust (Exemption) Regulations. It correctly identifies references to articles 43, 43A, and 57(1)(g) of Cap. 331 (Trusts and Trustees Act) and to the Creativity Trust Order (S.L. 444.02).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the original PDF text exactly, with allowance for minor formatting differences.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "1.\nThe title of these regulations is the Creativity Trust\n(Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 2 matches the original PDF text precisely, including all legal references and wording.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 exactly matches the text in the original PDF document, including the title and the substantive legal content. Minor formatting differences are acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "Original PDF Text: '1. The title of these regulations is the Creativity Trust (Exemption) Regulations.'"
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 2 matches the original PDF text exactly, including the reference to 'articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act' and 'Creativity Trust Order'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the original PDF text for regulation 1. Minor formatting differences are allowed.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Creativity Trust (Exemption) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Creativity Trust (Exemption) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 2 matches the original PDF text exactly, including all legal references and terminology.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.331.04/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Exemption.\",\n  \"text\": \"The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": [\n      {\n        \"target\": \"43",
+      "pdf_text": "The Trustees of the trust known as the Creativity Trust, established by the Creativity Trust Order, shall be exempt from the requirements of articles 43 and 43A of the Trusts and Trustees Act in accordance with article 57(1)(g) of the same Act."
+    }
+  ],
+  "generated_at": "2026-01-20T19:11:04.952997"
+}

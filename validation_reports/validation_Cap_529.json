@@ -1,0 +1,435 @@
+{
+  "law_code": "Cap. 529",
+  "law_name": "Company Service Providers Act",
+  "pdf_pages": 20,
+  "extraction_metrics": {
+    "total_pages_in_pdf": 20,
+    "pages_processed": 20,
+    "pages_skipped": 0,
+    "articles_extracted": 22,
+    "schedules_extracted": 1,
+    "miscellaneous_extracted": 0,
+    "edges_created": 89,
+    "extraction_time_seconds": 336.03,
+    "extraction_timestamp": "2026-01-06T09:59:18.580267"
+  },
+  "trials": [
+    {
+      "trial_id": 1,
+      "timestamp": "2026-01-20T19:07:36.699940",
+      "questions_total": 12,
+      "questions_correct": 7,
+      "accuracy": 0.5833333333333334,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 0.5,
+          "total": 4,
+          "correct": 2
+        },
+        "cross_reference": {
+          "accuracy": 1.0,
+          "total": 3,
+          "correct": 3
+        },
+        "completeness": {
+          "accuracy": 0.0,
+          "total": 2,
+          "correct": 0
+        },
+        "structure": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "trial_id": 2,
+      "timestamp": "2026-01-20T19:08:03.828313",
+      "questions_total": 12,
+      "questions_correct": 7,
+      "accuracy": 0.5833333333333334,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 0.5,
+          "total": 4,
+          "correct": 2
+        },
+        "cross_reference": {
+          "accuracy": 1.0,
+          "total": 3,
+          "correct": 3
+        },
+        "completeness": {
+          "accuracy": 0.0,
+          "total": 2,
+          "correct": 0
+        },
+        "structure": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "overall_accuracy": {
+      "mean": 0.5833,
+      "ci_95_low": 0.5833,
+      "ci_95_high": 0.5833,
+      "std_dev": 0.0
+    },
+    "by_question_type": {
+      "faithfulness": {
+        "mean_accuracy": 0.5,
+        "ci_95_low": 0.5,
+        "ci_95_high": 0.5,
+        "std_dev": 0.0
+      },
+      "cross_reference": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      },
+      "completeness": {
+        "mean_accuracy": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "std_dev": 0.0
+      },
+      "structure": {
+        "mean_accuracy": 0.6667,
+        "ci_95_low": 0.6667,
+        "ci_95_high": 0.6667,
+        "std_dev": 0.0
+      }
+    },
+    "num_trials": 2,
+    "statistical_power": "limited"
+  },
+  "statistical_analysis": {
+    "methodology": "RAGAS + Bloomberg Law + BenchmarkQED",
+    "confidence_level": 0.95,
+    "min_questions": 10,
+    "trials_for_significance": 6
+  },
+  "questions_asked": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): '(1) The short title of this Act is the Company Service Providers Act.\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Counc...'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): '(1) In this Act, unless the context otherwise requires:\n\"approved jurisdiction\" means an EEA State or an EU Member State or any other jurisdiction which, in the opinion of the Authority, has an equal ...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 3 in the PDF contain this exact text (allowing for minor formatting differences): '(1) No person shall act as a company service provider or a limited company service provider, or hold himself out to act as such, in or from Malta unless that person is duly authorised or registered, a...'?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 4
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 3A in the PDF contain this exact text (allowing for minor formatting differences): '(1) Without prejudice to the provisions of article 3(5), any person intending to act as a company service provider, or hold himself out to act as such, in or from Malta, shall apply to the Authority f...'?",
+      "expected_answer": "yes",
+      "source_article": "3A",
+      "page_reference": 5
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "question": "How many numbered articles are in this law? The extraction found 22.",
+      "expected_answer": "22",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "question": "Does this law contain schedules? The extraction found: SCHEDULE",
+      "expected_answer": "yes",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference '1' internally?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference external law 'Directive (EU) 2015/849' or '47 of Directive (EU) 2015/849'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 1 reference external law 'Regulation (EU) No. 648/2012' or '(EU) No. 648/2012'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "question": "Does regulation/article 1 have sub-items like ['1(1)', '1(2)', '1(3)']?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "question": "Does regulation/article 2 have sub-items like ['2(1)', '2(1)(a)', '2(2)']?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "question": "Does regulation/article 3 have sub-items like ['3(1)', '3(1B)', '3(1a)']?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 4
+    }
+  ],
+  "detailed_results": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content for regulation/article 1 precisely matches the text present in the original PDF. It includes subsections (1) and (2) as requested in the prompt.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "1.\n(1)\nThe short title of this Act is the Company Service\nProviders Act.\n(2)\nThe main purpose of this Act is to implement Article 47 of\nDirective (EU) 2015/849 of the European Parliament and of the Counc..."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately captures the specified text from Article 2(1) regarding the definition of \"approved jurisdiction\". The definition in the extracted content matches the original PDF text.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/2\",\n  \"type\": \"article\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"(1) In this Act, unless the context otherwise requires:\\n\\\"approved jurisdiction\\\" means an EEA State or an EU Member State or any other jurisdiction which, in the opinion of the Authority, has an equal or comparable level of regulation regarding company service providers to that in Malta;\\n\\\"authorised person\\\" means a company service provider authorised by the Authority in accordance with ",
+      "pdf_text": "PDF: 2.\n(1) In this Act, unless the context otherwise requires:\n\"approved jurisdiction\" means an EEA State or an EU Member\nState or any other jurisdiction which, in the opinion of the Authority,\nhas an equal or comparable level of regulation regarding company\nservice providers to that in Malta; \n\nExtracted: (1) In this Act, unless the context otherwise requires:\n\"approved jurisdiction\" means an EEA State or an EU Member State or any other jurisdiction which, in the opinion of the Authority, has "
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text is a portion of article 3, but the provided snippet ends prematurely. The actual text in the PDF continues after 'registered' with 'as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder'. This ending portion is not present in the validated text.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/3\",\n  \"type\": \"article\",\n  \"number\": \"3\",\n  \"title\": \"Requirements for the provision of company services in, or from Malta.\",\n  \"text\": \"(1) No person shall act as a company service provider or a limited company service provider, or hold himself out to act as such, in or from Malta unless that person is duly authorised or registered, as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder.\\n(1a) Without prejudice to article",
+      "pdf_text": "The provided text ends with '...registered, a...', the PDF text contains '(1) No person shall act as a company service provider or a limited company service provider, or hold himself out to act as such, in or from Malta unless that person is duly authorised or registered, as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder.'"
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided PDF does not contain the regulation/article 3A. The extracted content is therefore not present in the document.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/3A\",\n  \"type\": \"article\",\n  \"number\": \"3A\",\n  \"title\": null,\n  \"text\": \"(1) Without prejudice to the provisions of article 3(5), any person intending to act as a company service provider, or hold himself out to act as such, in or from Malta, shall apply to the Authority for authorisation to do so.\\n(2) Without prejudice to the provisions of article 3(5), any person intending to act as a limited company service provider, or hold himself out to act as such, in or from Malta,",
+      "pdf_text": "The provided text only contains up to article 3."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content states that there are 22 articles in this law. However, based on the provided PDF excerpt, there is no indication of the total number of articles. The excerpt only shows the first few articles (1, 2, and 3). Therefore, it is impossible to accurately determine the total number of articles in the law based solely on this excerpt. The provided excerpt contains article numbering up to '3'. The statement suggesting 22 articles is incorrect based on the given text.",
+      "extracted_text": "{\n  \"regulations_count\": 0,\n  \"articles_count\": 22,\n  \"schedules\": [\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Act regulates company service providers in Malta, primarily to implement Article 47 of Directive (EU) 2015/849 concerning the prevention of money laundering and terrorist financing as it applies to persons providing company services.\",\n    \"key_topics\": [\n      \"Authorisation and registration requirements for Company Service Providers (CSPs)\",\n      \"Fit and proper person",
+      "pdf_text": "The PDF excerpt includes articles numbered '1', '2', and '3'. There is no evidence within this excerpt to suggest the existence of 22 articles."
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content claims that the law contains schedules. However, after reviewing the provided text, I cannot find any mention or reference to a schedule within the document. The second schedule mentioned in the 'person' definition refers to the Civil Code, not a schedule within this Act itself.",
+      "extracted_text": "{\n  \"regulations_count\": 0,\n  \"articles_count\": 22,\n  \"schedules\": [\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Act regulates company service providers in Malta, primarily to implement Article 47 of Directive (EU) 2015/849 concerning the prevention of money laundering and terrorist financing as it applies to persons providing company services.\",\n    \"key_topics\": [\n      \"Authorisation and registration requirements for Company Service Providers (CSPs)\",\n      \"Fit and proper person",
+      "pdf_text": "The provided text doesn't include any schedules within the Company Service Providers Act itself. The mention of the Second Schedule refers to the Civil Code."
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the original PDF text. Article 1 references itself internally via sub-article (2) referring to article 47 of a directive. The extracted content correctly identifies these internal and external references.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC, as amended from time to time, in so far"
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the original PDF text, including the references to 'Article 47 of Directive (EU) 2015/849' and the other Directives and Regulations mentioned in Article 1(2).",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC, as amended from time to time, in so far"
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text in the original PDF, including the reference to 'Regulation (EU) No. 648/2012'.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC, as amended from time to time, in so far"
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the structure and content of Article 1 in the original PDF, including the presence and numbering of the sub-items (1), (2), and (3).",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The PDF text clearly shows the following:\n\n\"1.\n(1)\n(2)\n(3)\""
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately represents the structure and content of Article 2 from the original PDF text, including the sub-items 2(1) and its sub-paragraphs (a), (b), (c), and then further sub-paragraphs (i), (ii), (iii) and so on. Also includes 2(2).",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/2\",\n  \"type\": \"article\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"(1) In this Act, unless the context otherwise requires:\\n\\\"approved jurisdiction\\\" means an EEA State or an EU Member State or any other jurisdiction which, in the opinion of the Authority, has an equal or comparable level of regulation regarding company service providers to that in Malta;\\n\\\"authorised person\\\" means a company service provider authorised by the Authority in accordance with ",
+      "pdf_text": "The original PDF text includes:\n2.\n(1) In this Act, unless the context otherwise requires:\n ...\n(a) ...\n(b) ...\n(c) ...\n(2) Any reference in this Act to any law, or provision thereof,"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The original PDF text only includes article 3 up to the point of defining terms and requirements. The extracted information includes sub-articles such as 3(1), 3(1a), 3(1B) and others that are not present within the provided original text. These sub-articles appear to be from a later part of the document or an amendment not included in the given excerpt.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/3\",\n  \"type\": \"article\",\n  \"number\": \"3\",\n  \"title\": \"Requirements for the provision of company services in, or from Malta.\",\n  \"text\": \"(1) No person shall act as a company service provider or a limited company service provider, or hold himself out to act as such, in or from Malta unless that person is duly authorised or registered, as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder.\\n(1a) Without prejudice to article",
+      "pdf_text": "The provided PDF text ends at the beginning of article 3, before any sub-articles are mentioned."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the provided snippet from the original PDF text exactly. There are no discrepancies in the wording or numbering. The minor formatting differences (line breaks and whitespace) are acceptable.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "1.\n(1)\nThe short title of this Act is the Company Service\nProviders Act.\n(2)\nThe main purpose of this Act is to implement Article 47 of\nDirective (EU) 2015/849 of the European Parliament and of the Counc..."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text of regulation/article 2 in the PDF, specifically the initial part of the definition of \"approved jurisdiction\".",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/2\",\n  \"type\": \"article\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"(1) In this Act, unless the context otherwise requires:\\n\\\"approved jurisdiction\\\" means an EEA State or an EU Member State or any other jurisdiction which, in the opinion of the Authority, has an equal or comparable level of regulation regarding company service providers to that in Malta;\\n\\\"authorised person\\\" means a company service provider authorised by the Authority in accordance with ",
+      "pdf_text": "PDF: 2.\n(1) In this Act, unless the context otherwise requires:\n\"approved jurisdiction\" means an EEA State or an EU Member\nState or any other jurisdiction which, in the opinion of the Authority, has an equal ..."
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content is missing the phrase \", as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder.\" at the end of the sentence, which is present in the original Act. The question also does not accurately reflect the text of Article 3(1).",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/3\",\n  \"type\": \"article\",\n  \"number\": \"3\",\n  \"title\": \"Requirements for the provision of company services in, or from Malta.\",\n  \"text\": \"(1) No person shall act as a company service provider or a limited company service provider, or hold himself out to act as such, in or from Malta unless that person is duly authorised or registered, as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder.\\n(1a) Without prejudice to article",
+      "pdf_text": "The PDF doesn't include Article 3 at all."
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided PDF text does not contain an article numbered \"3A\". Therefore, the extracted content does not match the original PDF text. The numbering jumps from article 2 to article 3 without mention of an article 3A.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/3A\",\n  \"type\": \"article\",\n  \"number\": \"3A\",\n  \"title\": null,\n  \"text\": \"(1) Without prejudice to the provisions of article 3(5), any person intending to act as a company service provider, or hold himself out to act as such, in or from Malta, shall apply to the Authority for authorisation to do so.\\n(2) Without prejudice to the provisions of article 3(5), any person intending to act as a limited company service provider, or hold himself out to act as such, in or from Malta,",
+      "pdf_text": "The provided document contains articles 1, 2, 3, and 4 without article 3A."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The document only has 4 articles that are numbered. The question is asking how many numbered articles are present in the law. The extracted content specifies that there are 22.",
+      "extracted_text": "{\n  \"regulations_count\": 0,\n  \"articles_count\": 22,\n  \"schedules\": [\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Act regulates company service providers in Malta, primarily to implement Article 47 of Directive (EU) 2015/849 concerning the prevention of money laundering and terrorist financing as it applies to persons providing company services.\",\n    \"key_topics\": [\n      \"Authorisation and registration requirements for Company Service Providers (CSPs)\",\n      \"Fit and proper person",
+      "pdf_text": "The PDF only contains 4 articles clearly indicated by a number such as '1.', '2.', '3.' and '4.'. The extracted value for articles_count is 22 which is incorrect."
+    },
+    {
+      "question_id": "COMP-SCHED",
+      "question_type": "completeness",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content incorrectly identifies that this law contains schedules. The document does refer to the Second Schedule to the Civil Code, but this is not a schedule to the Company Service Providers Act itself. The term 'SCHEDULE' appears nowhere in the provided PDF text.",
+      "extracted_text": "{\n  \"regulations_count\": 0,\n  \"articles_count\": 22,\n  \"schedules\": [\n    \"SCHEDULE\"\n  ],\n  \"metadata\": {\n    \"purpose\": \"This Act regulates company service providers in Malta, primarily to implement Article 47 of Directive (EU) 2015/849 concerning the prevention of money laundering and terrorist financing as it applies to persons providing company services.\",\n    \"key_topics\": [\n      \"Authorisation and registration requirements for Company Service Providers (CSPs)\",\n      \"Fit and proper person",
+      "pdf_text": "The provided PDF text does not contain the word 'SCHEDULE' on its own, referring to a schedule within the Company Service Providers Act."
+    },
+    {
+      "question_id": "XREF-INT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately represents the original PDF text for Article 1 of the Company Service Providers Act. The text, sub-items, and cross-references are all correctly identified and extracted.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The provided extraction matches verbatim the text under 'Short title and scope.' in the ORIGINAL PDF TEXT."
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the original PDF text, including the references to 'Article 47 of Directive (EU) 2015/849' and other cited directives and regulations.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC, as amended from time to time, in so far"
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1(2) references 'Regulation (EU) No. 648/2012' which the extracted content correctly identifies.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European Parliament and of the Council, and repealing Directive 2005/60/EC of the European Parliament and of the Council and Commission Directive 2006/70/EC, as amended from time to time, in so far"
+    },
+    {
+      "question_id": "STRUCT-1",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Article 1 in the provided PDF text does indeed have three sub-items numbered (1), (2), and (3), as indicated in the extracted content.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/1\",\n  \"type\": \"article\",\n  \"number\": \"1\",\n  \"title\": \"Short title and scope.\",\n  \"text\": \"(1) The short title of this Act is the Company Service Providers Act.\\n(2) The main purpose of this Act is to implement Article 47 of Directive (EU) 2015/849 of the European Parliament and of the Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering or terrorist financing, amending Regulation (EU) No. 648/2012 of the European ",
+      "pdf_text": "1.\n(1)\nThe short title of this Act is the Company Service\nProviders Act.\n(2)\nThe main purpose of this Act is to implement Article 47 of\nDirective (EU) 2015/849 of the European Parliament and of the\nCouncil of 20 May 2015 on the prevention of the use of the financial\nsystem for the purposes of money laundering or terrorist financing,\namending Regulation (EU) No. 648/2012 of the European Parliament\nand of the Council, and repealing Directive 2005/60/EC of the\nEuropean Parliament and of the Council"
+    },
+    {
+      "question_id": "STRUCT-2",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content for Article 2 accurately reflects the text in the original PDF, including all sub-items: (1), (a), (b), (c), (i), (ii), (a), (b), (iii) and (2). Therefore, it has sub-items like ['2(1)', '2(1)(a)', '2(2)'].",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/2\",\n  \"type\": \"article\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"(1) In this Act, unless the context otherwise requires:\\n\\\"approved jurisdiction\\\" means an EEA State or an EU Member State or any other jurisdiction which, in the opinion of the Authority, has an equal or comparable level of regulation regarding company service providers to that in Malta;\\n\\\"authorised person\\\" means a company service provider authorised by the Authority in accordance with ",
+      "pdf_text": "2.\n(1) In this Act, unless the context otherwise requires:\n\"approved jurisdiction\" means an EEA State...\n(a) by participation, in the form of direct ownership or by...\n(2) Any reference in this Act to any law, or provision thereof..."
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The provided text does not include article 3. The extracted content presents \"Requirements for the provision of company services in, or from Malta.\" However, I cannot verify the presence of sub-items like ['3(1)', '3(1B)', '3(1a)'] as the document does not include the full article 3. Furthermore, the document starts at '1' and moves to '2', the document provided does not have the text required to confirm or deny the statement in the validation question.",
+      "extracted_text": "{\n  \"id\": \"art:Cap.529/3\",\n  \"type\": \"article\",\n  \"number\": \"3\",\n  \"title\": \"Requirements for the provision of company services in, or from Malta.\",\n  \"text\": \"(1) No person shall act as a company service provider or a limited company service provider, or hold himself out to act as such, in or from Malta unless that person is duly authorised or registered, as applicable, to do so in accordance with this Act and any regulations made, and rules issued thereunder.\\n(1a) Without prejudice to article",
+      "pdf_text": "The provided text does not include article 3"
+    }
+  ],
+  "generated_at": "2026-01-20T19:08:03.829555"
+}

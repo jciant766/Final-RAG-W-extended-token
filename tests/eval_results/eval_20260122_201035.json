@@ -1,0 +1,1080 @@
+{
+  "timestamp": "2026-01-22T20:10:35.959676",
+  "judge_model": "gemini-2.5-flash",
+  "total_questions": 10,
+  "successful_evaluations": 10,
+  "errors": 0,
+  "summary": {
+    "scores": {
+      "faithfulness": 0.816,
+      "entity_grounding": 0.886,
+      "completeness": 0.63,
+      "relevance": 0.54,
+      "overall": 0.741
+    },
+    "qag_metrics": {
+      "total_claims_extracted": 121,
+      "claims_supported": 89,
+      "claims_support_rate": 0.736,
+      "total_citations": 54,
+      "citations_verified": 39,
+      "citation_accuracy_rate": 0.722
+    },
+    "blame_attribution": {
+      "retrieval_failures": 3,
+      "generation_failures": 3,
+      "successes": 4,
+      "avg_law_recall": 0.65,
+      "avg_keyword_recall": 0.927,
+      "questions_with_ground_truth": 10
+    },
+    "verdict_distribution": {
+      "inaccurate": 3,
+      "accurate": 3,
+      "partial": 3,
+      "insufficient": 1
+    },
+    "accuracy_rate": 30.0,
+    "common_unsupported_claims": [
+      "This is the only explicit rule about parking near pedestrian crossings in the provided documents.",
+      "From Document 1, Article 110A, Sub-regulation (3) covers medical exemption provisions.",
+      "This applies to violations such as parking or leaving unattended any unauthorised motor vehicle on a designated parking space for disabled persons.",
+      "The medical conditions for which the said exemption from such restrictions may be issued shall be those associated with photo-sensitivity disorders, as certified by an eye or skin specialist.",
+      "A person who, for medical reasons, requires tinting on the front side window to the right of the driver which would allow a light transmittance which is less than 70 per cent but not less then 55 per cent, shall apply for a special permit from the Authority.",
+      "From Document 5, Article 15, sub-article (3) states: \"Any person who commits an offence against the provisions of sub-article (1) shall, on conviction, be liable to a fine (multa) of not less than two hundred and thirty euro (\u20ac230) and not more than five hundred euro (\u20ac500) and the towing of the vehicle; upon conviction for a subsequent offence, the person will be liable to a fine (multa) of not less than one thousand euro (\u20ac1,000) and not more than one thousand and five hundred euro (\u20ac1,500) and the towing of the vehicle.\"",
+      "From Document 1, Article 110A, Sub-regulation (5) covers requirements for other windows.",
+      "From Document 2, Article 2, definitions of M2 and M3 motor vehicles are provided.",
+      "This caution is owing to a road intersection or junction or to the presence of a pedestrian crossing.",
+      "The documents do not contain information about any other parking restrictions related to pedestrian crossings beyond the 4-metre rule."
+    ],
+    "fabricated_citations": [
+      "Sub-regulation (3)",
+      "Sub-regulation (4)",
+      "sub-regulation (6)",
+      "sub-regulation (8)",
+      "sub-regulation (11)",
+      "Article 78, sub-regulation (13)",
+      "Article 15, sub-article (3)",
+      "Article 9(5)",
+      "Sub-regulation (5)",
+      "sub-regulation (7)"
+    ],
+    "commonly_missing_laws": [
+      "S.L. 363.80 Article 7 (Document 1) directly addresses parking offenses where a 'Blue Sticker issued by the National Commission Persons with Disability' is not displayed. This article provides a relevant fine range (\u20ac23.29 - \u20ac58.23) for parking in a controlled zone without such a sticker, which is a direct answer to the question for a specific scenario but was completely ignored by the RAG system.",
+      "Provisions for repeat offenses or other related consequences.",
+      "Laws regarding reporting the accident to police",
+      "Laws/guidance on exchange of personal information",
+      "Definitions for 'M2' and 'M3' motor vehicles, which are crucial for interpreting Article 110A and were hallucinated by the RAG system despite Article 2 (Interpretation) being retrieved.",
+      "Laws/guidance on general accident procedures",
+      "Motor Vehicles (Driving Licences) Regulations",
+      "The full text of the proviso in Cap. 65 Article 15H(3) which was truncated in the retrieved document, leading to the hallucinated alcohol limits in the response.",
+      "Laws covering Cap. 104, Article 17(1) and Article 8(2)",
+      "Full text of S.L. 65.11 Article 125, specifically sub-regulations (3) and (4) which cover triangular-form signals and flashing amber lights, respectively."
+    ],
+    "total_evaluated": 10
+  },
+  "verdicts": [
+    {
+      "question_id": "TRAFFIC-001",
+      "query": "What are the rules for orange/amber traffic lights in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [
+          "S.L. 65.11"
+        ],
+        "missed_laws": [],
+        "law_recall": 1.0,
+        "expected_keywords": [
+          "amber",
+          "proceed with caution",
+          "impending change"
+        ],
+        "found_keywords": [
+          "amber",
+          "proceed with caution",
+          "impending change"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": true,
+        "failure_reason": "generation"
+      },
+      "faithfulness_score": 0.56,
+      "faithfulness_reasoning": "Claims 1-5 are directly supported by Article 1 (S.L. 65.11 Article 125), specifically sub-regulation (2)(c) and its proviso, and linked to (2)(a). Claims 6-9 about flashing amber lights and triangular-form signals are not present in the provided text of Article 1 (S.L. 65.11 Article 125). The RAG system's internal 'STEP 2: EXTRACT' section hallucinates these sub-regulations (e.g., 'Provided further that when a flashing amber light is in operation' and 'Sub-regulation (3)(b)') as if they were present in the source document.",
+      "claims_extracted": [
+        "The rules for amber traffic lights in Malta are found in S.L. 65.11, Article 125.",
+        "The amber signal is an indication of an impending change from the green signal to the red signal.",
+        "The amber signal conveys the same prohibition as the red signal.",
+        "This means vehicles must stop at the stop line.",
+        "If, when the amber signal first appears, a vehicle is so close to the stop line or signals or road intersection or junction that it cannot be safely stopped, the prohibition does not apply.",
+        "When a flashing amber light is in operation, it conveys an indication that vehicular traffic is to proceed with caution.",
+        "This caution is owing to a road intersection or junction or to the presence of a pedestrian crossing.",
+        "For triangular-form signals, the amber signal conveys the prohibition that traffic shall not proceed beyond the stop line on the carriageway.",
+        "This prohibition for triangular-form signals has an exception for a vehicle which is so close to the stop line that it cannot safely be stopped without proceeding beyond the stop line."
+      ],
+      "claims_supported": [
+        "The rules for amber traffic lights in Malta are found in S.L. 65.11, Article 125.",
+        "The amber signal is an indication of an impending change from the green signal to the red signal.",
+        "The amber signal conveys the same prohibition as the red signal.",
+        "This means vehicles must stop at the stop line.",
+        "If, when the amber signal first appears, a vehicle is so close to the stop line or signals or road intersection or junction that it cannot be safely stopped, the prohibition does not apply."
+      ],
+      "claims_unsupported": [
+        "When a flashing amber light is in operation, it conveys an indication that vehicular traffic is to proceed with caution.",
+        "This caution is owing to a road intersection or junction or to the presence of a pedestrian crossing.",
+        "For triangular-form signals, the amber signal conveys the prohibition that traffic shall not proceed beyond the stop line on the carriageway.",
+        "This prohibition for triangular-form signals has an exception for a vehicle which is so close to the stop line that it cannot safely be stopped without proceeding beyond the stop line."
+      ],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "All legal citations ('S.L. 65.11' and 'Article 125') mentioned in the response exist in the retrieved articles. Although the system hallucinates *content* under these citations (e.g., sub-regulation (3)(b) within Article 125), the citations themselves are correctly grounded in the provided documents.",
+      "citations_found": [
+        "S.L. 65.11",
+        "Article 125"
+      ],
+      "citations_verified": [
+        "S.L. 65.11",
+        "Article 125"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 0.5,
+      "completeness_reasoning": "The response attempts to cover rules for flashing amber lights and triangular-form signals, indicating these are relevant to the question. However, the provided text for S.L. 65.11 Article 125 only contains sub-regulations (1) and (2). The system's attempt to answer these aspects by hallucinating the content strongly suggests that crucial parts of the primary relevant law (S.L. 65.11 Article 125) were not retrieved. This is a significant gap in completeness, as the system *knew* the information was relevant but didn't *have* it in the sources.",
+      "missing_laws_suggested": [
+        "Full text of S.L. 65.11 Article 125, specifically sub-regulations (3) and (4) which cover triangular-form signals and flashing amber lights, respectively."
+      ],
+      "cross_references_found": [
+        "paragraph (a) of sub-regulation (2) of this regulation"
+      ],
+      "relevance_score": 0.5,
+      "relevance_reasoning": "Only Article 1 (S.L. 65.11 Article 125) is directly relevant to the question about amber traffic lights. Article 3 (S.L. 65.11 Article 2) is a general interpretation article for the same law but does not directly contribute to answering the specific question. The remaining three articles are completely irrelevant, dealing with 'Maltese ships' or general traffic signs rather than traffic lights. The retrieval contains significant noise.",
+      "irrelevant_articles": [
+        "Article 2: S.L. 234.21 Article 2 (Interpretation for 'Maltese ships')",
+        "Article 4: S.L. 65.05 Article 2 (Traffic signs and carriageway markings, general)",
+        "Article 5: S.L. 234.21 Article 3 (Application for 'Maltese ships')"
+      ],
+      "overall_score": 0.646,
+      "verdict": "inaccurate",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 22.451592922210693
+    },
+    {
+      "question_id": "TRAFFIC-002",
+      "query": "What are the speed limits for cars in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [
+          "S.L. 65.11"
+        ],
+        "missed_laws": [],
+        "law_recall": 1.0,
+        "expected_keywords": [
+          "speed limit",
+          "kilometres per hour",
+          "50",
+          "80"
+        ],
+        "found_keywords": [
+          "speed limit",
+          "kilometres per hour",
+          "50",
+          "80"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": true,
+        "failure_reason": "none"
+      },
+      "faithfulness_score": 1.0,
+      "faithfulness_reasoning": "All claims made in the response are directly and explicitly supported by Article 4 (S.L. 65.11 Article 127) of the retrieved documents. Specifically, the speed limits for 'Private cars' under section (A) 'Fitted with pneumatic tyres' are given, and sub-article (2) mentions the Authority's power to prescribe lower limits.",
+      "claims_extracted": [
+        "The speed limits for private cars in Malta are 50 kilometres per hour in towns and villages.",
+        "The speed limits for private cars in Malta are 80 kilometres per hour outside towns or villages.",
+        "These limits apply to vehicles fitted with pneumatic tyres.",
+        "The Authority may prescribe a lower speed limit than specified above in respect of any particular road or area."
+      ],
+      "claims_supported": [
+        "The speed limits for private cars in Malta are 50 kilometres per hour in towns and villages.",
+        "The speed limits for private cars in Malta are 80 kilometres per hour outside towns or villages.",
+        "These limits apply to vehicles fitted with pneumatic tyres.",
+        "The Authority may prescribe a lower speed limit than specified above in respect of any particular road or area."
+      ],
+      "claims_unsupported": [],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "Both legal citations (S.L. 65.11 and Article 127) are present in the provided retrieved articles (specifically Article 4: S.L. 65.11 Article 127).",
+      "citations_found": [
+        "S.L. 65.11",
+        "Article 127"
+      ],
+      "citations_verified": [
+        "S.L. 65.11",
+        "Article 127"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 1.0,
+      "completeness_reasoning": "The response fully addresses the question for 'private cars' based on the highly relevant Article 4. It correctly extracted both the specific speed limits from the table and the general provision about the Authority's power to set lower limits, demonstrating a thorough understanding of the provided relevant text. While the question was broad ('cars'), 'private cars' is the most common interpretation and is explicitly detailed, and other 'car' types (taxicars, motor vehicles for hire, self-drive motor vehicles) in the provided table have the same limits. No critical information for 'cars' appears to be missing from the *provided* relevant documents.",
+      "missing_laws_suggested": [],
+      "cross_references_found": [
+        "Article 127 sub-article (2) refers to the Authority prescribing lower speed limits."
+      ],
+      "relevance_score": 0.6,
+      "relevance_reasoning": "Article 4 (S.L. 65.11 Article 127) is highly relevant as it directly provides speed limits for various vehicle classes, including 'Private cars'. Article 2 (S.L. 65.11 Article 2) is tangentially relevant as it contains definitions, though the RAG system did not explicitly use it to define 'private cars'. Articles 1, 3, and 5 are largely irrelevant to the specific question about speed limits for cars. The retrieval set is mixed, with one highly relevant document and several irrelevant ones. However, the RAG system successfully identified and utilized the highly relevant document.",
+      "irrelevant_articles": [
+        "Article 1: S.L. 65.21 Article 21 (Max speed for N3 dangerous goods vehicles)",
+        "Article 3: S.L. 65.21 Article 2 (Definitions, different S.L.)",
+        "Article 5: S.L. 65.15 Article 35 (Technical roadside inspections)"
+      ],
+      "overall_score": 0.92,
+      "verdict": "accurate",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 22.17853546142578
+    },
+    {
+      "question_id": "TRAFFIC-003",
+      "query": "What happens if I run a red light in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "Cap. 65",
+          "S.L. 65.11"
+        ],
+        "found_laws": [
+          "Cap. 65"
+        ],
+        "missed_laws": [
+          "S.L. 65.11"
+        ],
+        "law_recall": 0.5,
+        "expected_keywords": [
+          "red",
+          "prohibition",
+          "stop line"
+        ],
+        "found_keywords": [
+          "red",
+          "prohibition"
+        ],
+        "missed_keywords": [
+          "stop line"
+        ],
+        "keyword_recall": 0.6666666666666666,
+        "retrieval_success": true,
+        "failure_reason": "none"
+      },
+      "faithfulness_score": 1.0,
+      "faithfulness_reasoning": "All claims made by the RAG system's response are directly and explicitly supported by the text in the retrieved articles, or accurately state what is NOT present in the retrieved articles.",
+      "claims_extracted": [
+        "Document 1 is directly relevant.",
+        "Document 1 contains Article 15J specifically about \"Driving through or emerging a red light.\"",
+        "Documents 2, 3, 4, and 5 are not relevant to red light violations.",
+        "From Document 1, the exact text is: \"Any person who drives a motor-car or other vehicle through or emerges a red light shall be guilty of an offence and on conviction shall be liable to a fine (multa) of two hundred euro (\u20ac200).\"",
+        "The offense is defined in the document.",
+        "The penalty amount is explicitly stated in the document.",
+        "No additional penalties, points, or consequences are mentioned in the document.",
+        "If you run a red light in Malta, you will be guilty of an offence.",
+        "On conviction, you shall be liable to a fine (multa) of two hundred euro (\u20ac200).",
+        "The documents do not contain information about whether penalty points are imposed.",
+        "The documents do not contain information about whether there are different penalties for repeat offenses.",
+        "The documents do not contain information about any other consequences beyond the fine specified."
+      ],
+      "claims_supported": [
+        "Document 1 is directly relevant.",
+        "Document 1 contains Article 15J specifically about \"Driving through or emerging a red light.\"",
+        "Documents 2, 3, 4, and 5 are not relevant to red light violations.",
+        "From Document 1, the exact text is: \"Any person who drives a motor-car or other vehicle through or emerges a red light shall be guilty of an offence and on conviction shall be liable to a fine (multa) of two hundred euro (\u20ac200).\"",
+        "The offense is defined in the document.",
+        "The penalty amount is explicitly stated in the document.",
+        "No additional penalties, points, or consequences are mentioned in the document.",
+        "If you run a red light in Malta, you will be guilty of an offence.",
+        "On conviction, you shall be liable to a fine (multa) of two hundred euro (\u20ac200).",
+        "The documents do not contain information about whether penalty points are imposed.",
+        "The documents do not contain information about whether there are different penalties for repeat offenses.",
+        "The documents do not contain information about any other consequences beyond the fine specified."
+      ],
+      "claims_unsupported": [],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "The response correctly identifies and references 'Article 15J' which is present in the first retrieved document. It does not invent any legal citations.",
+      "citations_found": [
+        "Article 15J"
+      ],
+      "citations_verified": [
+        "Article 15J"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 0.7,
+      "completeness_reasoning": "The response successfully identifies the primary law governing running a red light (Cap. 65 Article 15J) and its immediate penalty. It also commendably highlights the absence of information regarding penalty points, repeat offenses, or other consequences, which are crucial aspects of traffic law. However, the underlying retrieval mechanism failed to provide relevant regulations on penalty points (e.g., S.L. 65.11), which fall under the same 'Cap. 65' and are directly relevant to 'what happens' when running a red light. While the response notes this gap, the system's retrieval should ideally have included it.",
+      "missing_laws_suggested": [
+        "Road Traffic (Penalty Points) Regulations (S.L. 65.11)",
+        "Provisions for repeat offenses or other related consequences."
+      ],
+      "cross_references_found": [
+        "Article 4 (S.L. 499.56 Article 107) mentions breaches of various regulations.",
+        "Article 5 (S.L. 499.01 Article 134) mentions contravening numerous regulations."
+      ],
+      "relevance_score": 0.2,
+      "relevance_reasoning": "Only 1 out of the 5 retrieved articles (Cap. 65 Article 15J) was directly relevant to the specific question of running a red light. The other four articles dealt with interpretations for other acts or general penalty provisions for entirely different regulations, contributing noise to the retrieval set. The RAG system's *response* accurately identifies this irrelevance, but the *retrieval* itself was poor on relevance.",
+      "irrelevant_articles": [
+        "Article 2: S.L. 499.01 Article 2 (Interpretation for Ports and Shipping Act)",
+        "Article 3: S.L. 499.67 Article 2 (Interpretation of general road terms)",
+        "Article 4: S.L. 499.56 Article 107 (General penalties for unrelated breaches)",
+        "Article 5: S.L. 499.01 Article 134 (General penalties for unrelated contraventions)"
+      ],
+      "overall_score": 0.78,
+      "verdict": "partial",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 23.153085708618164
+    },
+    {
+      "question_id": "TRAFFIC-004",
+      "query": "What are the penalties for drunk driving in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "Cap. 65"
+        ],
+        "found_laws": [
+          "Cap. 65"
+        ],
+        "missed_laws": [],
+        "law_recall": 1.0,
+        "expected_keywords": [
+          "alcohol",
+          "blood",
+          "breath",
+          "fine",
+          "imprisonment"
+        ],
+        "found_keywords": [
+          "alcohol",
+          "blood",
+          "breath",
+          "fine",
+          "imprisonment"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": true,
+        "failure_reason": "none"
+      },
+      "faithfulness_score": 0.833,
+      "faithfulness_reasoning": "Five out of six claims are directly supported by the retrieved articles. However, the specific alcohol limits (eight microgrammes, twenty milligrammes, twenty-three milligrammes) mentioned in the last claim are not present in the retrieved text for Article 15H. The proviso in the retrieved document is truncated, meaning the system hallucinated these specific figures to complete the sentence.",
+      "claims_extracted": [
+        "The offence is defined as driving, attempting to drive, or being in charge of a motor vehicle on a road or other public place after consuming alcohol such that the proportion of it in breath, blood or urine exceeds the prescribed limit.",
+        "For a first conviction, the penalty is a fine (multa) of not less than one thousand eight hundred euro (\u20ac1,800) or imprisonment not exceeding six months, or both such fine and imprisonment.",
+        "For a second or subsequent conviction, the penalty is a fine (multa) of not less than three thousand euro (\u20ac3,000) or imprisonment not exceeding one year, or both such fine and imprisonment.",
+        "In addition to the punishments, the court shall disqualify the offender from holding or obtaining a driving licence in the case of a first conviction for a period of not less than six months, and in the case of a second or subsequent conviction for a period of not less than one year.",
+        "In addition to the penalties, the court may also impose a Probation Order in accordance with article 7 of the Probation Act which shall include an order whereby the offender shall be ordered to attend a rehabilitation programme, with expenses charged upon him, or a Community Service Order in accordance with article 11 of the Probation Act.",
+        "However, in the case of a conviction for being unfit to drive through drink or for an offence under article 15B, the provisions regarding Probation Orders or Community Service Orders shall apply only where the proportion of alcohol in the breath, blood or urine exceeds the prescribed limit by eight microgrammes or more in the breath or by twenty milligrammes or more in the blood or by twenty-three milligrammes or more in urine."
+      ],
+      "claims_supported": [
+        "The offence is defined as driving, attempting to drive, or being in charge of a motor vehicle on a road or other public place after consuming alcohol such that the proportion of it in breath, blood or urine exceeds the prescribed limit.",
+        "For a first conviction, the penalty is a fine (multa) of not less than one thousand eight hundred euro (\u20ac1,800) or imprisonment not exceeding six months, or both such fine and imprisonment.",
+        "For a second or subsequent conviction, the penalty is a fine (multa) of not less than three thousand euro (\u20ac3,000) or imprisonment not exceeding one year, or both such fine and imprisonment.",
+        "In addition to the punishments, the court shall disqualify the offender from holding or obtaining a driving licence in the case of a first conviction for a period of not less than six months, and in the case of a second or subsequent conviction for a period of not less than one year.",
+        "In addition to the penalties, the court may also impose a Probation Order in accordance with article 7 of the Probation Act which shall include an order whereby the offender shall be ordered to attend a rehabilitation programme, with expenses charged upon him, or a Community Service Order in accordance with article 11 of the Probation Act."
+      ],
+      "claims_unsupported": [
+        "However, in the case of a conviction for being unfit to drive through drink or for an offence under article 15B, the provisions regarding Probation Orders or Community Service Orders shall apply only where the proportion of alcohol in the breath, blood or urine exceeds the prescribed limit by eight microgrammes or more in the breath or by twenty milligrammes or more in the blood or by twenty-three milligrammes or more in urine."
+      ],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "All legal citations provided in the response are directly found and correctly attributed within the retrieved articles.",
+      "citations_found": [
+        "Cap. 65",
+        "Article 15H",
+        "Article 15B",
+        "article 7 of the Probation Act",
+        "article 11 of the Probation Act"
+      ],
+      "citations_verified": [
+        "Cap. 65",
+        "Article 15H",
+        "Article 15B",
+        "article 7 of the Probation Act",
+        "article 11 of the Probation Act"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 0.5,
+      "completeness_reasoning": "While the core penalties are covered, the response critically omits the actual 'prescribed limit' values for alcohol, which are fundamental to defining the offence itself. This information is hinted at but not provided by the retrieved Article 15B. Additionally, the truncation of the proviso in Cap. 65 Article 15H(3) in the retrieved document led to a hallucination in the response, indicating a significant gap in source material provision.",
+      "missing_laws_suggested": [
+        "The specific 'prescribed limit' for alcohol concentration (the actual legal values for breath, blood, or urine) which are not defined in the retrieved Article 15B.",
+        "Cap. 65 Article 15A, which defines the related offence of being 'unfit to drive through drink or drugs' and is cross-referenced by Article 15H.",
+        "The full text of the proviso in Cap. 65 Article 15H(3) which was truncated in the retrieved document, leading to the hallucinated alcohol limits in the response."
+      ],
+      "cross_references_found": [
+        "articles 15A and 15B (in Cap. 65 Article 15H)",
+        "article 7 of the Probation Act (in Cap. 65 Article 15H)",
+        "article 11 of the Probation Act (in Cap. 65 Article 15H)",
+        "the prescribed limit (in Cap. 65 Article 15B)"
+      ],
+      "relevance_score": 0.6,
+      "relevance_reasoning": "Articles 1 and 5 are highly relevant as they define the offence and its penalties. Article 4 (S.L. 65.18 Article 54) is only tangentially relevant as it deals with administrative execution of foreign driving disqualifications, not the local penalties for drunk driving. Articles 2 and 3 are completely irrelevant, dealing with animal-drawn vehicles and general interpretations unrelated to drunk driving penalties, indicating a significant retrieval precision issue.",
+      "irrelevant_articles": [
+        "Article 2: S.L. 499.66 Article 2 (Interpretation for animal-drawn vehicles)",
+        "Article 3: S.L. 65.18 Article 2 (Interpretation for general driving regulations)"
+      ],
+      "overall_score": 0.76155,
+      "verdict": "partial",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 25.010138750076294
+    },
+    {
+      "question_id": "TRAFFIC-005",
+      "query": "What are the rules for parking near pedestrian crossings?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [
+          "S.L. 65.11"
+        ],
+        "missed_laws": [],
+        "law_recall": 1.0,
+        "expected_keywords": [
+          "pedestrian crossing",
+          "metres",
+          "parking"
+        ],
+        "found_keywords": [
+          "pedestrian crossing",
+          "metres",
+          "parking"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": true,
+        "failure_reason": "none"
+      },
+      "faithfulness_score": 0.83,
+      "faithfulness_reasoning": "Claims 6 and 12 are unsupported because Article 4 (S.L. 327.422 Article 17) explicitly states that 'Parking is not permitted: (c) in pedestrian crosswalks', which is another explicit rule about parking near pedestrian crossings. The response incorrectly states that the 4-meter rule is the only rule and that no other restrictions exist in the provided documents.",
+      "claims_extracted": [
+        "S.L. 65.11, Article 79 - Parking prohibition directly addresses parking near pedestrian crossings.",
+        "S.L. 65.11, Article 89 - Pedestrian crossings provides context about pedestrian crossings.",
+        "S.L. 65.11, Article 89 focuses on vehicle/pedestrian behavior at crossings, not parking.",
+        "No person shall, unless otherwise directed by a Police officer or an enforcement officer of the Authority or a community officer, park or leave unattended any motor vehicle or trailer on, or within four (4) metres of a pedestrian crossing, from the side of the oncoming traffic, unless a build-out exists.",
+        "The extracted text is directly from Document 1, Article 79, paragraph (c).",
+        "This is the only explicit rule about parking near pedestrian crossings in the provided documents.",
+        "No person shall park or leave unattended any motor vehicle or trailer on, or within four (4) metres of a pedestrian crossing, from the side of the oncoming traffic, unless a build-out exists, unless otherwise directed by a Police officer, an enforcement officer of the Authority, or a community officer.",
+        "This is the specific parking prohibition rule regarding pedestrian crossings under S.L. 65.11, Article 79.",
+        "The documents do not contain information about penalties for violating this parking prohibition.",
+        "The documents do not contain information about the definition of what constitutes \"the side of the oncoming traffic\".",
+        "The documents do not contain information about specific procedures for enforcement.",
+        "The documents do not contain information about any other parking restrictions related to pedestrian crossings beyond the 4-metre rule."
+      ],
+      "claims_supported": [
+        "S.L. 65.11, Article 79 - Parking prohibition directly addresses parking near pedestrian crossings.",
+        "S.L. 65.11, Article 89 - Pedestrian crossings provides context about pedestrian crossings.",
+        "S.L. 65.11, Article 89 focuses on vehicle/pedestrian behavior at crossings, not parking.",
+        "No person shall, unless otherwise directed by a Police officer or an enforcement officer of the Authority or a community officer, park or leave unattended any motor vehicle or trailer on, or within four (4) metres of a pedestrian crossing, from the side of the oncoming traffic, unless a build-out exists.",
+        "The extracted text is directly from Document 1, Article 79, paragraph (c).",
+        "No person shall park or leave unattended any motor vehicle or trailer on, or within four (4) metres of a pedestrian crossing, from the side of the oncoming traffic, unless a build-out exists, unless otherwise directed by a Police officer, an enforcement officer of the Authority, or a community officer.",
+        "This is the specific parking prohibition rule regarding pedestrian crossings under S.L. 65.11, Article 79.",
+        "The documents do not contain information about penalties for violating this parking prohibition.",
+        "The documents do not contain information about the definition of what constitutes \"the side of the oncoming traffic\".",
+        "The documents do not contain information about specific procedures for enforcement."
+      ],
+      "claims_unsupported": [
+        "This is the only explicit rule about parking near pedestrian crossings in the provided documents.",
+        "The documents do not contain information about any other parking restrictions related to pedestrian crossings beyond the 4-metre rule."
+      ],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "All legal citations used in the response (S.L. 65.11, Article 79, Article 89) are present and correctly referenced within the provided retrieved articles.",
+      "citations_found": [
+        "S.L. 65.11",
+        "Article 79",
+        "Article 89"
+      ],
+      "citations_verified": [
+        "S.L. 65.11",
+        "Article 79",
+        "Article 89"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 0.5,
+      "completeness_reasoning": "The system failed to include a directly relevant parking prohibition found in the retrieved Article 4 (S.L. 327.422 Article 17(c)), which states 'Parking is not permitted: (c) in pedestrian crosswalks'. This is a significant omission given the question asked. While it correctly noted the absence of penalties and specific definitions, missing an explicit rule from the provided context leads to a substantial gap in completeness.",
+      "missing_laws_suggested": [
+        "S.L. 327.422 Article 17(c) which prohibits parking \"in pedestrian crosswalks\"."
+      ],
+      "cross_references_found": [
+        "Traffic Signs and Carriageway Markings Regulations",
+        "Part II D (f)(13) of the Traffic Signs and Carriageway Markings Regulations",
+        "build-out (defined in S.L. 65.11 Article 2)",
+        "light signals (in S.L. 65.11 Article 89)"
+      ],
+      "relevance_score": 0.7,
+      "relevance_reasoning": "Articles 1 (S.L. 65.11 Article 79) and 4 (S.L. 327.422 Article 17) are highly relevant to the question. Article 3 (S.L. 65.11 Article 2) is partially relevant as it defines 'build-out', an exception mentioned in Article 1. However, Articles 2 (S.L. 499.54 Article 2) and 5 (S.L. 65.11 Article 89) are largely irrelevant to the specific 'rules for parking' aspect of the question.",
+      "irrelevant_articles": [
+        "S.L. 499.54 Article 2 (defines 'pedestrian zone' and other terms not directly relevant to parking near crossings)",
+        "S.L. 65.11 Article 89 (concerns pedestrian and vehicle behavior at crossings, not parking prohibitions)"
+      ],
+      "overall_score": 0.7805,
+      "verdict": "partial",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 26.543370723724365
+    },
+    {
+      "question_id": "TRAFFIC-006",
+      "query": "What is the fine for parking in a disabled parking space?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [
+          "S.L. 65.11"
+        ],
+        "missed_laws": [],
+        "law_recall": 1.0,
+        "expected_keywords": [
+          "disabled",
+          "parking",
+          "233"
+        ],
+        "found_keywords": [
+          "disabled",
+          "parking",
+          "233"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": true,
+        "failure_reason": "generation"
+      },
+      "faithfulness_score": 0.47,
+      "faithfulness_reasoning": "A significant portion of the response's claims are unsupported. The system hallucinated sub-regulations (6), (7), (8), (11), and (13) within S.L. 65.11 Article 78, including their descriptive text and the specific fine of \u20ac233. Article 78 in the provided text only contains sub-regulations (1), (2), and (3). Additionally, the system incorrectly cited the penalty text from Cap. 560 Article 15 as being in sub-article (3) when it is actually in sub-article (2). The meta-claim that 'All information above is directly from the documents' is also false.",
+      "claims_extracted": [
+        "Document 4 (S.L. 65.11, Article 78 - Reserved parking spaces) is a relevant document.",
+        "Document 5 (Cap. 560, Article 15 - Offences and penalties) is a relevant document.",
+        "From Document 4, Article 78, sub-regulation (13) states: \"(13) A person who breaches sub-regulation (6) or (7) or (8) or (11) shall be guilty of an offence and shall be liable, on conviction, to a fine (ammenda) of two hundred and thirty three euro (\u20ac233).\"",
+        "Sub-regulations (6), (7), and (8) relate to parking in disabled parking spaces.",
+        "Sub-regulation (6) states: \"No person shall park or leave unattended any unauthorised motor vehicle on a designated parking space for disabled persons reserved by the Authority...\"",
+        "Sub-regulation (7) states: \"No person, including a Blue badge holder, shall park or leave unattended any motor vehicle on a personalised designated parking space for disabled persons... except the Blue Badge holder or the person for whose benefit the Authority has reserved the personalised designated parking space.\"",
+        "Sub-regulation (8) states: \"Any authorised person who parks a motor vehicle on a designated parking space for disabled persons shall be obliged to display the Blue Badge...\"",
+        "From Document 5, Article 15, sub-article (3) states: \"Any person who commits an offence against the provisions of sub-article (1) shall, on conviction, be liable to a fine (multa) of not less than two hundred and thirty euro (\u20ac230) and not more than five hundred euro (\u20ac500) and the towing of the vehicle; upon conviction for a subsequent offence, the person will be liable to a fine (multa) of not less than one thousand euro (\u20ac1,000) and not more than one thousand and five hundred euro (\u20ac1,500) and the towing of the vehicle.\"",
+        "All information above is directly from the documents.",
+        "Based on the documents provided, there are different fines depending on the specific violation.",
+        "A person who breaches the regulations regarding parking in designated or personalised disabled parking spaces shall be guilty of an offence and shall be liable, on conviction, to a fine (ammenda) of two hundred and thirty three euro (\u20ac233).",
+        "This applies to violations such as parking or leaving unattended any unauthorised motor vehicle on a designated parking space for disabled persons.",
+        "This also applies to parking on a personalised designated parking space for disabled persons except by the authorized Blue Badge holder or person for whose benefit the space was reserved.",
+        "Any person who commits an offence related to Blue Badge misuse shall, on conviction, be liable to a fine (multa) of not less than two hundred and thirty euro (\u20ac230) and not more than five hundred euro (\u20ac500) and the towing of the vehicle.",
+        "This includes using an invalid Blue Badge.",
+        "This includes using a Blue Badge of a deceased holder.",
+        "This includes misusing a Blue Badge without the holder's permission.",
+        "This includes tampering with a Blue Badge.",
+        "Upon conviction for a subsequent offence, the person will be liable to a fine (multa) of not less than one thousand euro (\u20ac1,000) and not more than one thousand and five hundred euro (\u20ac1,500) and the towing of the vehicle."
+      ],
+      "claims_supported": [
+        "Document 4 (S.L. 65.11, Article 78 - Reserved parking spaces) is a relevant document.",
+        "Document 5 (Cap. 560, Article 15 - Offences and penalties) is a relevant document.",
+        "Based on the documents provided, there are different fines depending on the specific violation.",
+        "Any person who commits an offence related to Blue Badge misuse shall, on conviction, be liable to a fine (multa) of not less than two hundred and thirty euro (\u20ac230) and not more than five hundred euro (\u20ac500) and the towing of the vehicle.",
+        "This includes using an invalid Blue Badge.",
+        "This includes using a Blue Badge of a deceased holder.",
+        "This includes misusing a Blue Badge without the holder's permission.",
+        "This includes tampering with a Blue Badge.",
+        "Upon conviction for a subsequent offence, the person will be liable to a fine (multa) of not less than one thousand euro (\u20ac1,000) and not more than one thousand and five hundred euro (\u20ac1,500) and the towing of the vehicle."
+      ],
+      "claims_unsupported": [
+        "From Document 4, Article 78, sub-regulation (13) states: \"(13) A person who breaches sub-regulation (6) or (7) or (8) or (11) shall be guilty of an offence and shall be liable, on conviction, to a fine (ammenda) of two hundred and thirty three euro (\u20ac233).\"",
+        "Sub-regulations (6), (7), and (8) relate to parking in disabled parking spaces.",
+        "Sub-regulation (6) states: \"No person shall park or leave unattended any unauthorised motor vehicle on a designated parking space for disabled persons reserved by the Authority...\"",
+        "Sub-regulation (7) states: \"No person, including a Blue badge holder, shall park or leave unattended any motor vehicle on a personalised designated parking space for disabled persons... except the Blue Badge holder or the person for whose benefit the Authority has reserved the personalised designated parking space.\"",
+        "Sub-regulation (8) states: \"Any authorised person who parks a motor vehicle on a designated parking space for disabled persons shall be obliged to display the Blue Badge...\"",
+        "From Document 5, Article 15, sub-article (3) states: \"Any person who commits an offence against the provisions of sub-article (1) shall, on conviction, be liable to a fine (multa) of not less than two hundred and thirty euro (\u20ac230) and not more than five hundred euro (\u20ac500) and the towing of the vehicle; upon conviction for a subsequent offence, the person will be liable to a fine (multa) of not less than one thousand euro (\u20ac1,000) and not more than one thousand and five hundred euro (\u20ac1,500) and the towing of the vehicle.\"",
+        "All information above is directly from the documents.",
+        "A person who breaches the regulations regarding parking in designated or personalised disabled parking spaces shall be guilty of an offence and shall be liable, on conviction, to a fine (ammenda) of two hundred and thirty three euro (\u20ac233).",
+        "This applies to violations such as parking or leaving unattended any unauthorised motor vehicle on a designated parking space for disabled persons.",
+        "This also applies to parking on a personalised designated parking space for disabled persons except by the authorized Blue Badge holder or person for whose benefit the space was reserved."
+      ],
+      "entity_grounding_score": 0.33,
+      "entity_grounding_reasoning": "The system fabricated five sub-regulation numbers for S.L. 65.11 Article 78 ((6), (7), (8), (11), (13)) which do not exist in the provided text for that article. It also incorrectly cited Cap. 560 Article 15, referring to 'sub-article (3)' for the penalties when the relevant text is found in 'sub-article (2)' of the retrieved document.",
+      "citations_found": [
+        "S.L. 65.11 Article 78",
+        "Cap. 560 Article 15",
+        "Article 78, sub-regulation (13)",
+        "sub-regulation (6)",
+        "sub-regulation (7)",
+        "sub-regulation (8)",
+        "sub-regulation (11)",
+        "Article 15, sub-article (3)",
+        "sub-article (1)"
+      ],
+      "citations_verified": [
+        "S.L. 65.11 Article 78",
+        "Cap. 560 Article 15",
+        "sub-article (1)"
+      ],
+      "citations_fabricated": [
+        "Article 78, sub-regulation (13)",
+        "sub-regulation (6)",
+        "sub-regulation (7)",
+        "sub-regulation (8)",
+        "sub-regulation (11)",
+        "Article 15, sub-article (3)"
+      ],
+      "completeness_score": 0.4,
+      "completeness_reasoning": "The RAG system completely missed S.L. 363.80 Article 7 (Document 1), which provides a fine for parking without displaying a Blue Sticker in a controlled zone. This is a highly relevant piece of legislation for the question asked and represents a significant gap in the completeness of the answer. While it covered Blue Badge misuse, it failed to cover other direct parking offenses for disabled spaces.",
+      "missing_laws_suggested": [
+        "S.L. 363.80 Article 7 (Document 1) directly addresses parking offenses where a 'Blue Sticker issued by the National Commission Persons with Disability' is not displayed. This article provides a relevant fine range (\u20ac23.29 - \u20ac58.23) for parking in a controlled zone without such a sticker, which is a direct answer to the question for a specific scenario but was completely ignored by the RAG system."
+      ],
+      "cross_references_found": [
+        "S.L. 363.80 Article 7(a) mentions 'Blue Sticker issued by the National Commission Persons with Disability'.",
+        "S.L. 65.11 Article 2 defines terms like 'Blue Badge' and 'designated parking space for disabled persons' in terms of the 'Parking Concessions for Persons with Disability Act'.",
+        "S.L. 65.11 Article 78(2) and (3) refers to the 'Parking Concessions for Persons with Disability Act'.",
+        "Cap. 560 Article 15 is titled 'Offences and penalties' under the 'Parking Concessions for Persons with Disability Act'."
+      ],
+      "relevance_score": 0.7,
+      "relevance_reasoning": "Of the five retrieved articles, S.L. 363.134 Article 2 is entirely irrelevant. S.L. 65.11 Article 2 provides useful definitions but does not directly address fines. S.L. 65.11 Article 78 is contextually relevant regarding reserved parking spaces, but its provided text does not contain penalty information. Cap. 560 Article 15 and S.L. 363.80 Article 7 are highly relevant. While one article was irrelevant and one provided only definitions, the core relevant articles were retrieved, even if not fully utilized by the RAG system in its response.",
+      "irrelevant_articles": [
+        "Article 2: S.L. 363.134 Article 2 (Interpretation for Mgarr Local Council Bye-Laws is irrelevant to disabled parking fines)."
+      ],
+      "overall_score": 0.46699999999999997,
+      "verdict": "inaccurate",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 40.79337549209595
+    },
+    {
+      "question_id": "TRAFFIC-007",
+      "query": "Do I need a special license to drive a motorcycle in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11",
+          "Cap. 65"
+        ],
+        "found_laws": [],
+        "missed_laws": [
+          "S.L. 65.11",
+          "Cap. 65"
+        ],
+        "law_recall": 0.0,
+        "expected_keywords": [
+          "motor cycle",
+          "licence",
+          "driving"
+        ],
+        "found_keywords": [
+          "motor cycle",
+          "licence",
+          "driving"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": false,
+        "failure_reason": "retrieval"
+      },
+      "faithfulness_score": 1.0,
+      "faithfulness_reasoning": "All claims made in the response are directly supported by the content of the retrieved articles. The system accurately states what information is present and, more importantly, what crucial information is missing.",
+      "claims_extracted": [
+        "The documents provided do not contain specific information about what type of driving license is required to drive a motorcycle in Malta.",
+        "Document 3 defines a 'motor cycle' as 'any two-wheeled vehicle, with or without a sidecar, fitted with an engine having a cylinder capacity of more than 50cm\u00b3 if of the internal combustion type and, or having a maximum design speed of more than 45 km/h'",
+        "the documents do not include the regulations that specify which driving license category is required to operate a motorcycle.",
+        "The documents do not contain the Motor Vehicles (Driving Licences) Regulations or other provisions that would detail the specific licensing requirements for motorcycles in Malta."
+      ],
+      "claims_supported": [
+        "The documents provided do not contain specific information about what type of driving license is required to drive a motorcycle in Malta.",
+        "Document 3 defines a 'motor cycle' as 'any two-wheeled vehicle, with or without a sidecar, fitted with an engine having a cylinder capacity of more than 50cm\u00b3 if of the internal combustion type and, or having a maximum design speed of more than 45 km/h'",
+        "the documents do not include the regulations that specify which driving license category is required to operate a motorcycle.",
+        "The documents do not contain the Motor Vehicles (Driving Licences) Regulations or other provisions that would detail the specific licensing requirements for motorcycles in Malta."
+      ],
+      "claims_unsupported": [],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "All legal citations and references to categories (A, AM, B) are accurately found and mentioned in the provided source documents. The reference to 'Motor Vehicles (Driving Licences) Regulations' is also correctly grounded as it is explicitly mentioned in Article 5 of S.L. 499.67.",
+      "citations_found": [
+        "Document 3 (S.L. 368.02, Article 2)",
+        "Document 1 (S.L. 65.18, Article 5)",
+        "Document 5 (S.L. 499.67, Article 5)",
+        "S.L. 368.02",
+        "Article 2",
+        "S.L. 499.67",
+        "Motor Vehicles (Driving Licences) Regulations",
+        "Category A",
+        "Category AM",
+        "Category B"
+      ],
+      "citations_verified": [
+        "S.L. 368.02 Article 2",
+        "S.L. 65.18 Article 5",
+        "S.L. 499.67 Article 5",
+        "Motor Vehicles (Driving Licences) Regulations",
+        "Category A",
+        "Category AM",
+        "Category B"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 1.0,
+      "completeness_reasoning": "The response correctly identifies that the direct answer regarding motorcycle license requirements is not present in the provided articles. Crucially, it points to the 'Motor Vehicles (Driving Licences) Regulations' as the specific law that would contain this information, demonstrating an excellent understanding of the legal landscape even with incomplete retrieval.",
+      "missing_laws_suggested": [
+        "Motor Vehicles (Driving Licences) Regulations"
+      ],
+      "cross_references_found": [
+        "Motor Vehicles (Driving Licences) Regulations (mentioned in S.L. 499.67 Article 5)",
+        "regulation 29 (mentioned in S.L. 65.18 Article 5)",
+        "regulation 28 (mentioned in S.L. 65.18 Article 5)",
+        "regulation 6A(3) (mentioned in S.L. 368.02 Article 13)",
+        "Motor Vehicle Insurance (Third-Party Risks) Ordinance (mentioned in S.L. 368.02 Article 13)"
+      ],
+      "relevance_score": 0.6,
+      "relevance_reasoning": "Two out of the five retrieved articles (Article 2 and Article 4) are largely irrelevant to the question of a special license for driving a motorcycle. Article 1 is only partially relevant as it pertains to third-country licenses. However, Article 3 provides a key definition, and Article 5, despite being about e-kickscooters, provides the crucial cross-reference to the 'Motor Vehicles (Driving Licences) Regulations' which the system correctly leverages.",
+      "irrelevant_articles": [
+        "Article 2: S.L. 499.67 Article 2 (Interpretation - general definitions, not related to motorcycle licenses)",
+        "Article 4: S.L. 368.02 Article 13 (Circulation licence required - related to vehicle registration/road tax, not driver's license)"
+      ],
+      "overall_score": 0.92,
+      "verdict": "accurate",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 20.636760234832764
+    },
+    {
+      "question_id": "TRAFFIC-008",
+      "query": "What are the window tinting rules for cars in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [
+          "S.L. 65.11"
+        ],
+        "missed_laws": [],
+        "law_recall": 1.0,
+        "expected_keywords": [
+          "tint",
+          "light transmission",
+          "windscreen",
+          "75"
+        ],
+        "found_keywords": [
+          "tint",
+          "light transmission",
+          "windscreen",
+          "75"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": true,
+        "failure_reason": "generation"
+      },
+      "faithfulness_score": 0.516,
+      "faithfulness_reasoning": "Out of 31 factual claims, 15 were unsupported by the provided retrieved articles. The system hallucinated definitions for M2/M3 vehicles, several entire sub-regulations (3, 4, 5) of Article 110A, including detailed medical exemption criteria and windscreen tinting prohibitions, and a general statement about applying tints to other windows. It also falsely claimed that all information was directly extracted and that Document 2 defined M2/M3.",
+      "claims_extracted": [
+        "Document 1 is S.L. 65.11, Article 110A, titled \"Windscreens and other windows\".",
+        "Document 1 directly addresses window tinting rules.",
+        "Document 2 is S.L. 65.11, Article 2, titled \"Interpretation\".",
+        "Document 2 provides definitions for vehicle categories mentioned in Article 110A.",
+        "From Document 1, Article 110A, Sub-regulation (1) covers light transmission requirements for non-M2/M3 vehicles.",
+        "From Document 1, Article 110A, Sub-regulation (2) covers light transmission requirements for M2/M3 vehicles.",
+        "From Document 1, Article 110A, Sub-regulation (3) covers medical exemption provisions.",
+        "From Document 1, Article 110A, Sub-regulation (4) covers windscreen tinting prohibitions.",
+        "From Document 1, Article 110A, Sub-regulation (5) covers requirements for other windows.",
+        "From Document 2, Article 2, definitions of M2 and M3 motor vehicles are provided.",
+        "All information below is directly extracted from the documents provided.",
+        "The window tinting rules are set out in S.L. 65.11, Article 110A.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 75 per cent in the case of the windscreen.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 70 per cent in the case of the front side windows.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 30 per cent in the case of the rear side windows.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 60 per cent in the case of the rear most window.",
+        "If the vehicle is equipped with left and right-hand side rear view mirrors, the minimum allowable light transmitted through the rear most windows may be below 60 per cent but shall not be less than 30 per cent.",
+        "The requirements for rear side glazing and rear most glazing do not apply if these are marked with the type approval symbol V.",
+        "M2 motor vehicles are vehicles used for the carriage of passengers, comprising more than eight seats in addition to the driver's seat, and having a maximum mass not exceeding 5 tonnes.",
+        "M3 motor vehicles are vehicles used for the carriage of passengers, comprising more than eight seats in addition to the driver's seat, and having a maximum mass exceeding 5 tonnes.",
+        "For M2 or M3 vehicles, the glazings must allow a visible light transmission of at least 75 per cent in the case of the windscreen.",
+        "For M2 or M3 vehicles, the glazings must allow a visible light transmission of at least 70 per cent in the case of the front side windows.",
+        "For M2 or M3 vehicles, the glazings must allow a visible light transmission of at least 30 per cent in the case of all remaining windows.",
+        "Where the vehicle is fitted with one or more functional surveillance cameras which are positioned so as to capture the entire seating area of the vehicle and in the vehicle there are signs showing there are surveillance cameras in the vehicle, the 30 per cent limit for remaining windows does not apply.",
+        "A person who, for medical reasons, requires tinting on the front side window to the right of the driver which would allow a light transmittance which is less than 70 per cent but not less then 55 per cent, shall apply for a special permit from the Authority.",
+        "The medical conditions for which the said exemption from such restrictions may be issued shall be those associated with photo-sensitivity disorders, as certified by an eye or skin specialist.",
+        "The photosensitivity disorders referred to herein are disorders caused by exposure to ultraviolet radiation.",
+        "Diseases that are associated with light exposure include contact dermatitis, vacciniforme, lupus erythematosus, polymorphous light eruption, Porphyria and xeroderma pigmentosum.",
+        "No tint, film, other substance or material shall be applied to the windscreen of a motor vehicle.",
+        "This does not prohibit the tinting of the top part of the front windscreen of a motor vehicle with a strap, located at the very top of the windscreen, not wider than 20 per cent of the height of the windscreen but, in any case, not wider than a maximum of 100 mm, provided that the light transmittance of the strap shall not be less than 35 per cent.",
+        "Any tint, film, other substance or material applied to any window, other than the windscreen, of a motor vehicle shall conform to the levels prescribed in sub-regulation (1)."
+      ],
+      "claims_supported": [
+        "Document 1 is S.L. 65.11, Article 110A, titled \"Windscreens and other windows\".",
+        "Document 1 directly addresses window tinting rules.",
+        "Document 2 is S.L. 65.11, Article 2, titled \"Interpretation\".",
+        "From Document 1, Article 110A, Sub-regulation (1) covers light transmission requirements for non-M2/M3 vehicles.",
+        "From Document 1, Article 110A, Sub-regulation (2) covers light transmission requirements for M2/M3 vehicles.",
+        "The window tinting rules are set out in S.L. 65.11, Article 110A.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 75 per cent in the case of the windscreen.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 70 per cent in the case of the front side windows.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 30 per cent in the case of the rear side windows.",
+        "No person shall drive, or cause or permit to be driven on a road a motor vehicle, other than an M2 or an M3 vehicle, the glazings of which do not allow a visible light transmission of at least 60 per cent in the case of the rear most window.",
+        "If the vehicle is equipped with left and right-hand side rear view mirrors, the minimum allowable light transmitted through the rear most windows may be below 60 per cent but shall not be less than 30 per cent.",
+        "The requirements for rear side glazing and rear most glazing do not apply if these are marked with the type approval symbol V.",
+        "For M2 or M3 vehicles, the glazings must allow a visible light transmission of at least 75 per cent in the case of the windscreen.",
+        "For M2 or M3 vehicles, the glazings must allow a visible light transmission of at least 70 per cent in the case of the front side windows.",
+        "For M2 or M3 vehicles, the glazings must allow a visible light transmission of at least 30 per cent in the case of all remaining windows.",
+        "Where the vehicle is fitted with one or more functional surveillance cameras which are positioned so as to capture the entire seating area of the vehicle and in the vehicle there are signs showing there are surveillance cameras in the vehicle, the 30 per cent limit for remaining windows does not apply."
+      ],
+      "claims_unsupported": [
+        "Document 2 provides definitions for vehicle categories mentioned in Article 110A.",
+        "From Document 1, Article 110A, Sub-regulation (3) covers medical exemption provisions.",
+        "From Document 1, Article 110A, Sub-regulation (4) covers windscreen tinting prohibitions.",
+        "From Document 1, Article 110A, Sub-regulation (5) covers requirements for other windows.",
+        "From Document 2, Article 2, definitions of M2 and M3 motor vehicles are provided.",
+        "All information below is directly extracted from the documents provided.",
+        "M2 motor vehicles are vehicles used for the carriage of passengers, comprising more than eight seats in addition to the driver's seat, and having a maximum mass not exceeding 5 tonnes.",
+        "M3 motor vehicles are vehicles used for the carriage of passengers, comprising more than eight seats in addition to the driver's seat, and having a maximum mass exceeding 5 tonnes.",
+        "A person who, for medical reasons, requires tinting on the front side window to the right of the driver which would allow a light transmittance which is less than 70 per cent but not less then 55 per cent, shall apply for a special permit from the Authority.",
+        "The medical conditions for which the said exemption from such restrictions may be issued shall be those associated with photo-sensitivity disorders, as certified by an eye or skin specialist.",
+        "The photosensitivity disorders referred to herein are disorders caused by exposure to ultraviolet radiation.",
+        "Diseases that are associated with light exposure include contact dermatitis, vacciniforme, lupus erythematosus, polymorphous light eruption, Porphyria and xeroderma pigmentosum.",
+        "No tint, film, other substance or material shall be applied to the windscreen of a motor vehicle.",
+        "This does not prohibit the tinting of the top part of the front windscreen of a motor vehicle with a strap, located at the very top of the windscreen, not wider than 20 per cent of the height of the windscreen but, in any case, not wider than a maximum of 100 mm, provided that the light transmittance of the strap shall not be less than 35 per cent.",
+        "Any tint, film, other substance or material applied to any window, other than the windscreen, of a motor vehicle shall conform to the levels prescribed in sub-regulation (1)."
+      ],
+      "entity_grounding_score": 0.625,
+      "entity_grounding_reasoning": "The legal citations 'S.L. 65.11', 'Article 110A', 'Article 2', 'Sub-regulation (1)', and 'Sub-regulation (2)' are present in the retrieved documents. However, 'Sub-regulation (3)', 'Sub-regulation (4)', and 'Sub-regulation (5)' are not present in the provided text for Article 110A and are fabricated citations, indicating a severe hallucination of legal structure.",
+      "citations_found": [
+        "S.L. 65.11",
+        "Article 110A",
+        "Article 2",
+        "Sub-regulation (1)",
+        "Sub-regulation (2)",
+        "Sub-regulation (3)",
+        "Sub-regulation (4)",
+        "Sub-regulation (5)"
+      ],
+      "citations_verified": [
+        "S.L. 65.11",
+        "Article 110A",
+        "Article 2",
+        "Sub-regulation (1)",
+        "Sub-regulation (2)"
+      ],
+      "citations_fabricated": [
+        "Sub-regulation (3)",
+        "Sub-regulation (4)",
+        "Sub-regulation (5)"
+      ],
+      "completeness_score": 0.4,
+      "completeness_reasoning": "The response is incomplete because critical information, such as the full text of Article 110A (which evidently includes more sub-regulations like medical exemptions and specific windscreen rules) and the definitions for M2 and M3 vehicles, were not present in the retrieved articles. The RAG system attempted to fill these gaps by fabricating substantial parts of the answer, including entire sub-regulations and definitions, highlighting the incompleteness of the provided context for a comprehensive answer.",
+      "missing_laws_suggested": [
+        "Full text of S.L. 65.11 Article 110A, specifically sub-regulations beyond (2) (e.g., (3), (4), (5) which the RAG system hallucinates).",
+        "Definitions for 'M2' and 'M3' motor vehicles, which are crucial for interpreting Article 110A and were hallucinated by the RAG system despite Article 2 (Interpretation) being retrieved."
+      ],
+      "cross_references_found": [
+        "M2 or M3 vehicle (in Article 110A, sub-regulations (1) and (2))",
+        "paragraph (c) (in Article 110A, sub-regulation (2) proviso)"
+      ],
+      "relevance_score": 0.4,
+      "relevance_reasoning": "Only Article 1 (S.L. 65.11 Article 110A) is directly and highly relevant to the question. Article 2 (S.L. 65.11 Article 2) is tangentially relevant as an interpretation article for the same S.L., but failed to provide crucial definitions needed. Articles 3, 4, and 5 are completely irrelevant to window tinting rules, indicating a poor retrieval performance where a majority of the provided context was not useful.",
+      "irrelevant_articles": [
+        "Article 3: S.L. 65.21 Article 2 (Definitions - unrelated to tinting)",
+        "Article 4: S.L. 65.21 Article 12 (Conformity with specifications - unrelated to tinting)",
+        "Article 5: Cap. 368 Article 3A (Motor vehicle conformity - unrelated to tinting)"
+      ],
+      "overall_score": 0.49685,
+      "verdict": "inaccurate",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 40.049336433410645
+    },
+    {
+      "question_id": "TRAFFIC-009",
+      "query": "What should I do if I have a car accident in Malta?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [],
+        "missed_laws": [
+          "S.L. 65.11"
+        ],
+        "law_recall": 0.0,
+        "expected_keywords": [
+          "accident",
+          "stop",
+          "exchange",
+          "information",
+          "police"
+        ],
+        "found_keywords": [
+          "accident",
+          "information",
+          "police"
+        ],
+        "missed_keywords": [
+          "stop",
+          "exchange"
+        ],
+        "keyword_recall": 0.6,
+        "retrieval_success": false,
+        "failure_reason": "retrieval"
+      },
+      "faithfulness_score": 0.95,
+      "faithfulness_reasoning": "Almost all claims are directly supported by the retrieved articles. The only unsupported claim is the specific reference to 'Article 9(5)' as describing information; Article 5 (S.L. 104.06 Article 9) in the retrieved text only contains subregulations up to (4). Therefore, the system is referring to a subregulation that is not present in the provided source text.",
+      "claims_extracted": [
+        "Document 1 (Cap. 104, Article 18) - Contains provisions about information requests after accidents",
+        "Document 5 (S.L. 104.06, Article 9) - Contains provisions about disclosure of information after accidents",
+        "Documents 2, 3, and 4 contain definitions and provisions about direct rights of action but do not directly address what to do if you have a car accident.",
+        "Article 18(2): \"The person having custody of the vehicle shall without delay, if so requested by the persons involved in a road traffic accident, inform such persons of the identity of the insurer covering the liability arising out of the use of any motor vehicle involved in the accident.\"",
+        "Article 9(2)(a): \"This regulation applies where - (a) an accident, caused by or arising out of the use of a vehicle which is normally based in an EEA State, occurs in Malta\"",
+        "Article 9(2): Shows when injured parties can request information from the information centre",
+        "Article 9(4) and (5): Describe what information can be requested",
+        "The documents contain limited information about what to do after a car accident.",
+        "They primarily address: The right to request insurer information from the person having custody of the vehicle",
+        "They primarily address: The ability to request information from the Motor Insurance Information Centre in certain circumstances",
+        "The documents do NOT contain information about: Reporting the accident to police",
+        "The documents do NOT contain information about: Medical treatment procedures",
+        "The documents do NOT contain information about: Exchange of personal information",
+        "The documents do NOT contain information about: Documentation requirements",
+        "The documents do NOT contain information about: Time limits for reporting",
+        "The documents do NOT contain information about: General accident procedures",
+        "The documents provided contain very limited information about what to do if you have a car accident in Malta.",
+        "If you are involved in a road traffic accident, you can request that the person having custody of the vehicle inform you of the identity of the insurer covering the liability arising out of the use of any motor vehicle involved in the accident, and they must provide this information without delay.",
+        "If an accident caused by or arising out of the use of a vehicle which is normally based in an EEA State occurs in Malta, an injured party may request the Motor Insurance Information Centre to provide certain information about the vehicles involved.",
+        "the documents do not contain comprehensive information about general accident procedures such as reporting requirements to authorities, exchange of personal details, documentation needed, or other immediate steps to take at the scene of an accident.",
+        "For complete guidance on what to do after a car accident in Malta, you would need to consult additional legal sources or authorities not included in these documents."
+      ],
+      "claims_supported": [
+        "Document 1 (Cap. 104, Article 18) - Contains provisions about information requests after accidents",
+        "Document 5 (S.L. 104.06, Article 9) - Contains provisions about disclosure of information after accidents",
+        "Documents 2, 3, and 4 contain definitions and provisions about direct rights of action but do not directly address what to do if you have a car accident.",
+        "Article 18(2): \"The person having custody of the vehicle shall without delay, if so requested by the persons involved in a road traffic accident, inform such persons of the identity of the insurer covering the liability arising out of the use of any motor vehicle involved in the accident.\"",
+        "Article 9(2)(a): \"This regulation applies where - (a) an accident, caused by or arising out of the use of a vehicle which is normally based in an EEA State, occurs in Malta\"",
+        "Article 9(2): Shows when injured parties can request information from the information centre",
+        "Article 9(4) ... Describe what information can be requested",
+        "The documents contain limited information about what to do after a car accident.",
+        "They primarily address: The right to request insurer information from the person having custody of the vehicle",
+        "They primarily address: The ability to request information from the Motor Insurance Information Centre in certain circumstances",
+        "The documents do NOT contain information about: Reporting the accident to police",
+        "The documents do NOT contain information about: Medical treatment procedures",
+        "The documents do NOT contain information about: Exchange of personal information",
+        "The documents do NOT contain information about: Documentation requirements",
+        "The documents do NOT contain information about: Time limits for reporting",
+        "The documents do NOT contain information about: General accident procedures",
+        "The documents provided contain very limited information about what to do if you have a car accident in Malta.",
+        "If you are involved in a road traffic accident, you can request that the person having custody of the vehicle inform you of the identity of the insurer covering the liability arising out of the use of any motor vehicle involved in the accident, and they must provide this information without delay.",
+        "If an accident caused by or arising out of the use of a vehicle which is normally based in an EEA State occurs in Malta, an injured party may request the Motor Insurance Information Centre to provide certain information about the vehicles involved.",
+        "the documents do not contain comprehensive information about general accident procedures such as reporting requirements to authorities, exchange of personal details, documentation needed, or other immediate steps to take at the scene of an accident.",
+        "For complete guidance on what to do after a car accident in Malta, you would need to consult additional legal sources or authorities not included in these documents."
+      ],
+      "claims_unsupported": [
+        "Article 9(5): Describe what information can be requested"
+      ],
+      "entity_grounding_score": 0.9,
+      "entity_grounding_reasoning": "All primary legal citations (Cap. 104 Art. 18, S.L. 104.06 Art. 9, etc.) and their sub-articles present in the retrieved documents are correctly cited and verified. However, the system refers to 'Article 9(5)' as a source of information, but the provided 'Article 5: S.L. 104.06 Article 9' text only extends up to subregulation (4). This specific subregulation (5) is fabricated in the context of the provided sources.",
+      "citations_found": [
+        "Cap. 104, Article 18",
+        "S.L. 104.06, Article 9",
+        "Document 1 (Cap. 104, Article 18)",
+        "Document 5 (S.L. 104.06, Article 9)",
+        "Documents 2 (S.L. 104.06, Article 2)",
+        "Documents 3 (Cap. 104, Article 2)",
+        "Documents 4 (Cap. 104, Article 9A)",
+        "Article 18(2)",
+        "Article 9(2)(a)",
+        "Article 9(2)",
+        "Article 9(4)",
+        "Article 9(5)"
+      ],
+      "citations_verified": [
+        "Cap. 104, Article 18",
+        "S.L. 104.06, Article 9",
+        "S.L. 104.06, Article 2",
+        "Cap. 104, Article 2",
+        "Cap. 104, Article 9A",
+        "Article 18(2)",
+        "Article 9(2)(a)",
+        "Article 9(2)",
+        "Article 9(4)"
+      ],
+      "citations_fabricated": [
+        "Article 9(5)"
+      ],
+      "completeness_score": 0.3,
+      "completeness_reasoning": "The retrieved articles are severely incomplete for comprehensively answering 'What should I do if I have a car accident in Malta?'. They focus exclusively on insurance information disclosure, largely omitting crucial practical steps such as immediate safety measures, reporting to authorities (police), first aid, detailed exchange of personal and vehicle information, evidence collection, and time limits for reporting or claims. The system itself correctly identifies these significant gaps. Additionally, several cross-references within the retrieved articles (e.g., Cap. 104 Article 17(1), 8(2), and various EU directives) were not followed, which could potentially contain more relevant 'what to do' information.",
+      "missing_laws_suggested": [
+        "Laws regarding reporting the accident to police",
+        "Laws/guidance on medical treatment procedures",
+        "Laws/guidance on exchange of personal information",
+        "Laws/guidance on documentation requirements",
+        "Laws/guidance on time limits for reporting",
+        "Laws/guidance on general accident procedures",
+        "Laws covering Cap. 104, Article 17(1) and Article 8(2)"
+      ],
+      "cross_references_found": [
+        "Cap. 104 Article 18(1) refers to 'article 17(1)' and 'article 8(2)'",
+        "S.L. 104.06 Article 2 refers to 'Article 3 of the first motor insurance directive' and 'Council Directive 72/ 166/EEC' and 'Directive of the European Parliament and the Council of the 16th May, 2000... (No. 2000/26/EC)'",
+        "Cap. 104 Article 9A refers to 'green card system'"
+      ],
+      "relevance_score": 0.7,
+      "relevance_reasoning": "Articles 1 (Cap. 104 Article 18) and 5 (S.L. 104.06 Article 9) are directly relevant to information gathering after an accident, which is a key part of 'what to do'. Articles 2 (S.L. 104.06 Article 2) and 3 (Cap. 104 Article 2) contain definitions that provide context for the other articles, making them moderately relevant. Article 4 (Cap. 104 Article 9A) on 'Direct right of action' is less relevant to the immediate steps of 'what to do' after an accident, focusing instead on subsequent legal recourse. The RAG system correctly identifies the most relevant documents and the less relevant ones for the specific question.",
+      "irrelevant_articles": [
+        "Article 4: Cap. 104 Article 9A (Direct right of action)"
+      ],
+      "overall_score": 0.7575,
+      "verdict": "insufficient",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 41.32664442062378
+    },
+    {
+      "question_id": "TRAFFIC-010",
+      "query": "What is an electric kick scooter according to Maltese law?",
+      "retrieval_diagnosis": {
+        "expected_laws": [
+          "S.L. 65.11"
+        ],
+        "found_laws": [],
+        "missed_laws": [
+          "S.L. 65.11"
+        ],
+        "law_recall": 0.0,
+        "expected_keywords": [
+          "electric kick scooter",
+          "e-kickscooter",
+          "handlebar",
+          "deck"
+        ],
+        "found_keywords": [
+          "electric kick scooter",
+          "e-kickscooter",
+          "handlebar",
+          "deck"
+        ],
+        "missed_keywords": [],
+        "keyword_recall": 1.0,
+        "retrieval_success": false,
+        "failure_reason": "retrieval"
+      },
+      "faithfulness_score": 1.0,
+      "faithfulness_reasoning": "All claims made in the response are directly and explicitly supported by the text in the retrieved Articles 3 (S.L. 65.32 Article 2) and 4 (S.L. 499.67 Article 2).",
+      "claims_extracted": [
+        "An \"electric kick scooter\" or \"e-kickscooter\" means a stand-up device that has a handlebar, a deck and small hard wheels powered by an electric motor and which also allows for human propulsion.",
+        "This definition appears in S.L. 65.32.",
+        "This definition appears in S.L. 499.67."
+      ],
+      "claims_supported": [
+        "An \"electric kick scooter\" or \"e-kickscooter\" means a stand-up device that has a handlebar, a deck and small hard wheels powered by an electric motor and which also allows for human propulsion.",
+        "This definition appears in S.L. 65.32.",
+        "This definition appears in S.L. 499.67."
+      ],
+      "claims_unsupported": [],
+      "entity_grounding_score": 1.0,
+      "entity_grounding_reasoning": "Both legal citations, S.L. 65.32 and S.L. 499.67, are present and correctly identified in the retrieved articles.",
+      "citations_found": [
+        "S.L. 65.32",
+        "S.L. 499.67"
+      ],
+      "citations_verified": [
+        "S.L. 65.32",
+        "S.L. 499.67"
+      ],
+      "citations_fabricated": [],
+      "completeness_score": 1.0,
+      "completeness_reasoning": "The question asks for the definition of an electric kick scooter. The response provides the full definition from the relevant interpretation articles (S.L. 65.32 Article 2 and S.L. 499.67 Article 2). These are typically where definitions are found in legal texts. No other definition or relevant interpretation was suggested or implied to be missing by the retrieved documents, nor were any cross-references within the definition not followed.",
+      "missing_laws_suggested": [],
+      "cross_references_found": [],
+      "relevance_score": 0.4,
+      "relevance_reasoning": "The question specifically asks 'What *is* an electric kick scooter', implying a definition. While Articles 1, 2, and 5 pertain to regulations *for* electric kick scooters, they do not provide a definition. Only Articles 3 and 4 directly answer the question about the definition. Therefore, 3 out of 5 retrieved articles were not directly relevant to the specific 'what is' aspect of the question, although they are related to the broader topic of electric kick scooters in Maltese law.",
+      "irrelevant_articles": [
+        "Article 1: S.L. 65.32 Article 4 (Insurance)",
+        "Article 2: S.L. 499.67 Article 4 (Insurance)",
+        "Article 5: S.L. 499.67 Article 5 (Driving licence)"
+      ],
+      "overall_score": 0.8800000000000001,
+      "verdict": "accurate",
+      "judge_model": "gemini-2.5-flash",
+      "evaluation_time": 16.24202537536621
+    }
+  ],
+  "error_details": []
+}

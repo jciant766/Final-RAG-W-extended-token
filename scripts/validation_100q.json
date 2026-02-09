@@ -1,0 +1,3820 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-16T20:03:49.046179",
+    "total_questions": 100,
+    "total_time_seconds": 331.53,
+    "coverage_percent": 100.0
+  },
+  "domain_stats": {
+    "civil_law": {
+      "count": 15,
+      "total_articles": 150,
+      "total_time": 51.858702421188354
+    },
+    "criminal_law": {
+      "count": 15,
+      "total_articles": 150,
+      "total_time": 50.12647199630737
+    },
+    "company_law": {
+      "count": 12,
+      "total_articles": 120,
+      "total_time": 39.3415687084198
+    },
+    "employment_law": {
+      "count": 12,
+      "total_articles": 120,
+      "total_time": 38.954773902893066
+    },
+    "property_law": {
+      "count": 10,
+      "total_articles": 100,
+      "total_time": 32.53171491622925
+    },
+    "family_law": {
+      "count": 10,
+      "total_articles": 100,
+      "total_time": 32.33579063415527
+    },
+    "tax_law": {
+      "count": 8,
+      "total_articles": 80,
+      "total_time": 25.52817702293396
+    },
+    "constitutional_law": {
+      "count": 5,
+      "total_articles": 50,
+      "total_time": 15.408327102661133
+    },
+    "administrative_law": {
+      "count": 5,
+      "total_articles": 50,
+      "total_time": 16.99414324760437
+    },
+    "consumer_protection_law": {
+      "count": 4,
+      "total_articles": 40,
+      "total_time": 14.128407716751099
+    },
+    "data_protection_and_privacy": {
+      "count": 4,
+      "total_articles": 40,
+      "total_time": 14.317938804626465
+    }
+  },
+  "results": [
+    {
+      "id": 1,
+      "domain": "civil_law",
+      "question": "What is the prescription period for claiming damages from a car accident?",
+      "categories_detected": [
+        "civil_law",
+        "property_law"
+      ],
+      "query_expansion": [
+        "compensation",
+        "indemnity"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 158",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "451",
+          "title": "Action for indemnity subject to prescription.",
+          "text_preview": "Article 451 - Action for indemnity subject to prescription.\n\nThe action for the payment of the indemnity under articles 447 and 450 is subject to prescription: and the right of way or of watercourse m"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2153",
+          "title": "Actions for damages not arising from criminal offence.",
+          "text_preview": "Article 2153 - Actions for damages not arising from criminal offence.\n\nActions for damages not arising from a criminal offence are barred by the lapse of two years."
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2124",
+          "title": null,
+          "text_preview": "Article 2124\n\n(1) Save as otherwise provided by law, prescription does not run against minors and persons interdicted.\n(2) Nor does it run, during the continuance of marriage, against any one of the s"
+        }
+      ],
+      "elapsed_seconds": 5.4
+    },
+    {
+      "id": 2,
+      "domain": "civil_law",
+      "question": "How long do I have to sue for breach of contract?",
+      "categories_detected": [
+        "civil_law"
+      ],
+      "query_expansion": [
+        "bring action",
+        "institute proceedings",
+        "non-performance"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 12",
+          "article_number": "843",
+          "title": "Time within which to bring action.",
+          "text_preview": "Article 843 - Time within which to bring action.\n\n(1) The applicant is bound to bring the action in respect of the right stated in the warrant within twenty days from the issue of the warrant:\nProvide"
+        },
+        {
+          "law_code": "Cap. 12",
+          "article_number": "413",
+          "title": "Effects of non-suit in action by jactitator.",
+          "text_preview": "Article 413 - Effects of non-suit in action by jactitator.\n\nWhere in the action instituted by the jactitator the court shall give judgment of non-suit against the jactitator, the time allowed under ar"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1058",
+          "title": "Where obligation is contracted on condition that an event shall happen within a certain time.",
+          "text_preview": "Article 1058 - Where obligation is contracted on condition that an event shall happen within a certain time.\n\n(1) Where an obligation is contracted on condition that an event shall happen within an ap"
+        }
+      ],
+      "elapsed_seconds": 3.09
+    },
+    {
+      "id": 3,
+      "domain": "civil_law",
+      "question": "What are the essential elements of a valid contract under Maltese law?",
+      "categories_detected": [
+        "civil_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 386"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 426",
+          "article_number": "3",
+          "title": "Validity of electronic transactions.",
+          "text_preview": "Article 3 - Validity of electronic transactions.\n\nFor the purposes of any law in Malta and subject to the other provisions of this Act, a transaction is not deemed to be invalid merely because it took"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "966",
+          "title": "Requisites of contracts.",
+          "text_preview": "Article 966 - Requisites of contracts.\n\nThe following are the conditions essential to the validity of a contract:\n(a) capacity of the parties to contract;\n(b) the consent of the party who binds himsel"
+        },
+        {
+          "law_code": "Cap. 255",
+          "article_number": "18",
+          "title": "",
+          "text_preview": "Article 18\n\nA marriage, whether celebrated in Malta or abroad, shall be valid for all purposes of law in Malta if -\n(a) as regards the formalities thereof, the formalities required for its validity by"
+        }
+      ],
+      "elapsed_seconds": 3.22
+    },
+    {
+      "id": 4,
+      "domain": "civil_law",
+      "question": "Can a minor enter into a binding contract?",
+      "categories_detected": [
+        "civil_law",
+        "family_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "971",
+          "title": null,
+          "text_preview": "Article 971\n\n(1) Subject to any other provision contained in the Commercial Code, any minor who has attained the age of fourteen years, and is not subject to parental authority, nor provided with a cu"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1217",
+          "title": null,
+          "text_preview": "Article 1217\n\n(1) The mere declaration made by a minor that he is of age shall not operate to deprive him of the right to sue for rescission.\n(2) Nevertheless, it shall not be lawful for a minor to im"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1218",
+          "title": null,
+          "text_preview": "Article 1218\n\nWhere the agreement is one with regard to which a minor is, under the provisions of the Commercial Code, considered to be of age, or is entered into by the minor by reason of his trade, "
+        }
+      ],
+      "elapsed_seconds": 3.46
+    },
+    {
+      "id": 5,
+      "domain": "civil_law",
+      "question": "What is the difference between nullity and rescission of a contract?",
+      "categories_detected": [
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1226",
+          "title": "Plea of nullity.",
+          "text_preview": "Article 1226 - Plea of nullity.\n\n(1) The plea of nullity may at any time be set up by the party sued for the performance of the contract in all cases in which such party could have brought an action f"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1212",
+          "title": "Grounds of rescission.",
+          "text_preview": "Article 1212 - Grounds of rescission.\n\nAny agreement which is defective by reason of the absence of any of the conditions essential to the validity of contracts, or which is expressly declared by law "
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1227",
+          "title": "Affirmation or ratification of obligation.",
+          "text_preview": "Article 1227 - Affirmation or ratification of obligation.\n\nThe affirmation or ratification of an obligation against which an action or plea of rescission on the ground of nullity or on any other groun"
+        }
+      ],
+      "elapsed_seconds": 2.83
+    },
+    {
+      "id": 6,
+      "domain": "civil_law",
+      "question": "How is compensation for moral damages calculated?",
+      "categories_detected": [
+        "civil_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [
+        "compensation",
+        "indemnity"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1045",
+          "title": "Measure of damages.",
+          "text_preview": "Article 1045 - Measure of damages.\n\n(1) The damage which is to be made good by the person responsible in accordance with the foregoing provisions shall consist in the actual loss which the act shall h"
+        },
+        {
+          "law_code": "Cap. 579",
+          "article_number": "11",
+          "title": "Assessment by the Court.",
+          "text_preview": "Article 11 - Assessment by the Court.\n\n(1) In assessing the sum being awarded under this Act in an action for defamation, the Court shall take into account:\n(a) the gravity and extent of the defamatio"
+        },
+        {
+          "law_code": "Cap. 579",
+          "article_number": "9",
+          "title": "Libel damages.",
+          "text_preview": "Article 9 - Libel damages.\n\nIn proceedings instituted under this Act, the Court may order the defendant to pay a sum not exceeding eleven thousand, six hundred and forty euro (€11,640) by way of moral"
+        }
+      ],
+      "elapsed_seconds": 3.02
+    },
+    {
+      "id": 7,
+      "domain": "civil_law",
+      "question": "What is the prescription period for debt recovery?",
+      "categories_detected": [
+        "civil_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 386",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2085",
+          "title": "When prescription in acquired by debtor.",
+          "text_preview": "Article 2085 - When prescription in acquired by debtor.\n\nPrescription takes place in favour of the debtor, in respect of property of which he is in possession, by the lapse of the time established for"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1027",
+          "title": null,
+          "text_preview": "Article 1027\n\nThe action for the recovery of that which may have been unduly given, unless prescribed under any of the provisions contained in the title relating to prescription, shall be prescribed b"
+        },
+        {
+          "law_code": "Cap. 579",
+          "article_number": "18",
+          "title": "Prescription.",
+          "text_preview": "Article 18 - Prescription.\n\nAn action under the provisions of this Act shall, unless it is subject to a shorter period of prescription under this Act, be barred by prescription after the lapse of one "
+        }
+      ],
+      "elapsed_seconds": 3.31
+    },
+    {
+      "id": 8,
+      "domain": "civil_law",
+      "question": "Can I claim damages for defamation?",
+      "categories_detected": [
+        "civil_law"
+      ],
+      "query_expansion": [
+        "compensation",
+        "indemnity"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 579",
+          "article_number": "11",
+          "title": "Assessment by the Court.",
+          "text_preview": "Article 11 - Assessment by the Court.\n\n(1) In assessing the sum being awarded under this Act in an action for defamation, the Court shall take into account:\n(a) the gravity and extent of the defamatio"
+        },
+        {
+          "law_code": "Cap. 579",
+          "article_number": "17",
+          "title": "Defamation of deceased persons.",
+          "text_preview": "Article 17 - Defamation of deceased persons.\n\n(1) An action shall lie for defamation of a deceased person provided that the deceased person was the father or mother or sibling or child of the plaintif"
+        },
+        {
+          "law_code": "Cap. 579",
+          "article_number": "9",
+          "title": "Libel damages.",
+          "text_preview": "Article 9 - Libel damages.\n\nIn proceedings instituted under this Act, the Court may order the defendant to pay a sum not exceeding eleven thousand, six hundred and forty euro (€11,640) by way of moral"
+        }
+      ],
+      "elapsed_seconds": 3.61
+    },
+    {
+      "id": 9,
+      "domain": "civil_law",
+      "question": "What is the liability of a guardian for acts of a minor?",
+      "categories_detected": [
+        "civil_law",
+        "family_law"
+      ],
+      "query_expansion": [
+        "responsibility",
+        "obligation"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1034",
+          "title": "Liability of person having charge of minor or person with a mental disorder or other condition, which renders him incapable of managing his own affairs.",
+          "text_preview": "Article 1034 - Liability of person having charge of minor or person with a mental disorder or other condition, which renders him incapable of managing his own affairs.\n\nAny person having the charge of"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "188C",
+          "title": "Obligations in respect of acts of guardianship.",
+          "text_preview": "Article 188C - Obligations in respect of acts of guardianship.\n\n(1) The provisions of this Sub-title shall be construed and interpreted and every function, power, authority, discretion, duty or right "
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "175",
+          "title": "Duties of minor towards tutor.",
+          "text_preview": "Article 175 - Duties of minor towards tutor.\n\n(1) The minor shall obey the tutor in all that is permitted by the law.\n(2) Where the tutor abuses his authority, or neglects his duties, the minor himsel"
+        }
+      ],
+      "elapsed_seconds": 3.72
+    },
+    {
+      "id": 10,
+      "domain": "civil_law",
+      "question": "How does joint and several liability work?",
+      "categories_detected": [
+        "civil_law"
+      ],
+      "query_expansion": [
+        "responsibility",
+        "obligation"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1112",
+          "title": null,
+          "text_preview": "Article 1112\n\nAn obligation shall not be deemed to be indivisible solely on the ground that it is a joint and several obligation."
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1049",
+          "title": null,
+          "text_preview": "Article 1049\n\n(1) Where two or more persons have maliciously caused any damage, their liability to make good the damage shall be a joint and several liability.\n(2) Where some of them have acted with m"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1089",
+          "title": "Obligation not to be presumed to be in solidum.",
+          "text_preview": "Article 1089 - Obligation not to be presumed to be in solidum.\n\nJoint and several liability is not presumed. If not declared by law, it must be expressly stipulated."
+        }
+      ],
+      "elapsed_seconds": 3.3
+    },
+    {
+      "id": 11,
+      "domain": "civil_law",
+      "question": "What is the effect of force majeure on contractual obligations?",
+      "categories_detected": [
+        "civil_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1134",
+          "title": null,
+          "text_preview": "Article 1134\n\nThe debtor shall not be liable for damages if he was prevented from giving or doing the thing he undertook to give or to do, or if he did the thing he was forbidden to do, in consequence"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1557",
+          "title": "Except when caused by force majeure.",
+          "text_preview": "Article 1557 - Except when caused by force majeure.\n\nThe lessee shall in no case be responsible for the repair of damages caused by force majeure and without any fault of his own."
+        },
+        {
+          "law_code": "Cap. 13",
+          "article_number": "318",
+          "title": null,
+          "text_preview": "Article 318\n\n(1) Where an embargo or any other reason of force majeure causes a temporary suspension of the voyage of a vessel whether before the vessel's departure or during the voyage, without any f"
+        }
+      ],
+      "elapsed_seconds": 3.04
+    },
+    {
+      "id": 12,
+      "domain": "civil_law",
+      "question": "How are interest rates on debts regulated?",
+      "categories_detected": [
+        "financial_services_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 403",
+        "Cap. 330",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 16.06",
+          "article_number": "5",
+          "title": "Interest rates of credit and financial institutions.",
+          "text_preview": "Article 5 - Interest rates of credit and financial institutions.\n\nNotwithstanding anything else contained in any other law, credit and financial institutions within the meaning of regulation 2 may det"
+        },
+        {
+          "law_code": "S.L. 16.06",
+          "article_number": "4",
+          "title": "Amount of interest due may exceed capital.",
+          "text_preview": "Article 4 - Amount of interest due may exceed capital.\n\nIt shall be lawful for the amount of interest due in respect of any debt or other obligation listed in regulation 3 to exceed the amount of capi"
+        },
+        {
+          "law_code": "S.L. 16.06",
+          "article_number": "3",
+          "title": "",
+          "text_preview": "Article 3\n\n(1) The provisions of Title IV and Title XVII of Part II of\nBook Second of the Civil Code or of any other part of the Civil\nCode or of any other law in so far as they limit or restrict the\n"
+        }
+      ],
+      "elapsed_seconds": 3.71
+    },
+    {
+      "id": 13,
+      "domain": "civil_law",
+      "question": "What is the warranty period for defective goods?",
+      "categories_detected": [
+        "consumer_protection_law",
+        "civil_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 378",
+          "article_number": "78",
+          "title": "Liability of the seller",
+          "text_preview": "Article 78 - Liability of the seller\n\n(1) The seller shall be liable to the consumer for any lack of conformity which exists at the time when the goods were delivered and which becomes apparent within"
+        },
+        {
+          "law_code": "Cap. 378",
+          "article_number": "80",
+          "title": "Burden of proof.",
+          "text_preview": "Article 80 - Burden of proof.\n\n(1) Any lack of conformity which becomes apparent within one year of the time when the goods were delivered shall be presumed to have existed at the time when the goods "
+        },
+        {
+          "law_code": "Cap. 378",
+          "article_number": "75",
+          "title": "Repair or replacement of goods.",
+          "text_preview": "Article 75 - Repair or replacement of goods.\n\n(1) In order to have the goods brought into conformity, the consumer may choose between repair and replacement, unless the remedy chosen would be impossib"
+        }
+      ],
+      "elapsed_seconds": 3.51
+    },
+    {
+      "id": 14,
+      "domain": "civil_law",
+      "question": "Can I transfer my contractual rights to another person?",
+      "categories_detected": [
+        "civil_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 386",
+        "Cap. 13"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 13",
+          "article_number": "329",
+          "title": "Passenger cannot transfer his right.",
+          "text_preview": "Article 329 - Passenger cannot transfer his right.\n\nA passenger cannot, without the consent of the master, transfer to a third party the right accruing to him from the contract."
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1595",
+          "title": null,
+          "text_preview": "Article 1595\n\n(1) In the cases mentioned in the last preceding article, the right of preference can be exercised in the manner and within the times hereinafter stated, even after the new lease has bee"
+        },
+        {
+          "law_code": "Cap. 415",
+          "article_number": "39",
+          "title": "Assignment and licences.",
+          "text_preview": "Article 39 - Assignment and licences.\n\nThe right conferred by article 32 may be assigned or granted under contractual licence subject to the provisions of article 24."
+        }
+      ],
+      "elapsed_seconds": 3.55
+    },
+    {
+      "id": 15,
+      "domain": "civil_law",
+      "question": "What remedies exist for unjust enrichment?",
+      "categories_detected": [
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1028A",
+          "title": null,
+          "text_preview": "Article 1028A\n\n(1) Whosoever, without a just cause, enriches himself to the detriment of others shall, to the limits of such enrichment, reimburse and compensate any patrimonial loss which such other "
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1028B",
+          "title": null,
+          "text_preview": "Article 1028B\n\nThe actio de in rem verso may not be exercised where the person who suffers the loss may take another action to make up for such loss."
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1047",
+          "title": null,
+          "text_preview": "Article 1047\n\n(1) The damage which consists in depriving a person of the use of his own money, shall be made good by the payment of interest at the rate of eight per cent a year.\n(2) If, however, the "
+        }
+      ],
+      "elapsed_seconds": 3.1
+    },
+    {
+      "id": 16,
+      "domain": "criminal_law",
+      "question": "What types of punishments exist under Maltese criminal law?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [
+        "penalty",
+        "sentence"
+      ],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 11",
+          "article_number": "4",
+          "title": "Procedure in the case of other offences.",
+          "text_preview": "Article 4 - Procedure in the case of other offences.\n\nIn the case of offences liable to punishment under the provisions of any Act of Parliament whatsoever being in force in Malta, whensoever such off"
+        },
+        {
+          "law_code": "Cap. 101",
+          "article_number": "22",
+          "title": "Offences and penalties.",
+          "text_preview": "Article 22 - Offences and penalties.\n\n(1) Any person -\n(a) who acts in contravention of, or fails to comply with,\nany provision of this Ordinance; or\n(b) who acts in contravention of, or fails to comp"
+        },
+        {
+          "law_code": "S.L. 226.01",
+          "article_number": "9",
+          "title": "",
+          "text_preview": "Article 9\n\nThe Maltese courts shall, subject to the provisions of article 5 of the Criminal Code, have jurisdiction over the offences laid down in these regulations."
+        }
+      ],
+      "elapsed_seconds": 3.07
+    },
+    {
+      "id": 17,
+      "domain": "criminal_law",
+      "question": "How does a suspended sentence work?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [
+        "liable to imprisonment",
+        "punishment of"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "28A",
+          "title": "Suspended sentence of imprisonment.",
+          "text_preview": "Article 28A - Suspended sentence of imprisonment.\n\n(1) Subject to sub-articles (2) to (7) and to articles 28B to 28I, a court which passes a sentence of imprisonment for a term of not more than two ye"
+        },
+        {
+          "law_code": "S.L. 260.03",
+          "article_number": "84",
+          "title": "Order of suspension.",
+          "text_preview": "Article 84 - Order of suspension.\n\n(1) The power to award disciplinary punishments, other than a caution, shall include the power to order that the punishment is not to take effect unless, during a pe"
+        },
+        {
+          "law_code": "Cap. 9",
+          "article_number": "28C",
+          "title": "Competent court for dealing with suspended sentence.",
+          "text_preview": "Article 28C - Competent court for dealing with suspended sentence.\n\n(1) An offender may be dealt with in respect of a suspended sentence by the Court of Criminal Appeal, by the Criminal Court or, wher"
+        }
+      ],
+      "elapsed_seconds": 3.21
+    },
+    {
+      "id": 18,
+      "domain": "criminal_law",
+      "question": "What is the minimum age of criminal responsibility?",
+      "categories_detected": [
+        "criminal_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 287",
+          "article_number": "10",
+          "title": "Exclusion of children from court.",
+          "text_preview": "Article 10 - Exclusion of children from court.\n\nNo person under the age of sixteen (16) years who is not accompanied by his parent or other relative or guardian shall be permitted to be present in any"
+        },
+        {
+          "law_code": "Cap. 540",
+          "article_number": "2A",
+          "title": "Emancipation.",
+          "text_preview": "Article 2A - Emancipation.\n\nPersons who have reached the age of sixteen (16) years, but have not yet reached the age of eighteen (18) years, for all intents and purposes of this Act, shall be consider"
+        },
+        {
+          "law_code": "Cap. 287",
+          "article_number": "11",
+          "title": "Provisions applicable to courts of criminal justice.",
+          "text_preview": "Article 11 - Provisions applicable to courts of criminal justice.\n\n(1) The provisions of article 7 shall mutatis mutandis apply to any court of criminal justice where the person or one of the persons "
+        }
+      ],
+      "elapsed_seconds": 3.62
+    },
+    {
+      "id": 19,
+      "domain": "criminal_law",
+      "question": "Can a company be criminally liable?",
+      "categories_detected": [
+        "criminal_law",
+        "company_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 50",
+          "article_number": "25",
+          "title": "Proceedings against companies.",
+          "text_preview": "Article 25 - Proceedings against companies.\n\nWhere the person guilty of an offence under this Act is a company or corporation, every director and officer of the company or corporation shall be guilty "
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "315",
+          "title": null,
+          "text_preview": "Article 315\n\n(1) If in the course of the winding up of a company, whether by the court or voluntarily, it appears that any business of the company has been carried on with intent to defraud creditors "
+        },
+        {
+          "law_code": "Cap. 115",
+          "article_number": "3",
+          "title": "Where offence is committed by company or society.",
+          "text_preview": "Article 3 - Where offence is committed by company or society.\n\nWhere a company or society is guilty of a contravention against section 2, every director, manager, secretary and other officer of the co"
+        }
+      ],
+      "elapsed_seconds": 3.57
+    },
+    {
+      "id": 20,
+      "domain": "criminal_law",
+      "question": "What are the rules for concurrent sentences?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [
+        "liable to imprisonment",
+        "punishment of"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "17",
+          "title": "Concurrent offences and punishments.",
+          "text_preview": "Article 17 - Concurrent offences and punishments.\n\nIn the case of concurrent offences and punishments, the following provisions shall apply:\n(a) a person guilty of more than one crime liable to punish"
+        },
+        {
+          "law_code": "Cap. 9",
+          "article_number": "28",
+          "title": "Rules as to the serving of punishments.",
+          "text_preview": "Article 28 - Rules as to the serving of punishments.\n\n(1) When more punishments of the same kind are awarded at the same time against the same offender, they shall be undergone one after the terminati"
+        },
+        {
+          "law_code": "Cap. 9",
+          "article_number": "28E",
+          "title": "Concurrent offences and punishments in relation to suspended sentence.",
+          "text_preview": "Article 28E - Concurrent offences and punishments in relation to suspended sentence.\n\n(1) Where an offender is sentenced for more than one crime in accordance with the provisions of article 17(b), an "
+        }
+      ],
+      "elapsed_seconds": 3.36
+    },
+    {
+      "id": 21,
+      "domain": "criminal_law",
+      "question": "How is compensation to crime victims determined?",
+      "categories_detected": [
+        "criminal_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "offence",
+        "criminal act"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 101",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "15A",
+          "title": "Compensation for victims of crime.",
+          "text_preview": "Article 15A - Compensation for victims of crime.\n\n(1) In addition to any punishment to which the person convicted of an offence may be sentenced, the Court may order the offender to make restitution t"
+        },
+        {
+          "law_code": "S.L. 9.12",
+          "article_number": "7",
+          "title": "Qualification for compensation.",
+          "text_preview": "Article 7 - Qualification for compensation.\n\nTo qualify for compensation, applicants are required to indicate to the Claims Officer that the offence giving rise to the criminal injury sustained has be"
+        },
+        {
+          "law_code": "S.L. 9.12",
+          "article_number": "11",
+          "title": "No compensation.",
+          "text_preview": "Article 11 - No compensation.\n\nNo compensation will be paid under the Scheme where:\n(a) the criminal injury was sustained before 1st January 2006;\n(b) the Claims Officer is of the opinion that the off"
+        }
+      ],
+      "elapsed_seconds": 3.45
+    },
+    {
+      "id": 22,
+      "domain": "criminal_law",
+      "question": "What is the difference between a crime and a contravention?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [
+        "offence",
+        "criminal act"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "2",
+          "title": "Classification of offences.",
+          "text_preview": "Article 2 - Classification of offences.\n\nOffences are divided into crimes and contraventions."
+        },
+        {
+          "law_code": "Cap. 50",
+          "article_number": "15",
+          "title": "",
+          "text_preview": "Article 15\n\nAny person charged with an offence which is a crime under\nthis Act may, if the circumstances warrant such a finding, be found\nguilty of a contravention under this Act, and shall be liable,"
+        },
+        {
+          "law_code": "Cap. 10",
+          "article_number": "318",
+          "title": "Breach of any provision of this Code or of any order thereunder to constitute a contravention.",
+          "text_preview": "Article 318 - Breach of any provision of this Code or of any order thereunder to constitute a contravention.\n\nAny person who commits any breach of the provisions of this Code or of any order or regula"
+        }
+      ],
+      "elapsed_seconds": 3.6
+    },
+    {
+      "id": 23,
+      "domain": "criminal_law",
+      "question": "When can property be forfeited in criminal proceedings?",
+      "categories_detected": [
+        "criminal_law",
+        "property_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 158",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "23C",
+          "title": "Forfeiture of property derived from criminal activity.",
+          "text_preview": "Article 23C - Forfeiture of property derived from criminal activity.\n\n(1) Where it is established that the value of the property of the person found guilty of a relevant offence is disproportionate to"
+        },
+        {
+          "law_code": "Cap. 9",
+          "article_number": "23",
+          "title": "Forfeiture of corpus delicti.",
+          "text_preview": "Article 23 - Forfeiture of corpus delicti.\n\n(1) The forfeiture of the corpus delicti, of the instruments used or intended to be used in the commission of any crime, and of anything obtained by such cr"
+        },
+        {
+          "law_code": "Cap. 621",
+          "article_number": "19",
+          "title": "Administration and disposal of forfeited property, and of property confiscated in favour of the Government.",
+          "text_preview": "Article 19 - Administration and disposal of forfeited property, and of property confiscated in favour of the Government.\n\n(1) Where any property has by a final judgement of a court been forfeited or c"
+        }
+      ],
+      "elapsed_seconds": 3.64
+    },
+    {
+      "id": 24,
+      "domain": "criminal_law",
+      "question": "What are the rules for recidivists?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 77",
+          "article_number": "7",
+          "title": null,
+          "text_preview": "Article 7\n\nThe benefit of the non-registration of a conviction as provided in article 6, shall not extend to persons who are recidivists in the crime of theft or fraud or of selling or dealing in drug"
+        },
+        {
+          "law_code": "Cap. 9",
+          "article_number": "28F",
+          "title": "Recidivists.",
+          "text_preview": "Article 28F - Recidivists.\n\nIn dealing with an offender for an offence punishable with imprisonment committed during the operational period of a suspended sentence the court shall consider him a recid"
+        },
+        {
+          "law_code": "S.L. 405.04",
+          "article_number": "8",
+          "title": "Rehabilitation periods.",
+          "text_preview": "Article 8 - Rehabilitation periods.\n\n(1) If, from the information given to the Manager, it results that the applicant has been found guilty of any of the offences listed in the Second Schedule and the"
+        }
+      ],
+      "elapsed_seconds": 3.01
+    },
+    {
+      "id": 25,
+      "domain": "criminal_law",
+      "question": "How long can someone be detained before trial?",
+      "categories_detected": [
+        "criminal_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 9",
+        "Cap. 101"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "12",
+          "title": "Detention.",
+          "text_preview": "Article 12 - Detention.\n\n(1) Persons sentenced to detention shall be detained in the prison or in that part of the prison appointed for persons sentenced to that punishment.\n(2) Where it is not otherw"
+        },
+        {
+          "law_code": "Cap. 101",
+          "article_number": "27",
+          "title": "Detention during inquiry.",
+          "text_preview": "Article 27 - Detention during inquiry.\n\nNotwithstanding the provisions of the Criminal Code, and saving the extensions by the President of Malta of the term of the inquiry as provided in article 401(1"
+        },
+        {
+          "law_code": "S.L. 220.04",
+          "article_number": "5",
+          "title": "Arrest not to exceed 72 days without permission from higher authority.",
+          "text_preview": "Article 5 - Arrest not to exceed 72 days without permission from higher authority.\n\nAn accused shall not be held in arrest for more than seventy-two consecutive days without a court-martial being conv"
+        }
+      ],
+      "elapsed_seconds": 3.29
+    },
+    {
+      "id": 26,
+      "domain": "criminal_law",
+      "question": "What is the procedure for issuing an arrest warrant?",
+      "categories_detected": [
+        "criminal_law",
+        "police_and_law_enforcement_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 9",
+        "Cap. 101"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 276",
+          "article_number": "14",
+          "title": "",
+          "text_preview": "Article 14\n\n(1) A warrant for the arrest of a person accused of an\nextraditable offence, or alleged to be unlawfully at large after\nconviction of such an offence, may be issued by a magistrate -\n(a) o"
+        },
+        {
+          "law_code": "S.L. 276.05",
+          "article_number": "8",
+          "title": "Arrest after issue of certificate.",
+          "text_preview": "Article 8 - Arrest after issue of certificate.\n\n(1) Where a certificate has been issued by the Attorney\nGeneral under article 7, this article shall apply.\n(2) Without the need of any further authority"
+        },
+        {
+          "law_code": "S.L. 276.08",
+          "article_number": "8",
+          "title": "",
+          "text_preview": "Article 8\n\n(1) Where a certificate has been issued by the Attorney General under article 7, this article shall apply.\n(2) Without the need of any further authority under the relevant Act other than th"
+        }
+      ],
+      "elapsed_seconds": 3.53
+    },
+    {
+      "id": 27,
+      "domain": "criminal_law",
+      "question": "Can I get bail for serious offences?",
+      "categories_detected": [
+        "criminal_law",
+        "police_and_law_enforcement_law"
+      ],
+      "query_expansion": [
+        "provisional liberty",
+        "release on bail"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 276",
+          "article_number": "26N",
+          "title": "Consultation with the ICC concerning bail.",
+          "text_preview": "Article 26N - Consultation with the ICC concerning bail.\n\nBail, discharge, transit and unscheduled landing\n(1) Where an application for bail is made in proceedings under this Part -\n(a) the court shal"
+        },
+        {
+          "law_code": "Cap. 446",
+          "article_number": "22",
+          "title": "",
+          "text_preview": "Article 22\n\n(1) Where a court by which a person is convicted of an offence (not being an offence punishable only be a fine (multa or ammenda) and not being an offence which apart from an increase of p"
+        },
+        {
+          "law_code": "Cap. 9",
+          "article_number": "28A",
+          "title": "Suspended sentence of imprisonment.",
+          "text_preview": "Article 28A - Suspended sentence of imprisonment.\n\n(1) Subject to sub-articles (2) to (7) and to articles 28B to 28I, a court which passes a sentence of imprisonment for a term of not more than two ye"
+        }
+      ],
+      "elapsed_seconds": 3.36
+    },
+    {
+      "id": 28,
+      "domain": "criminal_law",
+      "question": "What is the penalty for perjury?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 113",
+          "article_number": "9",
+          "title": "",
+          "text_preview": "Article 9\n\nAn oath or affirmation taken or made by a witness or by an expert before the House of Representatives or any Committee thereof shall for the purposes of the Criminal Code be comparable to a"
+        },
+        {
+          "law_code": "Cap. 453",
+          "article_number": "70",
+          "title": "Offences against the administration of justice",
+          "text_preview": "Article 70 - Offences against the administration of justice\n\n1. The Court shall have jurisdiction over the following offences against its administration of justice when committed intentionally -\n(a) G"
+        },
+        {
+          "law_code": "Cap. 50",
+          "article_number": "14",
+          "title": "",
+          "text_preview": "Article 14\n\n(1) Every person charged with an offence under articles 6\nto 13 other than article 13(1), (4) or (5) shall be liable, on\nconviction, in respect of each offence, to imprisonment for a term\n"
+        }
+      ],
+      "elapsed_seconds": 3.51
+    },
+    {
+      "id": 29,
+      "domain": "criminal_law",
+      "question": "How are fines calculated in criminal cases?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 9",
+          "article_number": "11",
+          "title": "Fine (multa).",
+          "text_preview": "Article 11 - Fine (multa).\n\n(1) Where it is not otherwise specifically provided, the maximum of a fine (multa) is one thousand and one hundred and sixty-four euro and sixty-nine cents (€1,164.69) and "
+        },
+        {
+          "law_code": "S.L. 425.17",
+          "article_number": "6",
+          "title": "Range of fines.",
+          "text_preview": "Article 6 - Range of fines.\n\n(1) Without prejudice to regulations 3 and 7, and sub-regulation (2), the sanctioning authority shall, upon conviction or an admission according to regulation 8, impose a "
+        },
+        {
+          "law_code": "S.L. 425.17",
+          "article_number": "7",
+          "title": "Amount of fines.",
+          "text_preview": "Article 7 - Amount of fines.\n\nIn determining the amount of the fine (multa) which is to be imposed according to these regulations, the sanctioning authority shall take into account the following crite"
+        }
+      ],
+      "elapsed_seconds": 2.83
+    },
+    {
+      "id": 30,
+      "domain": "criminal_law",
+      "question": "What is the statute of limitations for criminal offences?",
+      "categories_detected": [
+        "criminal_law"
+      ],
+      "query_expansion": [
+        "prescription",
+        "time-barred"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 101"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 291",
+          "article_number": "12",
+          "title": null,
+          "text_preview": "Article 12\n\n(1) Action before a Commissioner shall be subject to the same rules of prescription which may from time to time be applicable to the criminal action taken in respect of an offence mentione"
+        },
+        {
+          "law_code": "Cap. 522",
+          "article_number": "6",
+          "title": null,
+          "text_preview": "Article 6\n\n(1) The provisions of articles 121D and 248E(4) of the Criminal Code shall mutatis mutandis apply to any offence under this Act.\n(2) The provisions of article 328K of the Criminal Code shal"
+        },
+        {
+          "law_code": "S.L. 90.01",
+          "article_number": "1B",
+          "title": "",
+          "text_preview": "Article 1B\n\nThe Attorney General shall have the power to decide whether a prosecution shall or shall not be instituted in the following categories of offences when the charges are to be filed in the C"
+        }
+      ],
+      "elapsed_seconds": 3.06
+    },
+    {
+      "id": 31,
+      "domain": "company_law",
+      "question": "What is the minimum share capital for a private limited company?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law",
+        "tax_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 13",
+        "Cap. 123",
+        "Cap. 406"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "209",
+          "title": null,
+          "text_preview": "Article 209\n\n(1) A private company is a company which, besides fulfilling the requirements of this Act for it to hold the status of a private company, is one which, by its memorandum or articles -\n(a)"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "135",
+          "title": null,
+          "text_preview": "Article 135\n\n(1) A resolution shall be an extraordinary resolution where-\n(a) it has been taken at a general meeting of which notice specifying the intention to propose the text of the resolution as a"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "186",
+          "title": "Share capital in any convertible currency.",
+          "text_preview": "Article 186 - Share capital in any convertible currency.\n\n(1) The share capital of a company may be denominated in any currency which is a convertible currency within the meaning assigned to it by the"
+        }
+      ],
+      "elapsed_seconds": 3.59
+    },
+    {
+      "id": 32,
+      "domain": "company_law",
+      "question": "What are the duties of company directors?",
+      "categories_detected": [
+        "company_law"
+      ],
+      "query_expansion": [
+        "administrator",
+        "officer of company"
+      ],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "136A",
+          "title": "General duties of directors.",
+          "text_preview": "Article 136A - General duties of directors.\n\n(1) A director of a company shall be bound to act honestly and in good faith in the best interests of the company.\n(2) The directors of a company shall pro"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "150",
+          "title": "General duty of officers of a company.",
+          "text_preview": "Article 150 - General duty of officers of a company.\n\nAnything required to be done by a company under any provision of this Act shall be deemed also to be required to be done by the officers of the co"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "137",
+          "title": "Directors.",
+          "text_preview": "Article 137 - Directors.\n\n(1) Every public company shall have at least two directors.\n(2) Every private company shall have at least one director, and where a private company has one director, all refe"
+        }
+      ],
+      "elapsed_seconds": 3.1
+    },
+    {
+      "id": 33,
+      "domain": "company_law",
+      "question": "How many directors must a private company have?",
+      "categories_detected": [
+        "company_law",
+        "tax_law"
+      ],
+      "query_expansion": [
+        "administrator",
+        "officer of company"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 123",
+        "Cap. 406"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "137",
+          "title": "Directors.",
+          "text_preview": "Article 137 - Directors.\n\n(1) Every public company shall have at least two directors.\n(2) Every private company shall have at least one director, and where a private company has one director, all refe"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "211",
+          "title": null,
+          "text_preview": "Article 211\n\n(1) A private company shall have the status of an exempt company if the conditions mentioned in sub-article (2) are contained in its memorandum or articles.\n(2) The conditions required by"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "146",
+          "title": "Return as to changes among directors, company secretary and in representation of company.",
+          "text_preview": "Article 146 - Return as to changes among directors, company secretary and in representation of company.\n\n(1) Every company shall send to the Registrar for registration a return of any change among its"
+        }
+      ],
+      "elapsed_seconds": 2.93
+    },
+    {
+      "id": 34,
+      "domain": "company_law",
+      "question": "What happens if a company fails to file annual returns?",
+      "categories_detected": [
+        "company_law",
+        "administrative_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 234.42",
+          "article_number": "80",
+          "title": "",
+          "text_preview": "Article 80\n\n(1) Every company shall upon each anniversary of its registration, make a return in the form set out in the Fifth Schedule showing the matters therein specified and made up to the date of "
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "184",
+          "title": null,
+          "text_preview": "Article 184\n\n(1) Every company shall, after 1st January 2004, upon each anniversary of its registration, make a return in the form set out in the Seventh Schedule showing the matters therein specified"
+        },
+        {
+          "law_code": "S.L. 386.19",
+          "article_number": "6A",
+          "title": null,
+          "text_preview": "Article 6A\n\n(1) Every company shall, upon each anniversary of its registration, make a return in the form set out in the First Schedule, showing any change in details on beneficial owners such as name"
+        }
+      ],
+      "elapsed_seconds": 3.4
+    },
+    {
+      "id": 35,
+      "domain": "company_law",
+      "question": "Can a director be personally liable for company debts?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law"
+      ],
+      "query_expansion": [
+        "administrator",
+        "officer of company"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 13"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "316",
+          "title": null,
+          "text_preview": "Article 316\n\n(1) The provisions of this article shall apply where a company has been dissolved and is insolvent and it appears that a person who was a director of the company knew, or ought to have kn"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "315",
+          "title": null,
+          "text_preview": "Article 315\n\n(1) If in the course of the winding up of a company, whether by the court or voluntarily, it appears that any business of the company has been carried on with intent to defraud creditors "
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "136A",
+          "title": "General duties of directors.",
+          "text_preview": "Article 136A - General duties of directors.\n\n(1) A director of a company shall be bound to act honestly and in good faith in the best interests of the company.\n(2) The directors of a company shall pro"
+        }
+      ],
+      "elapsed_seconds": 3.19
+    },
+    {
+      "id": 36,
+      "domain": "company_law",
+      "question": "What are the grounds for winding up a company?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 13"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "214",
+          "title": "Causes of dissolution and consequential winding up.",
+          "text_preview": "Article 214 - Causes of dissolution and consequential winding up.\n\n(1) A company shall be dissolved and consequently wound up in the following cases -\n(a) the company has by extraordinary resolution r"
+        },
+        {
+          "law_code": "S.L. 234.42",
+          "article_number": "101",
+          "title": "Powers of the court.",
+          "text_preview": "Article 101 - Powers of the court.\n\n(1) On the hearing of the winding up application, the court may either dismiss the application or make an order acceding\nthereto (hereinafter referred to as a \"wind"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "218",
+          "title": "Dissolution and winding up application.",
+          "text_preview": "Article 218 - Dissolution and winding up application.\n\n(1) A request to the court (hereinafter referred to as the \"winding up application\") for the -\n(a) winding up of a company by the court in accord"
+        }
+      ],
+      "elapsed_seconds": 3.37
+    },
+    {
+      "id": 37,
+      "domain": "company_law",
+      "question": "How do shareholders approve major transactions?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law"
+      ],
+      "query_expansion": [
+        "member",
+        "stockholder"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 13"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 234.42",
+          "article_number": "33",
+          "title": "",
+          "text_preview": "Article 33\n\nAt any general meeting a resolution put to the vote of the meeting shall be approved by more than 50% of the voting rights in the company unless a higher majority is required by the memora"
+        },
+        {
+          "law_code": "S.L. 234.42",
+          "article_number": "34",
+          "title": "",
+          "text_preview": "Article 34\n\nIn the case of an equality of votes the chairman of the meeting shall be entitled to a second or casting vote."
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "359",
+          "title": "Acquisition of one company by another which holds 90% or more, but not all, of its voting shares.",
+          "text_preview": "Article 359 - Acquisition of one company by another which holds 90% or more, but not all, of its voting shares.\n\n(1) Where a merger by acquisition is carried out by a company which holds ninety per ce"
+        }
+      ],
+      "elapsed_seconds": 3.38
+    },
+    {
+      "id": 38,
+      "domain": "company_law",
+      "question": "What are the requirements for a company name?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 13"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "79",
+          "title": "Change of name of company.",
+          "text_preview": "Article 79 - Change of name of company.\n\nChange of name of company."
+        },
+        {
+          "law_code": "S.L. 386.22",
+          "article_number": "5",
+          "title": "Name and memorandum of cell company.",
+          "text_preview": "Article 5 - Name and memorandum of cell company.\n\n(1) The name of a cell company shall, without prejudice to the provisions of the Act, include the expression \"Mobile Assets Protected Cell Company\" or"
+        },
+        {
+          "law_code": "S.L. 386.25",
+          "article_number": "7",
+          "title": "Conformity with the provisions of the Act.",
+          "text_preview": "Article 7 - Conformity with the provisions of the Act.\n\n(1) The Registrar shall ensure that every online formation of a company complies with the provisions of the Act relating to the formation of com"
+        }
+      ],
+      "elapsed_seconds": 3.35
+    },
+    {
+      "id": 39,
+      "domain": "company_law",
+      "question": "How can minority shareholders protect their rights?",
+      "categories_detected": [
+        "company_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "member",
+        "stockholder"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 234.42",
+          "article_number": "35",
+          "title": "",
+          "text_preview": "Article 35\n\nSubject to any rights or restrictions for the time being attached to any class or classes of shares, every member shall have one vote for each share of which he is the holder."
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "402",
+          "title": "Protection of shareholders against unfair prejudice.",
+          "text_preview": "Article 402 - Protection of shareholders against unfair prejudice.\n\n(1) Any member of a company who complains that the affairs of the company have been or are being or are likely to be conducted in a "
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "101",
+          "title": "Rights of holders of special classes of shares and variations thereof.",
+          "text_preview": "Article 101 - Rights of holders of special classes of shares and variations thereof.\n\nRights of holders of special classes of shares and variations thereof."
+        }
+      ],
+      "elapsed_seconds": 3.17
+    },
+    {
+      "id": 40,
+      "domain": "company_law",
+      "question": "What is the procedure for changing a company's memorandum?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 13"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "213",
+          "title": "Change of status of company.",
+          "text_preview": "Article 213 - Change of status of company.\n\n(1) A private company may change its status to a public company by altering its memorandum or articles and incorporating in such alteration all those change"
+        },
+        {
+          "law_code": "S.L. 386.14",
+          "article_number": "22",
+          "title": "Amendments to memorandum and articles of association.",
+          "text_preview": "Article 22 - Amendments to memorandum and articles of association.\n\nThe memorandum and articles of association of an incorporated cell may be amended by an extraordinary resolution of the incorporated"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "79",
+          "title": "Change of name of company.",
+          "text_preview": "Article 79 - Change of name of company.\n\nChange of name of company."
+        }
+      ],
+      "elapsed_seconds": 3.59
+    },
+    {
+      "id": 41,
+      "domain": "company_law",
+      "question": "Can a company buy back its own shares?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 13"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "106",
+          "title": "Conditions in which a company may acquire its own shares.",
+          "text_preview": "Article 106 - Conditions in which a company may acquire its own shares.\n\n(1) Without prejudice to the principle of equal treatment of the shareholders who enjoy the same rights in respect of the share"
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "96",
+          "title": "Company may not hold its own shares.",
+          "text_preview": "Article 96 - Company may not hold its own shares.\n\nCompany may not hold its own shares."
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "109",
+          "title": "Conditions for acquisition by a company of its own shares where permitted by law.",
+          "text_preview": "Article 109 - Conditions for acquisition by a company of its own shares where permitted by law.\n\nDuring the time that a company holds any of its own shares -\n(a) they shall carry no voting rights notw"
+        }
+      ],
+      "elapsed_seconds": 3.27
+    },
+    {
+      "id": 42,
+      "domain": "company_law",
+      "question": "What are the rules for dividend distribution?",
+      "categories_detected": [
+        "company_law",
+        "commercial_law",
+        "financial_services_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 403",
+        "Cap. 330"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 386",
+          "article_number": "76",
+          "title": null,
+          "text_preview": "Article 76\n\nSubject to the rights of persons, if any, entitled to shares with special rights as to dividend, all dividends shall be declared and paid according to the amounts paid or credited as paid "
+        },
+        {
+          "law_code": "S.L. 372.03",
+          "article_number": "1",
+          "title": "Title",
+          "text_preview": "Article 1 - Title\n\nThe title of these Rules is Income Tax (Dividend Distribution to Shareholders) Rules."
+        },
+        {
+          "law_code": "Cap. 386",
+          "article_number": "78",
+          "title": null,
+          "text_preview": "Article 78\n\nNo dividend shall bear interest against the company."
+        }
+      ],
+      "elapsed_seconds": 3.0
+    },
+    {
+      "id": 43,
+      "domain": "employment_law",
+      "question": "What is the minimum notice period for terminating employment?",
+      "categories_detected": [
+        "employment_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 452",
+          "article_number": "36",
+          "title": "Notice of and compensation for termination of contracts of service.",
+          "text_preview": "Article 36 - Notice of and compensation for termination of contracts of service.\n\n(1) Saving the provisions of sub-article (16), when an employment relationship is subject to a probationary period, th"
+        },
+        {
+          "law_code": "S.L. 452.126",
+          "article_number": "13",
+          "title": "Minimum predictability of work.",
+          "text_preview": "Article 13 - Minimum predictability of work.\n\n(1) Where a worker's work pattern is entirely or mostly unpredictable the worker shall not be required to work by the employer unless both of the followin"
+        },
+        {
+          "law_code": "Cap. 594",
+          "article_number": "40",
+          "title": "Termination of contract of employment.",
+          "text_preview": "Article 40 - Termination of contract of employment.\n\n(1) When a contract of employment is terminated the employer shall, within four days from the date of termination, notify Jobsplus by any means as "
+        }
+      ],
+      "elapsed_seconds": 2.85
+    },
+    {
+      "id": 44,
+      "domain": "employment_law",
+      "question": "How many hours per week is the maximum working time?",
+      "categories_detected": [
+        "employment_law",
+        "occupational_health_and_safety"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 452"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 452.134",
+          "article_number": "6",
+          "title": "Daily and weekly working time.",
+          "text_preview": "Article 6 - Daily and weekly working time.\n\n(1) Working time shall not exceed:\n(a) fourteen (14) hours in any twenty-four (24) hour\nperiod; and\n(b) eighty-four (84) hours in any seven (7) day period.\n"
+        },
+        {
+          "law_code": "S.L. 452.68",
+          "article_number": "2",
+          "title": "",
+          "text_preview": "Article 2\n\n(1) The hours of work of whole-time employees other than watchmen shall not exceed forty hours in any one week:\nProvided that by mutual agreement between the employer and the authorised rep"
+        },
+        {
+          "law_code": "S.L. 452.134",
+          "article_number": "4",
+          "title": "Working time and reference period.",
+          "text_preview": "Article 4 - Working time and reference period.\n\n(1) Without prejudice to regulation 6, standard working hours shall be based on an eight (8) hour day.\n(2) Working time may be extended in accordance wi"
+        }
+      ],
+      "elapsed_seconds": 3.83
+    },
+    {
+      "id": 45,
+      "domain": "employment_law",
+      "question": "What is the minimum wage in Malta?",
+      "categories_detected": [
+        "employment_law",
+        "social_security_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 452"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 452.129",
+          "article_number": "2",
+          "title": "National minimum wage.",
+          "text_preview": "Article 2 - National minimum wage.\n\nThe national minimum wage per week related to a normal working week shall be as follows:\nAge eighteen (18) years and over €192.73\nAge seventeen (17) years €185.95\nU"
+        },
+        {
+          "law_code": "S.L. 452.71",
+          "article_number": "4",
+          "title": "Mandatory supplements.",
+          "text_preview": "Article 4 - Mandatory supplements.\n\n(1) Employees who are paid the weekly minimum wage as set out in the Schedule to this Order, or a weekly wage equivalent to the minimum wage set out in the said Sch"
+        },
+        {
+          "law_code": "S.L. 452.131",
+          "article_number": "3",
+          "title": "National minimum wage.",
+          "text_preview": "Article 3 - National minimum wage.\n\nThe national minimum wage per week related to a normal working week shall be in accordance with the said Agreement as follows:\nAge eighteen (18) years and over ...."
+        }
+      ],
+      "elapsed_seconds": 3.12
+    },
+    {
+      "id": 46,
+      "domain": "employment_law",
+      "question": "How much annual leave is an employee entitled to?",
+      "categories_detected": [
+        "employment_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 452"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 452.115",
+          "article_number": "3",
+          "title": "Annual leave.",
+          "text_preview": "Article 3 - Annual leave.\n\n(1) Leave with pay from the annual leave entitlement shall be availed of on days agreed upon between the employer and employee.\n(2) As from the 1st of January 2019, unless o"
+        },
+        {
+          "law_code": "S.L. 452.115",
+          "article_number": "2",
+          "title": "Minimum requirements.",
+          "text_preview": "Article 2 - Minimum requirements.\n\n(1) This order lays down the minimum requirements related to the entitlement of annual leave in terms of the Organisation of Working Time Regulations.\n(2) This order"
+        },
+        {
+          "law_code": "S.L. 452.101",
+          "article_number": "3",
+          "title": "",
+          "text_preview": "Article 3\n\n(1) A whole-time employee whose entitlements are not covered by a Wages Council Wage Regulation Order shall, on employment, be entitled to sick leave, of at least the equivalent in hours, c"
+        }
+      ],
+      "elapsed_seconds": 3.08
+    },
+    {
+      "id": 47,
+      "domain": "employment_law",
+      "question": "What constitutes unfair dismissal?",
+      "categories_detected": [
+        "employment_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 318.20",
+          "article_number": "8",
+          "title": "Unfair dismissal.",
+          "text_preview": "Article 8 - Unfair dismissal.\n\nAn employee who is dismissed shall be regarded to have been unfairly dismissed if the reason, or if more than one, the principal reason, of the dismissal of that employe"
+        },
+        {
+          "law_code": "S.L. 452.79",
+          "article_number": "11",
+          "title": "Unfair dismissal",
+          "text_preview": "Article 11 - Unfair dismissal\n\n(1) A part-time employee shall be regarded as having been unfairly dismissed if the reason for the dismissal or the grounds for the dismissal are:\n(a) that the employee "
+        },
+        {
+          "law_code": "S.L. 452.96",
+          "article_number": "9",
+          "title": "Unfair dismissal.",
+          "text_preview": "Article 9 - Unfair dismissal.\n\n(1) An information and consultation representative or a candidate in an election in which any person elected will, on being elected, be such a representative shall have "
+        }
+      ],
+      "elapsed_seconds": 3.25
+    },
+    {
+      "id": 48,
+      "domain": "employment_law",
+      "question": "Can an employer change the terms of employment unilaterally?",
+      "categories_detected": [
+        "employment_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 452",
+          "article_number": "33",
+          "title": "Duration of contracts of service.",
+          "text_preview": "Article 33 - Duration of contracts of service.\n\nA person may bind himself to give his services for a fixed term or for an indefinite term, or in respect of a specified task, undertaking, work or servi"
+        },
+        {
+          "law_code": "Cap. 452",
+          "article_number": "42",
+          "title": "",
+          "text_preview": "Article 42\n\nUnless in such case as is otherwise provided by this Act, if a contract of service between an employee and his employer or a collective agreement entered into between the employer and the "
+        },
+        {
+          "law_code": "Cap. 452",
+          "article_number": "12",
+          "title": "Terms as to spending of wages.",
+          "text_preview": "Article 12 - Terms as to spending of wages.\n\nNo employer shall impose in any contract of service any terms as to the place in which, or the manner in which, or the person or persons with whom, any wag"
+        }
+      ],
+      "elapsed_seconds": 2.72
+    },
+    {
+      "id": 49,
+      "domain": "employment_law",
+      "question": "What are the rules for probationary periods?",
+      "categories_detected": [
+        "employment_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 452"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 452.91",
+          "article_number": "12A",
+          "title": "Dismissal during probation.",
+          "text_preview": "Article 12A - Dismissal during probation.\n\nIn the case that an employee who is pregnant or has recently given birth or who is breastfeeding is in her probationary period, the following provisions shal"
+        },
+        {
+          "law_code": "Cap. 452",
+          "article_number": "36",
+          "title": "Notice of and compensation for termination of contracts of service.",
+          "text_preview": "Article 36 - Notice of and compensation for termination of contracts of service.\n\n(1) Saving the provisions of sub-article (16), when an employment relationship is subject to a probationary period, th"
+        },
+        {
+          "law_code": "S.L. 452.108",
+          "article_number": "4",
+          "title": "Effective date of employment, notice and probation.",
+          "text_preview": "Article 4 - Effective date of employment, notice and probation.\n\n(1) A person who was considered to be performing services as a self-employed person for another person, whether prior to, or at any tim"
+        }
+      ],
+      "elapsed_seconds": 3.17
+    },
+    {
+      "id": 50,
+      "domain": "employment_law",
+      "question": "How is redundancy compensation calculated?",
+      "categories_detected": [
+        "employment_law",
+        "social_security_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 452"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 452.80",
+          "article_number": "10",
+          "title": "Redundancies as a result of judicial decisions.",
+          "text_preview": "Article 10 - Redundancies as a result of judicial decisions.\n\nRegulation 7 and regulation 8 shall not apply in those cases where the collective redundancy is the result of a judicial decision."
+        },
+        {
+          "law_code": "S.L. 452.80",
+          "article_number": "2",
+          "title": "Definitions.",
+          "text_preview": "Article 2 - Definitions.\n\n(1) For purposes of these regulations -\n\"Act\" means the Employment and Industrial Relations Act;\n\"collective redundancy\" means the termination of the employment by an employe"
+        },
+        {
+          "law_code": "S.L. 452.80",
+          "article_number": "6",
+          "title": "Duty of employer to inform employees' representatives.",
+          "text_preview": "Article 6 - Duty of employer to inform employees' representatives.\n\nWithin the period of seven days mentioned in the preceding regulation, the employer shall be bound to supply the employees' represen"
+        }
+      ],
+      "elapsed_seconds": 3.14
+    },
+    {
+      "id": 51,
+      "domain": "employment_law",
+      "question": "What are the maternity leave entitlements?",
+      "categories_detected": [
+        "employment_law",
+        "social_security_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 452"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 452.91",
+          "article_number": "6",
+          "title": "Entitlement to maternity leave.",
+          "text_preview": "Article 6 - Entitlement to maternity leave.\n\n(1) A pregnant employee may apply for maternity leave for an uninterrupted period of fourteen weeks if she notifies her employer in accordance with regulat"
+        },
+        {
+          "law_code": "S.L. 452.91",
+          "article_number": "11",
+          "title": "Rights during maternity and special maternity leave.",
+          "text_preview": "Article 11 - Rights during maternity and special maternity leave.\n\n(1) When an employee is on maternity leave or special maternity leave, the employee shall be deemed to have been in the employment of"
+        },
+        {
+          "law_code": "S.L. 331.07",
+          "article_number": "11",
+          "title": "",
+          "text_preview": "Article 11\n\nIn accordance with the provisions of the Protection of Maternity (Employment) Regulations, an employee on maternity leave shall be entitled to the first fourteen weeks of maternity leave w"
+        }
+      ],
+      "elapsed_seconds": 3.94
+    },
+    {
+      "id": 52,
+      "domain": "employment_law",
+      "question": "Can an employer monitor employee emails?",
+      "categories_detected": [
+        "data_protection_and_privacy",
+        "employment_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 586"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 452",
+          "article_number": "29",
+          "title": "Harassment.",
+          "text_preview": "Article 29 - Harassment.\n\n(1) It shall not be lawful for an employer or an employee to harass another employee or to harass the employer by subjecting such person to any unwelcome act, request or cond"
+        },
+        {
+          "law_code": "S.L. 452.104",
+          "article_number": "5",
+          "title": "",
+          "text_preview": "Article 5\n\n(1) The employer shall respect the privacy of the teleworker.\n(2) The employer may only put in place any kind of monitoring system if:\n(a) this is agreed to by both the employer and the tel"
+        },
+        {
+          "law_code": "Cap. 452",
+          "article_number": "35",
+          "title": "Rights of employees to minimum information.",
+          "text_preview": "Article 35 - Rights of employees to minimum information.\n\nThe Minister may, after consultation with the Board, make regulations prescribing the minimum information which every employer shall be bound "
+        }
+      ],
+      "elapsed_seconds": 2.89
+    },
+    {
+      "id": 53,
+      "domain": "employment_law",
+      "question": "What is the procedure for collective redundancies?",
+      "categories_detected": [
+        "employment_law",
+        "company_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 452"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 452",
+          "article_number": "37",
+          "title": "Collective redundancies.",
+          "text_preview": "Article 37 - Collective redundancies.\n\n(1) An employer shall not terminate the employment of any employee on grounds of collective redundancy before he has notified in writing the employees' represent"
+        },
+        {
+          "law_code": "S.L. 452.80",
+          "article_number": "4",
+          "title": "Duty to consult employees' representative.",
+          "text_preview": "Article 4 - Duty to consult employees' representative.\n\nIn all cases of collective redundancies, the employer proposing to declare the redundancies, shall not terminate the employment of such employee"
+        },
+        {
+          "law_code": "S.L. 452.80",
+          "article_number": "5",
+          "title": "Beginning of consultations.",
+          "text_preview": "Article 5 - Beginning of consultations.\n\nThe consultations between the employer and the employees' representative shall begin within seven working days from the day on which the employees' representat"
+        }
+      ],
+      "elapsed_seconds": 3.17
+    },
+    {
+      "id": 54,
+      "domain": "employment_law",
+      "question": "Are non-compete clauses enforceable in Malta?",
+      "categories_detected": [
+        "employment_law",
+        "commercial_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 16",
+        "Cap. 12",
+        "Cap. 452"
+      ],
+      "laws_searched_count": 20,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 5",
+          "article_number": "2",
+          "title": "Courts not to have power to order specific performance of promises of marriage.",
+          "text_preview": "Article 2 - Courts not to have power to order specific performance of promises of marriage.\n\nNo court in Malta shall have jurisdiction, power, or authority, to compel, adjudge, decree or order any per"
+        },
+        {
+          "law_code": "Cap. 12",
+          "article_number": "826",
+          "title": null,
+          "text_preview": "Article 826\n\nSaving the provisions of the British Judgments (Reciprocal Enforcement) Act, any judgment delivered by a competent court outside Malta and constituting a res judicata may be enforced by t"
+        },
+        {
+          "law_code": "Cap. 12",
+          "article_number": "827",
+          "title": null,
+          "text_preview": "Article 827\n\n(1) The provisions of the last preceding article shall not have effect:\n(a) if the judgment sought to be enforced may be set aside on any of the grounds mentioned in article 811;\n(b) in t"
+        }
+      ],
+      "elapsed_seconds": 3.79
+    },
+    {
+      "id": 55,
+      "domain": "property_law",
+      "question": "How is ownership of immovable property transferred?",
+      "categories_detected": [
+        "property_law",
+        "civil_law",
+        "notarial_and_registration_law"
+      ],
+      "query_expansion": [
+        "dominium",
+        "proprietorship"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 158",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "310",
+          "title": null,
+          "text_preview": "Article 310\n\nThe following are immovables by reason of the object to which they refer:\n(a) the dominium directum or the right of the dominus on the tenement let out on emphyteusis, and the\ndominium ut"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "307",
+          "title": null,
+          "text_preview": "Article 307\n\nAll things which can be the subject of private or public ownership are either movable or immovable property."
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1691",
+          "title": null,
+          "text_preview": "Article 1691\n\nThe assignment of an immovable thing as provided in article 1689 conveys to the assignee the ownership of the thing assigned notwithstanding any stipulation to the contrary, even that wh"
+        }
+      ],
+      "elapsed_seconds": 3.47
+    },
+    {
+      "id": 56,
+      "domain": "property_law",
+      "question": "What are the rights of a tenant under a lease agreement?",
+      "categories_detected": [
+        "property_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1551",
+          "title": "unless a right on the thing is claimed.",
+          "text_preview": "Article 1551 - unless a right on the thing is claimed.\n\n(1) Where, on the contrary, the lessee is disturbed in the enjoyment of the thing in consequence of an action touching a right on the thing let,"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1614",
+          "title": null,
+          "text_preview": "Article 1614\n\n(1) The lessee is not entitled to sub-let a thing or to assign its lease, unless such right was agreed upon in the contract.\n(2) For the purposes of this Sub-title, a management agreemen"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1607",
+          "title": "When right of preference of sitting tenant is not competent.",
+          "text_preview": "Article 1607 - When right of preference of sitting tenant is not competent.\n\nThe right of preference granted under paragraph (a) of article 1594 to the lessee in the last preceding lease, in respect o"
+        }
+      ],
+      "elapsed_seconds": 3.27
+    },
+    {
+      "id": 57,
+      "domain": "property_law",
+      "question": "How do easements work under Maltese law?",
+      "categories_detected": [
+        "property_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "servitude",
+        "right of way"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 158"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "481",
+          "title": "by non-user.",
+          "text_preview": "Article 481 - by non-user.\n\n(1) An easement is extinguished by non-user for the period of forty years, in the case of property belonging to the Government of Malta or to a church or other pious instit"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "400",
+          "title": "Definition of \"easement\".",
+          "text_preview": "Article 400 - Definition of \"easement\".\n\n(1) An easement is a right established for the advantage of a tenement over another tenement belonging to another person, for the purpose of making use of such"
+        },
+        {
+          "law_code": "S.L. 16",
+          "article_number": "400",
+          "title": "Definition of \"easement\".",
+          "text_preview": "Article 400 - Definition of \"easement\".\n\n(1) An easement is a right established for the advantage of a tenement over another tenement belonging to another person, for the purpose of making use of such"
+        }
+      ],
+      "elapsed_seconds": 2.93
+    },
+    {
+      "id": 58,
+      "domain": "property_law",
+      "question": "What is the prescription period for acquiring ownership by possession?",
+      "categories_detected": [
+        "property_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "dominium",
+        "proprietorship",
+        "detention"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2107",
+          "title": null,
+          "text_preview": "Article 2107\n\n(1) Prescription is a mode of acquiring a right by a continuous, uninterrupted, peaceable, open, and unequivocal possession for a time specified by law.\n(2) Prescription is also a mode o"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2086",
+          "title": "When prescription is acquired by third party in possession.",
+          "text_preview": "Article 2086 - When prescription is acquired by third party in possession.\n\nAs to property which is in the possession of a third party, prescription takes place in favour of such third party by the la"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2140",
+          "title": "Prescription of ten years.",
+          "text_preview": "Article 2140 - Prescription of ten years.\n\n(1) Any person who in good faith and under a title capable of transferring ownership possesses an immovable thing for a period of ten years acquires ownershi"
+        }
+      ],
+      "elapsed_seconds": 2.97
+    },
+    {
+      "id": 59,
+      "domain": "property_law",
+      "question": "Can a landlord evict a tenant without a court order?",
+      "categories_detected": [
+        "property_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "tribunal",
+        "judicature"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 158",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 573",
+          "article_number": "17",
+          "title": "Execution of eviction.",
+          "text_preview": "Article 17 - Execution of eviction.\n\n(1) If the decision for eviction has not been challenged, the evictee shall leave from the land and remove all movable property during the time frame set out by th"
+        },
+        {
+          "law_code": "Cap. 573",
+          "article_number": "9",
+          "title": "",
+          "text_preview": "Article 9\n\n(1) The competent authority may order the eviction of any person from any land and the removal therefrom of any movable property, when:\n(a) it is occupied by such person without any title;\n"
+        },
+        {
+          "law_code": "Cap. 573",
+          "article_number": "16",
+          "title": "Powers of the Administrative Review Tribunal and of the Court of Appeal (Inferior Jurisdiction).",
+          "text_preview": "Article 16 - Powers of the Administrative Review Tribunal and of the Court of Appeal (Inferior Jurisdiction).\n\n(1) The Administrative Review Tribunal or the Court of Appeal (Inferior Jurisdiction) sha"
+        }
+      ],
+      "elapsed_seconds": 3.11
+    },
+    {
+      "id": 60,
+      "domain": "property_law",
+      "question": "What are the co-owners' rights in jointly owned property?",
+      "categories_detected": [
+        "property_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 158"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 16",
+          "article_number": "491",
+          "title": "Right of co-owner to make use of common property.",
+          "text_preview": "Article 491 - Right of co-owner to make use of common property.\n\nEach of the co-owners is entitled to make use of the common property, provided -\n(a) that the use be made according to the destination "
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "502",
+          "title": "Right of co-owner to have his share in kind.",
+          "text_preview": "Article 502 - Right of co-owner to have his share in kind.\n\nEach of the co-owners may claim his share of the property in kind."
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "491",
+          "title": "Right of co-owner to make use of common property.",
+          "text_preview": "Article 491 - Right of co-owner to make use of common property.\n\nEach of the co-owners is entitled to make use of the common property, provided -\n(a) that the use be made according to the destination "
+        }
+      ],
+      "elapsed_seconds": 3.25
+    },
+    {
+      "id": 61,
+      "domain": "property_law",
+      "question": "How is a mortgage registered?",
+      "categories_detected": [
+        "property_law",
+        "notarial_and_registration_law",
+        "financial_services_law"
+      ],
+      "query_expansion": [
+        "hypothec",
+        "hypothecary"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 158",
+        "Cap. 403",
+        "Cap. 330",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2033",
+          "title": null,
+          "text_preview": "Article 2033\n\n(1) A hypothec, whether legal, judicial, or conventional, is not effectual unless it is registered in the Public Registry, and it does not rank except from the date of its registration.\n"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2011",
+          "title": "Definition of hypothec.",
+          "text_preview": "Article 2011 - Definition of hypothec.\n\n(1) Hypothec is a right created over the property of a debtor or of a third party, for the benefit of the creditor, as security for the fulfilment of an obligat"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "2022",
+          "title": null,
+          "text_preview": "Article 2022\n\nThe creditor who has a privilege over an immovable, has a special legal hypothec over the immovable subject to the privilege."
+        }
+      ],
+      "elapsed_seconds": 3.62
+    },
+    {
+      "id": 62,
+      "domain": "property_law",
+      "question": "What taxes apply to property transfers?",
+      "categories_detected": [
+        "tax_law",
+        "property_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 158",
+        "Cap. 123",
+        "Cap. 406",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 123.92",
+          "article_number": "1",
+          "title": "Title",
+          "text_preview": "Article 1 - Title\n\nThe title of these rules is the Tax on Property Transfers Rules."
+        },
+        {
+          "law_code": "Cap. 123",
+          "article_number": "5A",
+          "title": "Property transfers.",
+          "text_preview": "Article 5A - Property transfers.\n\n(1) Notwithstanding any other provision of the Income Tax Acts, tax shall be chargeable and payable on any transfer to which this article applies in such amount, at s"
+        },
+        {
+          "law_code": "S.L. 123.202",
+          "article_number": "3",
+          "title": "",
+          "text_preview": "Article 3\n\nThese rules apply to any transfer on which tax is chargeable in terms of article 5A of the Income Tax Act that is made by means of a public deed not later than 31 December 2022 by a person "
+        }
+      ],
+      "elapsed_seconds": 3.23
+    },
+    {
+      "id": 63,
+      "domain": "property_law",
+      "question": "Can agricultural land be converted to residential use?",
+      "categories_detected": [
+        "planning_and_development_law",
+        "property_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 158",
+        "Cap. 16",
+        "Cap. 552"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 573.01",
+          "article_number": "2",
+          "title": "Definition of agricultural land.",
+          "text_preview": "Article 2 - Definition of agricultural land.\n\nAgricultural land means any land belonging to the Government which is mainly let for the growing of crops, flowers, fruit-trees or vines and for cognate a"
+        },
+        {
+          "law_code": "S.L. 639.13",
+          "article_number": "10",
+          "title": "",
+          "text_preview": "Article 10\n\nAny advertisement promoting the sale of agricultural land for purposes other than agriculture is prohibited."
+        },
+        {
+          "law_code": "S.L. 573.06",
+          "article_number": "3",
+          "title": "Exclusion of the application of these regulations.",
+          "text_preview": "Article 3 - Exclusion of the application of these regulations.\n\nExcept where a transfer or assignment of the rights required under these regulations is related to a transfer and assignment of rights b"
+        }
+      ],
+      "elapsed_seconds": 3.57
+    },
+    {
+      "id": 64,
+      "domain": "property_law",
+      "question": "What happens to a lease when the property is sold?",
+      "categories_detected": [
+        "property_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 158",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 573.02",
+          "article_number": "2",
+          "title": "Transfer.",
+          "text_preview": "Article 2 - Transfer.\n\n(1) Anyone who has, a commercial property by title of lease from the Government or the Lands Authority, can while the original lease is still running, transfer his rights in the"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1574",
+          "title": null,
+          "text_preview": "Article 1574\n\nIf the lessor sells the thing let, or alienates it in any other manner, the alienee cannot dissolve the lease, unless the lessor has reserved to himself such power in the contract of lea"
+        },
+        {
+          "law_code": "S.L. 573.02",
+          "article_number": "3",
+          "title": "Call for tender to the public.",
+          "text_preview": "Article 3 - Call for tender to the public.\n\n(1) Having observed in full the conditions imposed in the previous regulations, the Lands Authority shall issue a call for tender to the public, which shall"
+        }
+      ],
+      "elapsed_seconds": 3.12
+    },
+    {
+      "id": 65,
+      "domain": "family_law",
+      "question": "What are the grounds for divorce in Malta?",
+      "categories_detected": [
+        "family_law"
+      ],
+      "query_expansion": [
+        "dissolution of marriage",
+        "separation"
+      ],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "66N",
+          "title": "Jurisdiction of the court regarding divorce.",
+          "text_preview": "Article 66N - Jurisdiction of the court regarding divorce.\n\n(1) Notwithstanding the provisions of any other law, the courts of civil jurisdiction shall have jurisdiction to hear and determine a demand"
+        },
+        {
+          "law_code": "S.L. 12.20",
+          "article_number": "4",
+          "title": "Authorisation to proceed to initiate proceedings for personal separation or for divorce.",
+          "text_preview": "Article 4 - Authorisation to proceed to initiate proceedings for personal separation or for divorce.\n\n(1) Any party wishing to proceed to initiate a suit for personal separation or divorce against the"
+        },
+        {
+          "law_code": "S.L. 12.20",
+          "article_number": "6",
+          "title": "Consensual separation.",
+          "text_preview": "Article 6 - Consensual separation.\n\n(a) Where two spouses agree to enter into a deed of personal separation by mutual consent otherwise than through the mediation of a mediator as provided in regulati"
+        }
+      ],
+      "elapsed_seconds": 3.64
+    },
+    {
+      "id": 66,
+      "domain": "family_law",
+      "question": "How is child custody determined?",
+      "categories_detected": [
+        "family_law"
+      ],
+      "query_expansion": [
+        "care and custody",
+        "parental authority"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 16"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 507",
+          "article_number": "3",
+          "title": "",
+          "text_preview": "Article 3\n\nThe measures referred to in Article 1 may deal in particular with -\n(a) the attribution, exercise, termination or restriction of parental responsibility, as well as its delegation;\n(b) righ"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "131",
+          "title": "Child subject to parental authority.",
+          "text_preview": "Article 131 - Child subject to parental authority.\n\n(1) A child shall be subject to the authority of his parents for all effects as by law established.\n(2) Saving those cases established by law, this "
+        },
+        {
+          "law_code": "Cap. 410",
+          "article_number": "7",
+          "title": null,
+          "text_preview": "Article 7\n\nA decision relating to custody given in a Contracting State shall be recognised and, where it is enforceable in the State of origin, made enforceable in every other Contracting State."
+        }
+      ],
+      "elapsed_seconds": 3.23
+    },
+    {
+      "id": 67,
+      "domain": "family_law",
+      "question": "What is the waiting period before remarriage after divorce?",
+      "categories_detected": [
+        "family_law"
+      ],
+      "query_expansion": [
+        "dissolution of marriage",
+        "separation"
+      ],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "66A",
+          "title": null,
+          "text_preview": "Article 66A\n\n(1) Each of the spouses shall have the right to demand divorce or dissolution of the marriage as provided in this Sub-Title. It shall not be required that, prior to the demand of divorce,"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "66L",
+          "title": "Effects of dissolution of marriage.",
+          "text_preview": "Article 66L - Effects of dissolution of marriage.\n\n(1) When the competent civil court pronounces a divorce between the spouses, they shall have the right to remarry.\n(2) The pronouncement of divorce s"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "66B",
+          "title": null,
+          "text_preview": "Article 66B\n\nWithout prejudice to the following provisions of this article, divorce shall not be granted except upon a demand made jointly by the two spouses or by one of them against the other spouse"
+        }
+      ],
+      "elapsed_seconds": 2.85
+    },
+    {
+      "id": 68,
+      "domain": "family_law",
+      "question": "How is maintenance calculated after divorce?",
+      "categories_detected": [
+        "family_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "dissolution of marriage",
+        "separation"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "46A",
+          "title": "Maintenance pendente lite.",
+          "text_preview": "Article 46A - Maintenance pendente lite.\n\nDuring the pendency of the action for separation, either spouse, whether plaintiff or defendant, may demand from the other spouse a maintenance allowance in p"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "66B",
+          "title": null,
+          "text_preview": "Article 66B\n\nWithout prejudice to the following provisions of this article, divorce shall not be granted except upon a demand made jointly by the two spouses or by one of them against the other spouse"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "66I",
+          "title": "Powers of the court.",
+          "text_preview": "Article 66I - Powers of the court.\n\n(1) Where a demand for divorce is made to the competent civil court by either of the spouses, or by both spouses after having agreed that their marriage is to be di"
+        }
+      ],
+      "elapsed_seconds": 3.38
+    },
+    {
+      "id": 69,
+      "domain": "family_law",
+      "question": "What are the rules for prenuptial agreements?",
+      "categories_detected": [
+        "family_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1244",
+          "title": null,
+          "text_preview": "Article 1244\n\n(1) After the celebration of the marriage, the spouses\nmay, with the authority of the court, vary their marriage\nagreements, without prejudice to the rights of the children or of\nthird p"
+        },
+        {
+          "law_code": "S.L. 16",
+          "article_number": "1244",
+          "title": "Post-nuptial agreements",
+          "text_preview": "Article 1244 - Post-nuptial agreements\n\n(1) After the celebration of the marriage, the spouses may, with the authority of the court, vary their marriage agreements, without prejudice to the rights of "
+        },
+        {
+          "law_code": "S.L. 16",
+          "article_number": "1238",
+          "title": "Certain agreements may not be made.",
+          "text_preview": "Article 1238 - Certain agreements may not be made.\n\n(1) It shall not be lawful for the future spouses to enter into any agreement whereby either of them is established as head of the family, or into a"
+        }
+      ],
+      "elapsed_seconds": 3.44
+    },
+    {
+      "id": 70,
+      "domain": "family_law",
+      "question": "How does intestate succession work?",
+      "categories_detected": [
+        "family_law",
+        "property_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 158"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "863",
+          "title": null,
+          "text_preview": "Article 863\n\n(1) In intestate successions, the share of the person renouncing accrues to his co-heirs.\n(2) If the person renouncing is the sole heir, the succession devolves upon the person next in de"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "788",
+          "title": "When intestate succession takes place.",
+          "text_preview": "Article 788 - When intestate succession takes place.\n\nWhere there is no valid will, or where the testator has not disposed of the whole of his estate, or where the heirs-institute are unwilling or una"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "789",
+          "title": "Persons succeeding ab intestato.",
+          "text_preview": "Article 789 - Persons succeeding ab intestato.\n\nIntestate succession is granted in favour of the descendants, the ascendants, the collateral relatives and the spouse of the deceased, and the Governmen"
+        }
+      ],
+      "elapsed_seconds": 2.98
+    },
+    {
+      "id": 71,
+      "domain": "family_law",
+      "question": "Can children inherit from their unmarried father?",
+      "categories_detected": [
+        "family_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "799",
+          "title": "Children or descendants of persons excluded as unworthy.",
+          "text_preview": "Article 799 - Children or descendants of persons excluded as unworthy.\n\n(1) The children or descendants of a person excluded as unworthy shall not be excluded by reason of the unworthiness of their pa"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "602",
+          "title": "All children may receive by will.",
+          "text_preview": "Article 602 - All children may receive by will.\n\nAll the children of the testator whether born in wedlock, out of wedlock or adopted or whether or not the presumption referred to in articles 102 to 11"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "105",
+          "title": null,
+          "text_preview": "Article 105\n\nThe marriage of the parents shall bring about the presumption that even their predeceased children were conceived or born in wedlock, and such presumption shall also operate in favour of "
+        }
+      ],
+      "elapsed_seconds": 3.1
+    },
+    {
+      "id": 72,
+      "domain": "family_law",
+      "question": "What is the legitimate portion in inheritance law?",
+      "categories_detected": [
+        "family_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "succession",
+        "estate"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 16",
+          "article_number": "608",
+          "title": "Descendants of person unworthy are entitled to the reserved portion.",
+          "text_preview": "Article 608 - Descendants of person unworthy are entitled to the reserved portion.\n\nThe descendants of a person excluded as unworthy shall, in all cases, be entitled to the reserved portion, which wou"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "608",
+          "title": null,
+          "text_preview": "Article 608\n\nThe descendants of a person excluded as unworthy shall, in all cases, be entitled to the reserved portion, which would have been due to the person so excluded:\nProvided that such person s"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "684",
+          "title": "Where only a portion of inheritance is disposed of.",
+          "text_preview": "Article 684 - Where only a portion of inheritance is disposed of.\n\n(1) If the testator has disposed only of a portion of the inheritance, the residue thereof shall vest in his heirs-at-law, according "
+        }
+      ],
+      "elapsed_seconds": 3.19
+    },
+    {
+      "id": 73,
+      "domain": "family_law",
+      "question": "How are matrimonial assets divided on divorce?",
+      "categories_detected": [
+        "family_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "dissolution of marriage",
+        "separation"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 16",
+          "article_number": "1338",
+          "title": null,
+          "text_preview": "Article 1338\n\n(1) Where the future spouses in a marriage contract stipulate that the property acquired by them during marriage shall be governed by the system of community of residue under separate ad"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1338",
+          "title": "Community of residue under separate administration.",
+          "text_preview": "Article 1338 - Community of residue under separate administration.\n\n(1) Where the future spouses in a marriage contract stipulate that the property acquired by them during marriage shall be governed b"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "1319",
+          "title": null,
+          "text_preview": "Article 1319\n\nThe right of each of the spouses to the community of acquests shall, saving any other provision of the law, commence from the day of the celebration of the marriage and terminate on the "
+        }
+      ],
+      "elapsed_seconds": 3.15
+    },
+    {
+      "id": 74,
+      "domain": "family_law",
+      "question": "What are the requirements for a valid will?",
+      "categories_detected": [
+        "family_law",
+        "civil_law",
+        "notarial_and_registration_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 16",
+          "article_number": "677",
+          "title": "By whom such wills are to be signed.",
+          "text_preview": "Article 677 - By whom such wills are to be signed.\n\n(1) The will referred to in the last preceding article shall be signed by the testator, by the person receiving it, and by the witnesses.\n(2) Where "
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "672",
+          "title": "Nullity of will.",
+          "text_preview": "Article 672 - Nullity of will.\n\nNon-compliance with the requirements of articles 655, 656, 657, 658, 659, 663, 668, 669 and 670 shall, saving the provisions of articles 673 to 682 inclusive relating t"
+        },
+        {
+          "law_code": "Cap. 16",
+          "article_number": "664",
+          "title": "Duties of judge or magistrate assisting an illiterate person.",
+          "text_preview": "Article 664 - Duties of judge or magistrate assisting an illiterate person.\n\nThe judge or magistrate requested to give his assistance under the last preceding article, shall read out and explain to th"
+        }
+      ],
+      "elapsed_seconds": 3.38
+    },
+    {
+      "id": 75,
+      "domain": "tax_law",
+      "question": "What is the income tax rate for individuals?",
+      "categories_detected": [
+        "tax_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 406"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 123",
+          "article_number": "56",
+          "title": "Normal rate of tax on individuals and certain bodies of persons.",
+          "text_preview": "Article 56 - Normal rate of tax on individuals and certain bodies of persons.\n\n(1) Saving the other provisions of this article, the tax upon the chargeable income of every person shall be determined a"
+        },
+        {
+          "law_code": "S.L. 123.174",
+          "article_number": "3",
+          "title": "",
+          "text_preview": "Article 3\n\n(1) In the case of an individual who is chargeable to tax at the rates specified in article 56(1)(b) of the Act, but not at the rates specified in the provisos thereto, a tax rebate shall b"
+        },
+        {
+          "law_code": "S.L. 123.167",
+          "article_number": "2",
+          "title": "",
+          "text_preview": "Article 2\n\n(1) Any person subject to tax under the Income Tax Act, hereinafter referred to as \"the Act\", shall be allowed a tax rebate in the circumstances established by these rules and in the amount"
+        }
+      ],
+      "elapsed_seconds": 2.91
+    },
+    {
+      "id": 76,
+      "domain": "tax_law",
+      "question": "What are the penalties for late tax filing?",
+      "categories_detected": [
+        "tax_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 123"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 406",
+          "article_number": "38",
+          "title": "",
+          "text_preview": "Article 38\n\n(1) Any person registered under article 10 who, being required to furnish a tax return for a tax period, does not furnish that return within the time laid down in the relevant provisions o"
+        },
+        {
+          "law_code": "Cap. 406",
+          "article_number": "42",
+          "title": "Reasonable excuse.",
+          "text_preview": "Article 42 - Reasonable excuse.\n\n(1) Notwithstanding the provisions of articles 37 to 41, both inclusive -\n(a) no administrative penalty shall be due by a person for any default if that person proves "
+        },
+        {
+          "law_code": "Cap. 406",
+          "article_number": "37A",
+          "title": "",
+          "text_preview": "Article 37A\n\nWhere a notice of payment furnished by a person registered under article 12 contains an understatement of the tax payable in accordance with articles 21(2) and 21(3) or where the Commissi"
+        }
+      ],
+      "elapsed_seconds": 2.89
+    },
+    {
+      "id": 77,
+      "domain": "tax_law",
+      "question": "How are capital gains taxed in Malta?",
+      "categories_detected": [
+        "tax_law",
+        "financial_services_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 403",
+        "Cap. 330"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 123",
+          "article_number": "4",
+          "title": "Charge of Income Tax.",
+          "text_preview": "Article 4 - Charge of Income Tax.\n\n(1) Subject to the provisions of this Act, income tax shall be payable at the rate or rates specified hereafter for the year of assessment commencing on 1st January,"
+        },
+        {
+          "law_code": "Cap. 123",
+          "article_number": "5",
+          "title": "Capital gains.",
+          "text_preview": "Article 5 - Capital gains.\n\n(1) (a) Capital gains derived by a person from the transfer of a capital asset shall be charged under article 4(1). Notwithstanding anything contained in any other part of "
+        },
+        {
+          "law_code": "S.L. 123.176",
+          "article_number": "2",
+          "title": "Interpretation.",
+          "text_preview": "Article 2 - Interpretation.\n\nIn these rules, unless the context otherwise requires: -\n\"the Act\" means the Income Tax Act;\n\"interest on risk capital\" shall have the meaning assigned to it in terms of r"
+        }
+      ],
+      "elapsed_seconds": 2.94
+    },
+    {
+      "id": 78,
+      "domain": "tax_law",
+      "question": "What is the VAT rate in Malta?",
+      "categories_detected": [
+        "tax_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 123",
+          "article_number": "56",
+          "title": "Normal rate of tax on individuals and certain bodies of persons.",
+          "text_preview": "Article 56 - Normal rate of tax on individuals and certain bodies of persons.\n\n(1) Saving the other provisions of this article, the tax upon the chargeable income of every person shall be determined a"
+        },
+        {
+          "law_code": "Cap. 123",
+          "article_number": "89",
+          "title": "",
+          "text_preview": "Article 89\n\n(1) If any person resident in Malta who has paid, by deduction or otherwise, or is liable to pay, tax under this Act for any year of assessment on any part of his income, proves to the sat"
+        },
+        {
+          "law_code": "S.L. 406.10",
+          "article_number": "7",
+          "title": "Electronic refund application.",
+          "text_preview": "Article 7 - Electronic refund application.\n\nTo obtain a refund of VAT, the taxable person not established in Malta shall address an electronic refund application to the Commissioner and submit it to t"
+        }
+      ],
+      "elapsed_seconds": 3.03
+    },
+    {
+      "id": 79,
+      "domain": "tax_law",
+      "question": "Are there tax incentives for startups?",
+      "categories_detected": [
+        "tax_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 123",
+        "Cap. 406"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 463.03",
+          "article_number": "5",
+          "title": "Assistance to small sized start-up undertakings.",
+          "text_preview": "Article 5 - Assistance to small sized start-up undertakings.\n\nWhere the Corporation is satisfied that a small sized start-up undertaking carrying on or intending to carry out a qualifying activity tha"
+        },
+        {
+          "law_code": "S.L. 463.03",
+          "article_number": "4",
+          "title": "Assistance for the development of a new business by a small or medium-sized start-up undertaking.",
+          "text_preview": "Article 4 - Assistance for the development of a new business by a small or medium-sized start-up undertaking.\n\nWhere the Corporation is satisfied that a small or medium-sized start-up undertaking carr"
+        },
+        {
+          "law_code": "S.L. 463.16",
+          "article_number": "3",
+          "title": "Assistance to support small start-ups under the Start-up Finance Scheme.",
+          "text_preview": "Article 3 - Assistance to support small start-ups under the Start-up Finance Scheme.\n\n(1) Where the Corporation is satisfied that the business is classified as a small-start-up undertaking as prescrib"
+        }
+      ],
+      "elapsed_seconds": 3.31
+    },
+    {
+      "id": 80,
+      "domain": "tax_law",
+      "question": "How does the tax refund system for shareholders work?",
+      "categories_detected": [
+        "tax_law",
+        "company_law",
+        "consumer_protection_law"
+      ],
+      "query_expansion": [
+        "member",
+        "stockholder"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 123",
+        "Cap. 406",
+        "Cap. 378"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 372",
+          "article_number": "48",
+          "title": "Refunds",
+          "text_preview": "Article 48 - Refunds\n\n(1) If it be proved to the satisfaction of the Commissioner that any person for any year of assessment has paid tax, by deduction or otherwise, in excess of the amount with which"
+        },
+        {
+          "law_code": "S.L. 123.176",
+          "article_number": "6",
+          "title": "",
+          "text_preview": "Article 6\n\nWithout prejudice to the provisions of article 51 of the Act, where in relation to a transaction, or to a series of transactions, sums are determined such that the undertaking, the sharehol"
+        },
+        {
+          "law_code": "S.L. 372.25",
+          "article_number": "2",
+          "title": "Claim for refund.",
+          "text_preview": "Article 2 - Claim for refund.\n\nAny person, except for shareholders of an international trading company, making a claim pursuant to article 48(4) or pursuant to article 48(4A) shall, in order to be ent"
+        }
+      ],
+      "elapsed_seconds": 3.3
+    },
+    {
+      "id": 81,
+      "domain": "tax_law",
+      "question": "What expenses are tax deductible for companies?",
+      "categories_detected": [
+        "tax_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 123",
+        "Cap. 406"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 123",
+          "article_number": "14",
+          "title": "Deductions allowed.",
+          "text_preview": "Article 14 - Deductions allowed.\n\n(1) For the purpose of ascertaining the total income of any person there shall be deducted all outgoings and expenses incurred by such person during the year precedin"
+        },
+        {
+          "law_code": "S.L. 123.01",
+          "article_number": "5",
+          "title": "Permissible deductions.",
+          "text_preview": "Article 5 - Permissible deductions.\n\nAnnual deductions for wear and tear shall constitute permissible deductions only in cases where proper records and documentation have been kept of the cost of the "
+        },
+        {
+          "law_code": "S.L. 123.82",
+          "article_number": "15",
+          "title": "Deduction for qualifying wages and tuition expenditure.",
+          "text_preview": "Article 15 - Deduction for qualifying wages and tuition expenditure.\n\n(1) When a company incurs allowable wages and tuition expenditure it shall be entitled, for the purpose of ascertaining its total "
+        }
+      ],
+      "elapsed_seconds": 3.53
+    },
+    {
+      "id": 82,
+      "domain": "tax_law",
+      "question": "How are rental income taxed?",
+      "categories_detected": [
+        "tax_law",
+        "property_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 158",
+        "Cap. 406",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 123",
+          "article_number": "31D",
+          "title": "Taxation of rental income derived from the letting of a tenement.",
+          "text_preview": "Article 31D - Taxation of rental income derived from the letting of a tenement.\n\n(1) Notwithstanding any other provision of the Income Tax Acts or any regulations made thereunder, the provisions of th"
+        },
+        {
+          "law_code": "Cap. 123",
+          "article_number": "31A",
+          "title": "Taxation of rental income received from the Housing Authority.",
+          "text_preview": "Article 31A - Taxation of rental income received from the Housing Authority.\n\n(1) Notwithstanding any other provision of the Income Tax Acts or any regulations issued thereunder, this article shall ap"
+        },
+        {
+          "law_code": "Cap. 123",
+          "article_number": "31B",
+          "title": "",
+          "text_preview": "Article 31B\n\n(1) Notwithstanding any other provision of the Income Tax Acts or any regulations made thereunder, this article shall apply where any person who is an owner of immovable property rents su"
+        }
+      ],
+      "elapsed_seconds": 3.61
+    },
+    {
+      "id": 83,
+      "domain": "constitutional_law",
+      "question": "What are the fundamental human rights in the Constitution?",
+      "categories_detected": [
+        "constitutional_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 1"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "MISC.ConstitutionofMaltaC",
+          "article_number": "32",
+          "title": "Fundamental rights and freedoms of the individual.",
+          "text_preview": "Article 32 - Fundamental rights and freedoms of the individual.\n\nWhereas every person in Malta is entitled to the fundamental rights and freedoms of the individual, that is to say, the right, whatever"
+        },
+        {
+          "law_code": "MISC.ConstitutionofMaltaC",
+          "article_number": "21",
+          "title": null,
+          "text_preview": "Article 21\n\nThe provisions of this Chapter shall not be enforceable in any court, but the principles therein contained are nevertheless fundamental to the governance of the country and it shall be the"
+        },
+        {
+          "law_code": "Cap. 319",
+          "article_number": "9",
+          "title": "",
+          "text_preview": "Article 9\n\n(1) Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief and freedom, either alone or in community with others"
+        }
+      ],
+      "elapsed_seconds": 2.88
+    },
+    {
+      "id": 84,
+      "domain": "constitutional_law",
+      "question": "How is the President of Malta elected?",
+      "categories_detected": [
+        "constitutional_law",
+        "electoral_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 1"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "MISC.ConstitutionofMaltaC",
+          "article_number": "51",
+          "title": null,
+          "text_preview": "Article 51\n\nThere shall be a Parliament of Malta which shall consist of the President and a House of Representatives."
+        },
+        {
+          "law_code": "MISC.ConstitutionofMaltaC",
+          "article_number": "48",
+          "title": "Establishment of the office of President.",
+          "text_preview": "Article 48 - Establishment of the office of President.\n\n(1) There shall be a President of Malta who shall be appointed by Resolution supported by the votes of not less than two-thirds of all the membe"
+        },
+        {
+          "law_code": "Cap. 186",
+          "article_number": "2",
+          "title": "President of Malta's salary.",
+          "text_preview": "Article 2 - President of Malta's salary.\n\nThere shall be paid to the President of Malta a salary of €71,575 with effect from 1st January, 2025."
+        }
+      ],
+      "elapsed_seconds": 3.03
+    },
+    {
+      "id": 85,
+      "domain": "constitutional_law",
+      "question": "What powers does the Constitutional Court have?",
+      "categories_detected": [
+        "constitutional_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [
+        "tribunal",
+        "judicature"
+      ],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "MISC.ConstitutionofMaltaC",
+          "article_number": "95",
+          "title": null,
+          "text_preview": "Article 95\n\n(1) There shall be in and for Malta such Superior Courts having such powers and jurisdiction as may be provided by any law for the time being in force in Malta.\n(2) One of the Superior Cou"
+        },
+        {
+          "law_code": "Cap. 369",
+          "article_number": "4",
+          "title": null,
+          "text_preview": "Article 4\n\n(1) In the exercise of their functions the Commission and\nthe Committee for Advocates and Legal Procurators shall have all\nthe powers as are assigned to the First Hall of the Civil Court by"
+        },
+        {
+          "law_code": "Cap. 490",
+          "article_number": "23",
+          "title": "Powers of the Court of Appeal.",
+          "text_preview": "Article 23 - Powers of the Court of Appeal.\n\n(1) The Court of Appeal shall have the power, in its judgement, to confirm, revoke or alter the decision appealed against and to give such directions as it"
+        }
+      ],
+      "elapsed_seconds": 3.32
+    },
+    {
+      "id": 86,
+      "domain": "constitutional_law",
+      "question": "Can fundamental rights be limited?",
+      "categories_detected": [
+        "constitutional_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 586.09",
+          "article_number": "7",
+          "title": "Proportionality and necessity.",
+          "text_preview": "Article 7 - Proportionality and necessity.\n\nAny restriction applied under these regulations shall respect the essence of the fundamental rights and freedoms of the data subject and shall be a necessar"
+        },
+        {
+          "law_code": "Cap. 319",
+          "article_number": "17",
+          "title": "",
+          "text_preview": "Article 17\n\nNothing in this Convention may be interpreted as implying for any State, group or person any right to engage in any activity or perform any act aimed at the destruction of any of the right"
+        },
+        {
+          "law_code": "Cap. 319",
+          "article_number": "18",
+          "title": "",
+          "text_preview": "Article 18\n\nThe restrictions permitted under this Convention to the said rights and freedoms shall not be applied for any purpose other than those for which they have been prescribed."
+        }
+      ],
+      "elapsed_seconds": 3.07
+    },
+    {
+      "id": 87,
+      "domain": "constitutional_law",
+      "question": "What is the procedure for amending the Constitution?",
+      "categories_detected": [
+        "constitutional_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 1"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "MISC.ConstitutionofMaltaC",
+          "article_number": "66",
+          "title": "Alteration of this Constitution.",
+          "text_preview": "Article 66 - Alteration of this Constitution.\n\n(1) Subject to the provisions of this article, Parliament may alter any of the provisions of this Constitution and (in so far as it forms part of the law"
+        },
+        {
+          "law_code": "Cap. 237",
+          "article_number": "14",
+          "title": "",
+          "text_preview": "Article 14\n\n(1) Any number of persons registered as voters for the election of members of the House of Representatives, being not less than ten per cent of the total number of persons registered as vo"
+        },
+        {
+          "law_code": "Cap. 237",
+          "article_number": "17",
+          "title": "",
+          "text_preview": "Article 17\n\n(1) As soon as may be after the service of the replies referred to in article 16(3), the Constitutional Court shall, unless it considers that such hearing is not required as the applicatio"
+        }
+      ],
+      "elapsed_seconds": 3.1
+    },
+    {
+      "id": 88,
+      "domain": "administrative_law",
+      "question": "How do I appeal a government administrative decision?",
+      "categories_detected": [
+        "administrative_law",
+        "constitutional_law"
+      ],
+      "query_expansion": [
+        "appellate proceedings",
+        "remedy"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 1"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 490",
+          "article_number": "22",
+          "title": "Right of appeal.",
+          "text_preview": "Article 22 - Right of appeal.\n\n(1) Any party to the proceedings before the Administrative Review Tribunal who feels aggrieved by a decision of the said Tribunal, may appeal to the Court of Appeal sitt"
+        },
+        {
+          "law_code": "Cap. 573",
+          "article_number": "14",
+          "title": "Appeal.",
+          "text_preview": "Article 14 - Appeal.\n\n(1) Any party that disagrees with the decision held by the Administrative Review Tribunal shall have the right to appeal before the Court of Appeal (Inferior Jurisdiction).\n(2) T"
+        },
+        {
+          "law_code": "Cap. 12",
+          "article_number": "469A",
+          "title": null,
+          "text_preview": "Article 469A\n\n(1) Saving as is otherwise provided by law, the courts of justice of civil jurisdiction may enquire into the validity of any administrative act or declare such act null, invalid or witho"
+        }
+      ],
+      "elapsed_seconds": 3.11
+    },
+    {
+      "id": 89,
+      "domain": "administrative_law",
+      "question": "What is the time limit for filing an administrative appeal?",
+      "categories_detected": [
+        "administrative_law"
+      ],
+      "query_expansion": [
+        "prescription",
+        "time-barred",
+        "appellate proceedings"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 490",
+          "article_number": "22",
+          "title": "Right of appeal.",
+          "text_preview": "Article 22 - Right of appeal.\n\n(1) Any party to the proceedings before the Administrative Review Tribunal who feels aggrieved by a decision of the said Tribunal, may appeal to the Court of Appeal sitt"
+        },
+        {
+          "law_code": "Cap. 490",
+          "article_number": "7",
+          "title": "Review of administrative acts.",
+          "text_preview": "Article 7 - Review of administrative acts.\n\n(1) The Administrative Review Tribunal shall be competent to review administrative acts of the public administration on points of law and points of fact.\n(2"
+        },
+        {
+          "law_code": "S.L. 117.33",
+          "article_number": "2",
+          "title": "Empowerment of the Administrative Review Tribunal with regard to the Farmers' Markets Regulations.",
+          "text_preview": "Article 2 - Empowerment of the Administrative Review Tribunal with regard to the Farmers' Markets Regulations.\n\n(1) The Administrative Review Tribunal shall continue to be competent to hear appeals fr"
+        }
+      ],
+      "elapsed_seconds": 3.02
+    },
+    {
+      "id": 90,
+      "domain": "administrative_law",
+      "question": "Can government decisions be reviewed by courts?",
+      "categories_detected": [
+        "administrative_law",
+        "constitutional_law"
+      ],
+      "query_expansion": [
+        "tribunal",
+        "judicature"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 1"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 563",
+          "article_number": "13",
+          "title": "",
+          "text_preview": "Article 13\n\n(a) When the Board is presented with recommendations or decisions taken or to be taken by the Chief Executive Officer, it shall discuss the said recommendations or decisions and if the Boa"
+        },
+        {
+          "law_code": "Cap. 12",
+          "article_number": "469A",
+          "title": null,
+          "text_preview": "Article 469A\n\n(1) Saving as is otherwise provided by law, the courts of justice of civil jurisdiction may enquire into the validity of any administrative act or declare such act null, invalid or witho"
+        },
+        {
+          "law_code": "Cap. 394",
+          "article_number": "10",
+          "title": "",
+          "text_preview": "Article 10\n\nThe tribunal shall, every six months starting from the date of commencement of this Act, make a report of its decisions to the House of Representatives; such report shall be submitted by t"
+        }
+      ],
+      "elapsed_seconds": 3.59
+    },
+    {
+      "id": 91,
+      "domain": "administrative_law",
+      "question": "What are the grounds for judicial review?",
+      "categories_detected": [
+        "administrative_law",
+        "constitutional_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 1"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 499.25",
+          "article_number": "17",
+          "title": "Grounds of appeal",
+          "text_preview": "Article 17 - Grounds of appeal\n\n(1) An appeal to the Administrative Review Tribunal may be filed on any of the following grounds:\n(a) that a material error as to the facts has been made;\n(b) that ther"
+        },
+        {
+          "law_code": "Cap. 490",
+          "article_number": "7",
+          "title": "Review of administrative acts.",
+          "text_preview": "Article 7 - Review of administrative acts.\n\n(1) The Administrative Review Tribunal shall be competent to review administrative acts of the public administration on points of law and points of fact.\n(2"
+        },
+        {
+          "law_code": "Cap. 12",
+          "article_number": "469A",
+          "title": null,
+          "text_preview": "Article 469A\n\n(1) Saving as is otherwise provided by law, the courts of justice of civil jurisdiction may enquire into the validity of any administrative act or declare such act null, invalid or witho"
+        }
+      ],
+      "elapsed_seconds": 4.12
+    },
+    {
+      "id": 92,
+      "domain": "administrative_law",
+      "question": "How do I obtain information from government under FOI?",
+      "categories_detected": [
+        "administrative_law",
+        "data_protection_and_privacy",
+        "constitutional_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 1",
+        "Cap. 586"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 549.39",
+          "article_number": "12",
+          "title": "Enforcement.",
+          "text_preview": "Article 12 - Enforcement.\n\n(1) Any person who requests the competent authority to provide him with environmental information in accordance with regulation 3, and who is dissatisfied with the response,"
+        },
+        {
+          "law_code": "Cap. 496",
+          "article_number": "1",
+          "title": "Short title and commencement.",
+          "text_preview": "Article 1 - Short title and commencement.\n\n(1) The short title of this Act is Freedom of Information Act.\n(2) This Act shall come into force on such a date as the Minister may by notice in the Gazette"
+        },
+        {
+          "law_code": "S.L. 496.03",
+          "article_number": "2",
+          "title": "Interpretation.",
+          "text_preview": "Article 2 - Interpretation.\n\nIn these regulations, unless the context otherwise requires:\n\"application form\" means the form in the First Schedule;\n\"reply forms\" means the forms in the Second Schedule;"
+        }
+      ],
+      "elapsed_seconds": 3.15
+    },
+    {
+      "id": 93,
+      "domain": "consumer_protection_law",
+      "question": "What is the return period for online purchases?",
+      "categories_detected": [
+        "consumer_protection_law",
+        "electronic_communications_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 378"
+      ],
+      "laws_searched_count": 18,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 378.17",
+          "article_number": "10",
+          "title": "Right of withdrawal.",
+          "text_preview": "Article 10 - Right of withdrawal.\n\n(1) Save where the exceptions provided for in regulation 18 apply, the consumer shall have a period of fourteen (14) days to withdraw from a distance or off-premises"
+        },
+        {
+          "law_code": "S.L. 406.10",
+          "article_number": "16",
+          "title": "Refund period.",
+          "text_preview": "Article 16 - Refund period.\n\nThe refund period shall not be more than one calendar year or less than three calendar months. Refund applications may, however, relate to a period of less than three mont"
+        },
+        {
+          "law_code": "S.L. 406.13",
+          "article_number": "5",
+          "title": "Minimum limit.",
+          "text_preview": "Article 5 - Minimum limit.\n\nRepayment shall only apply to goods where the value of such goods purchased from a single registered establishment as shown on a single receipt is not below fifty euro (€50"
+        }
+      ],
+      "elapsed_seconds": 3.78
+    },
+    {
+      "id": 94,
+      "domain": "consumer_protection_law",
+      "question": "What warranties apply to consumer goods?",
+      "categories_detected": [
+        "consumer_protection_law",
+        "civil_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 378",
+          "article_number": "72",
+          "title": null,
+          "text_preview": "Article 72\n\n(1) In this Part unless the context otherwise requires:\n\"consumer\" means any natural person who, in relation to contracts covered by this Part, is acting for purposes which are outside tha"
+        },
+        {
+          "law_code": "S.L. 378.17",
+          "article_number": "2",
+          "title": "Interpretation.",
+          "text_preview": "Article 2 - Interpretation.\n\n(1) Any reference in these regulations to the \"Act\" is a reference to the Consumer Affairs Act, and the provisions of article 2 of the said Act shall apply to these regula"
+        },
+        {
+          "law_code": "Cap. 378",
+          "article_number": "73",
+          "title": null,
+          "text_preview": "Article 73\n\n(1) Sellers shall deliver goods to the consumer that conform with the sales contract, which goods shall, in particular, where applicable:\n(a) be of the description, type, quantity and qual"
+        }
+      ],
+      "elapsed_seconds": 3.44
+    },
+    {
+      "id": 95,
+      "domain": "consumer_protection_law",
+      "question": "Can a business exclude liability for defective products?",
+      "categories_detected": [
+        "consumer_protection_law",
+        "commercial_law",
+        "civil_law"
+      ],
+      "query_expansion": [
+        "responsibility",
+        "obligation"
+      ],
+      "fundamental_laws_added": [
+        "Cap. 12",
+        "Cap. 386",
+        "Cap. 13",
+        "Cap. 16"
+      ],
+      "laws_searched_count": 19,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "Cap. 378",
+          "article_number": "60",
+          "title": "Defective product.",
+          "text_preview": "Article 60 - Defective product.\n\n(1) A product is defective if it fails to provide the safety which a person is entitled to expect, taking all circumstances into account including:\n(a) the presentatio"
+        },
+        {
+          "law_code": "Cap. 427",
+          "article_number": "35",
+          "title": "",
+          "text_preview": "Article 35\n\nNothing in this Act shall be construed as adversely affecting the rights of consumers arising from the provisions regulating liability for defective products under Part VII of the Consumer"
+        },
+        {
+          "law_code": "Cap. 378",
+          "article_number": "62",
+          "title": "Defences a producer may raise.",
+          "text_preview": "Article 62 - Defences a producer may raise.\n\nThe producer shall not be liable under this Part if he proves\n(a) that he did not put the product into circulation, or\n(b) that, having regard to the circu"
+        }
+      ],
+      "elapsed_seconds": 3.86
+    },
+    {
+      "id": 96,
+      "domain": "consumer_protection_law",
+      "question": "How do I file a complaint against a trader?",
+      "categories_detected": [
+        "consumer_protection_law",
+        "commercial_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386"
+      ],
+      "laws_searched_count": 16,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 117.42",
+          "article_number": "6",
+          "title": "Complaints by suppliers.",
+          "text_preview": "Article 6 - Complaints by suppliers.\n\n(1) Suppliers may submit complaints on alleged unfair trading practices to the relevant sectoral authority or to the Board:\nProvided that a sectoral authority sha"
+        },
+        {
+          "law_code": "S.L. 378.18",
+          "article_number": "14",
+          "title": "Consumer information that a trader must provide.",
+          "text_preview": "Article 14 - Consumer information that a trader must provide.\n\n(1) A trader shall inform consumers about the ADR entity by which he is covered, when he commits to or is obliged to use such an entity t"
+        },
+        {
+          "law_code": "S.L. 378.17",
+          "article_number": "7",
+          "title": "Burden of proof.",
+          "text_preview": "Article 7 - Burden of proof.\n\nAs regards compliance with the information requirements laid down in this Part, the burden of proof shall be on the trader."
+        }
+      ],
+      "elapsed_seconds": 3.04
+    },
+    {
+      "id": 97,
+      "domain": "data_protection_and_privacy",
+      "question": "What are my rights under GDPR in Malta?",
+      "categories_detected": [
+        "data_protection_and_privacy",
+        "eu_law",
+        "human_rights_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 418.06",
+          "article_number": "6",
+          "title": "Right to submit a complaint.",
+          "text_preview": "Article 6 - Right to submit a complaint.\n\nWithout prejudice to any other administrative or judicial remedy, natural or legal persons who have their habitual residence, place of work or establishment i"
+        },
+        {
+          "law_code": "S.L. 586.12",
+          "article_number": "1",
+          "title": "Citation and scope.",
+          "text_preview": "Article 1 - Citation and scope.\n\n(1) The title of these regulations is the Enforcement of Rights of the Data Subjects in relation to Transfers of Personal Data to a Third Country or an International O"
+        },
+        {
+          "law_code": "S.L. 591.03",
+          "article_number": "7",
+          "title": "Right to file a complaint.",
+          "text_preview": "Article 7 - Right to file a complaint.\n\nNatural and legal persons may file a complaint in relation to any matter falling within the scope of Regulation (EU) 2022/868 individually or, where relevant co"
+        }
+      ],
+      "elapsed_seconds": 3.76
+    },
+    {
+      "id": 98,
+      "domain": "data_protection_and_privacy",
+      "question": "What is the penalty for data breaches?",
+      "categories_detected": [
+        "data_protection_and_privacy",
+        "criminal_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 9",
+        "Cap. 101"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 330.20",
+          "article_number": "8",
+          "title": "The Authority's powers to impose administrative penalties and other administrative measures.",
+          "text_preview": "Article 8 - The Authority's powers to impose administrative penalties and other administrative measures.\n\n(1) Without prejudice to any other power of the Authority conferred to it under the DORA Regul"
+        },
+        {
+          "law_code": "S.L. 460.41",
+          "article_number": "39",
+          "title": "Infringements entailing a personal data breach.",
+          "text_preview": "Article 39 - Infringements entailing a personal data breach.\n\n(1) Where the CIP Department, or where designated the competent authority, becomes aware in the course of supervision or enforcement that "
+        },
+        {
+          "law_code": "Cap. 584",
+          "article_number": "15",
+          "title": "Penalties.",
+          "text_preview": "Article 15 - Penalties.\n\n(1) An air carrier which, as a result of a technical or non-technical fault, fails to transmit, in full or in part, PNR data in accordance with article 9 or does not do so in "
+        }
+      ],
+      "elapsed_seconds": 3.66
+    },
+    {
+      "id": 99,
+      "domain": "data_protection_and_privacy",
+      "question": "How long can a company retain my personal data?",
+      "categories_detected": [
+        "data_protection_and_privacy",
+        "consumer_protection_law",
+        "company_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [
+        "Cap. 386",
+        "Cap. 378"
+      ],
+      "laws_searched_count": 17,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 583.12",
+          "article_number": "3",
+          "title": "Data Retention Period.",
+          "text_preview": "Article 3 - Data Retention Period.\n\n(1) The Authority may retain all data, including any personal data, collected or otherwise processed in the pursuit of its regulatory functions under the Act for a "
+        },
+        {
+          "law_code": "S.L. 586.08",
+          "article_number": "5",
+          "title": "Time-limits for storage and review.",
+          "text_preview": "Article 5 - Time-limits for storage and review.\n\n(1) Personal data which is no longer required for the purposes set out in regulation 3(1) shall be erased without undue delay.\n(2) Without prejudice to"
+        },
+        {
+          "law_code": "S.L. 234.58",
+          "article_number": "9",
+          "title": "Data registration.",
+          "text_preview": "Article 9 - Data registration.\n\n(1) Companies shall establish and keep in place a procedure for data registration which guarantees that information required by these regulations is reported in an accu"
+        }
+      ],
+      "elapsed_seconds": 3.35
+    },
+    {
+      "id": 100,
+      "domain": "data_protection_and_privacy",
+      "question": "Do I have the right to be forgotten?",
+      "categories_detected": [
+        "data_protection_and_privacy",
+        "human_rights_law"
+      ],
+      "query_expansion": [],
+      "fundamental_laws_added": [],
+      "laws_searched_count": 15,
+      "articles_found": 10,
+      "top_articles": [
+        {
+          "law_code": "S.L. 12.32",
+          "article_number": "3",
+          "title": "Conferment of powers, duties and functions upon the Director General (Courts).",
+          "text_preview": "Article 3 - Conferment of powers, duties and functions upon the Director General (Courts).\n\nThe Director General (Courts) shall, subject to the provisions of the Data Protection Act, have the function"
+        },
+        {
+          "law_code": "S.L. 528.11",
+          "article_number": "8",
+          "title": "Protection of personal data.",
+          "text_preview": "Article 8 - Protection of personal data.\n\nIn respect of all processing of personal data in accordance with these regulations, every applicant shall have the right of access, rectification, erasure and"
+        },
+        {
+          "law_code": "S.L. 12.32",
+          "article_number": "4",
+          "title": "Manner of exercise of the right of erasure.",
+          "text_preview": "Article 4 - Manner of exercise of the right of erasure.\n\nThe right of erasure of personal data from a court judgment published on the website of the Court Services Agency shall be given effect either "
+        }
+      ],
+      "elapsed_seconds": 3.54
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+id,label,name,category,total_articles,type
+Cap. 379,Cap. 379,Competition Act,commercial_law,52,law
+Cap. 356,Cap. 356,Development Planning ActAll subsidiary legislation has been transposed to Cap. 5,planning_and_development_law,79,law
+Cap. 525,Cap. 525,Mental Health Act,health_law,48,law
+Cap. 382,Cap. 382,Excise Duty Act,tax_law,62,law
+Cap. 484,Cap. 484,Securitisation Act,financial_services_law,26,law
+Cap. 364,Cap. 364,Duty on Documents and Transfers Act,tax_law,86,law
+Cap. 626,Cap. 626,Sports Governance and Integrity Act,administrative_law,75,law
+Cap. 164,Cap. 164,Police Act,administrative_law,114,law
+Cap. 631,Cap. 631,Pre-Insolvency Act,commercial_law,51,law
+Cap. 527,Cap. 527,Protection of the Whistleblower Act,human_rights_law,28,law
+Cap. 345,Cap. 345,Financial Markets Act,commercial_law,116,law
+Cap. 69,Cap. 69,Reletting of Urban Property (Regulation) Ordinance,property_law,50,law
+Cap. 37,Cap. 37,Customs Ordinance,tax_law,112,law
+Cap. 586,Cap. 586,Data Protection Act,data_protection_and_privacy,33,law
+Cap. 551,Cap. 551,Environment and Planning Review Tribunal Act,environmental_law,58,law
+Cap. 605,Cap. 605,Education Act,education_law,71,law
+Cap. 318,Cap. 318,Social Security Act,social_security_law,156,law
+Cap. 487,Cap. 487,Insurance Distribution Act,commercial_law,76,law
+Cap. 594,Cap. 594,Employment and Training Services Act,employment_law,59,law
+Cap. 161,Cap. 161,Local Loans (Registered Stock and Securities) Ordinance,financial_services_law,46,law
+Cap. 529,Cap. 529,Company Service Providers Act,commercial_law,22,law
+Cap. 549,Cap. 549,Environment Protection Act,environmental_law,91,law
+Cap. 630,Cap. 630,Social Enterprise Act Not yet in force,commercial_law,34,law
+Cap. 418,Cap. 418,Malta Communications Authority Act,administrative_law,64,law
+Cap. 376,Cap. 376,Financial Institutions Act,financial_services_law,54,law
+Cap. 647,Cap. 647,Markets in Crypto-Assets Act,financial_services_law,66,law
+Cap. 158,Cap. 158,Housing (Decontrol) Ordinance,property_law,22,law
+Cap. 583,Cap. 583,Gaming Act,gaming_and_gambling_law,60,law
+Cap. 563,Cap. 563,Lands Authority Act,administrative_law,66,law
+Cap. 399,Cap. 399,Electronic Communications (Regulation) Act,electronic_communications_law,62,law
+Cap. 406,Cap. 406,Value Added Tax Act,tax_law,96,law
+Cap. 503,Cap. 503,Aircraft Registration Act,transport_law,68,law
+Cap. 93,Cap. 93,Pensions Ordinance,social_security_law,32,law
+Cap. 101,Cap. 101,Dangerous Drugs Ordinance,criminal_law,49,law
+Cap. 325,Cap. 325,Business Promotion Act,commercial_law,57,law
+Cap. 370,Cap. 370,Investment Services Act,financial_services_law,51,law
+Cap. 504,Cap. 504,Environment and Development Planning ActAll subsidiary legislation has been tran,environmental_law,98,law
+Cap. 354,Cap. 354,General Elections Act,constitutional_law,124,law
+Cap. 445,Cap. 445,Cultural Heritage Act,administrative_law,72,law
+Cap. 632,Cap. 632,Insolvency Practitioners Act,commercial_law,29,law
+Cap. 372,Cap. 372,Income Tax Management Act,tax_law,71,law
+Cap. 258,Cap. 258,Identity Card and other Identity Documents Act,administrative_law,25,law
+Cap. 653,Cap. 653,National Interest (Enabling Powers) Act,administrative_law,41,law
+Cap. 249,Cap. 249,Interpretation Act,administrative_law,17,law
+Cap. 371,Cap. 371,Banking Act,financial_services_law,77,law
+Cap. 492,Cap. 492,Voluntary Organisations Act,administrative_law,55,law
+Cap. 9,Cap. 9,Criminal Code,criminal_law,47,law
+Cap. 625,Cap. 625,Exclusive Economic Zone Act,maritime_law,13,law
+Cap. 595,Cap. 595,Public Administration Act,administrative_law,41,law
+Cap. 395,Cap. 395,Customs and Excise Tax Act [R],tax_law,75,law
+Cap. 604,Cap. 604,Private Residential Leases Act,property_law,40,law
+Cap. 350,Cap. 350,Broadcasting Act,media_and_broadcasting_law,63,law
+Cap. 373,Cap. 373,Prevention of Money Laundering Act,criminal_law,61,law
+Cap. 573,Cap. 573,Government Lands Act,property_law,82,law
+Cap. 451,Cap. 451,Mutual Recognition of Qualifications Act,administrative_law,9,law
+Cap. 537,Cap. 537,Drug Dependence (Treatment not Imprisonment) Act,criminal_law,17,law
+Cap. 331,Cap. 331,Trusts and Trustees Act,civil_law,75,law
+Cap. 276,Cap. 276,Extradition Act,criminal_law,56,law
+Cap. 510,Cap. 510,Malta Competition and Consumer Affairs Authority Act,consumer_protection_law,66,law
+Cap. 204,Cap. 204,Central Bank of Malta Act,financial_services_law,69,law
+Cap. 387,Cap. 387,Arbitration Act,civil_law,104,law
+Cap. 31,Cap. 31,Medical and Kindred Professions Ordinance,health_law,142,law
+Cap. 452,Cap. 452,Employment and Industrial Relations Act,employment_law,92,law
+Cap. 291,Cap. 291,Commissioners for Justice Act,criminal_law,15,law
+Cap. 490,Cap. 490,Administrative Justice Act,administrative_law,25,law
+Cap. 13,Cap. 13,Commercial Code,commercial_law,552,law
+Cap. 545,Cap. 545,Regulator for Energy and Water Services Act,administrative_law,53,law
+Cap. 58,Cap. 58,Widows' and Orphans' Pensions Act,social_security_law,37,law
+Cap. 460,Cap. 460,European Union Act,eu_law,6,law
+Cap. 327,Cap. 327,Education Act,education_law,100,law
+Cap. 123,Cap. 123,Income Tax Act,tax_law,139,law
+Cap. 353,Cap. 353,Civil Aviation (Security) Act,aviation_law,36,law
+Cap. 499,Cap. 499,Authority for Transport in Malta Act,transport_law,52,law
+Cap. 417,Cap. 417,Patents and Designs Act,intellectual_property_law,145,law
+Cap. 330,Cap. 330,Malta Financial Services Authority Act,administrative_law,47,law
+Cap. 649,Cap. 649,Food Safety and Security Authority Act,food_safety_law,32,law
+Cap. 403,Cap. 403,Insurance Business Act,financial_services_law,99,law
+Cap. 386,Cap. 386,Companies Act,commercial_law,463,law
+Cap. 601,Cap. 601,Public Finance Management Act,administrative_law,81,law
+Cap. 552,Cap. 552,Development Planning Act,planning_and_development_law,105,law
+Cap. 12,Cap. 12,Code of Organization and Civil Procedure,civil_law,1083,law
+L.N.512of2010,L.N.512of2010,L.N.512of2010 (external),external,0,law
+Cap. 16,Cap. 16,Civil Code,civil_law,2248,law
+Cap. 518,Cap. 518,Protection of Minors (Registration) Act,criminal_law,23,law
+Cap. 10,Cap. 10,Code of Police Laws,criminal_law,176,law
+Cap. 514,Cap. 514,Retirement Pensions Act,financial_services_law,64,law
+Cap. 614,Cap. 614,Cohabitation Act,civil_law,32,law
+Cap. 496,Cap. 496,Freedom of Information Act,constitutional_law,43,law
+Cap. 55,Cap. 55,Notarial Profession and Notarial Archives Act,notarial_and_registration_law,171,law
+Cap. 377,Cap. 377,Professional Secrecy Act,criminal_law,16,law
+Cap. 446,Cap. 446,Probation Act,criminal_law,43,law
+Cap. 217,Cap. 217,Immigration Act,immigration_law,41,law
+Cap. 413,Cap. 413,Equal Opportunities (Persons with Disability) Act,human_rights_law,36,law
+Cap. 455,Cap. 455,Sports Act,administrative_law,56,law
+Cap. 602,Cap. 602,Minor Protection (Alternative Care) Act,family_law,100,law
+Cap. 378,Cap. 378,Consumer Affairs Act,civil_law,166,law
+Cap. 234,Cap. 234,Merchant Shipping Act,maritime_law,448,law
+Cap. 363,Cap. 363,Local Government Act,administrative_law,141,law
+Cap. 442,Cap. 442,Co-operative Societies Act,commercial_law,112,law
+Cap. 281,Cap. 281,Accountancy Profession Act,administrative_law,34,law

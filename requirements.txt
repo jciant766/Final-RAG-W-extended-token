@@ -1,0 +1,39 @@
+# Core
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+
+# PDF Processing
+pymupdf>=1.24.0
+Pillow>=10.0.0
+
+# Vector Database
+lancedb>=0.6.0
+pyarrow>=14.0.0
+
+# Voyage AI (Embeddings + Reranking)
+voyageai>=0.2.0
+
+# BM25 Search
+rank-bm25>=0.2.2
+
+# OpenRouter (LLM - legacy)
+openai>=1.0.0
+httpx>=0.26.0
+
+# Anthropic (LLM with Citations API)
+anthropic>=0.40.0
+
+# Gemini Batch API
+google-genai>=0.3.0
+
+# UI
+streamlit>=1.31.0
+flask>=3.0.0
+flask-cors>=4.0.0
+flask-limiter>=3.5.0
+
+# Data handling
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+openpyxl>=3.1.0

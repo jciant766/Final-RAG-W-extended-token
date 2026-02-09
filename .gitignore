@@ -1,0 +1,49 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# LanceDB data
+lancedb_data/
+lancedb_graphrag/
+
+# Data files
+data/pdfs/*.pdf
+data/pdfs/ingestion_report.json
+All Malta law PDFs/
+All repealed laws pdfs/
+*.pdf
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+nul
+# Backup branch exclusions
+*.tar.gz
+*.zip
+*.exe
+*.db
+*.xlsx
+*.png
+lancedb_graphrag_backup_.zip
+# Local/sensitive
+.claude/
+divine-ceremony-482509-b8-82b451a799b4.json

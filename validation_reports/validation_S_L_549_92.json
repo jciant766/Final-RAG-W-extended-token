@@ -1,0 +1,409 @@
+{
+  "law_code": "S.L. 549.92",
+  "law_name": "Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations",
+  "pdf_pages": 1,
+  "extraction_metrics": {
+    "total_pages_in_pdf": 1,
+    "pages_processed": 1,
+    "pages_skipped": 0,
+    "regulations_extracted": 5,
+    "schedules_extracted": 0,
+    "miscellaneous_extracted": 0,
+    "edges_created": 6,
+    "extraction_time_seconds": 19.85,
+    "extraction_timestamp": "2026-01-06T12:59:15.532149"
+  },
+  "trials": [
+    {
+      "trial_id": 1,
+      "timestamp": "2026-01-20T19:09:17.217726",
+      "questions_total": 11,
+      "questions_correct": 10,
+      "accuracy": 0.9090909090909091,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 1.0,
+          "total": 6,
+          "correct": 6
+        },
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 1.0,
+          "total": 1,
+          "correct": 1
+        },
+        "structure": {
+          "accuracy": 1.0,
+          "total": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "trial_id": 2,
+      "timestamp": "2026-01-20T19:09:38.244207",
+      "questions_total": 11,
+      "questions_correct": 10,
+      "accuracy": 0.9090909090909091,
+      "results_by_type": {
+        "faithfulness": {
+          "accuracy": 1.0,
+          "total": 6,
+          "correct": 6
+        },
+        "cross_reference": {
+          "accuracy": 0.6666666666666666,
+          "total": 3,
+          "correct": 2
+        },
+        "completeness": {
+          "accuracy": 1.0,
+          "total": 1,
+          "correct": 1
+        },
+        "structure": {
+          "accuracy": 1.0,
+          "total": 1,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "overall_accuracy": {
+      "mean": 0.9091,
+      "ci_95_low": 0.9091,
+      "ci_95_high": 0.9091,
+      "std_dev": 0.0
+    },
+    "by_question_type": {
+      "faithfulness": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      },
+      "cross_reference": {
+        "mean_accuracy": 0.6667,
+        "ci_95_low": 0.6667,
+        "ci_95_high": 0.6667,
+        "std_dev": 0.0
+      },
+      "completeness": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      },
+      "structure": {
+        "mean_accuracy": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "std_dev": 0.0
+      }
+    },
+    "num_trials": 2,
+    "statistical_power": "limited"
+  },
+  "statistical_analysis": {
+    "methodology": "RAGAS + Bloomberg Law + BenchmarkQED",
+    "confidence_level": 0.95,
+    "min_questions": 10,
+    "trials_for_significance": 6
+  },
+  "questions_asked": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 3 in the PDF contain this exact text (allowing for minor formatting differences): 'For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the ...'?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 4 in the PDF contain this exact text (allowing for minor formatting differences): 'For the purposes of these regulations, the Autumn live-capturing season shall be in accordance with the provisions of the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Aut...'?",
+      "expected_answer": "yes",
+      "source_article": "4",
+      "page_reference": 1
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "question": "How many numbered regulations are in this law? The extraction found 5.",
+      "expected_answer": "5",
+      "source_article": null,
+      "page_reference": null
+    },
+    {
+      "question_id": "XREF-EXT-1",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 2 reference external law 'S.L. 549.42' or 'Wild Birds Regulations'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 2 reference external law 'S.L. 549.74' or 'Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "question": "Does regulation/article 3 reference external law 'S.L. 549.42' or '10(6)(i)'?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 1
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "question": "Does regulation/article 3 have sub-items like ['3(a)', '3(b)']?",
+      "expected_answer": "yes",
+      "source_article": "3",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 1 in the PDF contain this exact text (allowing for minor formatting differences): 'The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations....'?",
+      "expected_answer": "yes",
+      "source_article": "1",
+      "page_reference": 1
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "question": "Does regulation/article 2 in the PDF contain this exact text (allowing for minor formatting differences): 'Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred...'?",
+      "expected_answer": "yes",
+      "source_article": "2",
+      "page_reference": 1
+    }
+  ],
+  "detailed_results": [
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 1 matches the original PDF text exactly, after accounting for minor formatting differences (line breaks).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text of regulation 2 matches the text in the original PDF, including all legal terms and references. The formatting is also consistent.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "2.\nTerms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 3 matches the text in the original PDF, allowing for minor formatting differences.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Establishing of periods.\",\n  \"text\": \"For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \\\"the Autumn live-capturing season\\\", shall be on the following dates:",
+      "pdf_text": "PDF: 'For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \"the Autumn live-capturing season\", shall be on the following dates:' \nExtracted Text: 'For the purposes of establishing the period for the live-capturing of wild birds under regulation"
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 4 matches the corresponding text in the provided PDF extract.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": \"Live-Capturing according to set framework.\",\n  \"text\": \"For the purposes of these regulations, the Autumn live-capturing season shall be in accordance with the provisions of the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"i",
+      "pdf_text": "PDF: 'For the purposes of these regulations, the Autumn live-capturing season shall be in accordance with the provisions of the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations.'"
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted data accurately reflects that there are 5 numbered regulations within the provided text of Subsidiary Legislation 549.92.",
+      "extracted_text": "{\n  \"regulations_count\": 5,\n  \"articles_count\": 0,\n  \"schedules\": [],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation declares and regulates a specific derogation for the 2014 autumn live-capturing season of Song Thrush and Golden Plover in Malta, setting out the conditions, dates, and limits for this activity.\",\n    \"key_topics\": [\n      \"2014 autumn live-capturing season dates (20th October - 31st December)\",\n      \"Live-capturing licence fee (\\u20ac55)\",\n      \"Overall seasonal ba",
+      "pdf_text": "The document has regulations numbered 1 through 5."
+    },
+    {
+      "question_id": "XREF-EXT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the text of Regulation 2 in Subsidiary Legislation 549.92. The cross-references to 'Wild Birds Regulations', 'S.L. 549.42', and 'S.L. 549.74' are all present and correctly identified.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 2 accurately references 'S.L. 549.74' and 'Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations' as external law.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "2.\nTerms and expressions used in these regulations, unless the\ncontext otherwise requires, shall have the same meaning as given to\nthem in the Conservation of Wild Birds Regulations, hereinafter\nreferred to as the \"the Wild Birds Regulations\", and in the\nConservation of Wild Birds (Framework for Allowing a Derogation\nOpening an Autumn Live-Capturing Season for Song Thrush and\nGolden Plover) Regulations."
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "The regulation/article 3 references 'regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations'. The 'Wild Birds Regulations' are defined in regulation 2 as 'S.L. 549.42'. The extracted content incorrectly links the target law as 'S.L. 549.42' to include the article/regulation number. However, 10(6)(i) is the 'target' with S.L. 549.42 being the 'target_law'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Establishing of periods.\",\n  \"text\": \"For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \\\"the Autumn live-capturing season\\\", shall be on the following dates:",
+      "pdf_text": "3. For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \"the Autumn live-capturing season\", shall be on the following dates:"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 3 in the PDF has sub-items '3(a)' and '3(b)' specifying live-capturing dates for Song Thrush and Golden Plover, respectively.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Establishing of periods.\",\n  \"text\": \"For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \\\"the Autumn live-capturing season\\\", shall be on the following dates:",
+      "pdf_text": "3.\nFor the purposes of establishing the period for the live-\ncapturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the\nWild Birds Regulations, and for the purpose of these regulations,\nthe period for the live-capturing of Song Thrush and Golden Plover\nfor the year 2014, hereinafter referred to as \"the Autumn live-\ncapturing season\", shall be on the following dates:\n(a)\nlive-capturing of Song Thrush between the 20th\nOctober 2014 and the 31st December 2014, both dates\nincluded;\n(b)\n"
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 1 in the PDF text states: \"The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations.\" This is identical to the extracted text.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 2 matches the original PDF text exactly, including the cross-references and the phrase 'Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred...'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "2.\nTerms and expressions used in these regulations, unless the\ncontext otherwise requires, shall have the same meaning as given to\nthem in the Conservation of Wild Birds Regulations, hereinafter\nreferred to as the \"the Wild Birds Regulations\", and in the\nConservation of Wild Birds (Framework for Allowing a Derogation\nOpening an Autumn Live-Capturing Season for Song Thrush and\nGolden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 1 matches the text in the PDF. The only difference is the absence of a period at the end of the sentence in the PDF, but this is likely a transcription error and doesn't impact the meaning.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text matches the corresponding section in the original PDF document. The provided text in regulation 2, is accurately represented in the extracted content, including references to other regulations (S.L. 549.42 and S.L. 549.74).",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-3",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 3 accurately reflects the original PDF text regarding the purpose of establishing the period for live-capturing wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations and the purpose of these regulations.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Establishing of periods.\",\n  \"text\": \"For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \\\"the Autumn live-capturing season\\\", shall be on the following dates:",
+      "pdf_text": "For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \"the Autumn live-capturing season\", shall be on the following dates:"
+    },
+    {
+      "question_id": "FAITH-4",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text from regulation 4 exactly matches the text in the provided PDF, including the reference to \"Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations.\"",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/4\",\n  \"type\": \"regulation\",\n  \"number\": \"4\",\n  \"title\": \"Live-Capturing according to set framework.\",\n  \"text\": \"For the purposes of these regulations, the Autumn live-capturing season shall be in accordance with the provisions of the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"i",
+      "pdf_text": "For the purposes of these regulations, the Autumn live-capturing season shall be in accordance with the provisions of the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "COMP-COUNT",
+      "question_type": "completeness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately reflects the number of regulations (5) present in the provided PDF text. Each regulation is clearly numbered from 1 to 5.",
+      "extracted_text": "{\n  \"regulations_count\": 5,\n  \"articles_count\": 0,\n  \"schedules\": [],\n  \"metadata\": {\n    \"purpose\": \"This Subsidiary Legislation declares and regulates a specific derogation for the 2014 autumn live-capturing season of Song Thrush and Golden Plover in Malta, setting out the conditions, dates, and limits for this activity.\",\n    \"key_topics\": [\n      \"2014 autumn live-capturing season dates (20th October - 31st December)\",\n      \"Live-capturing licence fee (\\u20ac55)\",\n      \"Overall seasonal ba",
+      "pdf_text": "The PDF text shows numbered regulations from 1 to 5, indicating a total of 5 regulations."
+    },
+    {
+      "question_id": "XREF-EXT-1",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 2 references 'Conservation of Wild Birds Regulations', which is the same as 'Wild Birds Regulations', and also 'Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations'. The external references are correctly identified. The mention of 'S.L. 549.42' is implied, as the definition of 'Wild Birds Regulations' is found in 'S.L. 549.42'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "2. Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "XREF-EXT-2",
+      "question_type": "cross_reference",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted content accurately represents the original PDF text regarding regulation 2 and its references to 'S.L. 549.74' and 'Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "PDF: \"2. Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations.\""
+    },
+    {
+      "question_id": "XREF-EXT-3",
+      "question_type": "cross_reference",
+      "is_correct": false,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 3 references 'regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations'. According to regulation 2, \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\"...\". S.L. 549.42 is referred to as \"the Wild Birds Regulations\" in regulation 2. Thus the external cross-reference should be to S.L. 549.42. However, the external references should not contain the target law and target id like so, this should be done in the top level cross_reference object.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Establishing of periods.\",\n  \"text\": \"For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \\\"the Autumn live-capturing season\\\", shall be on the following dates:",
+      "pdf_text": "3.\nFor the purposes of establishing the period for the live-\ncapturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the\nWild Birds Regulations, and for the purpose of these regulations"
+    },
+    {
+      "question_id": "STRUCT-3",
+      "question_type": "structure",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "Regulation 3 of S.L.549.92 does contain sub-items labeled as '3(a)' and '3(b)'. The extracted content accurately reflects this structure.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/3\",\n  \"type\": \"regulation\",\n  \"number\": \"3\",\n  \"title\": \"Establishing of periods.\",\n  \"text\": \"For the purposes of establishing the period for the live-capturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the Wild Birds Regulations, and for the purpose of these regulations, the period for the live-capturing of Song Thrush and Golden Plover for the year 2014, hereinafter referred to as \\\"the Autumn live-capturing season\\\", shall be on the following dates:",
+      "pdf_text": "3.\nFor the purposes of establishing the period for the live-\ncapturing of wild birds under regulation 10(6)(i), (ii) and (iii) of the\nWild Birds Regulations, and for the purpose of these regulations,\nthe period for the live-capturing of Song Thrush and Golden Plover\nfor the year 2014, hereinafter referred to as \"the Autumn live-\ncapturing season\", shall be on the following dates:\n(a)\nlive-capturing of Song Thrush between the 20th\nOctober 2014 and the 31st December 2014, both dates\nincluded;\n(b)\n"
+    },
+    {
+      "question_id": "FAITH-1",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 1 matches the original PDF text exactly. Minor formatting differences like line breaks are acceptable.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/1\",\n  \"type\": \"regulation\",\n  \"number\": \"1\",\n  \"title\": \"Citation.\",\n  \"text\": \"The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations.\",\n  \"sub_items\": [],\n  \"page_start\": 1,\n  \"page_end\": 1,\n  \"cross_references\": {\n    \"internal\": [],\n    \"external\": []\n  }\n}",
+      "pdf_text": "The title of these regulations is the Conservation of Wild Birds (Declaration on a Derogation for a 2014 Autumn live-capturing season for Song Thrush and Golden Plover) Regulations."
+    },
+    {
+      "question_id": "FAITH-2",
+      "question_type": "faithfulness",
+      "is_correct": true,
+      "confidence": 1.0,
+      "llm_reasoning": "The extracted text for regulation 2 is identical to the text in the original PDF, including the reference to 'the Wild Birds Regulations' and the 'Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations'.",
+      "extracted_text": "{\n  \"id\": \"reg:S.L.549.92/2\",\n  \"type\": \"regulation\",\n  \"number\": \"2\",\n  \"title\": \"Interpretation.\",\n  \"text\": \"Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \\\"the Wild Birds Regulations\\\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plo",
+      "pdf_text": "Terms and expressions used in these regulations, unless the context otherwise requires, shall have the same meaning as given to them in the Conservation of Wild Birds Regulations, hereinafter referred to as the \"the Wild Birds Regulations\", and in the Conservation of Wild Birds (Framework for Allowing a Derogation Opening an Autumn Live-Capturing Season for Song Thrush and Golden Plover) Regulations."
+    }
+  ],
+  "generated_at": "2026-01-20T19:09:38.245323"
+}
